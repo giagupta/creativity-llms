@@ -1,0 +1,42 @@
+{
+  "model": {
+    "name": "gpt-4.1-mini",
+    "max_tokens": 350
+  },
+  "conditions": ["single_pass_18_keep5", "divergent_convergent_18_keep5"],
+  "budget": {
+    "max_candidates_per_prompt": 18,
+    "keep_top_k": 5
+  },
+  "sampling": {
+    "single_pass": {
+      "temperature": 0.9,
+      "top_p": 1.0
+    },
+    "reframing": {
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "num_reformulations": 3
+    },
+    "combinational": {
+      "temperature": 0.9,
+      "top_p": 1.0,
+      "candidates_per_reformulation": 3
+    },
+    "transformational": {
+      "temperature": 1.1,
+      "top_p": 1.0,
+      "candidates_per_reformulation": 3
+    },
+    "judge": {
+      "temperature": 0.0,
+      "top_p": 1.0
+    }
+  },
+  "selection": {
+    "discard_if_constraint_below": 0.4,
+    "constraint_weight": 0.2,
+    "usefulness_weight": 0.2,
+    "breakthrough_weight": 0.6
+  }
+}

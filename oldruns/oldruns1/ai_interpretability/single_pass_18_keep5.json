@@ -1,0 +1,443 @@
+{
+  "timestamp": "2026-02-01T11:25:18",
+  "prompt_id": "ai_interpretability",
+  "prompt": "Explain one major challenge in interpreting modern AI systems (e.g., deep neural networks) and propose a concrete research or engineering approach that would meaningfully improve interpretability in practice. Your proposal must be specific, feasible, and clearly justified. (Maximum two paragraphs.)",
+  "condition": "single_pass_18_keep5",
+  "config": {
+    "model": {
+      "name": "gpt-4.1-mini",
+      "max_tokens": 350
+    },
+    "conditions": [
+      "single_pass_18_keep5",
+      "divergent_convergent_18_keep5"
+    ],
+    "budget": {
+      "max_candidates_per_prompt": 18,
+      "keep_top_k": 5
+    },
+    "sampling": {
+      "single_pass": {
+        "temperature": 0.9,
+        "top_p": 1.0
+      },
+      "reframing": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "num_reformulations": 3
+      },
+      "combinational": {
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "transformational": {
+        "temperature": 1.1,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "judge": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "selection": {
+      "discard_if_constraint_below": 0.4,
+      "overall_score_weights": {
+        "constraint_satisfaction": 0.5,
+        "usefulness": 0.5
+      }
+    }
+  },
+  "result": {
+    "reformulations": [],
+    "candidates": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems, particularly deep neural networks, is their inherent complexity and high-dimensional nonlinearity, which obscure the causal relationships between inputs and outputs. Unlike simpler models, deep networks learn layered, distributed representations that are difficult to map onto human-understandable concepts. This \u201cblack-box\u201d nature hinders trust, debugging, and regulatory compliance, especially in high-stakes domains like healthcare or finance where understanding model reasoning is critical.\n\nA concrete approach to improving interpretability is the integration of prototype-based explanations within the neural architecture. Specifically, a model can be designed or retrofitted to learn a dictionary of representative \u201cprototypes\u201d or exemplars from training data, which it uses as reference points during inference. By projecting inputs onto these prototypes and explaining decisions in terms of similarity to human-interpretable examples, the model offers transparent, case-based reasoning that aligns with how practitioners analyze information. This approach is feasible because it leverages existing training data, supports end-to-end differentiability for effective learning, and has demonstrated success in domains like image recognition (e.g., ProtoPNet). It meaningfully improves interpretability by grounding abstract features in tangible, intuitive concepts without sacrificing much predictive performance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (complexity and nonlinearity of deep networks) and proposes a specific, feasible approach (prototype-based explanations) with justification, all within two paragraphs.",
+            "usefulness": "The proposed prototype-based method is a concrete, plausible technique that leverages existing data and has demonstrated success, making it likely to improve interpretability in practice."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and nonlinearity of deep networks) and proposes a specific, feasible approach (prototype-based explanations) with justification, all within two paragraphs.\",\n    \"usefulness\": \"The proposed prototype-based method is a concrete, plausible technique that leverages existing data and has demonstrated success, making it likely to improve interpretability in practice.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems, particularly deep neural networks, is their inherent complexity and high-dimensionality, which leads to \"black-box\" behavior. These models often learn intricate feature representations distributed across many layers and parameters, making it difficult to trace how specific inputs map to outputs or to understand the reasoning behind a given decision. This opacity hinders trust, limits debugging capabilities, and complicates regulatory compliance in critical applications such as healthcare or finance.\n\nA concrete approach to improve interpretability is to integrate modular, concept-based explanations during model training by embedding human-understandable concepts as intermediate representations. For example, one can design architectures that explicitly learn and align internal neurons or subnetworks to predefined semantic concepts using weak supervision or concept bottleneck models. This structured representation forces the model to organize knowledge in a way that corresponds to meaningful, disentangled factors, enabling transparent inspection of which concepts influenced decisions. Such an approach is feasible with existing datasets augmented by concept annotations and can be combined with visualization and counterfactual techniques to provide actionable insights. By grounding model reasoning in human-interpretable concepts, this method enhances transparency without sacrificing predictive performance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge and proposes a specific, feasible, and justified approach within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposal to use concept bottleneck models and modular, concept-based explanations is a well-known, plausible method that can improve interpretability in practice, supported by concrete mechanisms and feasibility."
+          },
+          "raw_judge_text": "```json\n{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge and proposes a specific, feasible, and justified approach within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposal to use concept bottleneck models and modular, concept-based explanations is a well-known, plausible method that can improve interpretability in practice, supported by concrete mechanisms and feasibility.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems, particularly deep neural networks, lies in their inherent complexity and high-dimensional, distributed representations. Unlike simpler models with explicit, human-readable parameters, deep networks learn millions of non-linear features spread across layers, making it difficult to attribute specific predictions to comprehensible factors. This opacity hinders trust, debugging, and compliance with regulatory standards, as stakeholders cannot easily verify or explain how inputs map to outputs.\n\nA concrete approach to improve interpretability is to develop and integrate modular, self-explanatory sub-networks that correspond to semantically meaningful concepts during training. For example, one could design architectures with dedicated \"concept bottleneck\" layers where intermediate units are explicitly trained to activate on human-understandable features (e.g., edge detectors, object parts, or domain-specific concepts) via auxiliary supervised losses. This method is feasible because it leverages labeled concept datasets or weak supervision, encouraging the model to disentangle features in a way that facilitates direct inspection and intervention. As a result, users can inspect concept activations for each prediction, improving transparency and enabling targeted corrections without sacrificing overall model performance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge and proposes a specific, feasible, and justified approach within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposal to use concept bottleneck layers with auxiliary supervised losses is a concrete and plausible method that can improve interpretability by linking internal representations to human-understandable concepts, making it likely to succeed in practice."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge and proposes a specific, feasible, and justified approach within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposal to use concept bottleneck layers with auxiliary supervised losses is a concrete and plausible method that can improve interpretability by linking internal representations to human-understandable concepts, making it likely to succeed in practice.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems, particularly deep neural networks, is their inherent complexity and opacity due to high-dimensional, nonlinear transformations learned across many layers. This makes it difficult to trace how specific input features contribute to a particular output, resulting in \"black-box\" behavior that undermines trust, hinders debugging, and limits accountability. Unlike simpler models with explicit rules or coefficients, neural networks distribute learned knowledge broadly and nonlinearly, complicating efforts to generate precise, human-understandable explanations for individual decisions or global reasoning patterns.\n\nA concrete approach to improve interpretability is to develop modular, self-explaining neural architectures combined with integrated prototype learning. Specifically, one can design networks with dedicated interpretable components, such as layers that explicitly learn and output human-understandable concepts or prototypes representing key input patterns, alongside conventional predictive units. During training, the model is constrained through additional losses to align these prototypes with semantically meaningful data clusters, while explanations for predictions are generated by showing similarity scores between inputs and prototypes. This method is feasible using existing prototype learning frameworks and leverages domain knowledge to ensure meaningful concepts emerge, enabling practitioners to gain intuitive, case-level insights into the decision-making process without sacrificing accuracy. Such modular interpretability fosters transparency and trust in high-stakes applications.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (complexity and opacity of deep networks) and proposes a specific, feasible approach (modular self-explaining architectures with prototype learning) within two paragraphs, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed method is concrete, leveraging existing prototype learning frameworks and adding interpretable components with semantic alignment, which is a plausible and practical way to improve interpretability without sacrificing accuracy."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and opacity of deep networks) and proposes a specific, feasible approach (modular self-explaining architectures with prototype learning) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed method is concrete, leveraging existing prototype learning frameworks and adding interpretable components with semantic alignment, which is a plausible and practical way to improve interpretability without sacrificing accuracy.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One major challenge in interpreting modern AI systems, especially deep neural networks, is their inherent complexity and opacity resulting from millions or billions of parameters spread across multiple non-linear layers. This complexity makes it difficult to trace how specific inputs lead to particular outputs, hindering transparency and trust. Existing post-hoc interpretability methods, such as feature importance scores or saliency maps, often provide limited or noisy insight and can be inconsistent across similar inputs, failing to convey the precise causal mechanisms behind a model\u2019s decisions.\n\nA concrete and feasible approach to improve interpretability is to integrate modular, concept-based bottlenecks within the architecture itself. Specifically, researchers can design intermediate layers that explicitly represent human-understandable concepts\u2014learned either through supervised concept annotations or unsupervised disentanglement\u2014and require the model to make predictions based on these concept activations. By constraining the model to rely on a structured, concept-level representation, this approach encourages transparency, as users can inspect which concepts influenced decisions and assess their validity directly. This method is practical with current training frameworks, enhances interpretability without sacrificing accuracy, and facilitates debugging and trust in real-world deployments.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (complexity and opacity of deep networks) and proposes a specific, feasible approach (modular concept-based bottlenecks) within two paragraphs, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed method is concrete, leveraging concept-level representations to improve transparency, is feasible with current techniques, and is well justified as enhancing interpretability and trust, making it highly plausible and useful."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and opacity of deep networks) and proposes a specific, feasible approach (modular concept-based bottlenecks) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed method is concrete, leveraging concept-level representations to improve transparency, is feasible with current techniques, and is well justified as enhancing interpretability and trust, making it highly plausible and useful.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems such as deep neural networks is their inherent complexity and opacity due to millions (or even billions) of parameters interacting nonlinearly. This \u201cblack-box\u201d nature makes it difficult to understand which features or reasoning pathways lead to a particular prediction, hindering trust, debugging, and compliance with regulatory requirements. Unlike simpler models, these networks do not provide intuitive explanations for their decisions, which is especially problematic in high-stakes domains like healthcare or finance where accountability and transparency are critical.\n\nA concrete, feasible approach to improve interpretability is to develop modular, self-explaining architectures that integrate interpretable sub-networks trained to output human-understandable concepts as intermediate representations. For example, one could design a network with bottleneck layers explicitly dedicated to disentangling domain-relevant features (e.g., \u201ctumor size,\u201d \u201ccell shape\u201d in medical imaging) and train these modules with auxiliary supervision from expert-annotated concept labels. This approach leverages domain knowledge to create a hierarchy of explanations, making the model\u2019s decision process more transparent without sacrificing accuracy. Additionally, by constraining parts of the model to produce semantically meaningful outputs, users can trace predictions back to concrete, comprehensible factors, facilitating better trust and enabling targeted error analysis. This is a practical advancement that builds on existing multitask and concept bottleneck frameworks and can be integrated into current deep learning pipelines with manageable annotation efforts.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (complexity and opacity of deep networks) and proposes a specific, feasible approach (modular, self-explaining architectures with concept bottlenecks) within two paragraphs, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed approach is well-justified, leveraging domain knowledge and auxiliary supervision to produce interpretable intermediate representations, which is a plausible and practical method likely to improve interpretability in real-world applications."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and opacity of deep networks) and proposes a specific, feasible approach (modular, self-explaining architectures with concept bottlenecks) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed approach is well-justified, leveraging domain knowledge and auxiliary supervision to produce interpretable intermediate representations, which is a plausible and practical method likely to improve interpretability in real-world applications.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems like deep neural networks is their inherent complexity and high-dimensional nonlinearity, often described as a \"black box.\" These models learn intricate feature representations distributed across many layers and parameters, making it difficult to trace how specific inputs lead to particular outputs. This opacity hinders trust, debugging, and compliance with regulations, especially in safety-critical domains such as healthcare or autonomous driving.\n\nA concrete approach to improve interpretability is the incorporation of modular neural network architectures combined with concept bottleneck models (CBMs). In this design, the network is structured into interpretable modules, each responsible for detecting human-understandable concepts before making a final prediction. For instance, in medical image analysis, one module may identify anatomical features, while another reasons about disease presence using these features. By enforcing intermediate layers to represent explicit concepts, CBMs enable users to inspect, intervene, and validate the reasoning process. This method is feasible with current training techniques, improves transparency without severely sacrificing performance, and facilitates practical debugging and alignment with domain knowledge.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (complexity and opacity of deep neural networks) and proposes a specific, feasible approach (modular architectures with concept bottleneck models) within two paragraphs, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed use of modular networks combined with concept bottleneck models is a well-defined, plausible method that improves interpretability by enforcing human-understandable intermediate representations, making it likely to succeed in practice."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and opacity of deep neural networks) and proposes a specific, feasible approach (modular architectures with concept bottleneck models) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed use of modular networks combined with concept bottleneck models is a well-defined, plausible method that improves interpretability by enforcing human-understandable intermediate representations, making it likely to succeed in practice.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems, particularly deep neural networks, is their inherent complexity and high dimensionality, which results in opaque decision-making processes. These models consist of millions to billions of parameters organized in multiple layers, making it difficult to discern how individual features or intermediate representations contribute to the final output. This lack of transparency impedes trust, accountability, and debugging, especially in high-stakes domains such as healthcare or autonomous driving where understanding the rationale behind a decision is crucial.\n\nA concrete approach to improve interpretability is to develop modular, self-explaining architectures that integrate explicit reasoning components, such as attention mechanisms or concept bottleneck layers, during training. For example, designing networks that predict intermediate human-understandable concepts (e.g., \"has wheels,\" \"is a pedestrian\") before making a final classification can ground the model\u2019s reasoning in interpretable features. This method is feasible as it builds on existing techniques like concept bottleneck models and attention-based explanations but goes further by enforcing interpretability as a core design principle. By constraining the model to explain its decisions through meaningful intermediates, practitioners can better trace predictions, identify biases, and facilitate human-AI collaboration without sacrificing much performance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge and proposes a specific, feasible research approach within two paragraphs, fully satisfying the prompt requirements.",
+            "usefulness": "The proposal to use modular, self-explaining architectures with concept bottleneck layers and attention mechanisms is a concrete, plausible method likely to improve interpretability in practice."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge and proposes a specific, feasible research approach within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposal to use modular, self-explaining architectures with concept bottleneck layers and attention mechanisms is a concrete, plausible method likely to improve interpretability in practice.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One major challenge in interpreting modern AI systems, especially deep neural networks, is their inherent complexity and high-dimensional parameter space, which leads to the infamous \"black-box\" problem. These models consist of millions of parameters distributed across many non-linear layers, making it difficult to understand how specific inputs are transformed into outputs or to trace the contribution of individual features to a final prediction. This lack of transparency hinders trust, debugging, and regulatory compliance, especially in high-stakes domains like healthcare or finance.\n\nA concrete approach to improve interpretability is the development of modular network architectures with built-in, layer-wise explanations. For example, designing networks where each layer or block is constrained to learn disentangled and semantically meaningful features\u2014enforced via auxiliary losses or supervision\u2014could enable intermediate outputs that correspond to human-understandable concepts. Coupled with automated visualization tools that highlight which modules activate for given inputs, this modular interpretability framework would allow practitioners to trace decision pathways more clearly, diagnose errors, and gain actionable insights. This approach is feasible because it builds on existing techniques like multitask learning and concept bottleneck models, and it aligns interpretability with network design rather than relying solely on post hoc explanations.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (black-box nature due to complexity) and proposes a specific, feasible approach (modular architectures with layer-wise explanations and auxiliary losses) within two paragraphs, fully satisfying the prompt requirements.",
+            "usefulness": "The proposal is plausible and builds on existing techniques like multitask learning and concept bottleneck models, providing a concrete mechanism to improve interpretability by making intermediate features semantically meaningful and traceable, which is likely to be effective in practice."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (black-box nature due to complexity) and proposes a specific, feasible approach (modular architectures with layer-wise explanations and auxiliary losses) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposal is plausible and builds on existing techniques like multitask learning and concept bottleneck models, providing a concrete mechanism to improve interpretability by making intermediate features semantically meaningful and traceable, which is likely to be effective in practice.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems, especially deep neural networks, is their inherent complexity and lack of transparency. These models consist of millions or even billions of parameters organized in multiple layers, making it extremely difficult to trace how specific inputs lead to particular outputs. This opacity creates a \"black box\" effect, hindering users' ability to understand, trust, and validate model decisions, particularly in high-stakes domains like healthcare or finance where accountability is crucial.\n\nA concrete and feasible approach to improve interpretability is to develop modular neural architectures coupled with hierarchical attribution methods. By designing models where distinct modules specialize in semantically meaningful subtasks (e.g., edge detection, object recognition, or sentiment analysis), one can analyze intermediate outputs and assign credit more clearly. Hierarchical attribution techniques can then quantify the contribution of each module and layer to final predictions. This modular interpretability framework would not only provide finer-grained explanations but also allow targeted debugging and auditing. It is justified because modular design aligns with how humans understand complex tasks and has been shown to improve both transparency and robustness in practice, making it a scalable solution for real-world deployment.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (complexity and opacity of deep neural networks) and proposes a specific, feasible approach (modular architectures with hierarchical attribution) within two paragraphs, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed modular interpretability framework is plausible and grounded in a clear mechanism (specialized modules and hierarchical attribution), offering a concrete path to improved transparency and debugging, though practical implementation details and potential limitations are not deeply explored."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and opacity of deep neural networks) and proposes a specific, feasible approach (modular architectures with hierarchical attribution) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed modular interpretability framework is plausible and grounded in a clear mechanism (specialized modules and hierarchical attribution), offering a concrete path to improved transparency and debugging, though practical implementation details and potential limitations are not deeply explored.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One major challenge in interpreting modern AI systems, particularly deep neural networks, is their inherent complexity and distributed representation. These models learn high-dimensional, non-linear feature combinations that are encoded across many layers and neurons, making it difficult to attribute specific decisions to human-understandable concepts. Consequently, traditional interpretability techniques like feature importance or saliency maps often produce explanations that are either too coarse or too noisy, failing to provide actionable insights about the decision process.\n\nA concrete, feasible approach to improving interpretability is to integrate concept bottleneck models (CBMs) into the training pipeline. CBMs require the network to first predict a set of human-interpretable intermediate concepts before making the final decision. By supervising these intermediate layers with annotated concept labels, the model\u2019s reasoning process becomes more transparent, as each prediction can be decomposed into concept activations that are directly meaningful to domain experts. This method is practical since many datasets already have or can be extended with concept-level annotations, and it has been shown to improve both interpretability and robustness. Adopting CBMs or similar bottleneck architectures in real-world systems would enable practitioners to diagnose errors and biases more effectively, facilitating trust and safer deployment of AI.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (complexity and distributed representation) and proposes a specific, feasible approach (concept bottleneck models) with justification, all within two paragraphs as required.",
+            "usefulness": "The proposed use of concept bottleneck models is a concrete and plausible method to improve interpretability by leveraging human-interpretable intermediate concepts, which is likely to succeed in practice given existing datasets and demonstrated benefits."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and distributed representation) and proposes a specific, feasible approach (concept bottleneck models) with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The proposed use of concept bottleneck models is a concrete and plausible method to improve interpretability by leveraging human-interpretable intermediate concepts, which is likely to succeed in practice given existing datasets and demonstrated benefits.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems like deep neural networks is their inherent complexity and distributed representations. These models often contain millions or billions of parameters organized in multiple layers, making it difficult to trace how specific inputs lead to particular outputs. The features learned are usually abstract and entangled, which means that traditional interpretability methods (e.g., simply examining weights or activations) fail to provide human-understandable explanations. This opacity hinders trust, debugging, and compliance with regulatory requirements, especially in high-stakes domains such as healthcare or finance.\n\nA concrete and feasible approach to improving interpretability is to integrate modular, concept-based bottlenecks within deep networks during training. Specifically, designing architectural components that explicitly represent human-understandable concepts\u2014via supervised concept annotations or self-supervised disentanglement\u2014can create intermediate layers whose activations correspond to meaningful features (e.g., \u201ctumor boundary\u201d or \u201ccredit risk factor\u201d). This approach can be coupled with concept activation vectors and saliency maps to generate explanations grounded in these interpretable units. By enforcing structured conceptual representations, models become more transparent and their decision logic easier to audit, while maintaining competitive performance. Such modular concept bottlenecks have been demonstrated in vision and NLP tasks, and extending them with scalable automated concept discovery would make interpretability practical for complex real-world systems.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge and proposes a specific, feasible, and well-justified research approach within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposal to integrate modular, concept-based bottlenecks with supervised or self-supervised concept annotations is a concrete and plausible method likely to improve interpretability in practice, supported by references to existing techniques and potential extensions."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge and proposes a specific, feasible, and well-justified research approach within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposal to integrate modular, concept-based bottlenecks with supervised or self-supervised concept annotations is a concrete and plausible method likely to improve interpretability in practice, supported by references to existing techniques and potential extensions.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One major challenge in interpreting modern AI systems like deep neural networks is their inherent complexity and opacity: these models have millions of parameters distributed across multiple layers, which interact in nonlinear ways that are difficult to trace back to human-understandable concepts. This \u201cblack box\u201d nature makes it challenging to explain why a model arrived at a particular decision, especially in high-stakes domains like healthcare or finance, where transparency and trustworthiness are essential.\n\nA concrete approach to improve interpretability is to develop modular neural architectures with built-in disentangled representations aligned to human-interpretable concepts, combined with concept activation vectors (CAVs) that quantitatively link internal features to these concepts. By training sub-networks or bottlenecks explicitly designed to capture semantically meaningful features (e.g., \u201ctumor shape\u201d or \u201ccredit risk factors\u201d) and using CAVs to measure each concept\u2019s influence on final predictions, practitioners can obtain explanations grounded in domain-relevant attributes rather than opaque neuron activations. This approach is feasible because it leverages existing methods in representation learning and concept-based interpretability, and it is justified as it creates a transparent mapping between learned features and human-understandable concepts, facilitating model debugging, validation, and user trust.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (model complexity and opacity) and proposes a specific, feasible approach (modular architectures with disentangled representations and concept activation vectors) within two paragraphs, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed approach leverages existing interpretability techniques and provides a concrete mechanism to link internal features to human-understandable concepts, making it a plausible and practical method to improve interpretability in real-world applications."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (model complexity and opacity) and proposes a specific, feasible approach (modular architectures with disentangled representations and concept activation vectors) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed approach leverages existing interpretability techniques and provides a concrete mechanism to link internal features to human-understandable concepts, making it a plausible and practical method to improve interpretability in real-world applications.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One major challenge in interpreting modern AI systems, particularly deep neural networks, is their inherent complexity and high-dimensional nonlinear representations. These models often contain millions or billions of parameters distributed across many layers, making it difficult to trace how input features combine and transform to produce a given output. Consequently, traditional interpretability tools like feature importance or saliency maps provide only coarse or sometimes misleading insights, as they do not fully capture the intricate interactions and hierarchical abstractions learned by the network.\n\nA concrete, feasible approach to improve interpretability is to integrate modular, interpretable sub-networks within the overall architecture, each explicitly designed for a semantically meaningful function or sub-task. For example, researchers could engineer architectures where early layers specialize in extracting human-understandable features (e.g., edges or objects) and subsequent modules correspond to distinct decision rules or reasoning steps, each with transparent internal structures such as decision trees or attention mechanisms with clear alignment to input components. By combining deep learning\u2019s power with these modular interpretable units, practitioners can generate explanations by inspecting each module\u2019s outputs and rationales. This method is justified by recent advances in neural-symbolic systems and structured attention, which have shown that such hybrid design improves transparency without severely sacrificing performance, making interpretability actionable for debugging, compliance, and trust.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge and proposes a specific, feasible, and justified approach within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposal to integrate modular interpretable sub-networks with semantically meaningful functions is plausible and grounded in recent research trends, making it a likely effective method to improve interpretability in practice."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge and proposes a specific, feasible, and justified approach within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposal to integrate modular interpretable sub-networks with semantically meaningful functions is plausible and grounded in recent research trends, making it a likely effective method to improve interpretability in practice.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One major challenge in interpreting modern AI systems like deep neural networks is their inherent complexity and opacity. These models often consist of millions of parameters arranged in many layers, making it difficult to trace how specific inputs are transformed into outputs. This \u201cblack box\u201d nature hampers understanding of decision pathways, limiting trust, accountability, and error diagnosis\u2014especially in high-stakes applications such as healthcare or autonomous driving.\n\nA concrete and feasible approach to improve interpretability is the development of modular architectures combined with intrinsically interpretable components. For example, designing neural networks that incorporate attention mechanisms explicitly tied to human-understandable concepts or intermediate representations enables clearer explanations of model reasoning. Additionally, engineering tools that automatically extract and visualize these concept activations during inference can offer practitioners actionable insights. This approach is justified as it balances model performance with transparency\u2014attention layers are already widely used in successful models\u2014and the concept-based visualization can be integrated into existing workflows without retraining entire systems from scratch. This hybrid strategy makes interpretability accessible and scalable in real-world deployments.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (complexity and opacity of deep neural networks) and proposes a specific, feasible approach (modular architectures with interpretable components and attention mechanisms tied to human-understandable concepts). The response is within two paragraphs and includes justification.",
+            "usefulness": "The proposed approach is plausible and grounded in existing techniques (attention mechanisms, concept-based visualization) that can be integrated without retraining entire systems, making it likely to improve interpretability in practice."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and opacity of deep neural networks) and proposes a specific, feasible approach (modular architectures with interpretable components and attention mechanisms tied to human-understandable concepts). The response is within two paragraphs and includes justification.\",\n    \"usefulness\": \"The proposed approach is plausible and grounded in existing techniques (attention mechanisms, concept-based visualization) that can be integrated without retraining entire systems, making it likely to improve interpretability in practice.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems, particularly deep neural networks, is their black-box nature: these models learn complex, highly non-linear representations distributed across millions of parameters, making it difficult to trace how specific inputs lead to outputs. This opacity hinders trust, debugging, and regulatory compliance, especially in high-stakes domains like healthcare or finance. Traditional interpretability methods, such as feature importance scores or saliency maps, often provide only partial insights, can be inconsistent, and sometimes mislead users by oversimplifying the network\u2019s decision process.\n\nA concrete approach to improve interpretability is integrating **concept bottleneck models (CBMs)** into deep learning pipelines. CBMs require the model to first predict human-interpretable concepts (e.g., \u201cpresence of a tumor,\u201d \u201ctexture type\u201d) before making the final decision, effectively creating a transparent intermediate layer aligned with domain knowledge. This structured bottleneck forces the network to represent information in understandable terms, enabling practitioners to inspect and validate intermediate predictions. Research shows CBMs can maintain competitive performance while significantly enhancing transparency. Engineering-wise, deploying CBMs requires curating labeled concept datasets and fine-tuning architectures to balance concept prediction accuracy and task performance. This approach is feasible with current annotation workflows and deep learning frameworks, and it meaningfully increases interpretability by opening a direct, semantically meaningful window into the model\u2019s reasoning.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (black-box nature) and proposes a specific, feasible approach (concept bottleneck models) with justification, all within two paragraphs as required.",
+            "usefulness": "The proposal is detailed, explaining how CBMs improve interpretability by introducing an intermediate, human-understandable layer, and addresses practical considerations like dataset curation and model tuning, making it a plausible and meaningful improvement."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (black-box nature) and proposes a specific, feasible approach (concept bottleneck models) with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The proposal is detailed, explaining how CBMs improve interpretability by introducing an intermediate, human-understandable layer, and addresses practical considerations like dataset curation and model tuning, making it a plausible and meaningful improvement.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems, particularly deep neural networks, is their inherent complexity and distributed representations. These models often involve millions or billions of parameters arranged in multiple layers, where information is encoded in highly entangled ways that defy straightforward human understanding. Consequently, it is difficult to trace how individual inputs map to outputs, making the rationale behind decisions opaque and limiting trust, debugging, and regulatory compliance.\n\nA feasible and impactful approach to improve interpretability is the development of modular neural architectures combined with concept-based bottleneck layers. Specifically, engineering networks to include intermediate layers that explicitly represent human-understandable concepts\u2014either predefined or learned via weak supervision\u2014can provide interpretable \u201ccheckpoints.\u201d This structure allows practitioners to inspect and intervene on concept activations rather than raw high-dimensional features. Research into automated discovery and alignment of these meaningful concepts, alongside rigorous evaluation of their fidelity, would make interpretability more practical, scalable, and actionable in real-world deployments. Such modular designs can also facilitate error diagnosis and correction by pinpointing which concept representations fail, thus integrating interpretability directly into the model\u2019s architecture rather than as a post hoc explanation step.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (complexity and distributed representations) and proposes a specific, feasible approach (modular architectures with concept-based bottleneck layers) within two paragraphs, fully satisfying the prompt requirements.",
+            "usefulness": "The proposal is detailed and plausible, describing concrete mechanisms (intermediate concept layers, weak supervision, automated concept discovery) that can improve interpretability in practice, making it a highly useful and actionable solution."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and distributed representations) and proposes a specific, feasible approach (modular architectures with concept-based bottleneck layers) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposal is detailed and plausible, describing concrete mechanisms (intermediate concept layers, weak supervision, automated concept discovery) that can improve interpretability in practice, making it a highly useful and actionable solution.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems, particularly deep neural networks, is their inherent complexity and opacity: these models consist of millions or billions of parameters distributed across many layers, making it difficult to trace specific inputs to outputs or understand the internal representations driving decisions. This \"black box\" nature hinders trust, debugging, and regulatory compliance, as stakeholders cannot easily verify why the AI made a particular prediction or recommendation. Furthermore, post-hoc interpretability methods often provide only approximate or local explanations that may be inconsistent or misleading.\n\nA concrete, feasible approach to improving interpretability is the integration of modular, self-explaining components within the neural architecture\u2014such as concept bottleneck models (CBMs)\u2014where the network is explicitly trained to predict intermediate human-understandable concepts before arriving at the final output. For example, in medical image diagnosis, the model first identifies key pathological features (e.g., presence of lesions, tissue abnormalities) as interpretable concepts, which are then used for the final classification. This architecture facilitates transparency by providing explanations grounded in domain-relevant concepts, enables targeted debugging by isolating errors at the concept level, and can be trained end-to-end with existing datasets. By embedding interpretability into the model design rather than relying solely on post-hoc analysis, this approach offers a practical and scalable path toward trustworthy AI systems.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (complexity and opacity of deep neural networks) and proposes a specific, feasible approach (concept bottleneck models) with justification, all within two paragraphs as required.",
+            "usefulness": "The proposed use of concept bottleneck models is a well-defined, plausible method that improves interpretability by embedding human-understandable concepts into the model, enabling transparency and targeted debugging, making it a practical and scalable solution."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and opacity of deep neural networks) and proposes a specific, feasible approach (concept bottleneck models) with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The proposed use of concept bottleneck models is a well-defined, plausible method that improves interpretability by embedding human-understandable concepts into the model, enabling transparency and targeted debugging, making it a practical and scalable solution.\"\n  }\n}"
+        }
+      }
+    ],
+    "top_k": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems, particularly deep neural networks, is their inherent complexity and high-dimensional nonlinearity, which obscure the causal relationships between inputs and outputs. Unlike simpler models, deep networks learn layered, distributed representations that are difficult to map onto human-understandable concepts. This \u201cblack-box\u201d nature hinders trust, debugging, and regulatory compliance, especially in high-stakes domains like healthcare or finance where understanding model reasoning is critical.\n\nA concrete approach to improving interpretability is the integration of prototype-based explanations within the neural architecture. Specifically, a model can be designed or retrofitted to learn a dictionary of representative \u201cprototypes\u201d or exemplars from training data, which it uses as reference points during inference. By projecting inputs onto these prototypes and explaining decisions in terms of similarity to human-interpretable examples, the model offers transparent, case-based reasoning that aligns with how practitioners analyze information. This approach is feasible because it leverages existing training data, supports end-to-end differentiability for effective learning, and has demonstrated success in domains like image recognition (e.g., ProtoPNet). It meaningfully improves interpretability by grounding abstract features in tangible, intuitive concepts without sacrificing much predictive performance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (complexity and nonlinearity of deep networks) and proposes a specific, feasible approach (prototype-based explanations) with justification, all within two paragraphs.",
+            "usefulness": "The proposed prototype-based method is a concrete, plausible technique that leverages existing data and has demonstrated success, making it likely to improve interpretability in practice."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and nonlinearity of deep networks) and proposes a specific, feasible approach (prototype-based explanations) with justification, all within two paragraphs.\",\n    \"usefulness\": \"The proposed prototype-based method is a concrete, plausible technique that leverages existing data and has demonstrated success, making it likely to improve interpretability in practice.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems, particularly deep neural networks, is their inherent complexity and high-dimensionality, which leads to \"black-box\" behavior. These models often learn intricate feature representations distributed across many layers and parameters, making it difficult to trace how specific inputs map to outputs or to understand the reasoning behind a given decision. This opacity hinders trust, limits debugging capabilities, and complicates regulatory compliance in critical applications such as healthcare or finance.\n\nA concrete approach to improve interpretability is to integrate modular, concept-based explanations during model training by embedding human-understandable concepts as intermediate representations. For example, one can design architectures that explicitly learn and align internal neurons or subnetworks to predefined semantic concepts using weak supervision or concept bottleneck models. This structured representation forces the model to organize knowledge in a way that corresponds to meaningful, disentangled factors, enabling transparent inspection of which concepts influenced decisions. Such an approach is feasible with existing datasets augmented by concept annotations and can be combined with visualization and counterfactual techniques to provide actionable insights. By grounding model reasoning in human-interpretable concepts, this method enhances transparency without sacrificing predictive performance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge and proposes a specific, feasible, and justified approach within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposal to use concept bottleneck models and modular, concept-based explanations is a well-known, plausible method that can improve interpretability in practice, supported by concrete mechanisms and feasibility."
+          },
+          "raw_judge_text": "```json\n{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge and proposes a specific, feasible, and justified approach within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposal to use concept bottleneck models and modular, concept-based explanations is a well-known, plausible method that can improve interpretability in practice, supported by concrete mechanisms and feasibility.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems, particularly deep neural networks, lies in their inherent complexity and high-dimensional, distributed representations. Unlike simpler models with explicit, human-readable parameters, deep networks learn millions of non-linear features spread across layers, making it difficult to attribute specific predictions to comprehensible factors. This opacity hinders trust, debugging, and compliance with regulatory standards, as stakeholders cannot easily verify or explain how inputs map to outputs.\n\nA concrete approach to improve interpretability is to develop and integrate modular, self-explanatory sub-networks that correspond to semantically meaningful concepts during training. For example, one could design architectures with dedicated \"concept bottleneck\" layers where intermediate units are explicitly trained to activate on human-understandable features (e.g., edge detectors, object parts, or domain-specific concepts) via auxiliary supervised losses. This method is feasible because it leverages labeled concept datasets or weak supervision, encouraging the model to disentangle features in a way that facilitates direct inspection and intervention. As a result, users can inspect concept activations for each prediction, improving transparency and enabling targeted corrections without sacrificing overall model performance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge and proposes a specific, feasible, and justified approach within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposal to use concept bottleneck layers with auxiliary supervised losses is a concrete and plausible method that can improve interpretability by linking internal representations to human-understandable concepts, making it likely to succeed in practice."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge and proposes a specific, feasible, and justified approach within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposal to use concept bottleneck layers with auxiliary supervised losses is a concrete and plausible method that can improve interpretability by linking internal representations to human-understandable concepts, making it likely to succeed in practice.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major challenge in interpreting modern AI systems, particularly deep neural networks, is their inherent complexity and opacity due to high-dimensional, nonlinear transformations learned across many layers. This makes it difficult to trace how specific input features contribute to a particular output, resulting in \"black-box\" behavior that undermines trust, hinders debugging, and limits accountability. Unlike simpler models with explicit rules or coefficients, neural networks distribute learned knowledge broadly and nonlinearly, complicating efforts to generate precise, human-understandable explanations for individual decisions or global reasoning patterns.\n\nA concrete approach to improve interpretability is to develop modular, self-explaining neural architectures combined with integrated prototype learning. Specifically, one can design networks with dedicated interpretable components, such as layers that explicitly learn and output human-understandable concepts or prototypes representing key input patterns, alongside conventional predictive units. During training, the model is constrained through additional losses to align these prototypes with semantically meaningful data clusters, while explanations for predictions are generated by showing similarity scores between inputs and prototypes. This method is feasible using existing prototype learning frameworks and leverages domain knowledge to ensure meaningful concepts emerge, enabling practitioners to gain intuitive, case-level insights into the decision-making process without sacrificing accuracy. Such modular interpretability fosters transparency and trust in high-stakes applications.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (complexity and opacity of deep networks) and proposes a specific, feasible approach (modular self-explaining architectures with prototype learning) within two paragraphs, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed method is concrete, leveraging existing prototype learning frameworks and adding interpretable components with semantic alignment, which is a plausible and practical way to improve interpretability without sacrificing accuracy."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and opacity of deep networks) and proposes a specific, feasible approach (modular self-explaining architectures with prototype learning) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed method is concrete, leveraging existing prototype learning frameworks and adding interpretable components with semantic alignment, which is a plausible and practical way to improve interpretability without sacrificing accuracy.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One major challenge in interpreting modern AI systems, especially deep neural networks, is their inherent complexity and opacity resulting from millions or billions of parameters spread across multiple non-linear layers. This complexity makes it difficult to trace how specific inputs lead to particular outputs, hindering transparency and trust. Existing post-hoc interpretability methods, such as feature importance scores or saliency maps, often provide limited or noisy insight and can be inconsistent across similar inputs, failing to convey the precise causal mechanisms behind a model\u2019s decisions.\n\nA concrete and feasible approach to improve interpretability is to integrate modular, concept-based bottlenecks within the architecture itself. Specifically, researchers can design intermediate layers that explicitly represent human-understandable concepts\u2014learned either through supervised concept annotations or unsupervised disentanglement\u2014and require the model to make predictions based on these concept activations. By constraining the model to rely on a structured, concept-level representation, this approach encourages transparency, as users can inspect which concepts influenced decisions and assess their validity directly. This method is practical with current training frameworks, enhances interpretability without sacrificing accuracy, and facilitates debugging and trust in real-world deployments.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a major challenge (complexity and opacity of deep networks) and proposes a specific, feasible approach (modular concept-based bottlenecks) within two paragraphs, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed method is concrete, leveraging concept-level representations to improve transparency, is feasible with current techniques, and is well justified as enhancing interpretability and trust, making it highly plausible and useful."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and opacity of deep networks) and proposes a specific, feasible approach (modular concept-based bottlenecks) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed method is concrete, leveraging concept-level representations to improve transparency, is feasible with current techniques, and is well justified as enhancing interpretability and trust, making it highly plausible and useful.\"\n  }\n}"
+        }
+      }
+    ],
+    "final_output": "A major challenge in interpreting modern AI systems, particularly deep neural networks, is their inherent complexity and high-dimensional nonlinearity, which obscure the causal relationships between inputs and outputs. Unlike simpler models, deep networks learn layered, distributed representations that are difficult to map onto human-understandable concepts. This \u201cblack-box\u201d nature hinders trust, debugging, and regulatory compliance, especially in high-stakes domains like healthcare or finance where understanding model reasoning is critical.\n\nA concrete approach to improving interpretability is the integration of prototype-based explanations within the neural architecture. Specifically, a model can be designed or retrofitted to learn a dictionary of representative \u201cprototypes\u201d or exemplars from training data, which it uses as reference points during inference. By projecting inputs onto these prototypes and explaining decisions in terms of similarity to human-interpretable examples, the model offers transparent, case-based reasoning that aligns with how practitioners analyze information. This approach is feasible because it leverages existing training data, supports end-to-end differentiability for effective learning, and has demonstrated success in domains like image recognition (e.g., ProtoPNet). It meaningfully improves interpretability by grounding abstract features in tangible, intuitive concepts without sacrificing much predictive performance.",
+    "selected": {
+      "mode": "single_pass",
+      "reformulation": "",
+      "scores": {
+        "constraint_satisfaction": 1.0,
+        "usefulness": 0.9,
+        "overall": 0.95,
+        "discard": false,
+        "rationale": {
+          "constraints": "The candidate clearly identifies a major challenge (complexity and nonlinearity of deep networks) and proposes a specific, feasible approach (prototype-based explanations) with justification, all within two paragraphs.",
+          "usefulness": "The proposed prototype-based method is a concrete, plausible technique that leverages existing data and has demonstrated success, making it likely to improve interpretability in practice."
+        },
+        "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major challenge (complexity and nonlinearity of deep networks) and proposes a specific, feasible approach (prototype-based explanations) with justification, all within two paragraphs.\",\n    \"usefulness\": \"The proposed prototype-based method is a concrete, plausible technique that leverages existing data and has demonstrated success, making it likely to improve interpretability in practice.\"\n  }\n}"
+      }
+    }
+  }
+}

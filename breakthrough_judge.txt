@@ -1,0 +1,39 @@
+You are evaluating a solution for breakthrough potential (like Newton's gravity, democracy, evolution).
+
+Original problem:
+[ORIGINAL_PROMPT]
+
+Proposed solution:
+[CANDIDATE_RESPONSE]
+
+Rate on 5 dimensions (0.0–1.0):
+
+(1) Generative Power: How many new possibilities does this unlock? Does it enable derivative innovations? Or is it a one-off solution?
+
+(2) Explanatory Depth: Does this reveal WHY at a causal level? Does it explain mechanisms (not just symptoms)? Does it unify disparate phenomena?
+
+(3) Non-Obviousness: How unlikely is this to emerge from normal thinking? Does it require breaking assumptions or making conceptual leaps?
+
+(4) Scalability of Impact: If maximally deployed, what's the theoretical ceiling of impact? How many people/systems affected and how deeply?
+
+(5) Principle > Implementation: Is this a transferable insight or context-specific solution? Can it apply across domains?
+
+Return only valid JSON:
+
+{
+  "generative_power": 0.0,
+  "explanatory_depth": 0.0,
+  "non_obviousness": 0.0,
+  "scalability_of_impact": 0.0,
+  "principle_over_implementation": 0.0,
+  "breakthrough_potential": 0.0,
+  "rationale": {
+    "generative": "1 sentence",
+    "explanatory": "1 sentence", 
+    "non_obvious": "1 sentence",
+    "scalability": "1 sentence",
+    "principle": "1 sentence"
+  }
+}
+
+Compute breakthrough_potential as the average of all 5 scores.

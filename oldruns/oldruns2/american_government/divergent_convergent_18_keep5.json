@@ -1,0 +1,791 @@
+{
+  "timestamp": "2026-02-01T11:53:29",
+  "prompt_id": "american_government",
+  "prompt": "Analyze the American government. Identify one significant structural problem and propose a concrete solution. The solution should be specific, feasible, and clearly justified. (Maximum two paragraphs.)",
+  "condition": "divergent_convergent_18_keep5",
+  "config": {
+    "model": {
+      "name": "gpt-4.1-mini",
+      "max_tokens": 350
+    },
+    "conditions": [
+      "single_pass_18_keep5",
+      "divergent_convergent_18_keep5"
+    ],
+    "budget": {
+      "max_candidates_per_prompt": 18,
+      "keep_top_k": 5
+    },
+    "sampling": {
+      "single_pass": {
+        "temperature": 0.9,
+        "top_p": 1.0
+      },
+      "reframing": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "num_reformulations": 3
+      },
+      "combinational": {
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "transformational": {
+        "temperature": 1.1,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "judge": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "selection": {
+      "discard_if_constraint_below": 0.4,
+      "constraint_weight": 0.2,
+      "usefulness_weight": 0.2,
+      "breakthrough_weight": 0.6
+    }
+  },
+  "result": {
+    "reformulations": [
+      "Examine a fundamental structural flaw within the American government\u2019s institutional design and explain how this flaw affects governance efficacy. Then, propose a targeted institutional reform that could realistically address this flaw while improving overall system performance.",
+      "Identify a key systemic incentive or procedural bottleneck in the American government that undermines its functionality. Describe how this incentive structure contributes to the problem and suggest a specific policy change aimed at realigning incentives to enhance government responsiveness.",
+      "Analyze the American government by focusing on the interactions between its branches or levels (federal, state, local) to uncover a structural tension that impedes effective governance. Propose a concrete mechanism or framework that could mitigate this tension and promote better coordination."
+    ],
+    "candidates": [
+      {
+        "mode": "structural_transfer",
+        "domain": "Deep sea ecosystems",
+        "reformulation": "Examine a fundamental structural flaw within the American government\u2019s institutional design and explain how this flaw affects governance efficacy. Then, propose a targeted institutional reform that could realistically address this flaw while improving overall system performance.",
+        "text": "Domain used: Deep sea ecosystems.\n\nA core structural principle in deep sea ecosystems is the reliance on decentralized, localized nodes of energy and nutrient cycling \u2014 such as hydrothermal vents \u2014 that function semi-autonomously yet maintain networked interdependencies across vast distances. Mapping this onto the American government\u2019s institutional flaw reveals a fundamental problem: excessive centralization and gridlock in Washington D.C. hinder responsiveness and adaptability. This creates bottlenecks where all decisions funnel through a polarized, binary legislature, reducing governance efficacy.\n\nInspired by the decentralized yet interconnected nodes in deep sea ecosystems, the solution is to institutionalize regional \u201cpolicy hubs\u201d with autonomous legislative authority over tailored issues, linked through a federal coordination council that facilitates knowledge and resource exchange but does not micromanage. This reform would diffuse decision-making power, enabling faster, context-sensitive governance while preserving cohesion via inter-hub collaboration. By structurally mimicking ecological decentralization, the American system could reduce national gridlock, increase policy innovation, and improve governance responsiveness without dissolving the union.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.71,
+            "rationale": {
+              "generative": "The solution opens pathways for decentralized governance models and regional innovation hubs beyond the American context.",
+              "explanatory": "It explains the causal mechanism of centralized bottlenecks by analogy to energy flow and autonomy in ecosystems.",
+              "non_obvious": "Drawing a parallel between deep sea ecosystem structures and government decentralization requires a significant conceptual leap.",
+              "scalability": "If implemented nationwide, it could transform governance responsiveness for millions while maintaining federal unity.",
+              "principle": "The insight about decentralized, networked autonomy applies broadly to complex systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.71,
+          "discard": false,
+          "final_score": 0.766,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem (excessive centralization and gridlock) and proposes a concrete, specific solution (regional policy hubs with autonomous authority linked by a federal council) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution is plausible and includes mechanisms for decentralization and coordination, which could realistically reduce gridlock and improve responsiveness, though practical challenges in implementation and political feasibility are not deeply addressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.71,\n  \"rationale\": {\n    \"generative\": \"The solution opens pathways for decentralized governance models and regional innovation hubs beyond the American context.\",\n    \"explanatory\": \"It explains the causal mechanism of centralized bottlenecks by analogy to energy flow and autonomy in ecosystems.\",\n    \"non_obvious\": \"Drawing a parallel between deep sea ecosystem structures and government decentralization requires a significant conceptual leap.\",\n    \"scalability\": \"If implemented nationwide, it could transform governance responsiveness for millions while maintaining federal unity.\",\n    \"principle\": \"The insight about decentralized, networked autonomy applies broadly to complex systems beyond government.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Quantum computing algorithms",
+        "reformulation": "Examine a fundamental structural flaw within the American government\u2019s institutional design and explain how this flaw affects governance efficacy. Then, propose a targeted institutional reform that could realistically address this flaw while improving overall system performance.",
+        "text": "Domain used: Quantum computing algorithms (specifically quantum superposition and entanglement).\n\nStructural problem: The American government suffers from entrenched polarization and gridlock due to rigid, mutually exclusive party positions and a winner-takes-all, single-threaded legislative process that limits simultaneous consideration of multiple policy pathways.\n\nSolution: Drawing on the principle of quantum superposition\u2014where quantum bits (qubits) exist in multiple states simultaneously\u2014and entanglement, a targeted institutional reform would be to implement \"multi-track deliberative chambers\" within Congress. Instead of forcing a binary yes/no vote on legislation after linear debate, lawmakers would engage in parallel, overlapping policy sessions where multiple alternative policy versions progress simultaneously, dynamically influencing each other through continuous feedback loops (akin to entanglement). This system would structurally integrate diverse positions early, allowing hybrid or compromise policies to emerge through iterative consensus before final votes, rather than entrenching opposition. \n\nWhy it works: By mirroring quantum algorithms\u2019 capacity to handle superposed states and entangled outcomes, this design reduces zero-sum gridlock and promotes adaptive, collective problem-solving. The concurrent multi-track deliberations break the rigid sequential bottleneck, increase legislative agility, and better reflect complex, interdependent stakeholder interests\u2014enhancing governance efficacy without upending democratic principles.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.4,
+          "constraint_overall": 0.7,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.75,
+            "rationale": {
+              "generative": "The solution unlocks new legislative processes enabling multiple policy pathways and hybrid outcomes, potentially inspiring further institutional innovations.",
+              "explanatory": "It explains the causal mechanism of polarization and gridlock as a product of linear, binary decision-making and proposes a structural alternative that integrates complexity and interdependence.",
+              "non_obvious": "Applying quantum computing principles like superposition and entanglement to political deliberation is a highly unconventional and creative conceptual leap.",
+              "scalability": "If broadly adopted, it could transform legislative bodies worldwide, affecting millions by improving governance efficacy and reducing political deadlock.",
+              "principle": "The insight of parallel, interdependent processing of options transcends the specific context and could inform decision-making systems in diverse domains."
+            }
+          },
+          "breakthrough_potential": 0.75,
+          "discard": false,
+          "final_score": 0.73,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.4,\n  \"overall\": 0.7,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"While the solution is innovative and well-justified conceptually, it relies heavily on an analogy to quantum computing without detailed practical mechanisms for implementation, making its feasibility and likelihood of success uncertain.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.75,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new legislative processes enabling multiple policy pathways and hybrid outcomes, potentially inspiring further institutional innovations.\",\n    \"explanatory\": \"It explains the causal mechanism of polarization and gridlock as a product of linear, binary decision-making and proposes a structural alternative that integrates complexity and interdependence.\",\n    \"non_obvious\": \"Applying quantum computing principles like superposition and entanglement to political deliberation is a highly unconventional and creative conceptual leap.\",\n    \"scalability\": \"If broadly adopted, it could transform legislative bodies worldwide, affecting millions by improving governance efficacy and reducing political deadlock.\",\n    \"principle\": \"The insight of parallel, interdependent processing of options transcends the specific context and could inform decision-making systems in diverse domains.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Beehive colony organization",
+        "reformulation": "Examine a fundamental structural flaw within the American government\u2019s institutional design and explain how this flaw affects governance efficacy. Then, propose a targeted institutional reform that could realistically address this flaw while improving overall system performance.",
+        "text": "Using the structural domain of a **Beehive colony organization**, one core principle is the decentralized yet highly coordinated division of labor, where individual bees autonomously perform specialized tasks based on real-time environmental feedback, while the queen bee functions primarily as a reproductive hub rather than a centralized command authority. This enables rapid, adaptive responses without bottlenecks or excessive hierarchical interference.\n\nMapping this to the American government reveals a fundamental flaw: **excessive centralization of decision-making power within rigid institutions and partisan hierarchies**, leading to gridlock and slow responsiveness. Inspired by the beehive, a feasible reform would be instituting **semi-autonomous, dynamic legislative committees empowered to self-organize and adapt their focus areas based on direct constituent data and societal needs, rather than fixed, rigid congressional committees**. These committees would operate with greater procedural flexibility and reduced partisan controls, enabling faster, context-sensitive policy development. This structure would plausibly improve governance efficacy by distributing legislative workload organically, lowering bottlenecks, and enhancing responsiveness, while maintaining accountability through transparent, data-driven constituent feedback loops akin to the environmental cues guiding a beehive\u2019s labor division.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.71,
+            "rationale": {
+              "generative": "The solution opens new avenues for adaptive governance structures and dynamic committee organization beyond traditional legislative models.",
+              "explanatory": "It explains the causal mechanism of gridlock as stemming from centralized, rigid hierarchies and proposes a biologically inspired decentralized coordination model.",
+              "non_obvious": "Mapping beehive colony organization to legislative reform requires a conceptual leap beyond typical political science frameworks.",
+              "scalability": "If broadly adopted, it could transform legislative responsiveness and efficiency across the entire U.S. government, affecting millions.",
+              "principle": "The insight about decentralized, feedback-driven task allocation is transferable to other complex organizational and governance systems."
+            }
+          },
+          "breakthrough_potential": 0.71,
+          "discard": false,
+          "final_score": 0.766,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (excessive centralization and partisan gridlock) and proposes a concrete, specific, and feasible solution (semi-autonomous, dynamic legislative committees). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"The proposed solution is plausible and detailed, with mechanisms for adaptability and responsiveness inspired by a beehive model. However, it may underestimate the complexity of political realities and entrenched interests, which slightly reduces its likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.71,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for adaptive governance structures and dynamic committee organization beyond traditional legislative models.\",\n    \"explanatory\": \"It explains the causal mechanism of gridlock as stemming from centralized, rigid hierarchies and proposes a biologically inspired decentralized coordination model.\",\n    \"non_obvious\": \"Mapping beehive colony organization to legislative reform requires a conceptual leap beyond typical political science frameworks.\",\n    \"scalability\": \"If broadly adopted, it could transform legislative responsiveness and efficiency across the entire U.S. government, affecting millions.\",\n    \"principle\": \"The insight about decentralized, feedback-driven task allocation is transferable to other complex organizational and governance systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine a fundamental structural flaw within the American government\u2019s institutional design and explain how this flaw affects governance efficacy. Then, propose a targeted institutional reform that could realistically address this flaw while improving overall system performance.",
+        "text": "The central assumption I am breaking is the fixed division of powers into three separate, often adversarial branches \u2014 legislative, executive, and judicial \u2014 designed to check and balance but frequently resulting in gridlock and inefficiency. The structural problem is that this rigid separation fosters partisan stalemate and slow policy response because each branch can veto or obstruct the other, impeding governance efficacy especially in crises or on complex, evolving issues.\n\nBy dissolving the strict branch separation and instead organizing government around integrated, functionally adaptive governing councils composed of rotating legislators, executives, and jurists working together on issue-specific commissions, we eliminate the antagonistic checkboxing of power. These councils would jointly draft, implement, and review policy in real time, balancing legal, political, and executive perspectives collaboratively rather than confrontationally. This transformation breaks the zero-sum assumption that governance requires internal competition for power, enabling more agile decision-making, reducing legislative-executive deadlock, and fostering more holistic, accountable governance that responds dynamically to societal needs.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.4,
+          "constraint_overall": 0.7,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution unlocks numerous new governance models by integrating branches and enabling adaptive councils, fostering derivative innovations in political structure.",
+              "explanatory": "It explains the causal mechanism of gridlock as stemming from rigid separation and adversarial checks, unifying legislative, executive, and judicial dysfunction under one framework.",
+              "non_obvious": "It requires breaking the deeply entrenched assumption of strict separation of powers, which is a significant conceptual leap from traditional governance thinking.",
+              "scalability": "If implemented, it could transform governance systems at national and potentially global levels, affecting millions through more agile and accountable decision-making.",
+              "principle": "The insight about replacing adversarial separation with integrated, adaptive collaboration can apply broadly to organizational and institutional design beyond government."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.76,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.4,\n  \"overall\": 0.7,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (the rigid separation of powers causing gridlock) and proposes a concrete solution (integrated governing councils with rotating members from each branch). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"While the solution is specific and addresses the problem directly, it is somewhat idealistic and lacks detailed mechanisms for implementation or transition, making its feasibility questionable in practice.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new governance models by integrating branches and enabling adaptive councils, fostering derivative innovations in political structure.\",\n    \"explanatory\": \"It explains the causal mechanism of gridlock as stemming from rigid separation and adversarial checks, unifying legislative, executive, and judicial dysfunction under one framework.\",\n    \"non_obvious\": \"It requires breaking the deeply entrenched assumption of strict separation of powers, which is a significant conceptual leap from traditional governance thinking.\",\n    \"scalability\": \"If implemented, it could transform governance systems at national and potentially global levels, affecting millions through more agile and accountable decision-making.\",\n    \"principle\": \"The insight about replacing adversarial separation with integrated, adaptive collaboration can apply broadly to organizational and institutional design beyond government.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine a fundamental structural flaw within the American government\u2019s institutional design and explain how this flaw affects governance efficacy. Then, propose a targeted institutional reform that could realistically address this flaw while improving overall system performance.",
+        "text": "The central assumption I break is that representative democracy must be strictly based on geographically defined districts electing single legislators who then form a government. This structural design creates entrenched partisan polarization and winner-takes-all conflicts, which impair governance efficacy by incentivizing localism and conflict over compromise, ultimately causing gridlock.\n\nBy reinterpreting representation to be issue-based rather than geographically based, I propose creating a parallel \"Issue Assembly\" in Congress where citizens choose representatives who specialize in key policy domains (e.g., health, environment, economy) through nationwide, ranked-choice elections. These representatives collaborate cross-regionally to draft legislation building on expertise and consensus rather than district interests. This system would break the zero-sum geographic electoral incentive, fostering cooperation and more coherent policy-making. It plausibly works because issue-focused, specialized representatives reduce local parochialism, enhancing governance efficiency while maintaining democratic legitimacy through popular election.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "Reframing representation by issue rather than geography opens many new institutional designs and derivative innovations in democratic governance.",
+              "explanatory": "It explains how geographic-based districts causally drive polarization and gridlock by incentivizing localism and winner-takes-all conflicts.",
+              "non_obvious": "Breaking the fundamental assumption of geographic representation requires a significant conceptual leap uncommon in political reform discourse.",
+              "scalability": "If widely adopted, it could transform legislative processes across large democracies, deeply affecting governance quality and citizen engagement.",
+              "principle": "The insight about decoupling representation from geography to reduce parochialism can apply to other collective decision-making systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.82,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (geographically based representation causing polarization and gridlock) and proposes a concrete, specific solution (an Issue Assembly with nationwide ranked-choice elections). The response is within two paragraphs and includes justification.\",\n    \"usefulness\": \"The solution is plausible and specific, outlining a mechanism to reduce parochialism and foster cooperation through issue-based representation. However, it may face practical challenges in implementation and voter adaptation, which slightly lowers its feasibility score.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"Reframing representation by issue rather than geography opens many new institutional designs and derivative innovations in democratic governance.\",\n    \"explanatory\": \"It explains how geographic-based districts causally drive polarization and gridlock by incentivizing localism and winner-takes-all conflicts.\",\n    \"non_obvious\": \"Breaking the fundamental assumption of geographic representation requires a significant conceptual leap uncommon in political reform discourse.\",\n    \"scalability\": \"If widely adopted, it could transform legislative processes across large democracies, deeply affecting governance quality and citizen engagement.\",\n    \"principle\": \"The insight about decoupling representation from geography to reduce parochialism can apply to other collective decision-making systems beyond government.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine a fundamental structural flaw within the American government\u2019s institutional design and explain how this flaw affects governance efficacy. Then, propose a targeted institutional reform that could realistically address this flaw while improving overall system performance.",
+        "text": "**Assumption broken:** The American government\u2019s institutional design assumes that legislative authority must remain rigidly confined within the separate, adversarial branches\u2014Congress independently legislates, while the Executive only implements, and the Judiciary solely interprets\u2014creating a fixed division of power.\n\n**Structural problem:** This strict separation fosters partisan gridlock, as competing branches often obstruct each other instead of collaborating, undermining governance efficacy, especially in polarized moments. Policy inertia and conflicting institutional incentives prevent timely, coherent responses to urgent national issues.\n\n**Solution:** Reinterpret the division of powers to enable a new hybrid \u201cCollaborative Governance Council\u201d composed of representatives from all three branches working jointly to draft and recommend legislation on critical issues, with expedited congressional consideration. Instituting this council breaks the rigid exclusivity of legislative power while preserving constitutional checks, fostering problem-solving through structured inter-branch dialogue and joint ownership of policy outcomes.\n\nBy directly institutionalizing cross-branch collaboration, this council transcends deadlock, aligning incentives across branches and baking in mutual accountability. This transformation would create a governance mechanism more adaptive and resilient to partisan stalemate, improving policy coherence without dismantling foundational principles of separation of powers.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.74,
+            "rationale": {
+              "generative": "The solution opens new avenues for inter-branch collaboration that could inspire further institutional innovations.",
+              "explanatory": "It identifies the root cause of gridlock as rigid separation and explains how shared governance can realign incentives.",
+              "non_obvious": "It challenges a foundational constitutional assumption, requiring a significant conceptual leap beyond traditional separation of powers.",
+              "scalability": "If broadly adopted, it could transform governance across the entire federal system, affecting millions through improved policy outcomes.",
+              "principle": "The insight about breaking rigid institutional silos to foster collaboration can apply to many organizational and governmental contexts."
+            }
+          },
+          "breakthrough_potential": 0.74,
+          "discard": false,
+          "final_score": 0.764,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed 'Collaborative Governance Council' is a novel mechanism that addresses gridlock by fostering inter-branch collaboration, but its feasibility is somewhat uncertain given constitutional and political challenges, which lowers the usefulness score.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.74,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for inter-branch collaboration that could inspire further institutional innovations.\",\n    \"explanatory\": \"It identifies the root cause of gridlock as rigid separation and explains how shared governance can realign incentives.\",\n    \"non_obvious\": \"It challenges a foundational constitutional assumption, requiring a significant conceptual leap beyond traditional separation of powers.\",\n    \"scalability\": \"If broadly adopted, it could transform governance across the entire federal system, affecting millions through improved policy outcomes.\",\n    \"principle\": \"The insight about breaking rigid institutional silos to foster collaboration can apply to many organizational and governmental contexts.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Medieval guild apprenticeship systems",
+        "reformulation": "Identify a key systemic incentive or procedural bottleneck in the American government that undermines its functionality. Describe how this incentive structure contributes to the problem and suggest a specific policy change aimed at realigning incentives to enhance government responsiveness.",
+        "text": "Domain used: Medieval guild apprenticeship systems.\n\nStructural problem in American government: A core systemic incentive issue is that politicians are often immediately thrust into high-stakes decision-making and electoral pressures without a structured, progressive learning curve or embedded accountability for long-term craftsmanship in governance. This creates incentives for short-termism, partisan grandstanding, and a focus on re-election rather than mastery of complex policy and responsiveness to constituents.\n\nInspired by the guild apprenticeship model\u2014where novices serve under skilled masters through a defined progression before becoming full guild members\u2014the government could implement a formalized \u201capprenticeship\u201d period for elected officials and senior staff. This would involve a mandatory mentorship and phased responsibility system where new officials work closely with experienced legislators or civil servants, gaining deep institutional knowledge and practical skills before acquiring full legislative authority or leadership roles. Such a system would realign incentives toward long-term competency and collaboration, reducing rash policy decisions driven by immediate electoral incentives, and fostering a culture of craftsmanship and accountability in governance. This structured progression would plausibly enhance responsiveness by embedding patience, nuanced understanding, and stakeholder engagement early in officials\u2019 careers.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.71,
+            "rationale": {
+              "generative": "The apprenticeship model opens pathways for new governance training systems and mentorship frameworks beyond current political onboarding.",
+              "explanatory": "It addresses the root cause of short-termism by explaining how lack of progressive learning and accountability mechanisms lead to poor governance outcomes.",
+              "non_obvious": "Applying a medieval guild apprenticeship concept to modern political structures requires a significant conceptual leap beyond typical reform ideas.",
+              "scalability": "If broadly adopted, it could transform political culture and decision-making across multiple levels of government, affecting millions.",
+              "principle": "The insight about structured, phased learning and mentorship is broadly applicable to other complex leadership and organizational domains."
+            }
+          },
+          "breakthrough_potential": 0.71,
+          "discard": false,
+          "final_score": 0.766,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific, and feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The apprenticeship model is a plausible mechanism to address short-termism and lack of experience in governance, with a clear structure and justification, though practical implementation details and political feasibility are not deeply explored.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.71,\n  \"rationale\": {\n    \"generative\": \"The apprenticeship model opens pathways for new governance training systems and mentorship frameworks beyond current political onboarding.\",\n    \"explanatory\": \"It addresses the root cause of short-termism by explaining how lack of progressive learning and accountability mechanisms lead to poor governance outcomes.\",\n    \"non_obvious\": \"Applying a medieval guild apprenticeship concept to modern political structures requires a significant conceptual leap beyond typical reform ideas.\",\n    \"scalability\": \"If broadly adopted, it could transform political culture and decision-making across multiple levels of government, affecting millions.\",\n    \"principle\": \"The insight about structured, phased learning and mentorship is broadly applicable to other complex leadership and organizational domains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Traditional Japanese tea ceremony",
+        "reformulation": "Identify a key systemic incentive or procedural bottleneck in the American government that undermines its functionality. Describe how this incentive structure contributes to the problem and suggest a specific policy change aimed at realigning incentives to enhance government responsiveness.",
+        "text": "**Domain Used:** Traditional Japanese tea ceremony (Chanoyu)\n\nA key systemic incentive problem in the American government is the entrenched polarization and procedural gridlock caused by adversarial competition and zero-sum incentives within legislative processes. This dynamic incentivizes obstruction rather than cooperation, undermining timely and responsive governance. From the tea ceremony, a core structural principle is *harmonious, ritualized collaboration*\u2014each participant follows a carefully choreographed sequence that emphasizes mutual respect, attentiveness, and a shared goal of creating a serene, unified experience. This structure transforms potentially competing agents into co-creators of a seamless, orderly event.\n\nMapping this principle structurally, the legislative process could be transformed by instituting a formalized, ritualized deliberative procedure modeled after the tea ceremony\u2019s choreography: structured, turn-taking sessions with pre-agreed protocols that require legislators to build upon each other\u2019s proposals in a cooperative sequence rather than confrontational debate. A specific policy change would be to implement a \u201ccollaborative legislative cadence,\u201d where bipartisan small groups rotate leadership of discussions and consensus-building phases according to a fixed, transparent order\u2014akin to the tea host and guests alternating roles in the ceremony\u2014prior to any floor vote. This would realign incentives away from obstruction toward incremental consensus, fostering mutual respect and shared ownership of outcomes, plausibly reducing gridlock by embedding cooperation into the procedural DNA of lawmaking.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.72,
+            "rationale": {
+              "generative": "The solution opens new avenues for procedural reform by introducing ritualized cooperation that could inspire derivative innovations in governance and other collaborative domains.",
+              "explanatory": "It addresses the root cause of polarization by explaining how adversarial incentives disrupt cooperation and proposes a mechanism to realign incentives structurally.",
+              "non_obvious": "Applying the principles of a traditional cultural ritual like the tea ceremony to legislative processes is a novel and unconventional conceptual leap.",
+              "scalability": "If broadly adopted, this approach could deeply affect the entire legislative system and potentially other political institutions, impacting millions of citizens.",
+              "principle": "The insight about embedding ritualized, cooperative sequences to overcome adversarial dynamics is transferable beyond the specific context of American government."
+            }
+          },
+          "breakthrough_potential": 0.72,
+          "discard": false,
+          "final_score": 0.772,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (polarization and gridlock) and proposes a concrete, specific, and justified solution within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed solution is plausible and detailed, offering a structured, ritualized legislative process inspired by the tea ceremony to foster cooperation, though it may face practical challenges in political adoption.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.72,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for procedural reform by introducing ritualized cooperation that could inspire derivative innovations in governance and other collaborative domains.\",\n    \"explanatory\": \"It addresses the root cause of polarization by explaining how adversarial incentives disrupt cooperation and proposes a mechanism to realign incentives structurally.\",\n    \"non_obvious\": \"Applying the principles of a traditional cultural ritual like the tea ceremony to legislative processes is a novel and unconventional conceptual leap.\",\n    \"scalability\": \"If broadly adopted, this approach could deeply affect the entire legislative system and potentially other political institutions, impacting millions of citizens.\",\n    \"principle\": \"The insight about embedding ritualized, cooperative sequences to overcome adversarial dynamics is transferable beyond the specific context of American government.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Urban traffic signal networks",
+        "reformulation": "Identify a key systemic incentive or procedural bottleneck in the American government that undermines its functionality. Describe how this incentive structure contributes to the problem and suggest a specific policy change aimed at realigning incentives to enhance government responsiveness.",
+        "text": "Domain used: Urban traffic signal networks.\n\nStructural problem in American government: A key systemic incentive problem is the winner-take-all, adversarial structure of legislative decision-making that leads to gridlock and slow responsiveness. Much like uncoordinated traffic lights cause congestion when each intersection operates independently without adapting to flow, legislators and committees act in siloed, often oppositional ways with limited feedback mechanisms to dynamically adjust priorities based on real-time political and social conditions.\n\nTransferred structural principle: Adaptive, synchronized traffic signal timing that responds dynamically to traffic flow to optimize throughput and minimize delays. Mapping this principle, the government could implement a real-time feedback and coordination system\u2014such as a \u201cresponsive legislative agenda manager\u201d\u2014that tracks the urgency and public impact of issues, adjusting legislative priorities and committee collaborations dynamically. This system would create incentives for cross-branch and bipartisan cooperation by continuously optimizing \u201cflow\u201d of policy progress rather than fixed, static agendas. Such an approach would plausibly reduce gridlock by aligning incentives around system-wide responsiveness and adapting decision-making to the changing \u201ctraffic\u201d of public needs, rather than rigid partisan schedules.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.71,
+            "rationale": {
+              "generative": "The solution opens new avenues for dynamic, feedback-driven governance models beyond static legislative processes.",
+              "explanatory": "It explains gridlock as a systemic coordination failure analogous to traffic congestion caused by uncoordinated signals.",
+              "non_obvious": "Applying adaptive traffic signal principles to legislative decision-making requires a significant conceptual leap across domains.",
+              "scalability": "If broadly adopted, it could transform legislative efficiency and responsiveness across all levels of government affecting millions.",
+              "principle": "The core insight of adaptive, synchronized coordination is transferable to many complex, multi-agent decision systems."
+            }
+          },
+          "breakthrough_potential": 0.71,
+          "discard": false,
+          "final_score": 0.746,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (winner-take-all legislative gridlock) and proposes a concrete, specific, and feasible solution (a real-time feedback and coordination system) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution is plausible and includes a mechanism for dynamic adjustment of legislative priorities to reduce gridlock, but it remains somewhat abstract and lacks detailed implementation steps or consideration of political feasibility, limiting its practical usefulness.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.71,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for dynamic, feedback-driven governance models beyond static legislative processes.\",\n    \"explanatory\": \"It explains gridlock as a systemic coordination failure analogous to traffic congestion caused by uncoordinated signals.\",\n    \"non_obvious\": \"Applying adaptive traffic signal principles to legislative decision-making requires a significant conceptual leap across domains.\",\n    \"scalability\": \"If broadly adopted, it could transform legislative efficiency and responsiveness across all levels of government affecting millions.\",\n    \"principle\": \"The core insight of adaptive, synchronized coordination is transferable to many complex, multi-agent decision systems.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Identify a key systemic incentive or procedural bottleneck in the American government that undermines its functionality. Describe how this incentive structure contributes to the problem and suggest a specific policy change aimed at realigning incentives to enhance government responsiveness.",
+        "text": "The central assumption breaking this approach is that elected officials must serve fixed, multi-year terms insulated from immediate public opinion to provide stability and deliberate governance. This assumption underlies structural incentives like lengthy election cycles and safe districts that often reduce government responsiveness and amplify polarization.\n\nBy reinterpreting the assumption to allow continuous, technology-enabled direct accountability, I propose replacing fixed terms with a rolling recall-and-affirmation system: every elected official would face a transparent, data-driven vote of confidence every six months. Constituents could either reaffirm their official or trigger a special election, incentivizing constant responsiveness and minimizing entrenched partisanship. This system leverages digital platforms to overcome logistical barriers, realigning incentives so officials continuously prioritize constituent needs, enabling adaptive, functional governance that is directly answerable\u2014bridging disconnects between voter preferences and government action.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution opens new avenues for continuous democratic engagement and could inspire further innovations in governance models.",
+              "explanatory": "It identifies the root cause of political stagnation as fixed terms insulated from public opinion, explaining how this drives polarization and unresponsiveness.",
+              "non_obvious": "Replacing fixed terms with frequent, technology-enabled votes of confidence challenges a deeply entrenched assumption about political stability.",
+              "scalability": "If widely adopted, it could transform governance systems globally, affecting millions by enhancing accountability and reducing partisanship.",
+              "principle": "The insight about continuous accountability via technology can be applied beyond government to other hierarchical or representative systems."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.82,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (fixed multi-year terms reducing responsiveness and increasing polarization) and proposes a concrete, specific solution (a rolling recall-and-affirmation system every six months). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"The proposed solution is specific and leverages technology to enable frequent accountability, which plausibly could increase responsiveness and reduce polarization. However, the feasibility is somewhat optimistic given potential logistical, political, and social challenges of implementing such frequent votes and special elections.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for continuous democratic engagement and could inspire further innovations in governance models.\",\n    \"explanatory\": \"It identifies the root cause of political stagnation as fixed terms insulated from public opinion, explaining how this drives polarization and unresponsiveness.\",\n    \"non_obvious\": \"Replacing fixed terms with frequent, technology-enabled votes of confidence challenges a deeply entrenched assumption about political stability.\",\n    \"scalability\": \"If widely adopted, it could transform governance systems globally, affecting millions by enhancing accountability and reducing partisanship.\",\n    \"principle\": \"The insight about continuous accountability via technology can be applied beyond government to other hierarchical or representative systems.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Identify a key systemic incentive or procedural bottleneck in the American government that undermines its functionality. Describe how this incentive structure contributes to the problem and suggest a specific policy change aimed at realigning incentives to enhance government responsiveness.",
+        "text": "Assumption broken: The government must operate within strictly adversarial, winner-takes-all electoral and legislative systems that pit parties and factions against each other, creating entrenched incentives for obstruction and polarization.  \n\nStructural problem: The incentive for legislators to prioritize party loyalty and ideological purity over cross-party compromise fosters gridlock and policy instability. This systemic adversarial structure undermines government responsiveness by rewarding obstruction rather than collaboration, even when bipartisan consensus is in the public interest.  \n\nBy breaking the assumption that elections and legislative processes must be strictly adversarial, we can introduce a mandated, ranked-choice hybrid parliamentarism system where coalitions are formed pre-election based on negotiated agendas\u2014candidates run within parties that must publicly align with cross-party coalition platforms. Legislative power would hinge on fulfilling these coalition commitments to retain coalition status and resources. This structurally incentivizes cooperation before and after elections rather than obstruction. Because coalitions are accountable to shared platforms, government would become more stable and responsive, reducing gridlock by aligning incentives around negotiated policy goals rather than zero-sum victories, thus transforming adversarial competition into collaborative governance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "This solution unlocks new political structures and coalition-based governance models that can inspire further innovations in democratic design.",
+              "explanatory": "It explains how adversarial incentives cause gridlock by prioritizing party loyalty over collaboration, revealing the causal mechanism behind legislative dysfunction.",
+              "non_obvious": "The approach breaks the fundamental assumption of adversarial elections, requiring a conceptual leap to hybrid parliamentarism with pre-election coalition commitments.",
+              "scalability": "If widely adopted, it could transform governance systems across large populations by reducing polarization and increasing policy stability.",
+              "principle": "The insight about aligning incentives through coalition accountability can be applied to other adversarial systems beyond the American government."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.8400000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice hybrid parliamentarism with pre-election coalition formation is a concrete mechanism that plausibly incentivizes cooperation and reduces gridlock, though it may face practical challenges in implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"This solution unlocks new political structures and coalition-based governance models that can inspire further innovations in democratic design.\",\n    \"explanatory\": \"It explains how adversarial incentives cause gridlock by prioritizing party loyalty over collaboration, revealing the causal mechanism behind legislative dysfunction.\",\n    \"non_obvious\": \"The approach breaks the fundamental assumption of adversarial elections, requiring a conceptual leap to hybrid parliamentarism with pre-election coalition commitments.\",\n    \"scalability\": \"If widely adopted, it could transform governance systems across large populations by reducing polarization and increasing policy stability.\",\n    \"principle\": \"The insight about aligning incentives through coalition accountability can be applied to other adversarial systems beyond the American government.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Identify a key systemic incentive or procedural bottleneck in the American government that undermines its functionality. Describe how this incentive structure contributes to the problem and suggest a specific policy change aimed at realigning incentives to enhance government responsiveness.",
+        "text": "**Assumption broken:** The problem is typically framed assuming that elected representatives must prioritize winning the next election, making short-term popular decisions to secure voter support (the electoral incentive structure).  \n\n**Structural problem:** This creates a systemic incentive for partisan gridlock and superficial policy-making, as politicians avoid difficult, long-term solutions that might be unpopular but necessary, undermining government functionality.\n\n**Solution:** Break this assumption by separating the electoral cycle from legislative accountability via fixed, non-renewable staggered six-year terms for Congress members with no immediate re-election. Representatives would be insulated from constant electoral pressure yet still accountable via post-term reviews and civic panels assessing their governance effectiveness. This reform would align incentives towards thoughtful, long-term policymaking over short-term pandering.\n\n**Why it works:** Freed from the immediate threat of losing elections, lawmakers could focus on pragmatic solutions addressing foundational issues instead of partisan point-scoring. Post-term accountability mechanisms ensure responsibility without incentivizing permanent campaigning, enabling a more responsive and functional government that thinks beyond election cycles.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "The solution opens new avenues for electoral reform and governance models by decoupling election cycles from legislative accountability.",
+              "explanatory": "It identifies the causal mechanism of electoral incentives driving short-termism and partisan gridlock, explaining why current structures fail.",
+              "non_obvious": "It requires breaking the deeply ingrained assumption that representatives must face immediate re-election, a significant conceptual leap.",
+              "scalability": "If implemented nationwide, it could transform legislative behavior across the entire U.S. government, affecting millions of citizens.",
+              "principle": "The insight about decoupling accountability from frequent elections can be applied to other governance and organizational contexts beyond the U.S. Congress."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.8079999999999999,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution with justification, all within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed solution addresses electoral incentives with a concrete mechanism (fixed, non-renewable staggered six-year terms and post-term reviews), which is plausible though it may face political and practical challenges in implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for electoral reform and governance models by decoupling election cycles from legislative accountability.\",\n    \"explanatory\": \"It identifies the causal mechanism of electoral incentives driving short-termism and partisan gridlock, explaining why current structures fail.\",\n    \"non_obvious\": \"It requires breaking the deeply ingrained assumption that representatives must face immediate re-election, a significant conceptual leap.\",\n    \"scalability\": \"If implemented nationwide, it could transform legislative behavior across the entire U.S. government, affecting millions of citizens.\",\n    \"principle\": \"The insight about decoupling accountability from frequent elections can be applied to other governance and organizational contexts beyond the U.S. Congress.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Coral reef symbiosis",
+        "reformulation": "Analyze the American government by focusing on the interactions between its branches or levels (federal, state, local) to uncover a structural tension that impedes effective governance. Propose a concrete mechanism or framework that could mitigate this tension and promote better coordination.",
+        "text": "Domain used: Coral reef symbiosis\n\nStructural problem: The American government suffers from fragmented coordination among its federal, state, and local branches, creating structural tensions where overlapping jurisdictions and competing priorities lead to inefficiencies and policy gridlock.\n\nTransferred principle and solution: Coral reef ecosystems thrive through mutualistic symbiosis, where diverse species maintain specialized functions but are interdependent through nutrient and energy exchange networks mediated by shared physical structures like the reef matrix. Analogously, the U.S. government could implement a formalized \u201cintergovernmental symbiosis platform\u201d \u2014 a dedicated, constitutionally recognized institutional framework that allows federal, state, and local governments to specialize in their comparative policy strengths while continuously exchanging critical information, resources, and policy feedback via shared digital and procedural \u201cchannels.\u201d This platform would be staffed by liaison officials embedded across levels who act like reef microbes facilitating nutrient flow, ensuring that local insights inform federal policy and federal resources efficiently support local priorities.\n\nThis solution works plausibly because, like coral symbiosis, effective governance requires interdependence and communication channels that respect specialization but prevent isolation. Creating this structured, ongoing exchange network addresses fragmentation by making coordination an organic, routine process\u2014much like nutrient cycling sustains reef health\u2014thereby mitigating tension caused by disconnected jurisdictions and fostering adaptive, cooperative governance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution opens pathways for new institutional designs that emphasize interdependence and continuous exchange across government levels.",
+              "explanatory": "It explains the causal mechanism of fragmentation as a failure of nutrient-like flows of information and resources, unifying governance challenges under a symbiotic framework.",
+              "non_obvious": "Drawing an analogy from coral reef symbiosis to government coordination is a novel conceptual leap that breaks conventional political science assumptions.",
+              "scalability": "If fully implemented, it could transform governance across all federal, state, and local levels, affecting millions through improved policy coherence and efficiency.",
+              "principle": "The insight about structured interdependence and communication channels is broadly transferable to other complex multi-agent systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.7959999999999999,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific, and justified solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed intergovernmental symbiosis platform is a plausible mechanism with clear roles and communication channels, though it remains somewhat abstract and would require further detail to fully assess feasibility and implementation challenges.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution opens pathways for new institutional designs that emphasize interdependence and continuous exchange across government levels.\",\n    \"explanatory\": \"It explains the causal mechanism of fragmentation as a failure of nutrient-like flows of information and resources, unifying governance challenges under a symbiotic framework.\",\n    \"non_obvious\": \"Drawing an analogy from coral reef symbiosis to government coordination is a novel conceptual leap that breaks conventional political science assumptions.\",\n    \"scalability\": \"If fully implemented, it could transform governance across all federal, state, and local levels, affecting millions through improved policy coherence and efficiency.\",\n    \"principle\": \"The insight about structured interdependence and communication channels is broadly transferable to other complex multi-agent systems beyond government.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Ant colony communication systems",
+        "reformulation": "Analyze the American government by focusing on the interactions between its branches or levels (federal, state, local) to uncover a structural tension that impedes effective governance. Propose a concrete mechanism or framework that could mitigate this tension and promote better coordination.",
+        "text": "**Domain used:** Ant colony communication systems.\n\n**Structural problem:** The American government\u2019s federal, state, and local branches often suffer from fragmented communication and coordination, leading to duplicative efforts, conflicting policies, and delays in response\u2014structural tension arises from siloed operations and weak feedback loops across levels.\n\n**Proposed solution:** Inspired by ant colonies\u2019 use of pheromone trails as dynamic, decentralized signals to coordinate collective action efficiently, establish a continuously updated, interoperable digital \u201cpolicy pheromone network\u201d that records real-time information on initiatives, resource deployments, and regulatory changes across all government levels. This network would employ algorithmic signaling of activity hotspots, overlap, or gaps, enabling branches to detect where cooperation is most needed and adapt their policies fluidly. Essentially, it functions as a shared, evolving information substrate that highlights collective priorities and constrains conflicting actions through positive and negative feedback.\n\n**Why it would work:** Like ant colonies optimizing foraging and defense without centralized command, this system facilitates emergent coordination by making government actions and needs transparent and instantly communicable without bureaucratic bottlenecks. The \u201cpolicy pheromone\u201d signals provide a low-cost, high-speed coordination mechanism that dynamically aligns federal, state, and local efforts, mitigating fragmentation and enabling more responsive, adaptive governance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution unlocks new possibilities for dynamic, decentralized coordination that could inspire derivative innovations in governance and beyond.",
+              "explanatory": "It explains the causal mechanism of fragmented communication by highlighting weak feedback loops and proposes a system to unify information flow across government levels.",
+              "non_obvious": "Applying ant colony pheromone signaling to government coordination is a conceptual leap that breaks from traditional hierarchical communication models.",
+              "scalability": "If fully implemented, it could impact all levels of government and millions of citizens by improving policy responsiveness and reducing inefficiencies.",
+              "principle": "The insight of decentralized, feedback-driven coordination is transferable to many complex systems beyond government, such as corporations or large networks."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.776,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific solution with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The solution is innovative and provides a plausible mechanism for improving coordination through a digital network inspired by ant colony communication, but it lacks detailed implementation steps and may face practical challenges in adoption and interoperability.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new possibilities for dynamic, decentralized coordination that could inspire derivative innovations in governance and beyond.\",\n    \"explanatory\": \"It explains the causal mechanism of fragmented communication by highlighting weak feedback loops and proposes a system to unify information flow across government levels.\",\n    \"non_obvious\": \"Applying ant colony pheromone signaling to government coordination is a conceptual leap that breaks from traditional hierarchical communication models.\",\n    \"scalability\": \"If fully implemented, it could impact all levels of government and millions of citizens by improving policy responsiveness and reducing inefficiencies.\",\n    \"principle\": \"The insight of decentralized, feedback-driven coordination is transferable to many complex systems beyond government, such as corporations or large networks.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Jazz improvisation ensembles",
+        "reformulation": "Analyze the American government by focusing on the interactions between its branches or levels (federal, state, local) to uncover a structural tension that impedes effective governance. Propose a concrete mechanism or framework that could mitigate this tension and promote better coordination.",
+        "text": "Domain: Jazz improvisation ensembles.\n\nThe core structural tension in the American government arises from rigid separation and competition among branches and levels (federal, state, local), which often impedes fluid coordination and timely governance. In jazz ensembles, the fundamental organizational principle is \"responsive interchange\": musicians simultaneously maintain individual roles while actively listening and adapting in real time to each other\u2019s spontaneous contributions, allowing for cohesive, dynamic expression despite improvisation and role fluidity.\n\nMapping this principle, the branches and levels of government could adopt a formalized \"interactive governance protocol\" analogous to a jazz \u201ccall-and-response\u201d system, where representatives designated as \u201cimprovisational liaisons\u201d from each branch and level hold ongoing, real-time communication sessions with authority to make iterative, mutual adjustments within defined boundaries\u2014rather than through slow, formal negotiations. This mechanism would institutionalize continuous, adaptive feedback loops that encourage cooperative responsiveness while preserving distinct roles. By enabling flexible, participatory dialogue structured around shared goals rather than rigid hierarchies or adversarial postures, this jazz-inspired framework could mitigate structural gridlock and foster more effective, timely coordination.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.5,
+          "constraint_overall": 0.75,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.72,
+            "rationale": {
+              "generative": "The solution opens new avenues for adaptive governance models inspired by dynamic, real-time interaction principles.",
+              "explanatory": "It explains the causal problem of rigid separation by highlighting the need for continuous, iterative feedback mechanisms.",
+              "non_obvious": "Drawing an analogy from jazz improvisation to government structure is a novel conceptual leap that breaks conventional political frameworks.",
+              "scalability": "If broadly adopted, this approach could transform coordination across all government levels, affecting millions through improved governance.",
+              "principle": "The insight about responsive interchange transcends government and can inform collaboration in diverse complex systems."
+            }
+          },
+          "breakthrough_potential": 0.72,
+          "discard": false,
+          "final_score": 0.732,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.5,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a significant structural problem (rigid separation and competition among branches and levels) and proposes a concrete, specific solution (an interactive governance protocol modeled on jazz improvisation) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"While the solution is creative and includes a clear mechanism (improvisational liaisons with real-time communication and iterative adjustments), it remains somewhat abstract and may face practical challenges in implementation, reducing its overall plausibility and effectiveness.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.72,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for adaptive governance models inspired by dynamic, real-time interaction principles.\",\n    \"explanatory\": \"It explains the causal problem of rigid separation by highlighting the need for continuous, iterative feedback mechanisms.\",\n    \"non_obvious\": \"Drawing an analogy from jazz improvisation to government structure is a novel conceptual leap that breaks conventional political frameworks.\",\n    \"scalability\": \"If broadly adopted, this approach could transform coordination across all government levels, affecting millions through improved governance.\",\n    \"principle\": \"The insight about responsive interchange transcends government and can inform collaboration in diverse complex systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Analyze the American government by focusing on the interactions between its branches or levels (federal, state, local) to uncover a structural tension that impedes effective governance. Propose a concrete mechanism or framework that could mitigate this tension and promote better coordination.",
+        "text": "**Assumption broken:** The core assumption that federal, state, and local governments operate as distinct, hierarchical units with separate, rigid authorities and limited real-time collaborative decision-making.\n\n**Structural problem:** This separation and rigid jurisdictional boundaries create slow, fragmented responses and chronic coordination failures, especially in crises or policy areas requiring rapid, multi-level action, such as public health, infrastructure, or climate resilience.\n\n**Solution:** Reimagine the American government as a dynamic, networked governance system by implementing a real-time digital collaboration platform that integrates decision-making across branches and levels. This \u201cGovernance Mesh\u201d would use AI facilitation to surface shared priorities, mediate conflicts, and synchronize policies and resources among federal, state, and local actors. Crucially, it would treat authority as fluid and contextual rather than fixed, enabling cross-jurisdictional task forces with temporarily delegated powers tailored to issue-specific needs.\n\n**Why it works:** By breaking down hierarchical silos and enabling adaptive, continuous coordination, the Governance Mesh would reduce delays and jurisdictional disputes, promote transparency, and leverage complementary strengths at all levels. In practice, this fluid, real-time choreography ensures the government acts not as separate pigeonholes of power but as an interoperable system responsive to complex, dynamic challenges.",
+        "judge": {
+          "constraint_satisfaction": 0.8,
+          "usefulness": 0.6,
+          "constraint_overall": 0.7,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution unlocks numerous new possibilities for dynamic, cross-jurisdictional governance and derivative innovations in collaborative decision-making.",
+              "explanatory": "It explains the causal mechanism of rigid jurisdictional boundaries causing coordination failures and proposes a systemic, real-time integration to address it.",
+              "non_obvious": "It breaks the entrenched assumption of fixed hierarchical authority, requiring a significant conceptual leap to fluid, contextual power delegation.",
+              "scalability": "If fully implemented, it could transform governance at all levels across the entire U.S., affecting millions and improving responses to complex challenges.",
+              "principle": "The insight of fluid, networked authority and AI-facilitated collaboration is transferable to other complex multi-level systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.76,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.8,\n  \"usefulness\": 0.6,\n  \"overall\": 0.7,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, innovative solution with justification. However, the response is formatted in multiple short paragraphs rather than two paragraphs as requested, which slightly reduces compliance.\",\n    \"usefulness\": \"The proposed 'Governance Mesh' is a novel and detailed concept with mechanisms for AI facilitation and fluid authority delegation, making it somewhat plausible. Yet, the feasibility of implementing such a complex digital system across all government levels and branches is ambitious and lacks discussion of practical challenges.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new possibilities for dynamic, cross-jurisdictional governance and derivative innovations in collaborative decision-making.\",\n    \"explanatory\": \"It explains the causal mechanism of rigid jurisdictional boundaries causing coordination failures and proposes a systemic, real-time integration to address it.\",\n    \"non_obvious\": \"It breaks the entrenched assumption of fixed hierarchical authority, requiring a significant conceptual leap to fluid, contextual power delegation.\",\n    \"scalability\": \"If fully implemented, it could transform governance at all levels across the entire U.S., affecting millions and improving responses to complex challenges.\",\n    \"principle\": \"The insight of fluid, networked authority and AI-facilitated collaboration is transferable to other complex multi-level systems beyond government.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Analyze the American government by focusing on the interactions between its branches or levels (federal, state, local) to uncover a structural tension that impedes effective governance. Propose a concrete mechanism or framework that could mitigate this tension and promote better coordination.",
+        "text": "The central assumption I am breaking is the strict and compartmentalized sovereignty of government branches and levels\u2014federal, state, and local\u2014as distinct, often competing authorities with rigidly defined boundaries. The structural problem this entrenched separation creates is a chronic lack of coordination and collaboration, with overlapping or conflicting jurisdictions causing policy gridlock, inefficiency, and diluted accountability that impede effective governance.\n\nBy reinterpreting government not as discrete branches or levels but as a fluid, networked \u201cgovernance ecosystem,\u201d I propose establishing a permanent, integrated digital Civic Coordination Platform (CCP) that blends authority and responsibilities dynamically through real-time data sharing, joint decision-making, and context-sensitive delegated powers. This platform would enable cross-branch and multi-level governance teams to co-create solutions tied to specific issues, dissolving traditional silos without abolishing formal roles. In practice, the CCP\u2019s transparency and adaptive governance modules would build trust and responsiveness, reducing duplication and deadlock, while empowering citizen oversight and participation through a unified digital engagement channel\u2014thus achieving smoother, faster, and more coherent management across all government strata.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.5,
+          "constraint_overall": 0.75,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution unlocks numerous possibilities for integrated governance and derivative innovations in digital civic coordination.",
+              "explanatory": "It explains the causal mechanism of siloed authority causing inefficiency and proposes a systemic, networked approach to governance.",
+              "non_obvious": "Reinterpreting government as a fluid ecosystem with dynamic authority sharing breaks conventional assumptions about rigid sovereignty.",
+              "scalability": "If fully implemented, it could transform governance across all levels, affecting millions through improved policy coherence and citizen engagement.",
+              "principle": "The insight of dynamic, networked governance ecosystems can be transferred to other complex organizational and institutional domains."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.78,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.5,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a significant structural problem (rigid separation and lack of coordination among government branches and levels) and proposes a concrete solution (a digital Civic Coordination Platform) within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The solution is specific and includes mechanisms like real-time data sharing and joint decision-making, but it is somewhat idealistic and lacks detailed feasibility considerations, making its practical success uncertain.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous possibilities for integrated governance and derivative innovations in digital civic coordination.\",\n    \"explanatory\": \"It explains the causal mechanism of siloed authority causing inefficiency and proposes a systemic, networked approach to governance.\",\n    \"non_obvious\": \"Reinterpreting government as a fluid ecosystem with dynamic authority sharing breaks conventional assumptions about rigid sovereignty.\",\n    \"scalability\": \"If fully implemented, it could transform governance across all levels, affecting millions through improved policy coherence and citizen engagement.\",\n    \"principle\": \"The insight of dynamic, networked governance ecosystems can be transferred to other complex organizational and institutional domains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Analyze the American government by focusing on the interactions between its branches or levels (federal, state, local) to uncover a structural tension that impedes effective governance. Propose a concrete mechanism or framework that could mitigate this tension and promote better coordination.",
+        "text": "The central assumption I am breaking is the strict separation and independence of the federal, state, and local government branches and levels, which are typically treated as siloed actors with distinct jurisdictions and decision-making powers. This rigid compartmentalization creates structural tension by fostering jurisdictional turf wars, misaligned priorities, and coordination failures, ultimately impeding effective governance, especially on issues requiring cross-level collaboration such as infrastructure, public health, and crisis response.\n\nBy reinterpreting government as a unified, integrated polycentric network rather than hierarchically segmented units, I propose establishing a permanent, digitally empowered \u201cGovernance Coordination Council\u201d (GCC) with equal representation from federal, state, and local entities empowered to co-design and co-manage policy initiatives, budgets, and conflict resolution via binding consensus protocols. Leveraging real-time data sharing and AI facilitation, the GCC would break down silos, promote dynamic joint accountability, and optimize resource allocation while preserving local autonomy within a shared governance framework. This mechanism would plausibly enhance cooperation by institutionalizing interdependence, creating incentives for collaboration, and using technology to overcome legacy segmentation, ultimately enabling more coherent and responsive governance outcomes.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution unlocks numerous possibilities for integrated governance models and derivative innovations in collaborative policymaking and technology-enabled coordination.",
+              "explanatory": "It explains the causal mechanism of siloed governance causing inefficiencies and how integrated networks can resolve these systemic issues.",
+              "non_obvious": "It requires breaking the entrenched assumption of strict separation between government levels and reimagining governance as a unified polycentric network.",
+              "scalability": "If fully implemented, it could transform governance across all levels in the U.S., affecting millions and potentially serving as a model globally.",
+              "principle": "The insight about overcoming siloed structures through integrated, technology-enabled coordination is transferable to other complex multi-agent systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.8400000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem\u2014the siloed nature of federal, state, and local governments\u2014and proposes a specific, feasible solution in two paragraphs as required.\",\n    \"usefulness\": \"The proposed Governance Coordination Council is a concrete mechanism with defined roles, leveraging technology and AI to improve coordination, which is plausible and addresses the problem effectively, though implementation challenges remain unaddressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous possibilities for integrated governance models and derivative innovations in collaborative policymaking and technology-enabled coordination.\",\n    \"explanatory\": \"It explains the causal mechanism of siloed governance causing inefficiencies and how integrated networks can resolve these systemic issues.\",\n    \"non_obvious\": \"It requires breaking the entrenched assumption of strict separation between government levels and reimagining governance as a unified polycentric network.\",\n    \"scalability\": \"If fully implemented, it could transform governance across all levels in the U.S., affecting millions and potentially serving as a model globally.\",\n    \"principle\": \"The insight about overcoming siloed structures through integrated, technology-enabled coordination is transferable to other complex multi-agent systems beyond government.\"\n  }\n}\n```"
+        }
+      }
+    ],
+    "top_k": [
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Identify a key systemic incentive or procedural bottleneck in the American government that undermines its functionality. Describe how this incentive structure contributes to the problem and suggest a specific policy change aimed at realigning incentives to enhance government responsiveness.",
+        "text": "Assumption broken: The government must operate within strictly adversarial, winner-takes-all electoral and legislative systems that pit parties and factions against each other, creating entrenched incentives for obstruction and polarization.  \n\nStructural problem: The incentive for legislators to prioritize party loyalty and ideological purity over cross-party compromise fosters gridlock and policy instability. This systemic adversarial structure undermines government responsiveness by rewarding obstruction rather than collaboration, even when bipartisan consensus is in the public interest.  \n\nBy breaking the assumption that elections and legislative processes must be strictly adversarial, we can introduce a mandated, ranked-choice hybrid parliamentarism system where coalitions are formed pre-election based on negotiated agendas\u2014candidates run within parties that must publicly align with cross-party coalition platforms. Legislative power would hinge on fulfilling these coalition commitments to retain coalition status and resources. This structurally incentivizes cooperation before and after elections rather than obstruction. Because coalitions are accountable to shared platforms, government would become more stable and responsive, reducing gridlock by aligning incentives around negotiated policy goals rather than zero-sum victories, thus transforming adversarial competition into collaborative governance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "This solution unlocks new political structures and coalition-based governance models that can inspire further innovations in democratic design.",
+              "explanatory": "It explains how adversarial incentives cause gridlock by prioritizing party loyalty over collaboration, revealing the causal mechanism behind legislative dysfunction.",
+              "non_obvious": "The approach breaks the fundamental assumption of adversarial elections, requiring a conceptual leap to hybrid parliamentarism with pre-election coalition commitments.",
+              "scalability": "If widely adopted, it could transform governance systems across large populations by reducing polarization and increasing policy stability.",
+              "principle": "The insight about aligning incentives through coalition accountability can be applied to other adversarial systems beyond the American government."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.8400000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice hybrid parliamentarism with pre-election coalition formation is a concrete mechanism that plausibly incentivizes cooperation and reduces gridlock, though it may face practical challenges in implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"This solution unlocks new political structures and coalition-based governance models that can inspire further innovations in democratic design.\",\n    \"explanatory\": \"It explains how adversarial incentives cause gridlock by prioritizing party loyalty over collaboration, revealing the causal mechanism behind legislative dysfunction.\",\n    \"non_obvious\": \"The approach breaks the fundamental assumption of adversarial elections, requiring a conceptual leap to hybrid parliamentarism with pre-election coalition commitments.\",\n    \"scalability\": \"If widely adopted, it could transform governance systems across large populations by reducing polarization and increasing policy stability.\",\n    \"principle\": \"The insight about aligning incentives through coalition accountability can be applied to other adversarial systems beyond the American government.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Analyze the American government by focusing on the interactions between its branches or levels (federal, state, local) to uncover a structural tension that impedes effective governance. Propose a concrete mechanism or framework that could mitigate this tension and promote better coordination.",
+        "text": "The central assumption I am breaking is the strict separation and independence of the federal, state, and local government branches and levels, which are typically treated as siloed actors with distinct jurisdictions and decision-making powers. This rigid compartmentalization creates structural tension by fostering jurisdictional turf wars, misaligned priorities, and coordination failures, ultimately impeding effective governance, especially on issues requiring cross-level collaboration such as infrastructure, public health, and crisis response.\n\nBy reinterpreting government as a unified, integrated polycentric network rather than hierarchically segmented units, I propose establishing a permanent, digitally empowered \u201cGovernance Coordination Council\u201d (GCC) with equal representation from federal, state, and local entities empowered to co-design and co-manage policy initiatives, budgets, and conflict resolution via binding consensus protocols. Leveraging real-time data sharing and AI facilitation, the GCC would break down silos, promote dynamic joint accountability, and optimize resource allocation while preserving local autonomy within a shared governance framework. This mechanism would plausibly enhance cooperation by institutionalizing interdependence, creating incentives for collaboration, and using technology to overcome legacy segmentation, ultimately enabling more coherent and responsive governance outcomes.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution unlocks numerous possibilities for integrated governance models and derivative innovations in collaborative policymaking and technology-enabled coordination.",
+              "explanatory": "It explains the causal mechanism of siloed governance causing inefficiencies and how integrated networks can resolve these systemic issues.",
+              "non_obvious": "It requires breaking the entrenched assumption of strict separation between government levels and reimagining governance as a unified polycentric network.",
+              "scalability": "If fully implemented, it could transform governance across all levels in the U.S., affecting millions and potentially serving as a model globally.",
+              "principle": "The insight about overcoming siloed structures through integrated, technology-enabled coordination is transferable to other complex multi-agent systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.8400000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem\u2014the siloed nature of federal, state, and local governments\u2014and proposes a specific, feasible solution in two paragraphs as required.\",\n    \"usefulness\": \"The proposed Governance Coordination Council is a concrete mechanism with defined roles, leveraging technology and AI to improve coordination, which is plausible and addresses the problem effectively, though implementation challenges remain unaddressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous possibilities for integrated governance models and derivative innovations in collaborative policymaking and technology-enabled coordination.\",\n    \"explanatory\": \"It explains the causal mechanism of siloed governance causing inefficiencies and how integrated networks can resolve these systemic issues.\",\n    \"non_obvious\": \"It requires breaking the entrenched assumption of strict separation between government levels and reimagining governance as a unified polycentric network.\",\n    \"scalability\": \"If fully implemented, it could transform governance across all levels in the U.S., affecting millions and potentially serving as a model globally.\",\n    \"principle\": \"The insight about overcoming siloed structures through integrated, technology-enabled coordination is transferable to other complex multi-agent systems beyond government.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine a fundamental structural flaw within the American government\u2019s institutional design and explain how this flaw affects governance efficacy. Then, propose a targeted institutional reform that could realistically address this flaw while improving overall system performance.",
+        "text": "The central assumption I break is that representative democracy must be strictly based on geographically defined districts electing single legislators who then form a government. This structural design creates entrenched partisan polarization and winner-takes-all conflicts, which impair governance efficacy by incentivizing localism and conflict over compromise, ultimately causing gridlock.\n\nBy reinterpreting representation to be issue-based rather than geographically based, I propose creating a parallel \"Issue Assembly\" in Congress where citizens choose representatives who specialize in key policy domains (e.g., health, environment, economy) through nationwide, ranked-choice elections. These representatives collaborate cross-regionally to draft legislation building on expertise and consensus rather than district interests. This system would break the zero-sum geographic electoral incentive, fostering cooperation and more coherent policy-making. It plausibly works because issue-focused, specialized representatives reduce local parochialism, enhancing governance efficiency while maintaining democratic legitimacy through popular election.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "Reframing representation by issue rather than geography opens many new institutional designs and derivative innovations in democratic governance.",
+              "explanatory": "It explains how geographic-based districts causally drive polarization and gridlock by incentivizing localism and winner-takes-all conflicts.",
+              "non_obvious": "Breaking the fundamental assumption of geographic representation requires a significant conceptual leap uncommon in political reform discourse.",
+              "scalability": "If widely adopted, it could transform legislative processes across large democracies, deeply affecting governance quality and citizen engagement.",
+              "principle": "The insight about decoupling representation from geography to reduce parochialism can apply to other collective decision-making systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.82,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (geographically based representation causing polarization and gridlock) and proposes a concrete, specific solution (an Issue Assembly with nationwide ranked-choice elections). The response is within two paragraphs and includes justification.\",\n    \"usefulness\": \"The solution is plausible and specific, outlining a mechanism to reduce parochialism and foster cooperation through issue-based representation. However, it may face practical challenges in implementation and voter adaptation, which slightly lowers its feasibility score.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"Reframing representation by issue rather than geography opens many new institutional designs and derivative innovations in democratic governance.\",\n    \"explanatory\": \"It explains how geographic-based districts causally drive polarization and gridlock by incentivizing localism and winner-takes-all conflicts.\",\n    \"non_obvious\": \"Breaking the fundamental assumption of geographic representation requires a significant conceptual leap uncommon in political reform discourse.\",\n    \"scalability\": \"If widely adopted, it could transform legislative processes across large democracies, deeply affecting governance quality and citizen engagement.\",\n    \"principle\": \"The insight about decoupling representation from geography to reduce parochialism can apply to other collective decision-making systems beyond government.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Identify a key systemic incentive or procedural bottleneck in the American government that undermines its functionality. Describe how this incentive structure contributes to the problem and suggest a specific policy change aimed at realigning incentives to enhance government responsiveness.",
+        "text": "The central assumption breaking this approach is that elected officials must serve fixed, multi-year terms insulated from immediate public opinion to provide stability and deliberate governance. This assumption underlies structural incentives like lengthy election cycles and safe districts that often reduce government responsiveness and amplify polarization.\n\nBy reinterpreting the assumption to allow continuous, technology-enabled direct accountability, I propose replacing fixed terms with a rolling recall-and-affirmation system: every elected official would face a transparent, data-driven vote of confidence every six months. Constituents could either reaffirm their official or trigger a special election, incentivizing constant responsiveness and minimizing entrenched partisanship. This system leverages digital platforms to overcome logistical barriers, realigning incentives so officials continuously prioritize constituent needs, enabling adaptive, functional governance that is directly answerable\u2014bridging disconnects between voter preferences and government action.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution opens new avenues for continuous democratic engagement and could inspire further innovations in governance models.",
+              "explanatory": "It identifies the root cause of political stagnation as fixed terms insulated from public opinion, explaining how this drives polarization and unresponsiveness.",
+              "non_obvious": "Replacing fixed terms with frequent, technology-enabled votes of confidence challenges a deeply entrenched assumption about political stability.",
+              "scalability": "If widely adopted, it could transform governance systems globally, affecting millions by enhancing accountability and reducing partisanship.",
+              "principle": "The insight about continuous accountability via technology can be applied beyond government to other hierarchical or representative systems."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.82,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (fixed multi-year terms reducing responsiveness and increasing polarization) and proposes a concrete, specific solution (a rolling recall-and-affirmation system every six months). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"The proposed solution is specific and leverages technology to enable frequent accountability, which plausibly could increase responsiveness and reduce polarization. However, the feasibility is somewhat optimistic given potential logistical, political, and social challenges of implementing such frequent votes and special elections.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for continuous democratic engagement and could inspire further innovations in governance models.\",\n    \"explanatory\": \"It identifies the root cause of political stagnation as fixed terms insulated from public opinion, explaining how this drives polarization and unresponsiveness.\",\n    \"non_obvious\": \"Replacing fixed terms with frequent, technology-enabled votes of confidence challenges a deeply entrenched assumption about political stability.\",\n    \"scalability\": \"If widely adopted, it could transform governance systems globally, affecting millions by enhancing accountability and reducing partisanship.\",\n    \"principle\": \"The insight about continuous accountability via technology can be applied beyond government to other hierarchical or representative systems.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Identify a key systemic incentive or procedural bottleneck in the American government that undermines its functionality. Describe how this incentive structure contributes to the problem and suggest a specific policy change aimed at realigning incentives to enhance government responsiveness.",
+        "text": "**Assumption broken:** The problem is typically framed assuming that elected representatives must prioritize winning the next election, making short-term popular decisions to secure voter support (the electoral incentive structure).  \n\n**Structural problem:** This creates a systemic incentive for partisan gridlock and superficial policy-making, as politicians avoid difficult, long-term solutions that might be unpopular but necessary, undermining government functionality.\n\n**Solution:** Break this assumption by separating the electoral cycle from legislative accountability via fixed, non-renewable staggered six-year terms for Congress members with no immediate re-election. Representatives would be insulated from constant electoral pressure yet still accountable via post-term reviews and civic panels assessing their governance effectiveness. This reform would align incentives towards thoughtful, long-term policymaking over short-term pandering.\n\n**Why it works:** Freed from the immediate threat of losing elections, lawmakers could focus on pragmatic solutions addressing foundational issues instead of partisan point-scoring. Post-term accountability mechanisms ensure responsibility without incentivizing permanent campaigning, enabling a more responsive and functional government that thinks beyond election cycles.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "The solution opens new avenues for electoral reform and governance models by decoupling election cycles from legislative accountability.",
+              "explanatory": "It identifies the causal mechanism of electoral incentives driving short-termism and partisan gridlock, explaining why current structures fail.",
+              "non_obvious": "It requires breaking the deeply ingrained assumption that representatives must face immediate re-election, a significant conceptual leap.",
+              "scalability": "If implemented nationwide, it could transform legislative behavior across the entire U.S. government, affecting millions of citizens.",
+              "principle": "The insight about decoupling accountability from frequent elections can be applied to other governance and organizational contexts beyond the U.S. Congress."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.8079999999999999,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution with justification, all within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed solution addresses electoral incentives with a concrete mechanism (fixed, non-renewable staggered six-year terms and post-term reviews), which is plausible though it may face political and practical challenges in implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for electoral reform and governance models by decoupling election cycles from legislative accountability.\",\n    \"explanatory\": \"It identifies the causal mechanism of electoral incentives driving short-termism and partisan gridlock, explaining why current structures fail.\",\n    \"non_obvious\": \"It requires breaking the deeply ingrained assumption that representatives must face immediate re-election, a significant conceptual leap.\",\n    \"scalability\": \"If implemented nationwide, it could transform legislative behavior across the entire U.S. government, affecting millions of citizens.\",\n    \"principle\": \"The insight about decoupling accountability from frequent elections can be applied to other governance and organizational contexts beyond the U.S. Congress.\"\n  }\n}"
+        }
+      }
+    ],
+    "final_output": "Assumption broken: The government must operate within strictly adversarial, winner-takes-all electoral and legislative systems that pit parties and factions against each other, creating entrenched incentives for obstruction and polarization.  \n\nStructural problem: The incentive for legislators to prioritize party loyalty and ideological purity over cross-party compromise fosters gridlock and policy instability. This systemic adversarial structure undermines government responsiveness by rewarding obstruction rather than collaboration, even when bipartisan consensus is in the public interest.  \n\nBy breaking the assumption that elections and legislative processes must be strictly adversarial, we can introduce a mandated, ranked-choice hybrid parliamentarism system where coalitions are formed pre-election based on negotiated agendas\u2014candidates run within parties that must publicly align with cross-party coalition platforms. Legislative power would hinge on fulfilling these coalition commitments to retain coalition status and resources. This structurally incentivizes cooperation before and after elections rather than obstruction. Because coalitions are accountable to shared platforms, government would become more stable and responsive, reducing gridlock by aligning incentives around negotiated policy goals rather than zero-sum victories, thus transforming adversarial competition into collaborative governance.",
+    "selected": {
+      "mode": "constraint_violation",
+      "reformulation": "Identify a key systemic incentive or procedural bottleneck in the American government that undermines its functionality. Describe how this incentive structure contributes to the problem and suggest a specific policy change aimed at realigning incentives to enhance government responsiveness.",
+      "scores": {
+        "constraint_satisfaction": 1.0,
+        "usefulness": 0.8,
+        "constraint_overall": 0.9,
+        "breakthrough_scores": {
+          "generative_power": 0.8,
+          "explanatory_depth": 0.7,
+          "non_obviousness": 0.85,
+          "scalability_of_impact": 0.9,
+          "principle_over_implementation": 0.75,
+          "breakthrough_potential": 0.8,
+          "rationale": {
+            "generative": "This solution unlocks new political structures and coalition-based governance models that can inspire further innovations in democratic design.",
+            "explanatory": "It explains how adversarial incentives cause gridlock by prioritizing party loyalty over collaboration, revealing the causal mechanism behind legislative dysfunction.",
+            "non_obvious": "The approach breaks the fundamental assumption of adversarial elections, requiring a conceptual leap to hybrid parliamentarism with pre-election coalition commitments.",
+            "scalability": "If widely adopted, it could transform governance systems across large populations by reducing polarization and increasing policy stability.",
+            "principle": "The insight about aligning incentives through coalition accountability can be applied to other adversarial systems beyond the American government."
+          }
+        },
+        "breakthrough_potential": 0.8,
+        "discard": false,
+        "final_score": 0.8400000000000001,
+        "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice hybrid parliamentarism with pre-election coalition formation is a concrete mechanism that plausibly incentivizes cooperation and reduces gridlock, though it may face practical challenges in implementation.\"\n  }\n}",
+        "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"This solution unlocks new political structures and coalition-based governance models that can inspire further innovations in democratic design.\",\n    \"explanatory\": \"It explains how adversarial incentives cause gridlock by prioritizing party loyalty over collaboration, revealing the causal mechanism behind legislative dysfunction.\",\n    \"non_obvious\": \"The approach breaks the fundamental assumption of adversarial elections, requiring a conceptual leap to hybrid parliamentarism with pre-election coalition commitments.\",\n    \"scalability\": \"If widely adopted, it could transform governance systems across large populations by reducing polarization and increasing policy stability.\",\n    \"principle\": \"The insight about aligning incentives through coalition accountability can be applied to other adversarial systems beyond the American government.\"\n  }\n}"
+      }
+    }
+  }
+}

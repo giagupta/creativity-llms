@@ -1,0 +1,443 @@
+{
+  "timestamp": "2026-02-01T11:21:11",
+  "prompt_id": "american_government",
+  "prompt": "Analyze the American government. Identify one significant structural problem and propose a concrete solution. The solution should be specific, feasible, and clearly justified. (Maximum two paragraphs.)",
+  "condition": "single_pass_18_keep5",
+  "config": {
+    "model": {
+      "name": "gpt-4.1-mini",
+      "max_tokens": 350
+    },
+    "conditions": [
+      "single_pass_18_keep5",
+      "divergent_convergent_18_keep5"
+    ],
+    "budget": {
+      "max_candidates_per_prompt": 18,
+      "keep_top_k": 5
+    },
+    "sampling": {
+      "single_pass": {
+        "temperature": 0.9,
+        "top_p": 1.0
+      },
+      "reframing": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "num_reformulations": 3
+      },
+      "combinational": {
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "transformational": {
+        "temperature": 1.1,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "judge": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "selection": {
+      "discard_if_constraint_below": 0.4,
+      "overall_score_weights": {
+        "constraint_satisfaction": 0.5,
+        "usefulness": 0.5
+      }
+    }
+  },
+  "result": {
+    "reformulations": [],
+    "candidates": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the Senate\u2019s equal representation regardless of state population. This design, rooted in the Constitution, grants each state two senators, giving disproportionate power to smaller states and diluting the principle of one-person, one-vote. As a result, less populous states have outsized influence on legislation, judicial appointments, and confirmations, which often skews policies away from the majority\u2019s interests and undermines democratic equity.\n\nA concrete and feasible solution is to institute a weighted voting system within the Senate, where each senator\u2019s vote corresponds to their state\u2019s population size. For example, a senator from a populous state like California would have more weighted votes than one from Wyoming. This reform preserves the Senate\u2019s bicameral nature and state representation but aligns legislative power more closely with population. Implementing weighted votes could be achieved through a constitutional amendment or federal legislation, potentially starting as a voluntary pilot program approved by states. This approach balances federalism with democratic fairness, ensuring all citizens\u2019 voices carry proportionate weight in federal policymaking.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "overall": 0.85,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The weighted voting proposal is specific and plausible, with a clear mechanism and justification, though it may face significant political and constitutional challenges that could limit practical implementation."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The weighted voting proposal is specific and plausible, with a clear mechanism and justification, though it may face significant political and constitutional challenges that could limit practical implementation.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the Senate's equal representation for states regardless of population size. This design disproportionately amplifies the political power of less-populated states, skewing federal legislation and resource allocation away from the national majority. For example, states like Wyoming, with fewer than 600,000 residents, have the same Senate representation as California, with nearly 40 million people, creating a representational imbalance that can hinder democratic responsiveness and equitable policy outcomes.\n\nA concrete and feasible solution is to implement a weighted voting system in the Senate, where each senator\u2019s vote is proportionate to the population of their state. This could be achieved through a constitutional amendment or federal legislation complemented by state-level consent mechanisms. By retaining two senators per state but weighting votes based on population, this reform balances the principle of state equality with demographic reality, ensuring that legislation better reflects the preferences of the majority of Americans while preserving states\u2019 formal role. This approach enhances democratic fairness without abolishing the Senate, making it a pragmatic compromise between tradition and representational equity.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "overall": 0.85,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposed weighted voting system is a concrete mechanism with a plausible path via constitutional amendment or legislation, but it may face significant political and practical challenges, slightly limiting its likelihood of success."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed weighted voting system is a concrete mechanism with a plausible path via constitutional amendment or legislation, but it may face significant political and practical challenges, slightly limiting its likelihood of success.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the increasing polarization and gridlock within the legislative branch, notably in the Senate. The filibuster rule, which requires a 60-vote supermajority to close debate on most legislation, often empowers a minority to block bills favored by the majority, leading to legislative stagnation and an inability to respond effectively to urgent national issues. This structural feature exacerbates partisan divides and diminishes public trust in government efficacy.\n\nA concrete and feasible solution is to reform the filibuster by returning it to its original form, which required continuous talking by the minority to sustain a filibuster (the \u201ctalking filibuster\u201d). This adjustment would maintain minority rights to debate and delay legislation but force actual effort to block bills, discouraging frivolous or purely obstructive use. By raising the practical cost of filibustering, this reform would encourage compromise and greater legislative productivity while preserving a critical check on majority power. It is specific because it targets a defined procedural rule, feasible because it can be enacted by the Senate itself without constitutional amendment, and justified as a balance between minority rights and effective governance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (the filibuster) and proposes a specific, feasible solution (returning to the talking filibuster) within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The solution is plausible and well-justified, targeting a defined procedural rule with a clear mechanism to reduce gridlock while preserving minority rights, making it likely to improve legislative productivity if implemented."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (the filibuster) and proposes a specific, feasible solution (returning to the talking filibuster) within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The solution is plausible and well-justified, targeting a defined procedural rule with a clear mechanism to reduce gridlock while preserving minority rights, making it likely to improve legislative productivity if implemented.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the polarization and gridlock within the legislative branch, particularly in the Senate. The current rules, such as the filibuster, require a supermajority of 60 votes to advance most legislation, which often leads to legislative stalemate when the Senate is closely divided. This system allows a minority to block bills, even those with broad public support, reducing the government\u2019s ability to respond effectively to pressing issues and undermining public trust in democratic institutions.\n\nA concrete and feasible solution is to reform the filibuster by eliminating it for all legislation except for constitutional amendments and budget reconciliation bills, which would still require supermajority thresholds. This change could be implemented through a Senate rule change, which requires only a simple majority vote. By doing so, the Senate would regain its functionality as a legislative body capable of passing laws with majority support, while preserving the filibuster\u2019s role in protecting the most fundamental governmental procedures. This reform would reduce gridlock, enhance governmental responsiveness, and better align legislative outcomes with voter preferences, strengthening democratic governance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (Senate filibuster causing gridlock) and proposes a specific, feasible solution (reforming the filibuster rules) within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposed solution is concrete and plausible, with a clear mechanism (Senate rule change by simple majority) and justification for preserving some filibuster functions, making it likely to reduce gridlock and improve legislative responsiveness."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (Senate filibuster causing gridlock) and proposes a specific, feasible solution (reforming the filibuster rules) within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed solution is concrete and plausible, with a clear mechanism (Senate rule change by simple majority) and justification for preserving some filibuster functions, making it likely to reduce gridlock and improve legislative responsiveness.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the Senate\u2019s representational imbalance, where each state receives equal representation regardless of population. This means that states with small populations, like Wyoming, have the same Senate power as populous states like California, leading to disproportionate influence and legislative gridlock. This imbalance distorts democratic principles by overrepresenting rural interests and underrepresenting urban populations, contributing to policy stagnation and political polarization.\n\nA concrete and feasible solution is to institute a graduated voting system within the Senate, where votes are weighted based on state populations rather than being equal per state. For example, a senator from California\u2019s population (around 40 million) would have more voting weight than a senator from Wyoming (around 600,000), scaled by population ratios capped to prevent extreme disparities. This reform could be implemented through a constitutional amendment or a national compact ratified by enough states to amend Senate procedural rules. By aligning Senate influence more closely with population, this solution would enhance democratic fairness, reduce legislative deadlock, and better reflect the will of the majority without entirely abolishing state representation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "overall": 0.8,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed weighted voting system is specific and justified, but its feasibility is somewhat limited due to the high difficulty of constitutional amendments and potential political resistance, reducing its practical likelihood of success."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed weighted voting system is specific and justified, but its feasibility is somewhat limited due to the high difficulty of constitutional amendments and potential political resistance, reducing its practical likelihood of success.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the polarization and gridlock within the legislative branch, largely exacerbated by the Senate\u2019s filibuster rule. This rule allows a minority of senators to block legislation unless 60 out of 100 senators vote to close debate, often resulting in stalemates on critical issues. The filibuster incentivizes obstruction rather than compromise, making it difficult for the government to respond decisively to pressing national challenges.\n\nA concrete solution is to reform the filibuster by requiring senators who wish to maintain it to physically hold the floor and speak continuously, similar to its original form, but with a strict time limit (e.g., eight hours per senator). This change is specific and feasible as it retains the filibuster but requires active use to sustain it, reducing its frequent, passive use to block legislation indefinitely. By raising the cost of obstruction through sustained debate, this reform encourages negotiation and accountability, improving legislative efficiency while respecting minority rights.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed reform to the filibuster is detailed and plausible, with a clear mechanism to reduce gridlock by requiring active participation, which could realistically improve legislative efficiency while preserving minority rights."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed reform to the filibuster is detailed and plausible, with a clear mechanism to reduce gridlock by requiring active participation, which could realistically improve legislative efficiency while preserving minority rights.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the polarization and gridlock within Congress, exacerbated by the current winner-take-all electoral system and party-centric primary elections. This setup incentivizes candidates to appeal primarily to their party\u2019s base rather than the broader electorate, leading to extreme partisanship and legislative stalemate. Consequently, essential policies often stall, and bipartisan cooperation is rare, undermining effective governance.\n\nA concrete solution is to implement ranked-choice voting (RCV) for congressional elections. RCV allows voters to rank candidates by preference, which encourages candidates to appeal to a wider electorate beyond the base, reducing polarization. This system promotes more moderate and consensus-driven campaigns, as candidates seek second- and third-choice votes from other party supporters. Several U.S. cities and states have successfully adopted RCV, demonstrating its feasibility. By fostering greater electoral competition and collaboration, RCV can help break legislative gridlock and improve government responsiveness to a broader range of citizens.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed ranked-choice voting system is a well-defined mechanism with demonstrated feasibility and a clear justification for reducing polarization and gridlock, making it a highly plausible and useful solution."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-defined mechanism with demonstrated feasibility and a clear justification for reducing polarization and gridlock, making it a highly plausible and useful solution.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the Senate\u2019s equal representation of states regardless of population. This arrangement grants small states disproportionate influence compared to their population size, which can skew policy outcomes and legislative priorities away from the preferences of the majority of Americans. For example, small states with fewer voters have the same Senate voting power as large states like California or Texas, leading to legislative gridlock and policies that may not reflect the demographic and political realities of the country.\n\nA concrete and feasible solution is to implement a graduated representation system in the Senate, where each state\u2019s number of senators is based on population tiers rather than being strictly equal. For instance, states under a certain population threshold (e.g., one million residents) keep one senator, those between one to five million states receive two senators, and larger states receive proportionally more, capped at a reasonable limit to prevent dominance by very populous states. This approach maintains small states\u2019 voice while better aligning Senate representation with population, improving democratic legitimacy and policy responsiveness. It could be enacted through a constitutional amendment supported by broad public advocacy emphasizing fairness and effectiveness, ensuring the Senate evolves to reflect America\u2019s demographic realities while preserving federalism principles.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "overall": 0.85,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a concrete, specific, and feasible solution within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposed graduated representation system is specific and includes population tiers with caps, making it plausible and potentially effective, though it may face significant political challenges and requires a constitutional amendment."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific, and feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed graduated representation system is specific and includes population tiers with caps, making it plausible and potentially effective, though it may face significant political challenges and requires a constitutional amendment.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the increasing polarization and gridlock in Congress, often exacerbated by the Senate\u2019s filibuster rule. The filibuster allows a minority of senators to block legislation unless 60 votes are obtained, making it difficult to pass laws even when there is a simple majority consensus. This contributes to legislative stagnation, undermines democratic responsiveness, and fuels public disillusionment by preventing timely action on critical issues.\n\nA concrete and feasible solution is to reform the filibuster by replacing the 60-vote threshold with a \u201ctalking filibuster\u201d that requires senators to physically hold the floor and continuously debate to maintain the filibuster. This approach preserves minority rights to express opposition but eliminates the ability to block legislation passively. Such a reform would encourage compromise and deliberation, reduce gridlock, and make Congress more accountable and functional without completely removing minority protections, balancing efficiency and democratic fairness. Several experts and lawmakers have advocated this reform as a middle ground that respects tradition while enhancing legislative productivity.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (the filibuster causing gridlock) and proposes a specific, feasible solution (a talking filibuster) within the two-paragraph limit, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed talking filibuster is a well-defined mechanism that balances minority rights with legislative efficiency, making it a plausible and practical reform likely to reduce gridlock and improve congressional functionality."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (the filibuster causing gridlock) and proposes a specific, feasible solution (a talking filibuster) within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed talking filibuster is a well-defined mechanism that balances minority rights with legislative efficiency, making it a plausible and practical reform likely to reduce gridlock and improve congressional functionality.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the excessive polarization and gridlock caused by the winner-take-all electoral system, particularly in the House of Representatives and the Senate. This system incentivizes political parties to cater to their ideological bases rather than the broader electorate, leading to increased partisanship and legislative stalemates. The current structure allows for a minority of highly polarized voters in safe districts or states to control the election outcomes, reducing incentives for compromise and collaboration across party lines.\n\nA concrete solution is to implement ranked-choice voting (RCV) nationwide for congressional elections. RCV allows voters to rank candidates by preference, which encourages candidates to appeal to a wider range of voters to gain second and third-choice votes. This system reduces the polarization by incentivizing moderation and coalition-building, as candidates must seek broader support beyond their core base to win. It is feasible because several municipalities and states have already adopted RCV in local or state elections, demonstrating its practical viability. By promoting more representative outcomes and reducing extreme partisanship, RCV could mitigate gridlock and improve the functionality of the legislative branch.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.",
+            "usefulness": "The solution of implementing ranked-choice voting is well-justified, specific, and plausible, with a clear mechanism to reduce polarization and gridlock, though practical challenges in nationwide adoption slightly temper the score."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The solution of implementing ranked-choice voting is well-justified, specific, and plausible, with a clear mechanism to reduce polarization and gridlock, though practical challenges in nationwide adoption slightly temper the score.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the increasing polarization and gridlock within Congress, largely driven by the winner-take-all, single-member district electoral system. This system incentivizes candidates to appeal to their party's base rather than the broader electorate, leading to more extreme partisanship and a lack of bipartisan cooperation. As a result, critical legislation often stalls, undermining effective governance and public trust in political institutions.\n\nA concrete and feasible solution is to implement ranked-choice voting (RCV) for congressional elections nationwide. RCV allows voters to rank candidates by preference, which encourages candidates to appeal to a wider audience to gain second- and third-choice votes. This system reduces the incentive for negative campaigning and promotes the election of more moderate and consensus-driven representatives. Several states, such as Maine and Alaska, have successfully adopted RCV for federal elections, demonstrating its practicality and positive impact. By fostering a more collaborative legislative environment, RCV can help reduce gridlock and restore functionality in Congress.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposed ranked-choice voting system is a well-defined, plausible reform with demonstrated success in some states, and the explanation of its mechanism and benefits is clear and convincing."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-defined, plausible reform with demonstrated success in some states, and the explanation of its mechanism and benefits is clear and convincing.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the Senate\u2019s equal representation of states regardless of population size. This arrangement disproportionately empowers less populous states, allowing them to wield influence comparable to much larger states, which can distort national policy priorities and exacerbate political polarization. For example, small states like Wyoming (with fewer than 600,000 residents) have the same Senate representation as California (with nearly 40 million residents), leading to legislative outcomes that may not reflect the preferences of the majority of Americans.\n\nA concrete and feasible solution is to implement a constitutional amendment to modify Senate representation by introducing a weighted voting system, where each senator\u2019s vote is weighted according to the population of their state. This approach preserves the equal number of senators per state as a symbolic gesture, maintaining state equality, but introduces proportional influence in legislative decisions, better aligning with democratic principles. Such a system could be incrementally enacted, starting with non-binding weighted votes to build consensus before full implementation, and would address the imbalance without abolishing the Senate or drastically altering federalism. This reform promotes fairer representation while respecting the constitutional framework and the political significance of states.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "overall": 0.8,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposed weighted voting system is a concrete mechanism that addresses the problem while preserving symbolic state equality, but its feasibility is somewhat uncertain given the need for a constitutional amendment and potential political resistance."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed weighted voting system is a concrete mechanism that addresses the problem while preserving symbolic state equality, but its feasibility is somewhat uncertain given the need for a constitutional amendment and potential political resistance.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the excessive polarization and gridlock within Congress, largely driven by the winner-take-all, single-member district electoral system. This system incentivizes political parties to cater to their partisan bases rather than moderate voters, leading to the election of more ideologically extreme representatives who prioritize party loyalty over compromise. As a result, legislative paralysis often ensues, preventing effective governance and undermining public trust.\n\nA concrete and feasible solution is to implement ranked-choice voting (RCV) for congressional elections. RCV allows voters to rank candidates by preference, ensuring that winners have broad support and encouraging candidates to appeal to a wider electorate instead of solely their base. This system can reduce polarization by incentivizing moderation and coalition-building, as candidates seek second- and third-choice votes. Several U.S. cities and states have successfully adopted RCV, and expanding its use federally could improve legislative functionality while maintaining the decentralized nature of American elections.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposed ranked-choice voting system is a well-defined mechanism with a plausible impact on reducing polarization and gridlock, supported by examples of existing implementations, making it a highly useful solution."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-defined mechanism with a plausible impact on reducing polarization and gridlock, supported by examples of existing implementations, making it a highly useful solution.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the Senate\u2019s equal representation of states regardless of population size. This arrangement means that less populous states wield disproportionate power compared to highly populated states, leading to policy outcomes that often do not reflect the preferences of the majority of Americans. For example, a state with fewer than a million residents has the same Senate representation as a state with tens of millions, skewing legislation and federal resource allocation in favor of smaller states and undermining democratic principles of proportional representation.\n\nA concrete and feasible solution is to amend Senate rules to introduce a weighted voting system, where each senator\u2019s vote is weighted according to their state\u2019s population. This would maintain the Senate\u2019s structure but better align its decisions with the population distribution. For instance, a senator from California could have a vote weighted twenty times greater than one from Wyoming. This reform would require consensus-building and a constitutional amendment or at least a change in Senate procedural rules, but it is achievable through bipartisan support by emphasizing that it preserves the Senate while making it more democratic. Such a change would enhance fairness, improve policy legitimacy, and better reflect the will of the American people without abolishing the Senate outright.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.5,
+          "overall": 0.75,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "While the weighted voting proposal is specific and justified, it faces substantial political and constitutional challenges that reduce its practical likelihood of success, making it moderately useful but not highly plausible."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.5,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"While the weighted voting proposal is specific and justified, it faces substantial political and constitutional challenges that reduce its practical likelihood of success, making it moderately useful but not highly plausible.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the Senate\u2019s equal representation of states regardless of population. This design disproportionately amplifies the political power of smaller states, often skewing legislation and federal resource allocation away from the interests of the majority of Americans. As a result, national policies can reflect minority preferences, contributing to political polarization and legislative gridlock.\n\nA concrete solution is to implement a weighted voting system in the Senate, where each senator\u2019s vote is proportional to their state\u2019s population, while preserving equal representation in terms of membership. For example, each senator would hold a vote weighted by their state\u2019s population divided by the smallest state\u2019s population, ensuring larger states have a commensurate influence without eliminating small states\u2019 voices entirely. This approach is feasible through congressional statute or a constitutional amendment, and it better balances democratic representation with federalism, enhancing legislative efficiency and fairness.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "overall": 0.85,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution with justification, all within two paragraphs as required.",
+            "usefulness": "The proposed weighted voting system is specific and plausible, with a clear mechanism to balance representation; however, it may face significant political and constitutional challenges, which slightly reduces its practical likelihood of success."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The proposed weighted voting system is specific and plausible, with a clear mechanism to balance representation; however, it may face significant political and constitutional challenges, which slightly reduces its practical likelihood of success.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the polarization and gridlock within Congress, largely fueled by the Senate\u2019s filibuster rule. The filibuster allows a minority of senators to block legislation unless 60 out of 100 senators vote to proceed, which often results in legislative stalemates even when a clear majority supports a bill. This built-in obstacle undermines the government's ability to respond efficiently to pressing issues, contributing to public frustration and weakened democratic governance.\n\nA concrete solution is to reform the filibuster by requiring a \"talking filibuster,\" where senators must continuously debate on the floor to maintain the filibuster, rather than allowing a silent procedural block. This change would raise the cost of obstruction, encouraging compromise and dialogue while preserving minority rights to some extent. It is feasible as it only requires a Senate rule change, which the majority can enact through the \u201cnuclear option.\u201d This reform strikes a balance between enhancing legislative efficiency and maintaining a degree of minority input, thereby addressing gridlock without abolishing the filibuster entirely.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (the filibuster causing gridlock) and proposes a specific, feasible solution (a talking filibuster) within the two-paragraph limit, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed solution is detailed, plausible, and includes a clear mechanism (continuous debate) to raise the cost of obstruction, with a feasible path to implementation (Senate rule change via the nuclear option), making it likely to improve legislative efficiency while preserving minority rights."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (the filibuster causing gridlock) and proposes a specific, feasible solution (a talking filibuster) within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution is detailed, plausible, and includes a clear mechanism (continuous debate) to raise the cost of obstruction, with a feasible path to implementation (Senate rule change via the nuclear option), making it likely to improve legislative efficiency while preserving minority rights.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the excessive polarization exacerbated by the winner-take-all electoral system, particularly in the House of Representatives and the Electoral College. This system incentivizes extreme partisan candidates and discourages moderate or third-party voices, leading to legislative gridlock and reduced public trust in government. Gerrymandering further compounds this issue by creating \u201csafe\u201d districts that reinforce polarization, making compromise less likely and governance more contentious.\n\nA concrete and feasible solution is to implement independent redistricting commissions at the state level combined with ranked-choice voting (RCV) for congressional and presidential elections. Independent commissions can draw fairer, more competitive districts that represent diverse viewpoints instead of entrenched partisan interests. Meanwhile, RCV allows voters to rank candidates by preference, reducing the spoiler effect and encouraging candidates to appeal to a broader electorate. This combination would incentivize moderation, reduce extreme partisanship, and improve the representativeness and functionality of American democracy without requiring a constitutional amendment\u2014only state legislation and local reforms are needed, making it politically achievable.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposed solution of independent redistricting commissions combined with ranked-choice voting is well-justified, plausible, and includes mechanisms likely to reduce polarization and improve representation without requiring a constitutional amendment."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed solution of independent redistricting commissions combined with ranked-choice voting is well-justified, plausible, and includes mechanisms likely to reduce polarization and improve representation without requiring a constitutional amendment.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the increasing polarization and gridlock within Congress, largely driven by the winner-take-all, single-member district electoral system. This system incentivizes politicians to cater to their base\u2019s extremes rather than the broader electorate, fostering partisanship and reducing cooperation across party lines. Consequently, important legislation is often stalled, undermining the government's ability to address pressing issues effectively.\n\nA concrete, feasible solution is to implement ranked-choice voting (RCV) nationwide for congressional elections. RCV allows voters to rank candidates by preference, which encourages candidates to appeal to a wider spectrum of voters to gain second- and third-choice votes. This system reduces the polarization caused by the current winner-take-all approach, as candidates must seek broader support to win. Several states and cities have successfully adopted RCV, demonstrating its practicality and positive impact on political civility and governance. By encouraging more moderate and consensus-driven candidates, RCV can help break legislative gridlock and foster a more functional, representative government.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed ranked-choice voting system is a well-defined, plausible solution with a clear mechanism to reduce polarization and gridlock, supported by examples of successful implementation, making it highly useful."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-defined, plausible solution with a clear mechanism to reduce polarization and gridlock, supported by examples of successful implementation, making it highly useful.\"\n  }\n}"
+        }
+      }
+    ],
+    "top_k": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the increasing polarization and gridlock within the legislative branch, notably in the Senate. The filibuster rule, which requires a 60-vote supermajority to close debate on most legislation, often empowers a minority to block bills favored by the majority, leading to legislative stagnation and an inability to respond effectively to urgent national issues. This structural feature exacerbates partisan divides and diminishes public trust in government efficacy.\n\nA concrete and feasible solution is to reform the filibuster by returning it to its original form, which required continuous talking by the minority to sustain a filibuster (the \u201ctalking filibuster\u201d). This adjustment would maintain minority rights to debate and delay legislation but force actual effort to block bills, discouraging frivolous or purely obstructive use. By raising the practical cost of filibustering, this reform would encourage compromise and greater legislative productivity while preserving a critical check on majority power. It is specific because it targets a defined procedural rule, feasible because it can be enacted by the Senate itself without constitutional amendment, and justified as a balance between minority rights and effective governance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (the filibuster) and proposes a specific, feasible solution (returning to the talking filibuster) within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The solution is plausible and well-justified, targeting a defined procedural rule with a clear mechanism to reduce gridlock while preserving minority rights, making it likely to improve legislative productivity if implemented."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (the filibuster) and proposes a specific, feasible solution (returning to the talking filibuster) within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The solution is plausible and well-justified, targeting a defined procedural rule with a clear mechanism to reduce gridlock while preserving minority rights, making it likely to improve legislative productivity if implemented.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the polarization and gridlock within Congress, exacerbated by the current winner-take-all electoral system and party-centric primary elections. This setup incentivizes candidates to appeal primarily to their party\u2019s base rather than the broader electorate, leading to extreme partisanship and legislative stalemate. Consequently, essential policies often stall, and bipartisan cooperation is rare, undermining effective governance.\n\nA concrete solution is to implement ranked-choice voting (RCV) for congressional elections. RCV allows voters to rank candidates by preference, which encourages candidates to appeal to a wider electorate beyond the base, reducing polarization. This system promotes more moderate and consensus-driven campaigns, as candidates seek second- and third-choice votes from other party supporters. Several U.S. cities and states have successfully adopted RCV, demonstrating its feasibility. By fostering greater electoral competition and collaboration, RCV can help break legislative gridlock and improve government responsiveness to a broader range of citizens.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed ranked-choice voting system is a well-defined mechanism with demonstrated feasibility and a clear justification for reducing polarization and gridlock, making it a highly plausible and useful solution."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-defined mechanism with demonstrated feasibility and a clear justification for reducing polarization and gridlock, making it a highly plausible and useful solution.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the increasing polarization and gridlock in Congress, often exacerbated by the Senate\u2019s filibuster rule. The filibuster allows a minority of senators to block legislation unless 60 votes are obtained, making it difficult to pass laws even when there is a simple majority consensus. This contributes to legislative stagnation, undermines democratic responsiveness, and fuels public disillusionment by preventing timely action on critical issues.\n\nA concrete and feasible solution is to reform the filibuster by replacing the 60-vote threshold with a \u201ctalking filibuster\u201d that requires senators to physically hold the floor and continuously debate to maintain the filibuster. This approach preserves minority rights to express opposition but eliminates the ability to block legislation passively. Such a reform would encourage compromise and deliberation, reduce gridlock, and make Congress more accountable and functional without completely removing minority protections, balancing efficiency and democratic fairness. Several experts and lawmakers have advocated this reform as a middle ground that respects tradition while enhancing legislative productivity.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (the filibuster causing gridlock) and proposes a specific, feasible solution (a talking filibuster) within the two-paragraph limit, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed talking filibuster is a well-defined mechanism that balances minority rights with legislative efficiency, making it a plausible and practical reform likely to reduce gridlock and improve congressional functionality."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (the filibuster causing gridlock) and proposes a specific, feasible solution (a talking filibuster) within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed talking filibuster is a well-defined mechanism that balances minority rights with legislative efficiency, making it a plausible and practical reform likely to reduce gridlock and improve congressional functionality.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the increasing polarization and gridlock within Congress, largely driven by the winner-take-all, single-member district electoral system. This system incentivizes candidates to appeal to their party's base rather than the broader electorate, leading to more extreme partisanship and a lack of bipartisan cooperation. As a result, critical legislation often stalls, undermining effective governance and public trust in political institutions.\n\nA concrete and feasible solution is to implement ranked-choice voting (RCV) for congressional elections nationwide. RCV allows voters to rank candidates by preference, which encourages candidates to appeal to a wider audience to gain second- and third-choice votes. This system reduces the incentive for negative campaigning and promotes the election of more moderate and consensus-driven representatives. Several states, such as Maine and Alaska, have successfully adopted RCV for federal elections, demonstrating its practicality and positive impact. By fostering a more collaborative legislative environment, RCV can help reduce gridlock and restore functionality in Congress.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposed ranked-choice voting system is a well-defined, plausible reform with demonstrated success in some states, and the explanation of its mechanism and benefits is clear and convincing."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-defined, plausible reform with demonstrated success in some states, and the explanation of its mechanism and benefits is clear and convincing.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the excessive polarization and gridlock within Congress, largely driven by the winner-take-all, single-member district electoral system. This system incentivizes political parties to cater to their partisan bases rather than moderate voters, leading to the election of more ideologically extreme representatives who prioritize party loyalty over compromise. As a result, legislative paralysis often ensues, preventing effective governance and undermining public trust.\n\nA concrete and feasible solution is to implement ranked-choice voting (RCV) for congressional elections. RCV allows voters to rank candidates by preference, ensuring that winners have broad support and encouraging candidates to appeal to a wider electorate instead of solely their base. This system can reduce polarization by incentivizing moderation and coalition-building, as candidates seek second- and third-choice votes. Several U.S. cities and states have successfully adopted RCV, and expanding its use federally could improve legislative functionality while maintaining the decentralized nature of American elections.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "overall": 0.95,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposed ranked-choice voting system is a well-defined mechanism with a plausible impact on reducing polarization and gridlock, supported by examples of existing implementations, making it a highly useful solution."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-defined mechanism with a plausible impact on reducing polarization and gridlock, supported by examples of existing implementations, making it a highly useful solution.\"\n  }\n}"
+        }
+      }
+    ],
+    "final_output": "A significant structural problem in the American government is the increasing polarization and gridlock within the legislative branch, notably in the Senate. The filibuster rule, which requires a 60-vote supermajority to close debate on most legislation, often empowers a minority to block bills favored by the majority, leading to legislative stagnation and an inability to respond effectively to urgent national issues. This structural feature exacerbates partisan divides and diminishes public trust in government efficacy.\n\nA concrete and feasible solution is to reform the filibuster by returning it to its original form, which required continuous talking by the minority to sustain a filibuster (the \u201ctalking filibuster\u201d). This adjustment would maintain minority rights to debate and delay legislation but force actual effort to block bills, discouraging frivolous or purely obstructive use. By raising the practical cost of filibustering, this reform would encourage compromise and greater legislative productivity while preserving a critical check on majority power. It is specific because it targets a defined procedural rule, feasible because it can be enacted by the Senate itself without constitutional amendment, and justified as a balance between minority rights and effective governance.",
+    "selected": {
+      "mode": "single_pass",
+      "reformulation": "",
+      "scores": {
+        "constraint_satisfaction": 1.0,
+        "usefulness": 0.9,
+        "overall": 0.95,
+        "discard": false,
+        "rationale": {
+          "constraints": "The candidate clearly identifies a significant structural problem (the filibuster) and proposes a specific, feasible solution (returning to the talking filibuster) within two paragraphs, fully meeting the prompt requirements.",
+          "usefulness": "The solution is plausible and well-justified, targeting a defined procedural rule with a clear mechanism to reduce gridlock while preserving minority rights, making it likely to improve legislative productivity if implemented."
+        },
+        "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (the filibuster) and proposes a specific, feasible solution (returning to the talking filibuster) within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The solution is plausible and well-justified, targeting a defined procedural rule with a clear mechanism to reduce gridlock while preserving minority rights, making it likely to improve legislative productivity if implemented.\"\n  }\n}"
+      }
+    }
+  }
+}

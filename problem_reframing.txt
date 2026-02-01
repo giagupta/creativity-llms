@@ -1,0 +1,20 @@
+You are given the following problem:
+
+[ORIGINAL_PROMPT]
+
+Generate five alternative problem formulations that reinterpret this task while preserving its core intent.
+
+Each reformulation should:
+- Emphasize a different objective, assumption, or level of abstraction
+- Remain aligned with the original goal (do not change the task into a different problem)
+- Open up a distinct class of possible solutions
+
+Valid reframing moves include:
+- Shifting from symptoms to underlying mechanisms
+- Reframing the problem at a systems or incentive level
+- Relaxing an implicit assumption in the original prompt
+- Changing the unit of intervention (individual → institution → policy → infrastructure)
+
+Do not propose solutions.
+
+Output the five reformulations as a numbered list, each written as a complete problem statement.

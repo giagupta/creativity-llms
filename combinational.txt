@@ -1,0 +1,25 @@
+You are solving the following problem:
+
+[REFORMULATED_PROMPT]
+
+Your task is to generate a solution using combinational creativity: transferring a structural pattern from one conceptually unrelated domain into the problem domain.
+
+Example (for illustration only):
+
+The discovery of the DNA double helix involved importing structural constraints and inference methods from outside biology (e.g., X-ray crystallography and chemical bonding theory) into genetics. The novelty came not from inventing new rules, but from transferring an external structural framework to explain a biological system.
+
+Apply the same principle here.
+
+Proceed as follows:
+1. Use the provided unrelated domain as a structural lens.
+2. Identify one core structural or organizational principle from that domain.
+3. Map that principle onto the problem at a structural level (not surface analogy).
+4. Use this mapping to propose a concrete, feasible solution.
+
+In your final response:
+- Explicitly name the domain you used.
+- Clearly identify the structural problem.
+- Propose a specific solution informed by the transferred structure.
+- Explain why the solution would plausibly work in practice.
+
+Limit the response to a maximum of two paragraphs.

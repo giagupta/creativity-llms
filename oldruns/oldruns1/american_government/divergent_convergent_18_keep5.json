@@ -1,0 +1,458 @@
+{
+  "timestamp": "2026-02-01T11:23:12",
+  "prompt_id": "american_government",
+  "prompt": "Analyze the American government. Identify one significant structural problem and propose a concrete solution. The solution should be specific, feasible, and clearly justified. (Maximum two paragraphs.)",
+  "condition": "divergent_convergent_18_keep5",
+  "config": {
+    "model": {
+      "name": "gpt-4.1-mini",
+      "max_tokens": 350
+    },
+    "conditions": [
+      "single_pass_18_keep5",
+      "divergent_convergent_18_keep5"
+    ],
+    "budget": {
+      "max_candidates_per_prompt": 18,
+      "keep_top_k": 5
+    },
+    "sampling": {
+      "single_pass": {
+        "temperature": 0.9,
+        "top_p": 1.0
+      },
+      "reframing": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "num_reformulations": 3
+      },
+      "combinational": {
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "transformational": {
+        "temperature": 1.1,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "judge": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "selection": {
+      "discard_if_constraint_below": 0.4,
+      "overall_score_weights": {
+        "constraint_satisfaction": 0.5,
+        "usefulness": 0.5
+      }
+    }
+  },
+  "result": {
+    "reformulations": [
+      "Examine the incentive structures within the American government and identify one systemic challenge that hinders effective governance. Propose a targeted institutional reform that addresses this challenge and explain why it would improve government functionality.",
+      "Identify a fundamental design flaw in the organizational framework of the American government that limits its responsiveness or efficiency. Suggest a specific policy or procedural change at the federal level that could mitigate this flaw, providing a clear rationale for its feasibility and impact.",
+      "Analyze a key interaction between branches or levels of the American government that creates dysfunction or gridlock. Recommend a concrete adjustment to this intergovernmental relationship or communication channel, explaining how it would enhance overall governance."
+    ],
+    "candidates": [
+      {
+        "mode": "structural_transfer",
+        "domain": "Deep sea coral ecosystems",
+        "reformulation": "Examine the incentive structures within the American government and identify one systemic challenge that hinders effective governance. Propose a targeted institutional reform that addresses this challenge and explain why it would improve government functionality.",
+        "text": "Domain used: Deep sea coral ecosystems.\n\nStructural problem: The American government suffers from entrenched incentive structures that foster siloed specialization and slow, adversarial decision-making, as political actors prioritize narrow interests and re-election over holistic, long-term governance.\n\nIn deep sea coral ecosystems, structural stability emerges from a highly interconnected network where diverse species form mutualistic relationships, distributing resources and resilience across the whole system rather than concentrating power or dependency in one place. Applying this principle, the government could institutionalize a formalized \u201cinteragency mutualism council\u201d where representatives from legislative, executive, and local levels engage in mandated cross-branch, cross-party collaborative units with shared resource pools and accountability metrics focused on integrated outcomes (e.g., climate resilience, economic equity). This would realign incentives from zero-sum competition to cooperative mutual benefit, ensuring diverse perspectives and resources dynamically support the entire governance ecosystem, enhancing responsiveness and reducing gridlock by structurally embedding interconnected, mutual dependencies.\n\nThis solution leverages the coral ecosystem\u2019s principle of distributed interdependence to rewire political incentives, making cooperation structurally necessary rather than optional, thus improving government functionality by fostering durable collaboration and adaptive governance.",
+        "judge": {
+          "constraint_satisfaction": 0.8,
+          "usefulness": 0.7,
+          "overall": 0.75,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate identifies a significant structural problem and proposes a concrete, specific solution within the two-paragraph limit, though the framing around deep sea coral ecosystems is somewhat tangential to the prompt.",
+            "usefulness": "The proposed 'interagency mutualism council' is a plausible mechanism to foster cross-branch collaboration and reduce gridlock, with clear justification based on distributed interdependence, though practical implementation details and feasibility challenges are not deeply addressed."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 0.8,\n  \"usefulness\": 0.7,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a significant structural problem and proposes a concrete, specific solution within the two-paragraph limit, though the framing around deep sea coral ecosystems is somewhat tangential to the prompt.\",\n    \"usefulness\": \"The proposed 'interagency mutualism council' is a plausible mechanism to foster cross-branch collaboration and reduce gridlock, with clear justification based on distributed interdependence, though practical implementation details and feasibility challenges are not deeply addressed.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Ant colony social organization",
+        "reformulation": "Examine the incentive structures within the American government and identify one systemic challenge that hinders effective governance. Propose a targeted institutional reform that addresses this challenge and explain why it would improve government functionality.",
+        "text": "Domain used: Ant colony social organization.\n\nStructural problem in American government: The misalignment of individual incentives among elected officials, leading to polarization and legislative gridlock, stems from fragmented, competitive roles where actors prioritize short-term electoral gains over collective, long-term governance outcomes.\n\nIn ant colonies, a core structural principle is decentralized coordination through stigmergy\u2014a system where ants communicate and coordinate indirectly via environmental markers (pheromone trails), enabling complex collective behavior without central control or direct competition. Transferring this principle, the government could implement a shared digital deliberation platform that acts as a collective \u201cpheromone trail,\u201d where legislators\u2019 proposals, feedback, and amendments are transparently tagged, ranked, and iteratively improved based on collective input from both peers and constituents. This institutional reform would create emergent, bottom-up consensus signals that guide legislators toward policies with broad, sustained support rather than zero-sum electoral competition. By embedding indirect coordination and iterative feedback loops into legislative processes, this system would reduce fragmentation and incentivize cooperation aligned with the public good, improving government functionality through structural realignment of incentives.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "overall": 0.85,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed digital deliberation platform with iterative feedback and transparency is a plausible mechanism to reduce polarization and improve cooperation, though practical implementation challenges and political feasibility are not deeply addressed."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed digital deliberation platform with iterative feedback and transparency is a plausible mechanism to reduce polarization and improve cooperation, though practical implementation challenges and political feasibility are not deeply addressed.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Quantum error correction systems",
+        "reformulation": "Examine the incentive structures within the American government and identify one systemic challenge that hinders effective governance. Propose a targeted institutional reform that addresses this challenge and explain why it would improve government functionality.",
+        "text": "Domain used: Quantum error correction systems (QEC).\n\nStructural problem: American government incentive structures suffer from fragmented accountability and pervasive \u201cerror propagation,\u201d where partisan incentives and misaligned institutional checks allow policy failures or misinformation to spread unchecked across branches and among the public, undermining effective governance. This is akin to how, in quantum computing, fragile quantum states are prone to errors that quickly spread unless actively detected and corrected through a redundant, fault-tolerant architecture.\n\nSolution: Inspired by QEC\u2019s principle of embedding logical qubits redundantly across multiple physical qubits to detect and correct errors before they corrupt the system, implement an institutional reform that creates cross-partisan \u201cgovernance redundancy committees\u201d with overlapping oversight roles distributed across multiple branches and levels of government. These committees would have mandated, transparent mechanisms to continuously audit, fact-check, and publicly verify critical policy data and legislative actions in near real-time, analogous to error syndrome measurements in QEC. This structural redundancy would reduce error propagation by ensuring no single partisan actor or institution could unilaterally distort information or block corrective action, thereby fostering greater accountability and resilience in governance.\n\nWhy it works: By structurally embedding overlapping, independent verification roles that detect and correct \u201cpolitical errors\u201d early, this system would enhance collective error correction capability. Just as QEC enables fragile quantum information to be preserved despite noise, these governance redundancies would stabilize policymaking processes against the systemic risk of partisan misinformation and institutional capture, improving government functionality through enforced, decentralized accountability.",
+        "judge": {
+          "constraint_satisfaction": 0.8,
+          "usefulness": 0.6,
+          "overall": 0.7,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate identifies a significant structural problem and proposes a concrete, specific solution with clear justification within the two-paragraph limit. The response is somewhat dense but meets the prompt requirements.",
+            "usefulness": "The proposed solution of cross-partisan oversight committees with transparent auditing mechanisms is plausible and addresses accountability issues, though the analogy to quantum error correction may complicate practical implementation and feasibility."
+          },
+          "raw_judge_text": "```json\n{\n  \"constraint_satisfaction\": 0.8,\n  \"usefulness\": 0.6,\n  \"overall\": 0.7,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a significant structural problem and proposes a concrete, specific solution with clear justification within the two-paragraph limit. The response is somewhat dense but meets the prompt requirements.\",\n    \"usefulness\": \"The proposed solution of cross-partisan oversight committees with transparent auditing mechanisms is plausible and addresses accountability issues, though the analogy to quantum error correction may complicate practical implementation and feasibility.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine the incentive structures within the American government and identify one systemic challenge that hinders effective governance. Propose a targeted institutional reform that addresses this challenge and explain why it would improve government functionality.",
+        "text": "A central assumption in analyzing American government incentives is that elected officials must maintain direct electoral accountability within geographically fixed, winner-take-all districts, constraining them to continually cater to narrow local interests or partisan bases. This structural setup fosters polarization, shortsighted policy-making, and gridlock as politicians compete primarily for intense partisan voters rather than broader, long-term national interests.\n\nBreaking this assumption, imagine replacing geographically fixed districts with a nationwide proportional representation system for the House of Representatives, where legislators are elected from party lists reflecting the total national vote. This reform would realign incentives by making officials accountable to broader constituencies and party platforms, encouraging collaboration and policy innovation aimed at comprehensive national challenges. With power distributed more proportionally, extreme fringe groups lose outsized influence, and elected leaders are motivated to develop coherent, long-term policies that appeal to diverse voters, plausibly reducing polarization and enhancing effective governance in practice.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (geographically fixed, winner-take-all districts) and proposes a concrete, specific solution (nationwide proportional representation for the House). The response is within the two-paragraph limit and includes justification.",
+            "usefulness": "The solution is plausible and well-justified, explaining how proportional representation would realign incentives, reduce polarization, and encourage long-term policy-making. While ambitious, the mechanism is clearly described and feasible in principle."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (geographically fixed, winner-take-all districts) and proposes a concrete, specific solution (nationwide proportional representation for the House). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"The solution is plausible and well-justified, explaining how proportional representation would realign incentives, reduce polarization, and encourage long-term policy-making. While ambitious, the mechanism is clearly described and feasible in principle.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine the incentive structures within the American government and identify one systemic challenge that hinders effective governance. Propose a targeted institutional reform that addresses this challenge and explain why it would improve government functionality.",
+        "text": "The central assumption I am breaking is that elected representatives must primarily secure re-election by appealing to their existing voter base and political donors, which entrenches short-termism and partisan conflict as a systemic challenge in American governance. This incentive structure prioritizes polarized messaging and incremental gains over collaborative, long-term policymaking, thereby hindering effective governance.\n\nBy deliberately rejecting the necessity of traditional electoral accountability as the sole driver of representatives\u2019 behavior, I propose instituting non-renewable, staggered \u201cpolicy stewardship\u201d terms for Congress members\u2014serving one fixed six-year term without the possibility of re-election. In this model, legislators would be selected through a hybrid lottery-elected process to ensure democracy and competence but would not face re-election pressures. Freed from campaign imperatives, these \u201cpolicy stewards\u201d would focus on deliberative, cross-partisan problem-solving and innovation. This radical shift would reduce polarization fueled by electoral incentives, foster long-term planning, and improve government functionality by aligning representatives\u2019 incentives with genuine governance rather than electoral survival.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "overall": 0.8,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (electoral incentives causing polarization and short-termism) and proposes a concrete, specific solution (non-renewable six-year terms with a hybrid lottery-election process). The response is within the two-paragraph limit and provides justification.",
+            "usefulness": "The solution is innovative and addresses the root cause by removing re-election pressures, which could reduce polarization and encourage long-term policymaking. However, the hybrid lottery-elected process and non-renewable terms may face practical and political feasibility challenges, making the proposal somewhat idealistic though still plausible."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (electoral incentives causing polarization and short-termism) and proposes a concrete, specific solution (non-renewable six-year terms with a hybrid lottery-election process). The response is within the two-paragraph limit and provides justification.\",\n    \"usefulness\": \"The solution is innovative and addresses the root cause by removing re-election pressures, which could reduce polarization and encourage long-term policymaking. However, the hybrid lottery-elected process and non-renewable terms may face practical and political feasibility challenges, making the proposal somewhat idealistic though still plausible.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine the incentive structures within the American government and identify one systemic challenge that hinders effective governance. Propose a targeted institutional reform that addresses this challenge and explain why it would improve government functionality.",
+        "text": "The central assumption I will break is that elected officials must act primarily in a partisan, majoritarian context where re-election depends on appealing to a broad but polarized voter base within fixed districts. This assumption structures incentives toward short-term partisan gain, gridlock, and legislative grandstanding rather than collaborative, effective governance.\n\nBy deliberately breaking this assumption, I propose reforming Congressional representation through multi-member, ranked-choice voting districts combined with mandatory cross-party bipartisan committees for legislation preparation. Rather than single-member plurality districts forcing zero-sum contests, multi-member ranked-choice voting encourages coalition-building and reduces the necessity for adversarial partisanship. Bipartisan committees would be institutionally embedded to create incentives for negotiation and shared ownership of legislation. This structural shift would lessen polarization by rewarding coalition governance, improve policy deliberation, and reduce legislative gridlock, thereby enhancing government functionality beyond the limits set by current electoral incentive constraints.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (partisan incentives in single-member districts) and proposes a concrete, specific solution (multi-member ranked-choice voting districts and bipartisan committees) within the two-paragraph limit.",
+            "usefulness": "The proposed solution is plausible and detailed, addressing the root causes of polarization and gridlock with mechanisms that encourage coalition-building and bipartisan cooperation, making it likely to improve government functionality if implemented."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (partisan incentives in single-member districts) and proposes a concrete, specific solution (multi-member ranked-choice voting districts and bipartisan committees) within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed solution is plausible and detailed, addressing the root causes of polarization and gridlock with mechanisms that encourage coalition-building and bipartisan cooperation, making it likely to improve government functionality if implemented.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Urban traffic signal networks",
+        "reformulation": "Identify a fundamental design flaw in the organizational framework of the American government that limits its responsiveness or efficiency. Suggest a specific policy or procedural change at the federal level that could mitigate this flaw, providing a clear rationale for its feasibility and impact.",
+        "text": "Domain used: Urban traffic signal networks.\n\nStructural problem: The American government\u2019s segmented and siloed branches and agencies often operate with rigid, pre-set protocols that lack adaptive, real-time coordination, leading to delays and inefficiencies in responding to emergent issues\u2014akin to how fixed-timing traffic signals fail to optimize flow under dynamic traffic conditions.\n\nTransferred principle and solution: Urban traffic signal networks increasingly use adaptive signal control technology, which dynamically adjusts signal timing based on real-time traffic data to optimize flow and reduce congestion. Applying this principle, the federal government could implement an adaptive inter-agency coordination system\u2014a centralized but flexible \u201ccommand center\u201d augmented by AI and real-time data sharing\u2014that continuously monitors key indicators across departments and adjusts priorities, resource allocation, and communication protocols on the fly. This system would replace rigid, sequential decision-making with agile, data-driven responsiveness to crises or policy needs.\n\nThis adaptive coordination system would plausibly enhance government responsiveness and efficiency by breaking down bureaucratic silos, enabling faster cross-agency collaboration, and dynamically reallocating effort where most needed, much like adaptive traffic signals reduce wait times and traffic jams by responding instantly to changing conditions rather than following fixed schedules. The feasibility is supported by existing technology in networked data systems and AI, which can be integrated into federal operations without the need for costly structural overhauls.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem in the American government and proposes a specific, feasible solution with justification, all within two paragraphs as required.",
+            "usefulness": "The proposed adaptive inter-agency coordination system is plausible, leveraging existing AI and data-sharing technologies to improve responsiveness and break down silos, though it remains somewhat conceptual without detailed implementation steps."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem in the American government and proposes a specific, feasible solution with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The proposed adaptive inter-agency coordination system is plausible, leveraging existing AI and data-sharing technologies to improve responsiveness and break down silos, though it remains somewhat conceptual without detailed implementation steps.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Bee communication waggle dance",
+        "reformulation": "Identify a fundamental design flaw in the organizational framework of the American government that limits its responsiveness or efficiency. Suggest a specific policy or procedural change at the federal level that could mitigate this flaw, providing a clear rationale for its feasibility and impact.",
+        "text": "Domain used: Bee communication via the waggle dance.\n\nStructural problem: The American government\u2019s organizational framework suffers from slow, inefficient information flow and decision-making across its many branches and levels, due to rigid hierarchy and siloed communication that limit responsiveness to complex, rapidly changing issues.\n\nSolution: Apply the decentralized, spatially encoded communication principle of the waggle dance by instituting a federal \u201cpolicy signaling network\u201d that uses standardized, dynamic data visualizations and short, codified briefs to convey the direction and intensity of emerging issues between agencies and branches in real time. This procedural change would mandate that each federal body regularly communicates concise, quantifiable \u201cmovement vectors\u201d of policy priorities and constraints mapped to situational contexts, enabling rapid collective orientation and coordinated adjustments without waiting for slow committee deliberations.\n\nRationale: Like bees who efficiently convey precise location and resource quality through a simple, shared code, this approach would break down hierarchical delays and information silos by creating a common, interoperable \"language\" for federal entities. This would enhance agility and situational awareness, allowing government branches to better align on priorities and adapt policies collaboratively in a timely manner, improving responsiveness and efficiency without requiring structural overhaul.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "overall": 0.8,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution with justification, all within two paragraphs as required.",
+            "usefulness": "The solution is innovative and provides a concrete mechanism for improving communication, but its reliance on a novel 'policy signaling network' may face practical challenges in implementation and adoption, reducing its overall plausibility."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The solution is innovative and provides a concrete mechanism for improving communication, but its reliance on a novel 'policy signaling network' may face practical challenges in implementation and adoption, reducing its overall plausibility.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Medieval guild apprenticeship systems",
+        "reformulation": "Identify a fundamental design flaw in the organizational framework of the American government that limits its responsiveness or efficiency. Suggest a specific policy or procedural change at the federal level that could mitigate this flaw, providing a clear rationale for its feasibility and impact.",
+        "text": "Domain used: Medieval guild apprenticeship systems. \n\nStructural problem: The American federal government often suffers from bureaucratic inefficiency and slow responsiveness due to lack of structured, long-term pathways for cultivating specialized institutional knowledge and leadership within agencies, leading to high turnover and fragmented expertise.\n\nSolution: Transfer the guild\u2019s apprenticeship principle\u2014formal, tiered mentorship and career progression within a structured \u201cguild\u201d framework\u2014to federal agencies by establishing a nationwide, standardized federal apprenticeship program for civil servants. This program would pair junior staff with senior mentors in multi-year, competency-based tracks aimed at deep skill acquisition and institutional memory development. Advancement within agencies would depend on demonstrated mastery and mentorship roles, much like a journeyman or master craftsman.\n\nRationale: Just as guild apprenticeships ensured continuity, quality, and expertise over generations, this structured mentorship model would build resilient, knowledgeable leadership inside agencies, reducing turnover-induced inefficiencies. The federal government already employs training programs and career ladders\u2014codifying them into a unified apprenticeship system leverages existing frameworks, making the policy feasible and scalable. Over time, it would improve responsiveness by embedding deep expertise and accountability within bureaucratic ranks.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution with justification, all within two paragraphs as required.",
+            "usefulness": "The apprenticeship model is a concrete mechanism with a clear pathway for implementation and rationale, making it a plausible and potentially effective solution to bureaucratic inefficiency."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The apprenticeship model is a concrete mechanism with a clear pathway for implementation and rationale, making it a plausible and potentially effective solution to bureaucratic inefficiency.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Identify a fundamental design flaw in the organizational framework of the American government that limits its responsiveness or efficiency. Suggest a specific policy or procedural change at the federal level that could mitigate this flaw, providing a clear rationale for its feasibility and impact.",
+        "text": "The central assumption being broken is that the federal government\u2019s decision-making must occur exclusively within fixed, slow-moving institutional boundaries, such as Congress and the executive bureaucracy, which operate in adversarial and siloed ways. This structure creates inefficiencies and limits responsiveness by entrenching partisan gridlock and compartmentalized authority.\n\nBy reinterpreting this assumption to allow a dynamic, cross-branch \u201cRapid Legislative-Executive Taskforce\u201d empowered to pass time-sensitive policy on a temporary fast-track basis\u2014with bipartisan representation, limited lifespan per issue, and subject to later full congressional review\u2014we create a hybrid procedural mechanism that cuts through standard delays without permanent shifts to the Constitution. This taskforce could respond to urgent problems (like natural disasters or economic crises) far faster while maintaining democratic legitimacy. The feasibility rests on legislatively enabling this mechanism, which maintains checks and balances but transforms adversarial rigidity into cooperative agility, substantially enhancing government responsiveness.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (slow, adversarial decision-making within fixed institutional boundaries) and proposes a specific, feasible solution (a bipartisan Rapid Legislative-Executive Taskforce with limited lifespan and congressional review) within two paragraphs.",
+            "usefulness": "The proposed taskforce is a concrete mechanism with defined features and checks, making it plausible and likely to improve government responsiveness, though some implementation challenges remain unaddressed."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (slow, adversarial decision-making within fixed institutional boundaries) and proposes a specific, feasible solution (a bipartisan Rapid Legislative-Executive Taskforce with limited lifespan and congressional review) within two paragraphs.\",\n    \"usefulness\": \"The proposed taskforce is a concrete mechanism with defined features and checks, making it plausible and likely to improve government responsiveness, though some implementation challenges remain unaddressed.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Identify a fundamental design flaw in the organizational framework of the American government that limits its responsiveness or efficiency. Suggest a specific policy or procedural change at the federal level that could mitigate this flaw, providing a clear rationale for its feasibility and impact.",
+        "text": "The central assumption I am breaking is that the American federal government must operate under a strict separation of powers with fixed, rigidly designed institutional roles and lengthy legislative processes. This separation, intended to prevent tyranny, often causes gridlock and inefficiencies, severely limiting the government\u2019s responsiveness to rapidly evolving issues.\n\nBy reinterpreting this assumption, I propose creating a constitutional mechanism for \u201cadaptive governance councils\u201d \u2014 temporary, cross-branch committees with delegated, integrated authority to respond swiftly to emergent national crises or technological advancements. These councils would combine members from executive, legislative, and judicial branches alongside technocrats and civil society experts, empowered to enact targeted policy or regulatory changes without full legislative approval but subject to rapid post-hoc review. This breaks the rule of strictly separated powers by enabling nuanced, agile decision-making while preserving checks through review processes. Such a solution would plausibly improve responsiveness and efficiency because it institutionalizes collaboration across branches with built-in accountability, reducing gridlock while respecting the constitutional spirit of balance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (separation of powers causing gridlock) and proposes a concrete, specific, and feasible solution within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposed adaptive governance councils are a plausible mechanism to improve responsiveness by integrating cross-branch collaboration with accountability, though the complexity of implementation and potential constitutional challenges slightly reduce the score."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (separation of powers causing gridlock) and proposes a concrete, specific, and feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed adaptive governance councils are a plausible mechanism to improve responsiveness by integrating cross-branch collaboration with accountability, though the complexity of implementation and potential constitutional challenges slightly reduce the score.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Identify a fundamental design flaw in the organizational framework of the American government that limits its responsiveness or efficiency. Suggest a specific policy or procedural change at the federal level that could mitigate this flaw, providing a clear rationale for its feasibility and impact.",
+        "text": "The central assumption being broken is that the U.S. federal government\u2019s separation of powers\u2014dividing authority strictly among the executive, legislative, and judicial branches\u2014is sacrosanct and must inherently limit swift, unified action. This structural division, intended to prevent tyranny, often results in gridlock, limiting responsiveness and efficiency. The fundamental design flaw is that rigidly compartmentalizing decision-making authority diminishes coordination and slows legislative and policy responses to urgent challenges.\n\nBy breaking the assumption that branches must operate independently without overlapping executive-legislative authority, we can introduce a \u201cUnified Crisis Executive\u201d mechanism: a temporary, constitutionally authorized office appointed jointly by Congress and the President during declared national emergencies, with limited but concentrated powers to enact and implement policy rapidly under defined time and scope constraints. This innovation would mitigate gridlock by legally enabling expedited bipartisan cooperation and unified authority, ensuring faster, coordinated federal responses. The feasibility lies in its temporary and narrowly tailored nature\u2014reducing fears of authoritarian overreach\u2014and its impact is a more agile government that maintains constitutional checks while overcoming paralysis in critical moments.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (separation of powers causing gridlock) and proposes a specific, feasible solution (a temporary 'Unified Crisis Executive' office) within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposed solution is detailed with a clear mechanism, limited scope, and constitutional safeguards, making it plausible and likely to improve government responsiveness during crises, though it may face political challenges in practice."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (separation of powers causing gridlock) and proposes a specific, feasible solution (a temporary 'Unified Crisis Executive' office) within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed solution is detailed with a clear mechanism, limited scope, and constitutional safeguards, making it plausible and likely to improve government responsiveness during crises, though it may face political challenges in practice.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Mycelial network communication",
+        "reformulation": "Analyze a key interaction between branches or levels of the American government that creates dysfunction or gridlock. Recommend a concrete adjustment to this intergovernmental relationship or communication channel, explaining how it would enhance overall governance.",
+        "text": "Domain used: Mycelial network communication in fungi.\n\nStructural problem: The American government often experiences gridlock due to rigid, siloed branches and levels (executive, legislative, state, federal) that communicate primarily through formal, hierarchical channels. This top-down or compartmentalized communication restricts timely information flow and mutual responsiveness, exacerbating dysfunction.\n\nSolution: Transfer the decentralized, adaptive communication principle of mycelial networks, where fungal hyphae form a distributed, self-organizing web that rapidly transmits nutrients and signals across nodes, enabling real-time feedback and resource sharing. Implement an intergovernmental \u201cmesh network\u201d platform that allows representatives and agencies across branches and levels to share data, proposals, and feedback continuously and transparently\u2014not just through formal sessions but via secure, iterative digital forums. This would create a dynamic, interconnected communication ecosystem that surfaces emerging issues early, coordinates responses collaboratively, and reduces bottlenecks caused by strict procedural barriers. By structurally mimicking mycelial networks\u2019 flexible, multi-nodal communication, government entities would gain resilience, agility, and greater alignment, helping to break gridlock and improve governance outcomes.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "overall": 0.8,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (government gridlock due to siloed communication) and proposes a concrete, specific, and justified solution within two paragraphs, fully meeting the prompt requirements.",
+            "usefulness": "The proposed solution of a decentralized, mesh network communication platform is plausible and detailed, offering a clear mechanism to improve inter-branch and inter-level communication, though it may face practical challenges in implementation and adoption."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (government gridlock due to siloed communication) and proposes a concrete, specific, and justified solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed solution of a decentralized, mesh network communication platform is plausible and detailed, offering a clear mechanism to improve inter-branch and inter-level communication, though it may face practical challenges in implementation and adoption.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Medieval maritime trade routes",
+        "reformulation": "Analyze a key interaction between branches or levels of the American government that creates dysfunction or gridlock. Recommend a concrete adjustment to this intergovernmental relationship or communication channel, explaining how it would enhance overall governance.",
+        "text": "Domain used: Medieval maritime trade routes.\n\nStructural problem: The American government suffers from gridlock stemming from rigid, siloed branches with limited, formalized communication channels, resembling isolated ports dependent on irregular, slow interactions. This lack of flexible, intermediary coordination impedes the flow of information and negotiation needed to resolve conflicts between branches or levels.\n\nSolution: Borrowing the organizational principle of medieval maritime trade networks, which relied on decentralized yet interconnected \u201ctrade hubs\u201d or intermediary ports facilitating continuous information exchange and negotiation among diverse actors, the U.S. government could establish permanent inter-branch \u201ccoordination councils.\u201d These councils would act as rotating, semi-autonomous convening bodies tasked with ongoing dialogue, conflict mediation, and joint problem-solving across Congress, the Executive, and Judiciary (and state-federal levels). This structural innovation would transform sporadic, formal communications into a dynamic, networked system, reducing gridlock through increased trust, transparency, and responsiveness.\n\nThis solution is feasible as it leverages existing institutional frameworks and procedural adaptations rather than requiring constitutional changes. By creating dedicated, routine forums modeled on successful trade hubs, decision-making channels become more fluid and adaptive, mirroring the efficiency and resilience maritime trade networks achieved despite complex, competing interests.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "overall": 0.85,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (government gridlock due to siloed branches) and proposes a concrete, specific, and feasible solution (inter-branch coordination councils). The response is within the two-paragraph limit and includes justification.",
+            "usefulness": "The proposed solution is plausible and specific, outlining a mechanism (rotating councils) that leverages existing frameworks without constitutional changes. However, the analogy to medieval trade routes, while creative, may limit clarity and the practical challenges of implementation are not fully addressed."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (government gridlock due to siloed branches) and proposes a concrete, specific, and feasible solution (inter-branch coordination councils). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"The proposed solution is plausible and specific, outlining a mechanism (rotating councils) that leverages existing frameworks without constitutional changes. However, the analogy to medieval trade routes, while creative, may limit clarity and the practical challenges of implementation are not fully addressed.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Open source software development",
+        "reformulation": "Analyze a key interaction between branches or levels of the American government that creates dysfunction or gridlock. Recommend a concrete adjustment to this intergovernmental relationship or communication channel, explaining how it would enhance overall governance.",
+        "text": "Domain used: Open Source Software Development\n\nStructural problem: The American government suffers from dysfunction and gridlock due to fragmented communication and siloed decision-making between branches (executive, legislative, judicial), each operating with rigid boundaries and minimal real-time collaboration or transparent feedback loops. This often leads to delayed responses, conflicting priorities, and entrenched partisan standoffs.\n\nProposed solution: Adapt the open source development principle of \u201ccollaborative modularity\u201d combined with transparent version control (like Git) to inter-branch governance. Establish a shared, publicly accessible \u201cbill and policy repository\u201d platform where proposed legislation, executive actions, and judicial interpretations are treated as modular \u201ccode commits.\u201d Branches would create transparent, trackable proposals with documented \u201cissues\u201d (disputes or concerns) and \u201cpull requests\u201d (amendment proposals). Representatives and officials from multiple branches would act as collaborators, jointly reviewing and integrating changes iteratively before formal adoption. This structured, version-controlled collaboration would institutionalize early cross-branch feedback and incremental consensus-building, reducing surprises and deadlocks.\n\nWhy it would work: By transplanting the transparent, modular, and iterative collaboration structure of open source projects, this model injects continuous dialogue, accountability, and shared ownership into the political process. It diminishes siloed bargaining by making every proposal\u2019s evolution visible and open for multi-branch input, thus fostering a culture of cooperation and rapid conflict resolution based on shared documentation and procedural rigor. This practical structural shift increases agility and trust across branches, helping to overcome gridlock through a well-proven coordination framework.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "overall": 0.85,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a concrete, specific, and justified solution within the two-paragraph limit, fully satisfying the prompt requirements.",
+            "usefulness": "The solution is detailed and proposes a novel mechanism inspired by open source collaboration, which is plausible and could improve transparency and cooperation, though practical implementation challenges in government context may limit full effectiveness."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific, and justified solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The solution is detailed and proposes a novel mechanism inspired by open source collaboration, which is plausible and could improve transparency and cooperation, though practical implementation challenges in government context may limit full effectiveness.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Analyze a key interaction between branches or levels of the American government that creates dysfunction or gridlock. Recommend a concrete adjustment to this intergovernmental relationship or communication channel, explaining how it would enhance overall governance.",
+        "text": "The central assumption I am breaking is that the legislative and executive branches must operate as separate, adversarial entities with clearly divided powers, inherently prone to conflict and gridlock. The structural problem is that this rigid separation fosters stalemate as each branch uses vetoes, delays, and political maneuvering to block the other, preventing timely policy decisions.\n\nBy reconceptualizing these branches as collaborative co-governors with shared responsibility and accountability, I propose establishing \u201cjoint executive-legislative councils\u201d composed equally of key members from Congress and the President\u2019s cabinet. These councils would meet continuously to negotiate and pre-approve policy frameworks, with binding dispute-resolution mechanisms that bypass typical veto and filibuster processes. This fusion mechanism would reduce entrenched opposition by embedding negotiation into the governance structure itself, incentivizing cooperation and enabling swifter, more integrated decision-making that reflects cross-branch consensus rather than confrontation. Such a shift dissolves zero-sum power struggles, making governance more adaptive and functional in practice.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "overall": 0.8,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (separation of powers causing gridlock) and proposes a concrete, specific solution (joint executive-legislative councils with binding dispute-resolution mechanisms). The response is within two paragraphs and includes justification.",
+            "usefulness": "The proposed solution is somewhat plausible and specific, introducing a novel institutional mechanism to foster cooperation and reduce gridlock. However, it may face practical challenges in implementation and political acceptance, and some details on enforcement and feasibility are not fully elaborated."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (separation of powers causing gridlock) and proposes a concrete, specific solution (joint executive-legislative councils with binding dispute-resolution mechanisms). The response is within two paragraphs and includes justification.\",\n    \"usefulness\": \"The proposed solution is somewhat plausible and specific, introducing a novel institutional mechanism to foster cooperation and reduce gridlock. However, it may face practical challenges in implementation and political acceptance, and some details on enforcement and feasibility are not fully elaborated.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Analyze a key interaction between branches or levels of the American government that creates dysfunction or gridlock. Recommend a concrete adjustment to this intergovernmental relationship or communication channel, explaining how it would enhance overall governance.",
+        "text": "The central assumption to break is that the branches of American government\u2014legislative, executive, and judicial\u2014must operate with strict separation and often adversarial interaction, with checks and balances structured primarily as obstacles to unilateral action. This rigid separation frequently leads to gridlock when partisan interests dominate and compromise becomes politically costly. By reinterpreting this assumption, we can imagine a system where overlapping task forces composed equally of members from all branches are constitutionally mandated for major policy areas, creating a hybrid, collaborative decision-making space rather than siloed, competitive arenas.\n\nUnder this new framework, a permanent \u201cInterbranch Policy Council\u201d would be established, comprising legislators, executive officials, and judicial advisors who jointly draft, review, and amend significant legislation and regulations before enactment. This council would operate transparently with consensus-building as its core rule, incentivizing collaboration by making joint proposals immune to veto or filibuster once approved by supermajority and judicial review built into the process upfront. Such integration would break down gridlock by aligning institutional perspectives early, fostering shared ownership of outcomes, and reducing the zero-sum dynamic that stymies progress under current separation, thus enhancing governance efficiency and public trust.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "overall": 0.8,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (gridlock caused by strict separation of powers) and proposes a concrete, specific solution (an Interbranch Policy Council) within the two-paragraph limit, fully satisfying the prompt requirements.",
+            "usefulness": "The proposed solution is detailed and includes mechanisms like consensus-building, supermajority approval, and judicial review integration, making it plausible; however, it may face practical challenges in implementation due to entrenched institutional norms and political resistance, which slightly lowers its feasibility score."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (gridlock caused by strict separation of powers) and proposes a concrete, specific solution (an Interbranch Policy Council) within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution is detailed and includes mechanisms like consensus-building, supermajority approval, and judicial review integration, making it plausible; however, it may face practical challenges in implementation due to entrenched institutional norms and political resistance, which slightly lowers its feasibility score.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Analyze a key interaction between branches or levels of the American government that creates dysfunction or gridlock. Recommend a concrete adjustment to this intergovernmental relationship or communication channel, explaining how it would enhance overall governance.",
+        "text": "Assumption broken: The rigid separation of powers and adversarial, winner-take-all election structure between branches, especially Congress and the President, is fixed and necessary to prevent tyranny and ensure accountability. This assumption typically leads to gridlock when opposing parties control different branches, as compromise is disincentivized.\n\nStructural problem: Partisan stalemate between executive and legislative branches causes policy paralysis, as mutual veto points and competitive incentives obstruct collaborative governance, even on broadly beneficial issues.\n\nSolution: Reimagine the executive-legislative relationship by establishing a formal \u201cco-governance\u201d council composed of bipartisan legislators and executive appointees, selected proportionally from the parties controlling Congress and the presidency, tasked with jointly drafting major legislation during a mandatory negotiation period before floor votes. This council would have decision-making authority on agreed proposals, with members rewarded through enhanced procedural roles and public resources. By breaking the assumption that branches must operate in strict opposition with zero-sum competition, this institutionalizes cooperation and reduces veto-driven deadlock, fostering practical compromise through shared power rather than enforced separation. In practice, creating vested incentives and a formal interbranch forum shifts incentives from obstruction to collaboration, streamlining lawmaking and improving governance effectiveness.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "overall": 0.85,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a concrete, specific, and justified solution within the two-paragraph limit.",
+            "usefulness": "The proposed co-governance council is a plausible institutional reform with clear mechanisms to reduce gridlock, though it may face practical challenges in implementation and political acceptance."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific, and justified solution within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed co-governance council is a plausible institutional reform with clear mechanisms to reduce gridlock, though it may face practical challenges in implementation and political acceptance.\"\n  }\n}"
+        }
+      }
+    ],
+    "top_k": [
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine the incentive structures within the American government and identify one systemic challenge that hinders effective governance. Propose a targeted institutional reform that addresses this challenge and explain why it would improve government functionality.",
+        "text": "A central assumption in analyzing American government incentives is that elected officials must maintain direct electoral accountability within geographically fixed, winner-take-all districts, constraining them to continually cater to narrow local interests or partisan bases. This structural setup fosters polarization, shortsighted policy-making, and gridlock as politicians compete primarily for intense partisan voters rather than broader, long-term national interests.\n\nBreaking this assumption, imagine replacing geographically fixed districts with a nationwide proportional representation system for the House of Representatives, where legislators are elected from party lists reflecting the total national vote. This reform would realign incentives by making officials accountable to broader constituencies and party platforms, encouraging collaboration and policy innovation aimed at comprehensive national challenges. With power distributed more proportionally, extreme fringe groups lose outsized influence, and elected leaders are motivated to develop coherent, long-term policies that appeal to diverse voters, plausibly reducing polarization and enhancing effective governance in practice.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (geographically fixed, winner-take-all districts) and proposes a concrete, specific solution (nationwide proportional representation for the House). The response is within the two-paragraph limit and includes justification.",
+            "usefulness": "The solution is plausible and well-justified, explaining how proportional representation would realign incentives, reduce polarization, and encourage long-term policy-making. While ambitious, the mechanism is clearly described and feasible in principle."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (geographically fixed, winner-take-all districts) and proposes a concrete, specific solution (nationwide proportional representation for the House). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"The solution is plausible and well-justified, explaining how proportional representation would realign incentives, reduce polarization, and encourage long-term policy-making. While ambitious, the mechanism is clearly described and feasible in principle.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine the incentive structures within the American government and identify one systemic challenge that hinders effective governance. Propose a targeted institutional reform that addresses this challenge and explain why it would improve government functionality.",
+        "text": "The central assumption I will break is that elected officials must act primarily in a partisan, majoritarian context where re-election depends on appealing to a broad but polarized voter base within fixed districts. This assumption structures incentives toward short-term partisan gain, gridlock, and legislative grandstanding rather than collaborative, effective governance.\n\nBy deliberately breaking this assumption, I propose reforming Congressional representation through multi-member, ranked-choice voting districts combined with mandatory cross-party bipartisan committees for legislation preparation. Rather than single-member plurality districts forcing zero-sum contests, multi-member ranked-choice voting encourages coalition-building and reduces the necessity for adversarial partisanship. Bipartisan committees would be institutionally embedded to create incentives for negotiation and shared ownership of legislation. This structural shift would lessen polarization by rewarding coalition governance, improve policy deliberation, and reduce legislative gridlock, thereby enhancing government functionality beyond the limits set by current electoral incentive constraints.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (partisan incentives in single-member districts) and proposes a concrete, specific solution (multi-member ranked-choice voting districts and bipartisan committees) within the two-paragraph limit.",
+            "usefulness": "The proposed solution is plausible and detailed, addressing the root causes of polarization and gridlock with mechanisms that encourage coalition-building and bipartisan cooperation, making it likely to improve government functionality if implemented."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (partisan incentives in single-member districts) and proposes a concrete, specific solution (multi-member ranked-choice voting districts and bipartisan committees) within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed solution is plausible and detailed, addressing the root causes of polarization and gridlock with mechanisms that encourage coalition-building and bipartisan cooperation, making it likely to improve government functionality if implemented.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Urban traffic signal networks",
+        "reformulation": "Identify a fundamental design flaw in the organizational framework of the American government that limits its responsiveness or efficiency. Suggest a specific policy or procedural change at the federal level that could mitigate this flaw, providing a clear rationale for its feasibility and impact.",
+        "text": "Domain used: Urban traffic signal networks.\n\nStructural problem: The American government\u2019s segmented and siloed branches and agencies often operate with rigid, pre-set protocols that lack adaptive, real-time coordination, leading to delays and inefficiencies in responding to emergent issues\u2014akin to how fixed-timing traffic signals fail to optimize flow under dynamic traffic conditions.\n\nTransferred principle and solution: Urban traffic signal networks increasingly use adaptive signal control technology, which dynamically adjusts signal timing based on real-time traffic data to optimize flow and reduce congestion. Applying this principle, the federal government could implement an adaptive inter-agency coordination system\u2014a centralized but flexible \u201ccommand center\u201d augmented by AI and real-time data sharing\u2014that continuously monitors key indicators across departments and adjusts priorities, resource allocation, and communication protocols on the fly. This system would replace rigid, sequential decision-making with agile, data-driven responsiveness to crises or policy needs.\n\nThis adaptive coordination system would plausibly enhance government responsiveness and efficiency by breaking down bureaucratic silos, enabling faster cross-agency collaboration, and dynamically reallocating effort where most needed, much like adaptive traffic signals reduce wait times and traffic jams by responding instantly to changing conditions rather than following fixed schedules. The feasibility is supported by existing technology in networked data systems and AI, which can be integrated into federal operations without the need for costly structural overhauls.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem in the American government and proposes a specific, feasible solution with justification, all within two paragraphs as required.",
+            "usefulness": "The proposed adaptive inter-agency coordination system is plausible, leveraging existing AI and data-sharing technologies to improve responsiveness and break down silos, though it remains somewhat conceptual without detailed implementation steps."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem in the American government and proposes a specific, feasible solution with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The proposed adaptive inter-agency coordination system is plausible, leveraging existing AI and data-sharing technologies to improve responsiveness and break down silos, though it remains somewhat conceptual without detailed implementation steps.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Medieval guild apprenticeship systems",
+        "reformulation": "Identify a fundamental design flaw in the organizational framework of the American government that limits its responsiveness or efficiency. Suggest a specific policy or procedural change at the federal level that could mitigate this flaw, providing a clear rationale for its feasibility and impact.",
+        "text": "Domain used: Medieval guild apprenticeship systems. \n\nStructural problem: The American federal government often suffers from bureaucratic inefficiency and slow responsiveness due to lack of structured, long-term pathways for cultivating specialized institutional knowledge and leadership within agencies, leading to high turnover and fragmented expertise.\n\nSolution: Transfer the guild\u2019s apprenticeship principle\u2014formal, tiered mentorship and career progression within a structured \u201cguild\u201d framework\u2014to federal agencies by establishing a nationwide, standardized federal apprenticeship program for civil servants. This program would pair junior staff with senior mentors in multi-year, competency-based tracks aimed at deep skill acquisition and institutional memory development. Advancement within agencies would depend on demonstrated mastery and mentorship roles, much like a journeyman or master craftsman.\n\nRationale: Just as guild apprenticeships ensured continuity, quality, and expertise over generations, this structured mentorship model would build resilient, knowledgeable leadership inside agencies, reducing turnover-induced inefficiencies. The federal government already employs training programs and career ladders\u2014codifying them into a unified apprenticeship system leverages existing frameworks, making the policy feasible and scalable. Over time, it would improve responsiveness by embedding deep expertise and accountability within bureaucratic ranks.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution with justification, all within two paragraphs as required.",
+            "usefulness": "The apprenticeship model is a concrete mechanism with a clear pathway for implementation and rationale, making it a plausible and potentially effective solution to bureaucratic inefficiency."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The apprenticeship model is a concrete mechanism with a clear pathway for implementation and rationale, making it a plausible and potentially effective solution to bureaucratic inefficiency.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Identify a fundamental design flaw in the organizational framework of the American government that limits its responsiveness or efficiency. Suggest a specific policy or procedural change at the federal level that could mitigate this flaw, providing a clear rationale for its feasibility and impact.",
+        "text": "The central assumption being broken is that the federal government\u2019s decision-making must occur exclusively within fixed, slow-moving institutional boundaries, such as Congress and the executive bureaucracy, which operate in adversarial and siloed ways. This structure creates inefficiencies and limits responsiveness by entrenching partisan gridlock and compartmentalized authority.\n\nBy reinterpreting this assumption to allow a dynamic, cross-branch \u201cRapid Legislative-Executive Taskforce\u201d empowered to pass time-sensitive policy on a temporary fast-track basis\u2014with bipartisan representation, limited lifespan per issue, and subject to later full congressional review\u2014we create a hybrid procedural mechanism that cuts through standard delays without permanent shifts to the Constitution. This taskforce could respond to urgent problems (like natural disasters or economic crises) far faster while maintaining democratic legitimacy. The feasibility rests on legislatively enabling this mechanism, which maintains checks and balances but transforms adversarial rigidity into cooperative agility, substantially enhancing government responsiveness.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "overall": 0.9,
+          "discard": false,
+          "rationale": {
+            "constraints": "The candidate clearly identifies a significant structural problem (slow, adversarial decision-making within fixed institutional boundaries) and proposes a specific, feasible solution (a bipartisan Rapid Legislative-Executive Taskforce with limited lifespan and congressional review) within two paragraphs.",
+            "usefulness": "The proposed taskforce is a concrete mechanism with defined features and checks, making it plausible and likely to improve government responsiveness, though some implementation challenges remain unaddressed."
+          },
+          "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (slow, adversarial decision-making within fixed institutional boundaries) and proposes a specific, feasible solution (a bipartisan Rapid Legislative-Executive Taskforce with limited lifespan and congressional review) within two paragraphs.\",\n    \"usefulness\": \"The proposed taskforce is a concrete mechanism with defined features and checks, making it plausible and likely to improve government responsiveness, though some implementation challenges remain unaddressed.\"\n  }\n}"
+        }
+      }
+    ],
+    "final_output": "A central assumption in analyzing American government incentives is that elected officials must maintain direct electoral accountability within geographically fixed, winner-take-all districts, constraining them to continually cater to narrow local interests or partisan bases. This structural setup fosters polarization, shortsighted policy-making, and gridlock as politicians compete primarily for intense partisan voters rather than broader, long-term national interests.\n\nBreaking this assumption, imagine replacing geographically fixed districts with a nationwide proportional representation system for the House of Representatives, where legislators are elected from party lists reflecting the total national vote. This reform would realign incentives by making officials accountable to broader constituencies and party platforms, encouraging collaboration and policy innovation aimed at comprehensive national challenges. With power distributed more proportionally, extreme fringe groups lose outsized influence, and elected leaders are motivated to develop coherent, long-term policies that appeal to diverse voters, plausibly reducing polarization and enhancing effective governance in practice.",
+    "selected": {
+      "mode": "constraint_violation",
+      "reformulation": "Examine the incentive structures within the American government and identify one systemic challenge that hinders effective governance. Propose a targeted institutional reform that addresses this challenge and explain why it would improve government functionality.",
+      "scores": {
+        "constraint_satisfaction": 1.0,
+        "usefulness": 0.8,
+        "overall": 0.9,
+        "discard": false,
+        "rationale": {
+          "constraints": "The candidate clearly identifies a significant structural problem (geographically fixed, winner-take-all districts) and proposes a concrete, specific solution (nationwide proportional representation for the House). The response is within the two-paragraph limit and includes justification.",
+          "usefulness": "The solution is plausible and well-justified, explaining how proportional representation would realign incentives, reduce polarization, and encourage long-term policy-making. While ambitious, the mechanism is clearly described and feasible in principle."
+        },
+        "raw_judge_text": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (geographically fixed, winner-take-all districts) and proposes a concrete, specific solution (nationwide proportional representation for the House). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"The solution is plausible and well-justified, explaining how proportional representation would realign incentives, reduce polarization, and encourage long-term policy-making. While ambitious, the mechanism is clearly described and feasible in principle.\"\n  }\n}"
+      }
+    }
+  }
+}

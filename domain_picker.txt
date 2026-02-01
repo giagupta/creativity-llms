@@ -1,0 +1,11 @@
+Pick exactly ONE conceptually unrelated domain or system to use as a creativity lens.
+
+Rules:
+- The domain must be meaningfully distant from the target problem domain.
+- Do NOT repeat any domain from this list: [USED_DOMAINS]
+- Output ONLY the domain name.
+- 2–6 words maximum.
+- No punctuation, no explanation.
+
+Target problem:
+[REFORMULATED_PROMPT]

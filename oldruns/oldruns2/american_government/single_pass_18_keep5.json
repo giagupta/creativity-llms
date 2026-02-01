@@ -1,0 +1,778 @@
+{
+  "timestamp": "2026-02-01T11:50:03",
+  "prompt_id": "american_government",
+  "prompt": "Analyze the American government. Identify one significant structural problem and propose a concrete solution. The solution should be specific, feasible, and clearly justified. (Maximum two paragraphs.)",
+  "condition": "single_pass_18_keep5",
+  "config": {
+    "model": {
+      "name": "gpt-4.1-mini",
+      "max_tokens": 350
+    },
+    "conditions": [
+      "single_pass_18_keep5",
+      "divergent_convergent_18_keep5"
+    ],
+    "budget": {
+      "max_candidates_per_prompt": 18,
+      "keep_top_k": 5
+    },
+    "sampling": {
+      "single_pass": {
+        "temperature": 0.9,
+        "top_p": 1.0
+      },
+      "reframing": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "num_reformulations": 3
+      },
+      "combinational": {
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "transformational": {
+        "temperature": 1.1,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "judge": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "selection": {
+      "discard_if_constraint_below": 0.4,
+      "constraint_weight": 0.2,
+      "usefulness_weight": 0.2,
+      "breakthrough_weight": 0.6
+    }
+  },
+  "result": {
+    "reformulations": [],
+    "candidates": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the increasing polarization and gridlock in Congress, largely due to the winner-take-all electoral system and gerrymandering. This system incentivizes politicians to cater to partisan extremes rather than moderate or bipartisan solutions, undermining effective governance. Gerrymandering exacerbates this by creating \u201csafe\u201d districts where incumbents face little competition, reducing accountability and encouraging ideological rigidity.\n\nA concrete solution is to implement independent, nonpartisan redistricting commissions at the state level to draw electoral districts based on neutral criteria like geographic contiguity and population equality. This would reduce gerrymandering and promote more competitive districts, encouraging candidates to appeal to broader constituencies. Additionally, introducing ranked-choice voting in federal elections could incentivize moderation by allowing voters to rank candidates by preference, diminishing the spoiler effect and enabling more diverse voices without electing extremists. These reforms are feasible, as several states have successfully adopted them, and they directly address root causes of legislative dysfunction, fostering a more responsive and effective Congress.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.5,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.4,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.56,
+            "rationale": {
+              "generative": "The solution opens pathways for electoral reform innovations like ranked-choice voting and independent commissions that can inspire further democratic improvements.",
+              "explanatory": "It identifies root causes of polarization by explaining how electoral incentives and district design drive legislative dysfunction.",
+              "non_obvious": "While electoral reform is discussed, combining independent redistricting with ranked-choice voting as a systemic fix requires a moderate conceptual leap.",
+              "scalability": "If widely adopted, these reforms could transform the political landscape for millions, improving governance at a national scale.",
+              "principle": "The insight about aligning incentives through neutral districting and voting methods can apply to other representative systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.56,
+          "discard": false,
+          "final_score": 0.716,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes two concrete, feasible solutions within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solutions\u2014independent redistricting commissions and ranked-choice voting\u2014are specific, plausible, and directly address the root causes of polarization and gridlock, making them highly likely to improve governance if implemented.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.5,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.4,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.56,\n  \"rationale\": {\n    \"generative\": \"The solution opens pathways for electoral reform innovations like ranked-choice voting and independent commissions that can inspire further democratic improvements.\",\n    \"explanatory\": \"It identifies root causes of polarization by explaining how electoral incentives and district design drive legislative dysfunction.\",\n    \"non_obvious\": \"While electoral reform is discussed, combining independent redistricting with ranked-choice voting as a systemic fix requires a moderate conceptual leap.\",\n    \"scalability\": \"If widely adopted, these reforms could transform the political landscape for millions, improving governance at a national scale.\",\n    \"principle\": \"The insight about aligning incentives through neutral districting and voting methods can apply to other representative systems beyond the U.S.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the Senate\u2019s equal representation of states regardless of population size. This arrangement gives disproportionate power to less populous states, enabling a minority of the population to block legislation favored by the majority. For example, states with small populations like Wyoming have the same Senate representation as California, which has nearly 70 times more residents. This imbalance can distort national policy priorities and hinder democratic responsiveness, especially on issues with widespread public support.\n\nA concrete, feasible solution is to implement a weighted voting system within the Senate, where each senator\u2019s vote is proportional to the population they represent. This approach preserves the formal structure and equal state representation but adjusts voting power to reflect population disparities more accurately. Such a change could be enacted through federal legislation or a constitutional amendment that maintains the Senate\u2019s role in protecting state interests while promoting fairer democratic representation. By doing so, the Senate would better balance minority rights with majority rule, reducing gridlock and enhancing legitimacy without dismantling the federal system.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.4,
+          "constraint_overall": 0.7,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.3,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.46,
+            "rationale": {
+              "generative": "The solution opens possibilities for rethinking legislative voting power but is primarily a single structural adjustment.",
+              "explanatory": "It identifies the root cause of disproportionate influence but does not deeply analyze underlying political dynamics or historical reasons.",
+              "non_obvious": "Proposing weighted voting within the Senate challenges the entrenched norm of equal state representation, requiring a conceptual leap.",
+              "scalability": "If implemented, it could affect the entire U.S. population and government functioning, significantly altering democratic responsiveness.",
+              "principle": "The insight about weighting representation by population could apply to other federations or organizations balancing equal and proportional representation."
+            }
+          },
+          "breakthrough_potential": 0.46,
+          "discard": false,
+          "final_score": 0.556,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.4,\n  \"overall\": 0.7,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"While the weighted voting proposal is specific and preserves the Senate's structure, it is politically challenging and would require significant legal changes, making its practical success uncertain.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.3,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.46,\n  \"rationale\": {\n    \"generative\": \"The solution opens possibilities for rethinking legislative voting power but is primarily a single structural adjustment.\",\n    \"explanatory\": \"It identifies the root cause of disproportionate influence but does not deeply analyze underlying political dynamics or historical reasons.\",\n    \"non_obvious\": \"Proposing weighted voting within the Senate challenges the entrenched norm of equal state representation, requiring a conceptual leap.\",\n    \"scalability\": \"If implemented, it could affect the entire U.S. population and government functioning, significantly altering democratic responsiveness.\",\n    \"principle\": \"The insight about weighting representation by population could apply to other federations or organizations balancing equal and proportional representation.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the increasing polarization and gridlock within Congress, largely driven by the Senate\u2019s filibuster rule, which requires a supermajority of 60 votes to pass most legislation. This often empowers a minority to block bills, stalling important policy decisions and undermining democratic responsiveness. The filibuster, originally intended to ensure extended debate, has evolved into a tool for obstruction, exacerbating partisan divides and hindering the government\u2019s ability to address pressing issues like infrastructure, voting rights, and climate change.\n\nA concrete solution is to reform the filibuster by reinstating the \"talking filibuster\" requirement, where senators must continuously debate the bill on the floor to maintain a filibuster, rather than allowing a silent procedural hold. This change would make obstruction more costly and visible, encouraging compromise and dialogue. It is feasible because it involves changing Senate rules, which the Senate can do by a simple majority vote. Justification lies in restoring accountability and fostering legislative productivity without eliminating minority rights entirely, striking a balance between preventing tyranny of the majority and avoiding legislative paralysis.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.5,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.46,
+            "rationale": {
+              "generative": "Reforming the filibuster could inspire further procedural innovations in legislative processes.",
+              "explanatory": "The solution identifies the filibuster\u2019s evolution from debate tool to obstruction mechanism, explaining the root cause of gridlock.",
+              "non_obvious": "Reinstating the talking filibuster is a nuanced approach that challenges current norms without abolishing minority rights.",
+              "scalability": "If adopted, it could significantly improve legislative efficiency affecting millions of citizens and multiple policy areas.",
+              "principle": "The insight about balancing minority rights with majority rule can inform governance reforms beyond the U.S. Senate."
+            }
+          },
+          "breakthrough_potential": 0.46,
+          "discard": false,
+          "final_score": 0.656,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The proposed reform to the filibuster is specific and plausible, with a clear mechanism to increase accountability and reduce gridlock, making it likely to improve legislative productivity if implemented.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.5,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.46,\n  \"rationale\": {\n    \"generative\": \"Reforming the filibuster could inspire further procedural innovations in legislative processes.\",\n    \"explanatory\": \"The solution identifies the filibuster\u2019s evolution from debate tool to obstruction mechanism, explaining the root cause of gridlock.\",\n    \"non_obvious\": \"Reinstating the talking filibuster is a nuanced approach that challenges current norms without abolishing minority rights.\",\n    \"scalability\": \"If adopted, it could significantly improve legislative efficiency affecting millions of citizens and multiple policy areas.\",\n    \"principle\": \"The insight about balancing minority rights with majority rule can inform governance reforms beyond the U.S. Senate.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the Senate\u2019s equal representation of states regardless of population size. This arrangement grants disproportionate power to less populous states, skewing legislative outcomes and policy priorities away from reflecting the preferences of the majority of Americans. For example, states with small populations like Wyoming have the same senatorial representation as California, which has over 60 times more residents. This imbalance undermines the principle of democratic representation and contributes to legislative gridlock, as senators from less populous states can block legislation favored by a national majority.\n\nA concrete and feasible solution is to implement a graduated voting weight system in the Senate, where each senator\u2019s vote is weighted proportionally based on their state\u2019s population. Instead of one senator, one vote, the votes cast by each senator would reflect the population they represent, better aligning Senate decisions with the national electorate\u2019s will. This reform could be enacted through a constitutional amendment requiring ratification by three-fourths of the states. While politically challenging, it preserves the bicameral structure and state representation while addressing democratic imbalances, promoting fairer policy outcomes and reducing the outsized influence of small states.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.3,
+            "explanatory_depth": 0.4,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.46,
+            "rationale": {
+              "generative": "The solution introduces a new voting weight concept that could inspire further reforms in representative systems.",
+              "explanatory": "It explains the causal mechanism of disproportionate representation leading to legislative imbalance and gridlock.",
+              "non_obvious": "Weighting senatorial votes by population challenges the entrenched one-state-one-vote assumption in a novel way.",
+              "scalability": "If implemented, it would affect the entire U.S. legislative process and potentially influence other federal systems.",
+              "principle": "The insight about proportional representation weighted by population can be adapted to other federations or decision bodies."
+            }
+          },
+          "breakthrough_potential": 0.46,
+          "discard": false,
+          "final_score": 0.616,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed graduated voting weight system is a concrete mechanism that addresses the problem directly, though it may face significant political challenges, which slightly reduces its practical likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.3,\n  \"explanatory_depth\": 0.4,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.46,\n  \"rationale\": {\n    \"generative\": \"The solution introduces a new voting weight concept that could inspire further reforms in representative systems.\",\n    \"explanatory\": \"It explains the causal mechanism of disproportionate representation leading to legislative imbalance and gridlock.\",\n    \"non_obvious\": \"Weighting senatorial votes by population challenges the entrenched one-state-one-vote assumption in a novel way.\",\n    \"scalability\": \"If implemented, it would affect the entire U.S. legislative process and potentially influence other federal systems.\",\n    \"principle\": \"The insight about proportional representation weighted by population can be adapted to other federations or decision bodies.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the increasing polarization and gridlock in Congress, often exacerbated by the Senate\u2019s filibuster rule. The filibuster allows a minority of senators to block legislation unless 60 out of 100 senators vote to end debate, which often prevents the passage of laws even when a simple majority supports them. This has contributed to legislative inaction and a growing public frustration with government inefficiency.\n\nA concrete solution is to reform the filibuster by requiring a \u201ctalking filibuster,\u201d where senators must continuously speak on the floor to maintain a filibuster, rather than allowing a silent hold. This change would raise the cost of obstruction, encouraging more bipartisan negotiation and compromise while preserving minority rights. It is feasible because it can be implemented through changes to Senate rules, which the Senate has historically done unilaterally. This reform would reduce gridlock by making filibusters more transparent and difficult to sustain, thus fostering a more functional legislative process.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.3,
+            "explanatory_depth": 0.4,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.6,
+            "principle_over_implementation": 0.2,
+            "breakthrough_potential": 0.36,
+            "rationale": {
+              "generative": "The solution enables derivative innovations in legislative procedure reform but is largely focused on a single mechanism.",
+              "explanatory": "It explains the causal role of the filibuster in legislative gridlock but does not deeply unify broader political dysfunctions.",
+              "non_obvious": "Requiring a talking filibuster is a known reform idea and does not represent a major conceptual leap.",
+              "scalability": "If implemented, it could significantly improve legislative efficiency affecting the entire U.S. government and population.",
+              "principle": "The insight is somewhat context-specific to legislative rules and does not broadly transfer across domains."
+            }
+          },
+          "breakthrough_potential": 0.36,
+          "discard": false,
+          "final_score": 0.596,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (the filibuster causing gridlock) and proposes a specific, feasible solution (talking filibuster) within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed talking filibuster is a concrete mechanism that raises the cost of obstruction and encourages negotiation, making it a plausible and effective reform to reduce gridlock while preserving minority rights.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.3,\n  \"explanatory_depth\": 0.4,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.6,\n  \"principle_over_implementation\": 0.2,\n  \"breakthrough_potential\": 0.36,\n  \"rationale\": {\n    \"generative\": \"The solution enables derivative innovations in legislative procedure reform but is largely focused on a single mechanism.\",\n    \"explanatory\": \"It explains the causal role of the filibuster in legislative gridlock but does not deeply unify broader political dysfunctions.\",\n    \"non_obvious\": \"Requiring a talking filibuster is a known reform idea and does not represent a major conceptual leap.\",\n    \"scalability\": \"If implemented, it could significantly improve legislative efficiency affecting the entire U.S. government and population.\",\n    \"principle\": \"The insight is somewhat context-specific to legislative rules and does not broadly transfer across domains.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the Senate\u2019s equal representation of states regardless of population size. This design means that two senators represent tiny states like Wyoming (with fewer than 600,000 people) just as much as they represent California (with nearly 40 million people), leading to disproportionate political influence that often skews national policy away from the preferences of the majority of Americans. This imbalance can stall legislation and amplify the voices of less populous states, undermining democratic principles of equal representation.\n\nA concrete and feasible solution is to maintain the Senate\u2019s current structure but introduce a weighted voting system within the Senate based on each state\u2019s population. Senators would retain their seats, preserving the traditional federal balance, but their votes on legislation would be weighted according to the population they represent. For example, a California senator\u2019s vote could count for many times that of a Wyoming senator. This approach respects the constitutional requirement for equal state representation while making the legislative process more representative of the American populace. It could be implemented through a constitutional amendment focused solely on voting weights, a more narrowly tailored change than abolishing or fundamentally restructuring the Senate, making it politically viable over time.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.5,
+            "explanatory_depth": 0.3,
+            "non_obviousness": 0.6,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.5,
+            "rationale": {
+              "generative": "Introducing weighted voting in the Senate opens possibilities for new hybrid governance models balancing federalism and population representation.",
+              "explanatory": "The solution addresses the causal mechanism of disproportionate influence by linking voting power directly to population size rather than just seat count.",
+              "non_obvious": "Proposing weighted votes within an existing equal-representation chamber challenges the entrenched assumption that each senator\u2019s vote must be equal.",
+              "scalability": "If adopted, this reform could affect the entire U.S. legislative process and potentially inspire similar reforms in other federations.",
+              "principle": "The insight of weighting representation by population within fixed seats could be applied to other political or organizational systems facing representation imbalances."
+            }
+          },
+          "breakthrough_potential": 0.5,
+          "discard": false,
+          "final_score": 0.62,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed weighted voting system is a concrete mechanism that respects constitutional constraints and aims to balance representation, but its political feasibility and practical implementation challenges reduce its likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.5,\n  \"explanatory_depth\": 0.3,\n  \"non_obviousness\": 0.6,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.5,\n  \"rationale\": {\n    \"generative\": \"Introducing weighted voting in the Senate opens possibilities for new hybrid governance models balancing federalism and population representation.\",\n    \"explanatory\": \"The solution addresses the causal mechanism of disproportionate influence by linking voting power directly to population size rather than just seat count.\",\n    \"non_obvious\": \"Proposing weighted votes within an existing equal-representation chamber challenges the entrenched assumption that each senator\u2019s vote must be equal.\",\n    \"scalability\": \"If adopted, this reform could affect the entire U.S. legislative process and potentially inspire similar reforms in other federations.\",\n    \"principle\": \"The insight of weighting representation by population within fixed seats could be applied to other political or organizational systems facing representation imbalances.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the increasing partisanship and polarization within Congress, often exacerbated by the winner-take-all electoral system and gerrymandering. This leads to legislative gridlock, undermining the government's ability to effectively address pressing issues and eroding public trust. The current system encourages candidates to cater to their party bases rather than moderate or cross-party voters, which deepens divisions and reduces cooperation.\n\nA concrete solution is to implement independent, non-partisan redistricting commissions in every state to draw electoral districts fairly based on population and community interests, rather than political advantage. This reform is specific and feasible, as several states (e.g., California, Arizona) have successfully adopted such commissions, showing that it can reduce extreme partisan safe districts and encourage more competitive elections. By fostering competition, candidates would need to appeal to a broader electorate, which could reduce polarization and enable more collaborative governance. This structural change strengthens democratic representation and can revitalize legislative functionality without requiring constitutional amendments.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.5,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.46,
+            "rationale": {
+              "generative": "The solution enables derivative innovations in electoral reform and governance by addressing districting fairness.",
+              "explanatory": "It explains how structural incentives in the electoral system cause polarization and legislative gridlock.",
+              "non_obvious": "While redistricting reform is known, framing it as a key lever to reduce polarization requires some conceptual insight.",
+              "scalability": "If widely adopted, it could impact all U.S. states and millions of voters, improving democratic functionality significantly.",
+              "principle": "The insight about fair representation reducing polarization can apply to other representative systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.46,
+          "discard": false,
+          "final_score": 0.656,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible, and well-justified solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The solution of independent redistricting commissions is specific and plausible, with a clear mechanism to reduce polarization by encouraging competitive elections and broader appeal, making it likely to succeed if implemented.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.5,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.46,\n  \"rationale\": {\n    \"generative\": \"The solution enables derivative innovations in electoral reform and governance by addressing districting fairness.\",\n    \"explanatory\": \"It explains how structural incentives in the electoral system cause polarization and legislative gridlock.\",\n    \"non_obvious\": \"While redistricting reform is known, framing it as a key lever to reduce polarization requires some conceptual insight.\",\n    \"scalability\": \"If widely adopted, it could impact all U.S. states and millions of voters, improving democratic functionality significantly.\",\n    \"principle\": \"The insight about fair representation reducing polarization can apply to other representative systems beyond the U.S.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the excessive polarization and gridlock within Congress, largely fueled by the winner-take-all, single-member district electoral system. This structure encourages politicians to cater to extreme partisan bases rather than the broader electorate, making bipartisan cooperation rare and legislative productivity low. As a result, important policy decisions are often stalled, reducing government effectiveness and public trust.\n\nA concrete solution is to implement ranked-choice voting (RCV) for House and Senate elections at the federal level. RCV allows voters to rank candidates by preference, which incentivizes candidates to appeal to a wider range of voters rather than just the partisan base. This can lead to the election of more moderate and consensus-driven representatives, reducing polarization and facilitating legislative compromise. Several states and cities have successfully used RCV, demonstrating its feasibility and potential to improve democratic representation and governance on a national scale.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.5,
+            "non_obviousness": 0.4,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.54,
+            "rationale": {
+              "generative": "Ranked-choice voting opens new possibilities for electoral reform and more nuanced democratic processes beyond simple plurality systems.",
+              "explanatory": "The solution identifies the causal mechanism of winner-take-all systems driving polarization and explains how RCV changes incentives to reduce it.",
+              "non_obvious": "While electoral reform is discussed, adopting ranked-choice voting as a direct structural fix requires a conceptual leap beyond typical partisan solutions.",
+              "scalability": "If implemented nationwide, it could affect millions of voters and fundamentally alter legislative dynamics across the entire federal government.",
+              "principle": "The insight about changing incentive structures through voting methods can apply to other representative systems beyond the U.S. context."
+            }
+          },
+          "breakthrough_potential": 0.54,
+          "discard": false,
+          "final_score": 0.704,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-defined mechanism with a plausible impact on reducing polarization and gridlock, supported by examples of successful implementation, making the solution highly useful.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.5,\n  \"non_obviousness\": 0.4,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.54,\n  \"rationale\": {\n    \"generative\": \"Ranked-choice voting opens new possibilities for electoral reform and more nuanced democratic processes beyond simple plurality systems.\",\n    \"explanatory\": \"The solution identifies the causal mechanism of winner-take-all systems driving polarization and explains how RCV changes incentives to reduce it.\",\n    \"non_obvious\": \"While electoral reform is discussed, adopting ranked-choice voting as a direct structural fix requires a conceptual leap beyond typical partisan solutions.\",\n    \"scalability\": \"If implemented nationwide, it could affect millions of voters and fundamentally alter legislative dynamics across the entire federal government.\",\n    \"principle\": \"The insight about changing incentive structures through voting methods can apply to other representative systems beyond the U.S. context.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the issue of partisan gerrymandering, where electoral district boundaries are manipulated by state legislatures to favor one political party over another. This practice undermines democratic representation by allowing elected officials to choose their voters rather than voters choosing their representatives, leading to less competitive elections, decreased accountability, and increased political polarization. Gerrymandering entrenches incumbents and diminishes the influence of minority and opposition party voters, skewing policy outcomes away from the broader public interest.\n\nA concrete solution is to establish independent, nonpartisan redistricting commissions in every state, modeled after successful examples like California and Arizona. These commissions would use transparent criteria focused on compactness, contiguity, and respect for natural and political boundaries rather than partisan advantage. States can implement this through legislation or ballot initiatives, ensuring commissions operate with impartial experts and citizen members, with clear judicial oversight to prevent abuses. This reform is feasible as it has already been enacted in several states, and it is justified by its potential to restore fair representation, increase electoral competitiveness, and enhance public trust in the democratic process.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 1.0,
+          "constraint_overall": 1.0,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.3,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.44,
+            "rationale": {
+              "generative": "The solution enables new possibilities for fairer electoral systems and could inspire further democratic reforms.",
+              "explanatory": "It explains the causal mechanism of gerrymandering undermining representation but does not deeply unify broader political phenomena.",
+              "non_obvious": "While the idea of independent commissions exists, applying it universally challenges entrenched partisan assumptions.",
+              "scalability": "If adopted nationwide, it could significantly improve democratic representation for millions of voters.",
+              "principle": "The insight about impartial boundary drawing can transfer to other contexts requiring fair resource or power allocation."
+            }
+          },
+          "breakthrough_potential": 0.44,
+          "discard": false,
+          "final_score": 0.664,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 1.0,\n  \"overall\": 1.0,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (partisan gerrymandering) and proposes a specific, feasible solution (independent redistricting commissions) within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution is detailed, citing existing state examples and mechanisms such as transparent criteria and judicial oversight, making it a plausible and effective reform to improve democratic representation.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.3,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.44,\n  \"rationale\": {\n    \"generative\": \"The solution enables new possibilities for fairer electoral systems and could inspire further democratic reforms.\",\n    \"explanatory\": \"It explains the causal mechanism of gerrymandering undermining representation but does not deeply unify broader political phenomena.\",\n    \"non_obvious\": \"While the idea of independent commissions exists, applying it universally challenges entrenched partisan assumptions.\",\n    \"scalability\": \"If adopted nationwide, it could significantly improve democratic representation for millions of voters.\",\n    \"principle\": \"The insight about impartial boundary drawing can transfer to other contexts requiring fair resource or power allocation.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the increasing polarization and gridlock within Congress, largely driven by the winner-take-all electoral system and partisan gerrymandering. This structure incentivizes politicians to cater to extreme partisan bases rather than the broader electorate, leading to legislative stalemates and reduced government responsiveness. The lack of competition in many districts ensures that primary elections, dominated by more ideologically extreme voters, effectively decide representatives, marginalizing moderate voices and collaboration across party lines.\n\nA concrete solution is to implement independent, non-partisan redistricting commissions combined with ranked-choice voting (RCV) for congressional elections. Independent commissions would draw district boundaries more fairly, reducing gerrymandering and increasing electoral competitiveness. RCV allows voters to rank candidates by preference, encouraging candidates to appeal to a broader spectrum of voters and mitigating the polarization driven by winner-take-all outcomes. This dual approach has been tested in states like Maine (RCV) and California (independent redistricting), demonstrating increased voter engagement and more moderate elected officials. Together, these reforms would structurally promote compromise and reduce legislative gridlock in Congress.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.64,
+            "rationale": {
+              "generative": "The solution opens pathways for further electoral reforms and innovations in democratic representation.",
+              "explanatory": "It identifies root causes of polarization by linking electoral mechanics to political behavior and legislative outcomes.",
+              "non_obvious": "Combining ranked-choice voting with independent redistricting requires a conceptual leap beyond typical partisan reform proposals.",
+              "scalability": "If widely adopted, these reforms could transform the political landscape across all states and at the federal level, affecting millions.",
+              "principle": "The insight about structural incentives shaping political behavior can apply to other governance systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.64,
+          "discard": false,
+          "final_score": 0.764,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution combines independent redistricting commissions and ranked-choice voting, both with clear mechanisms and precedent, making the approach plausible and likely to reduce polarization and gridlock.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.64,\n  \"rationale\": {\n    \"generative\": \"The solution opens pathways for further electoral reforms and innovations in democratic representation.\",\n    \"explanatory\": \"It identifies root causes of polarization by linking electoral mechanics to political behavior and legislative outcomes.\",\n    \"non_obvious\": \"Combining ranked-choice voting with independent redistricting requires a conceptual leap beyond typical partisan reform proposals.\",\n    \"scalability\": \"If widely adopted, these reforms could transform the political landscape across all states and at the federal level, affecting millions.\",\n    \"principle\": \"The insight about structural incentives shaping political behavior can apply to other governance systems beyond the U.S.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the polarization and gridlock within Congress, often resulting from the winner-take-all electoral system and partisan gerrymandering. This structure incentivizes extreme partisanship, as candidates primarily compete in safe districts dominated by one party, pushing them toward ideological extremes to win primary elections. Consequently, bipartisan cooperation is rare, legislative productivity suffers, and public trust in government declines.\n\nA concrete solution is to implement independent redistricting commissions in all states combined with ranked-choice voting (RCV) for congressional elections. Independent commissions reduce partisan gerrymandering by drawing more competitive and representative districts, while RCV encourages candidates to appeal to a broader electorate to gain second and third-choice votes. This dual reform would incentivize moderation and coalition-building, reducing polarization and enhancing legislative effectiveness. Both reforms have been successfully adopted in states like California and Maine, demonstrating feasibility and positive impact on political dynamics.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.5,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.4,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.56,
+            "rationale": {
+              "generative": "The solution opens pathways for further electoral reforms and innovations in democratic representation.",
+              "explanatory": "It identifies root causes of polarization by linking electoral mechanics to legislative behavior and public trust.",
+              "non_obvious": "While electoral reform is discussed, combining independent commissions with ranked-choice voting is a less common, integrative approach.",
+              "scalability": "If widely adopted, it could transform political dynamics across all states, affecting millions of voters and government functionality.",
+              "principle": "The insight about incentives shaping political behavior can apply to other governance and organizational systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.56,
+          "discard": false,
+          "final_score": 0.716,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed solution of independent redistricting commissions combined with ranked-choice voting is well-justified, specific, and plausible, with clear mechanisms to reduce polarization and improve legislative effectiveness.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.5,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.4,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.56,\n  \"rationale\": {\n    \"generative\": \"The solution opens pathways for further electoral reforms and innovations in democratic representation.\",\n    \"explanatory\": \"It identifies root causes of polarization by linking electoral mechanics to legislative behavior and public trust.\",\n    \"non_obvious\": \"While electoral reform is discussed, combining independent commissions with ranked-choice voting is a less common, integrative approach.\",\n    \"scalability\": \"If widely adopted, it could transform political dynamics across all states, affecting millions of voters and government functionality.\",\n    \"principle\": \"The insight about incentives shaping political behavior can apply to other governance and organizational systems beyond the U.S.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the Senate\u2019s equal representation of states regardless of population size. This arrangement grants disproportionate political power to less-populous states, skewing national policy outcomes and legislative priorities away from the preferences of the majority of Americans. For example, states with small populations have the same two senators as highly populous states like California or Texas, allowing a minority of the population to effectively block legislation favored by the majority and distort federal resource allocation.\n\nA concrete and feasible solution is to implement a weighted voting system within the Senate, where each senator\u2019s vote is proportional to their state\u2019s population. Rather than abolishing equal representation, this approach maintains the bicameral structure and preserves the Senate as a voice for states, but aligns legislative influence with population size. This could be achieved through a constitutional amendment or an interstate compact, initially agreed upon by a critical mass of states, that reforms Senate voting rules internally. Such a system would enhance democratic fairness, making Senate outcomes more reflective of the American populace while respecting the federalist principle of state participation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.5,
+          "constraint_overall": 0.75,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.3,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.46,
+            "rationale": {
+              "generative": "The solution opens possibilities for reforming legislative voting systems beyond simple seat allocation but remains focused on a specific chamber.",
+              "explanatory": "It identifies the root cause of disproportionate influence but does not deeply unify broader systemic political dynamics.",
+              "non_obvious": "Proposing weighted voting within the Senate challenges the entrenched norm of equal state representation, requiring a conceptual leap.",
+              "scalability": "If implemented, it would affect the entire U.S. population and federal governance, significantly altering political power distribution.",
+              "principle": "The insight about weighted representation could apply to other federations or organizations balancing equal representation with population size."
+            }
+          },
+          "breakthrough_potential": 0.46,
+          "discard": false,
+          "final_score": 0.5760000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.5,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed weighted voting system is specific and maintains the Senate structure, but its feasibility is questionable due to the high difficulty of constitutional amendments or interstate compacts altering Senate voting rules, making practical success uncertain.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.3,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.46,\n  \"rationale\": {\n    \"generative\": \"The solution opens possibilities for reforming legislative voting systems beyond simple seat allocation but remains focused on a specific chamber.\",\n    \"explanatory\": \"It identifies the root cause of disproportionate influence but does not deeply unify broader systemic political dynamics.\",\n    \"non_obvious\": \"Proposing weighted voting within the Senate challenges the entrenched norm of equal state representation, requiring a conceptual leap.\",\n    \"scalability\": \"If implemented, it would affect the entire U.S. population and federal governance, significantly altering political power distribution.\",\n    \"principle\": \"The insight about weighted representation could apply to other federations or organizations balancing equal representation with population size.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the Senate\u2019s equal representation scheme, where each state has two senators regardless of population size. This design disproportionately amplifies the political power of smaller states, often skewing national policy outcomes and legislative priorities away from the preferences of the majority of Americans. Consequently, this structural imbalance contributes to legislative gridlock and diminishes public trust in democratic fairness, as populous states with large, diverse populations see their voices comparatively diluted.\n\nA concrete solution is to implement a weighted voting system within the Senate, where each senator\u2019s vote is proportionate to the population they represent. For example, a senator from a small state might have a fractional vote, while senators from populous states would wield votes scaled to their population size, calculated based on the latest Census data. This reform preserves the bicameral structure and state representation while aligning legislative influence more closely with democratic principles of equal representation by population. Such a change could be enacted through a constitutional amendment or an interstate compact among a majority of states, ensuring its legitimacy and enforceability. This would reduce the disproportionate power of small states, improve policy responsiveness, and enhance the legitimacy of Senate decisions.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.4,
+          "constraint_overall": 0.7,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.3,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.46,
+            "rationale": {
+              "generative": "The solution opens possibilities for rethinking representation models beyond fixed equal representation, enabling derivative reforms in legislative voting systems.",
+              "explanatory": "It identifies the causal mechanism of disproportionate power due to equal state representation and links it to legislative gridlock and democratic legitimacy.",
+              "non_obvious": "Proposing weighted voting within the Senate challenges the entrenched assumption of equal senatorial votes and requires a conceptual leap.",
+              "scalability": "If implemented, it would affect the entire U.S. population and government structure, deeply influencing national policy and democratic fairness.",
+              "principle": "While context-specific, the insight about weighted representation based on population can inform governance reforms in other federations or organizations."
+            }
+          },
+          "breakthrough_potential": 0.46,
+          "discard": false,
+          "final_score": 0.556,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.4,\n  \"overall\": 0.7,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"While the solution is specific and justified, implementing a weighted voting system in the Senate faces significant constitutional and political challenges, making it less likely to succeed despite its theoretical appeal.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.3,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.46,\n  \"rationale\": {\n    \"generative\": \"The solution opens possibilities for rethinking representation models beyond fixed equal representation, enabling derivative reforms in legislative voting systems.\",\n    \"explanatory\": \"It identifies the causal mechanism of disproportionate power due to equal state representation and links it to legislative gridlock and democratic legitimacy.\",\n    \"non_obvious\": \"Proposing weighted voting within the Senate challenges the entrenched assumption of equal senatorial votes and requires a conceptual leap.\",\n    \"scalability\": \"If implemented, it would affect the entire U.S. population and government structure, deeply influencing national policy and democratic fairness.\",\n    \"principle\": \"While context-specific, the insight about weighted representation based on population can inform governance reforms in other federations or organizations.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem within the American government is the increasing polarization and gridlock in Congress, largely driven by the winner-take-all electoral system and partisan gerrymandering. This structure incentivizes politicians to cater to extreme bases rather than moderate or diverse constituencies, leading to legislative stalemates and reduced effectiveness in addressing national issues. The result is a government that struggles to pass meaningful legislation, eroding public trust and weakening democratic responsiveness.\n\nA concrete solution to this problem is the implementation of independent, non-partisan redistricting commissions at the state level combined with the adoption of ranked-choice voting (RCV) in congressional elections. Independent commissions reduce partisan gerrymandering by creating more competitive and representative districts, while RCV encourages candidates to appeal to a broader electorate to gain second-choice votes, fostering moderation. This dual reform is feasible as several states have successfully implemented independent commissions and RCV in local or state elections, providing models for wider adoption. Together, these reforms would help break the cycle of polarization, promote legislative cooperation, and restore functionality to the American government.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.64,
+            "rationale": {
+              "generative": "The solution unlocks new possibilities for electoral reform and political moderation that can inspire further innovations in democratic processes.",
+              "explanatory": "It explains the causal mechanisms behind polarization by linking electoral incentives and district design to legislative gridlock.",
+              "non_obvious": "While electoral reform is discussed, combining independent commissions with ranked-choice voting as a dual approach requires a conceptual leap beyond typical partisan fixes.",
+              "scalability": "If widely adopted, these reforms could impact the entire U.S. political system and potentially serve as a model for other democracies facing similar issues.",
+              "principle": "The insight about aligning electoral incentives to reduce polarization can be transferred to other governance systems beyond the U.S. context."
+            }
+          },
+          "breakthrough_potential": 0.64,
+          "discard": false,
+          "final_score": 0.764,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution of independent redistricting commissions combined with ranked-choice voting is well-justified, specific, and plausible, with clear mechanisms to reduce polarization and improve legislative functionality.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.64,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new possibilities for electoral reform and political moderation that can inspire further innovations in democratic processes.\",\n    \"explanatory\": \"It explains the causal mechanisms behind polarization by linking electoral incentives and district design to legislative gridlock.\",\n    \"non_obvious\": \"While electoral reform is discussed, combining independent commissions with ranked-choice voting as a dual approach requires a conceptual leap beyond typical partisan fixes.\",\n    \"scalability\": \"If widely adopted, these reforms could impact the entire U.S. political system and potentially serve as a model for other democracies facing similar issues.\",\n    \"principle\": \"The insight about aligning electoral incentives to reduce polarization can be transferred to other governance systems beyond the U.S. context.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the increasing polarization and gridlock in Congress, largely driven by the current legislative rules and partisanship incentives. The Senate\u2019s filibuster rule, which requires a 60-vote supermajority to pass most legislation, empowers a minority of senators to block bills, often resulting in stalemates even when a simple majority supports change. This creates legislative paralysis, undermining the government\u2019s ability to respond effectively to pressing issues and contributing to public frustration with political dysfunction.\n\nA concrete solution is to reform the filibuster to require a \u201ctalking filibuster,\u201d where senators must continuously speak on the floor to maintain it, rather than allowing silent or proxy blocking. This change would raise the cost of obstruction, encouraging negotiation and compromise while preserving minority rights to debate. By making it harder to block bills without sustained effort, the talking filibuster would reduce gridlock, incentivize collaboration, and improve legislative productivity. This reform is feasible through a majority vote in the Senate and has been proposed by lawmakers across the political spectrum as a practical step toward a more functional Congress.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.3,
+            "explanatory_depth": 0.4,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.6,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.4,
+            "rationale": {
+              "generative": "The solution enables some derivative innovations in legislative procedure but is largely a targeted fix.",
+              "explanatory": "It explains the causal role of the filibuster in legislative gridlock but does not unify broader political dysfunction.",
+              "non_obvious": "Requiring continuous speech to maintain a filibuster is a known reform idea, so it is somewhat intuitive.",
+              "scalability": "If implemented, it could significantly improve legislative efficiency affecting millions of citizens.",
+              "principle": "The insight about raising the cost of obstruction to encourage compromise can apply beyond this context."
+            }
+          },
+          "breakthrough_potential": 0.4,
+          "discard": false,
+          "final_score": 0.62,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (filibuster-induced gridlock) and proposes a specific, feasible solution (talking filibuster) within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed talking filibuster is a concrete mechanism that raises the cost of obstruction, encouraging compromise while preserving minority rights, making it a plausible and practical reform to reduce legislative gridlock.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.3,\n  \"explanatory_depth\": 0.4,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.6,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.4,\n  \"rationale\": {\n    \"generative\": \"The solution enables some derivative innovations in legislative procedure but is largely a targeted fix.\",\n    \"explanatory\": \"It explains the causal role of the filibuster in legislative gridlock but does not unify broader political dysfunction.\",\n    \"non_obvious\": \"Requiring continuous speech to maintain a filibuster is a known reform idea, so it is somewhat intuitive.\",\n    \"scalability\": \"If implemented, it could significantly improve legislative efficiency affecting millions of citizens.\",\n    \"principle\": \"The insight about raising the cost of obstruction to encourage compromise can apply beyond this context.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the Senate's representation system, where each state, regardless of population size, has two senators. This arrangement disproportionately empowers smaller states at the expense of larger, more populous ones, leading to unequal representation and legislative gridlock. For example, California, with nearly 40 million residents, has the same Senate representation as Wyoming, which has fewer than 600,000 people. This imbalance can distort policy outcomes and hinder the government's ability to respond effectively to the needs of the majority of Americans.\n\nA concrete solution is to implement a proportional representation system for the Senate, where the number of senators per state corresponds to its population size. This could be achieved through a constitutional amendment that increases the total number of senators and allocates seats based on population tiers, ensuring smaller states still retain a minimum level of representation but larger states gain more proportional influence. This reform would make the Senate more democratic and responsive, reducing legislative deadlock caused by a minority of states blocking legislation favored by the majority. While politically challenging, gradual implementation tied to census cycles and clear communication about fairness and democratic principles could build necessary public and political support.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.4,
+          "constraint_overall": 0.7,
+          "breakthrough_scores": {
+            "generative_power": 0.3,
+            "explanatory_depth": 0.4,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.42,
+            "rationale": {
+              "generative": "The solution opens possibilities for rethinking legislative representation but is largely a direct fix rather than a platform for many derivative innovations.",
+              "explanatory": "It explains the causal mechanism of unequal representation leading to gridlock but does not deeply unify broader political phenomena.",
+              "non_obvious": "The idea challenges a foundational constitutional design but is a known critique and proposed reform, so it is moderately non-obvious.",
+              "scalability": "If implemented, it would affect the entire U.S. political system and millions of citizens, significantly altering governance dynamics.",
+              "principle": "The insight about proportional representation has relevance beyond the U.S. Senate but is still tied to legislative representation contexts."
+            }
+          },
+          "breakthrough_potential": 0.42,
+          "discard": false,
+          "final_score": 0.532,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.4,\n  \"overall\": 0.7,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"While the solution is specific and justified, implementing a constitutional amendment to change Senate representation is highly politically challenging and unlikely to succeed, reducing its practical usefulness.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.3,\n  \"explanatory_depth\": 0.4,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.42,\n  \"rationale\": {\n    \"generative\": \"The solution opens possibilities for rethinking legislative representation but is largely a direct fix rather than a platform for many derivative innovations.\",\n    \"explanatory\": \"It explains the causal mechanism of unequal representation leading to gridlock but does not deeply unify broader political phenomena.\",\n    \"non_obvious\": \"The idea challenges a foundational constitutional design but is a known critique and proposed reform, so it is moderately non-obvious.\",\n    \"scalability\": \"If implemented, it would affect the entire U.S. political system and millions of citizens, significantly altering governance dynamics.\",\n    \"principle\": \"The insight about proportional representation has relevance beyond the U.S. Senate but is still tied to legislative representation contexts.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the Senate\u2019s equal representation for states regardless of population size. This design, intended to protect smaller states, disproportionately amplifies their political power, resulting in legislative gridlock and policies that can contradict the preferences of the national majority. For example, states with small populations have the same Senate representation as states with populations tens or hundreds of times larger, which can thwart broadly supported legislation and skew national priorities.\n\nA concrete solution is to implement a weighted voting system within the Senate, where each senator\u2019s vote is proportional to their state\u2019s population, while retaining the traditional equal-state membership structure. For instance, each senator\u2019s vote could be scaled based on their state\u2019s share of the total U.S. population, ensuring that larger states have greater influence without eliminating small states\u2019 guaranteed representation. This reform is feasible through statutory change rather than a constitutional amendment, as it pertains to Senate procedures, and it would better align the Senate\u2019s legislative outcomes with the will of the majority while preserving the federalist principle of state representation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.4,
+          "constraint_overall": 0.7,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.3,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.46,
+            "rationale": {
+              "generative": "The solution opens possibilities for new voting systems and federal reforms but remains focused on a specific institutional change.",
+              "explanatory": "It identifies the root cause of disproportionate influence and legislative gridlock tied to equal representation in the Senate.",
+              "non_obvious": "Proposing weighted voting within the Senate challenges the entrenched assumption of equal senatorial votes per state.",
+              "scalability": "If implemented, it could significantly affect national policy outcomes impacting all Americans by better aligning representation with population.",
+              "principle": "While context-specific to the U.S. Senate, the idea of weighted voting based on population could inspire reforms in other federations or representative bodies."
+            }
+          },
+          "breakthrough_potential": 0.46,
+          "discard": false,
+          "final_score": 0.556,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.4,\n  \"overall\": 0.7,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"While the weighted voting proposal is specific and preserves state representation, it may face significant political and procedural challenges, and the claim that it can be implemented by statutory change rather than constitutional amendment is questionable, reducing its practical likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.3,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.46,\n  \"rationale\": {\n    \"generative\": \"The solution opens possibilities for new voting systems and federal reforms but remains focused on a specific institutional change.\",\n    \"explanatory\": \"It identifies the root cause of disproportionate influence and legislative gridlock tied to equal representation in the Senate.\",\n    \"non_obvious\": \"Proposing weighted voting within the Senate challenges the entrenched assumption of equal senatorial votes per state.\",\n    \"scalability\": \"If implemented, it could significantly affect national policy outcomes impacting all Americans by better aligning representation with population.\",\n    \"principle\": \"While context-specific to the U.S. Senate, the idea of weighted voting based on population could inspire reforms in other federations or representative bodies.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the Senate\u2019s equal representation for all states regardless of population size. This arrangement grants disproportionate influence to less populous states, enabling a minority of the population to wield significant legislative power. As a result, policies can be skewed to favor smaller states, undermining the principle of democratic representation and often leading to legislative gridlock.\n\nA concrete solution is to reform the Senate by adjusting voting power to better reflect population while preserving each state\u2019s equal representation in principle. One feasible method is to maintain two Senators per state but weight their votes in the Senate based on the state's population\u2014 for example, by allocating fractional votes that sum to a state's proportional share of the national population. This maintains state identity in Senate seating but aligns legislative influence more closely with democratic norms. This approach is specific and feasible because it requires only internal Senate rule changes, not a constitutional amendment, making it politically achievable while addressing representational imbalance.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.3,
+            "non_obviousness": 0.6,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.5,
+            "rationale": {
+              "generative": "The solution opens possibilities for new voting structures and weighted representation models beyond the Senate context.",
+              "explanatory": "It addresses the root cause of representational imbalance by linking voting power directly to population rather than just state equality.",
+              "non_obvious": "Weighting Senate votes while preserving equal state representation challenges the entrenched binary assumption of equal votes per Senator.",
+              "scalability": "If adopted, it could significantly reshape legislative influence affecting all Americans and potentially inspire reforms in other federations.",
+              "principle": "The insight of decoupling physical representation from voting power can be applied to other governance and organizational systems."
+            }
+          },
+          "breakthrough_potential": 0.5,
+          "discard": false,
+          "final_score": 0.62,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed weighted voting system is a concrete mechanism that could address representational imbalance without a constitutional amendment, but its political feasibility and practical implementation challenges reduce its likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.3,\n  \"non_obviousness\": 0.6,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.5,\n  \"rationale\": {\n    \"generative\": \"The solution opens possibilities for new voting structures and weighted representation models beyond the Senate context.\",\n    \"explanatory\": \"It addresses the root cause of representational imbalance by linking voting power directly to population rather than just state equality.\",\n    \"non_obvious\": \"Weighting Senate votes while preserving equal state representation challenges the entrenched binary assumption of equal votes per Senator.\",\n    \"scalability\": \"If adopted, it could significantly reshape legislative influence affecting all Americans and potentially inspire reforms in other federations.\",\n    \"principle\": \"The insight of decoupling physical representation from voting power can be applied to other governance and organizational systems.\"\n  }\n}"
+        }
+      }
+    ],
+    "top_k": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the increasing polarization and gridlock within Congress, largely driven by the winner-take-all electoral system and partisan gerrymandering. This structure incentivizes politicians to cater to extreme partisan bases rather than the broader electorate, leading to legislative stalemates and reduced government responsiveness. The lack of competition in many districts ensures that primary elections, dominated by more ideologically extreme voters, effectively decide representatives, marginalizing moderate voices and collaboration across party lines.\n\nA concrete solution is to implement independent, non-partisan redistricting commissions combined with ranked-choice voting (RCV) for congressional elections. Independent commissions would draw district boundaries more fairly, reducing gerrymandering and increasing electoral competitiveness. RCV allows voters to rank candidates by preference, encouraging candidates to appeal to a broader spectrum of voters and mitigating the polarization driven by winner-take-all outcomes. This dual approach has been tested in states like Maine (RCV) and California (independent redistricting), demonstrating increased voter engagement and more moderate elected officials. Together, these reforms would structurally promote compromise and reduce legislative gridlock in Congress.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.64,
+            "rationale": {
+              "generative": "The solution opens pathways for further electoral reforms and innovations in democratic representation.",
+              "explanatory": "It identifies root causes of polarization by linking electoral mechanics to political behavior and legislative outcomes.",
+              "non_obvious": "Combining ranked-choice voting with independent redistricting requires a conceptual leap beyond typical partisan reform proposals.",
+              "scalability": "If widely adopted, these reforms could transform the political landscape across all states and at the federal level, affecting millions.",
+              "principle": "The insight about structural incentives shaping political behavior can apply to other governance systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.64,
+          "discard": false,
+          "final_score": 0.764,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution combines independent redistricting commissions and ranked-choice voting, both with clear mechanisms and precedent, making the approach plausible and likely to reduce polarization and gridlock.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.64,\n  \"rationale\": {\n    \"generative\": \"The solution opens pathways for further electoral reforms and innovations in democratic representation.\",\n    \"explanatory\": \"It identifies root causes of polarization by linking electoral mechanics to political behavior and legislative outcomes.\",\n    \"non_obvious\": \"Combining ranked-choice voting with independent redistricting requires a conceptual leap beyond typical partisan reform proposals.\",\n    \"scalability\": \"If widely adopted, these reforms could transform the political landscape across all states and at the federal level, affecting millions.\",\n    \"principle\": \"The insight about structural incentives shaping political behavior can apply to other governance systems beyond the U.S.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem within the American government is the increasing polarization and gridlock in Congress, largely driven by the winner-take-all electoral system and partisan gerrymandering. This structure incentivizes politicians to cater to extreme bases rather than moderate or diverse constituencies, leading to legislative stalemates and reduced effectiveness in addressing national issues. The result is a government that struggles to pass meaningful legislation, eroding public trust and weakening democratic responsiveness.\n\nA concrete solution to this problem is the implementation of independent, non-partisan redistricting commissions at the state level combined with the adoption of ranked-choice voting (RCV) in congressional elections. Independent commissions reduce partisan gerrymandering by creating more competitive and representative districts, while RCV encourages candidates to appeal to a broader electorate to gain second-choice votes, fostering moderation. This dual reform is feasible as several states have successfully implemented independent commissions and RCV in local or state elections, providing models for wider adoption. Together, these reforms would help break the cycle of polarization, promote legislative cooperation, and restore functionality to the American government.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.64,
+            "rationale": {
+              "generative": "The solution unlocks new possibilities for electoral reform and political moderation that can inspire further innovations in democratic processes.",
+              "explanatory": "It explains the causal mechanisms behind polarization by linking electoral incentives and district design to legislative gridlock.",
+              "non_obvious": "While electoral reform is discussed, combining independent commissions with ranked-choice voting as a dual approach requires a conceptual leap beyond typical partisan fixes.",
+              "scalability": "If widely adopted, these reforms could impact the entire U.S. political system and potentially serve as a model for other democracies facing similar issues.",
+              "principle": "The insight about aligning electoral incentives to reduce polarization can be transferred to other governance systems beyond the U.S. context."
+            }
+          },
+          "breakthrough_potential": 0.64,
+          "discard": false,
+          "final_score": 0.764,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution of independent redistricting commissions combined with ranked-choice voting is well-justified, specific, and plausible, with clear mechanisms to reduce polarization and improve legislative functionality.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.64,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new possibilities for electoral reform and political moderation that can inspire further innovations in democratic processes.\",\n    \"explanatory\": \"It explains the causal mechanisms behind polarization by linking electoral incentives and district design to legislative gridlock.\",\n    \"non_obvious\": \"While electoral reform is discussed, combining independent commissions with ranked-choice voting as a dual approach requires a conceptual leap beyond typical partisan fixes.\",\n    \"scalability\": \"If widely adopted, these reforms could impact the entire U.S. political system and potentially serve as a model for other democracies facing similar issues.\",\n    \"principle\": \"The insight about aligning electoral incentives to reduce polarization can be transferred to other governance systems beyond the U.S. context.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the increasing polarization and gridlock in Congress, largely due to the winner-take-all electoral system and gerrymandering. This system incentivizes politicians to cater to partisan extremes rather than moderate or bipartisan solutions, undermining effective governance. Gerrymandering exacerbates this by creating \u201csafe\u201d districts where incumbents face little competition, reducing accountability and encouraging ideological rigidity.\n\nA concrete solution is to implement independent, nonpartisan redistricting commissions at the state level to draw electoral districts based on neutral criteria like geographic contiguity and population equality. This would reduce gerrymandering and promote more competitive districts, encouraging candidates to appeal to broader constituencies. Additionally, introducing ranked-choice voting in federal elections could incentivize moderation by allowing voters to rank candidates by preference, diminishing the spoiler effect and enabling more diverse voices without electing extremists. These reforms are feasible, as several states have successfully adopted them, and they directly address root causes of legislative dysfunction, fostering a more responsive and effective Congress.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.5,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.4,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.56,
+            "rationale": {
+              "generative": "The solution opens pathways for electoral reform innovations like ranked-choice voting and independent commissions that can inspire further democratic improvements.",
+              "explanatory": "It identifies root causes of polarization by explaining how electoral incentives and district design drive legislative dysfunction.",
+              "non_obvious": "While electoral reform is discussed, combining independent redistricting with ranked-choice voting as a systemic fix requires a moderate conceptual leap.",
+              "scalability": "If widely adopted, these reforms could transform the political landscape for millions, improving governance at a national scale.",
+              "principle": "The insight about aligning incentives through neutral districting and voting methods can apply to other representative systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.56,
+          "discard": false,
+          "final_score": 0.716,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes two concrete, feasible solutions within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solutions\u2014independent redistricting commissions and ranked-choice voting\u2014are specific, plausible, and directly address the root causes of polarization and gridlock, making them highly likely to improve governance if implemented.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.5,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.4,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.56,\n  \"rationale\": {\n    \"generative\": \"The solution opens pathways for electoral reform innovations like ranked-choice voting and independent commissions that can inspire further democratic improvements.\",\n    \"explanatory\": \"It identifies root causes of polarization by explaining how electoral incentives and district design drive legislative dysfunction.\",\n    \"non_obvious\": \"While electoral reform is discussed, combining independent redistricting with ranked-choice voting as a systemic fix requires a moderate conceptual leap.\",\n    \"scalability\": \"If widely adopted, these reforms could transform the political landscape for millions, improving governance at a national scale.\",\n    \"principle\": \"The insight about aligning incentives through neutral districting and voting methods can apply to other representative systems beyond the U.S.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the polarization and gridlock within Congress, often resulting from the winner-take-all electoral system and partisan gerrymandering. This structure incentivizes extreme partisanship, as candidates primarily compete in safe districts dominated by one party, pushing them toward ideological extremes to win primary elections. Consequently, bipartisan cooperation is rare, legislative productivity suffers, and public trust in government declines.\n\nA concrete solution is to implement independent redistricting commissions in all states combined with ranked-choice voting (RCV) for congressional elections. Independent commissions reduce partisan gerrymandering by drawing more competitive and representative districts, while RCV encourages candidates to appeal to a broader electorate to gain second and third-choice votes. This dual reform would incentivize moderation and coalition-building, reducing polarization and enhancing legislative effectiveness. Both reforms have been successfully adopted in states like California and Maine, demonstrating feasibility and positive impact on political dynamics.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.5,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.4,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.56,
+            "rationale": {
+              "generative": "The solution opens pathways for further electoral reforms and innovations in democratic representation.",
+              "explanatory": "It identifies root causes of polarization by linking electoral mechanics to legislative behavior and public trust.",
+              "non_obvious": "While electoral reform is discussed, combining independent commissions with ranked-choice voting is a less common, integrative approach.",
+              "scalability": "If widely adopted, it could transform political dynamics across all states, affecting millions of voters and government functionality.",
+              "principle": "The insight about incentives shaping political behavior can apply to other governance and organizational systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.56,
+          "discard": false,
+          "final_score": 0.716,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed solution of independent redistricting commissions combined with ranked-choice voting is well-justified, specific, and plausible, with clear mechanisms to reduce polarization and improve legislative effectiveness.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.5,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.4,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.56,\n  \"rationale\": {\n    \"generative\": \"The solution opens pathways for further electoral reforms and innovations in democratic representation.\",\n    \"explanatory\": \"It identifies root causes of polarization by linking electoral mechanics to legislative behavior and public trust.\",\n    \"non_obvious\": \"While electoral reform is discussed, combining independent commissions with ranked-choice voting is a less common, integrative approach.\",\n    \"scalability\": \"If widely adopted, it could transform political dynamics across all states, affecting millions of voters and government functionality.\",\n    \"principle\": \"The insight about incentives shaping political behavior can apply to other governance and organizational systems beyond the U.S.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the excessive polarization and gridlock within Congress, largely fueled by the winner-take-all, single-member district electoral system. This structure encourages politicians to cater to extreme partisan bases rather than the broader electorate, making bipartisan cooperation rare and legislative productivity low. As a result, important policy decisions are often stalled, reducing government effectiveness and public trust.\n\nA concrete solution is to implement ranked-choice voting (RCV) for House and Senate elections at the federal level. RCV allows voters to rank candidates by preference, which incentivizes candidates to appeal to a wider range of voters rather than just the partisan base. This can lead to the election of more moderate and consensus-driven representatives, reducing polarization and facilitating legislative compromise. Several states and cities have successfully used RCV, demonstrating its feasibility and potential to improve democratic representation and governance on a national scale.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.5,
+            "non_obviousness": 0.4,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.54,
+            "rationale": {
+              "generative": "Ranked-choice voting opens new possibilities for electoral reform and more nuanced democratic processes beyond simple plurality systems.",
+              "explanatory": "The solution identifies the causal mechanism of winner-take-all systems driving polarization and explains how RCV changes incentives to reduce it.",
+              "non_obvious": "While electoral reform is discussed, adopting ranked-choice voting as a direct structural fix requires a conceptual leap beyond typical partisan solutions.",
+              "scalability": "If implemented nationwide, it could affect millions of voters and fundamentally alter legislative dynamics across the entire federal government.",
+              "principle": "The insight about changing incentive structures through voting methods can apply to other representative systems beyond the U.S. context."
+            }
+          },
+          "breakthrough_potential": 0.54,
+          "discard": false,
+          "final_score": 0.704,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-defined mechanism with a plausible impact on reducing polarization and gridlock, supported by examples of successful implementation, making the solution highly useful.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.5,\n  \"non_obviousness\": 0.4,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.54,\n  \"rationale\": {\n    \"generative\": \"Ranked-choice voting opens new possibilities for electoral reform and more nuanced democratic processes beyond simple plurality systems.\",\n    \"explanatory\": \"The solution identifies the causal mechanism of winner-take-all systems driving polarization and explains how RCV changes incentives to reduce it.\",\n    \"non_obvious\": \"While electoral reform is discussed, adopting ranked-choice voting as a direct structural fix requires a conceptual leap beyond typical partisan solutions.\",\n    \"scalability\": \"If implemented nationwide, it could affect millions of voters and fundamentally alter legislative dynamics across the entire federal government.\",\n    \"principle\": \"The insight about changing incentive structures through voting methods can apply to other representative systems beyond the U.S. context.\"\n  }\n}"
+        }
+      }
+    ],
+    "final_output": "One significant structural problem in the American government is the increasing polarization and gridlock within Congress, largely driven by the winner-take-all electoral system and partisan gerrymandering. This structure incentivizes politicians to cater to extreme partisan bases rather than the broader electorate, leading to legislative stalemates and reduced government responsiveness. The lack of competition in many districts ensures that primary elections, dominated by more ideologically extreme voters, effectively decide representatives, marginalizing moderate voices and collaboration across party lines.\n\nA concrete solution is to implement independent, non-partisan redistricting commissions combined with ranked-choice voting (RCV) for congressional elections. Independent commissions would draw district boundaries more fairly, reducing gerrymandering and increasing electoral competitiveness. RCV allows voters to rank candidates by preference, encouraging candidates to appeal to a broader spectrum of voters and mitigating the polarization driven by winner-take-all outcomes. This dual approach has been tested in states like Maine (RCV) and California (independent redistricting), demonstrating increased voter engagement and more moderate elected officials. Together, these reforms would structurally promote compromise and reduce legislative gridlock in Congress.",
+    "selected": {
+      "mode": "single_pass",
+      "reformulation": "",
+      "scores": {
+        "constraint_satisfaction": 1.0,
+        "usefulness": 0.9,
+        "constraint_overall": 0.95,
+        "breakthrough_scores": {
+          "generative_power": 0.6,
+          "explanatory_depth": 0.7,
+          "non_obviousness": 0.5,
+          "scalability_of_impact": 0.8,
+          "principle_over_implementation": 0.6,
+          "breakthrough_potential": 0.64,
+          "rationale": {
+            "generative": "The solution opens pathways for further electoral reforms and innovations in democratic representation.",
+            "explanatory": "It identifies root causes of polarization by linking electoral mechanics to political behavior and legislative outcomes.",
+            "non_obvious": "Combining ranked-choice voting with independent redistricting requires a conceptual leap beyond typical partisan reform proposals.",
+            "scalability": "If widely adopted, these reforms could transform the political landscape across all states and at the federal level, affecting millions.",
+            "principle": "The insight about structural incentives shaping political behavior can apply to other governance systems beyond the U.S."
+          }
+        },
+        "breakthrough_potential": 0.64,
+        "discard": false,
+        "final_score": 0.764,
+        "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution combines independent redistricting commissions and ranked-choice voting, both with clear mechanisms and precedent, making the approach plausible and likely to reduce polarization and gridlock.\"\n  }\n}",
+        "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.64,\n  \"rationale\": {\n    \"generative\": \"The solution opens pathways for further electoral reforms and innovations in democratic representation.\",\n    \"explanatory\": \"It identifies root causes of polarization by linking electoral mechanics to political behavior and legislative outcomes.\",\n    \"non_obvious\": \"Combining ranked-choice voting with independent redistricting requires a conceptual leap beyond typical partisan reform proposals.\",\n    \"scalability\": \"If widely adopted, these reforms could transform the political landscape across all states and at the federal level, affecting millions.\",\n    \"principle\": \"The insight about structural incentives shaping political behavior can apply to other governance systems beyond the U.S.\"\n  }\n}"
+      }
+    }
+  }
+}

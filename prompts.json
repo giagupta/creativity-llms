@@ -1,0 +1,24 @@
+{
+  "prompts": [
+    {
+      "id": "american_government",
+      "text": "Analyze the American government. Identify one significant structural problem and propose a concrete solution. The solution should be specific, feasible, and clearly justified. (Maximum two paragraphs.)"
+    },
+    {
+      "id": "ai_interpretability",
+      "text": "Explain one major challenge in interpreting modern AI systems (e.g., deep neural networks) and propose a concrete research or engineering approach that would meaningfully improve interpretability in practice. Your proposal must be specific, feasible, and clearly justified. (Maximum two paragraphs.)"
+    },
+    {
+      "id": "moral_circle_factory_farming",
+      "text": "Identify one key psychological or structural barrier that prevents people from expanding their moral concern to include factory-farmed animals. Propose a concrete intervention that could realistically shift behavior at scale, and justify why it would work. (Maximum two paragraphs.)"
+    },
+    {
+      "id": "climate_change",
+      "text": "Identify one major structural bottleneck that prevents effective climate action and propose a concrete, feasible intervention that targets this bottleneck. Explain why it would have outsized impact. (Maximum two paragraphs.)"
+    },
+    {
+      "id": "education_system",
+      "text": "Analyze the education system. Identify one structural problem that meaningfully harms learning or equity and propose a concrete, feasible solution. Explain the mechanism and why it would work. (Maximum two paragraphs.)"
+    }
+  ]
+}
