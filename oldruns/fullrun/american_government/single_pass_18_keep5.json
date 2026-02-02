@@ -1,0 +1,780 @@
+{
+  "timestamp": "2026-02-01T16:03:57",
+  "prompt_id": "american_government",
+  "prompt": "Analyze the American government. Identify one significant structural problem and propose a concrete solution. The solution should be specific, feasible, and clearly justified. (Maximum two paragraphs.)",
+  "condition": "single_pass_18_keep5",
+  "config": {
+    "model": {
+      "name": "gpt-4.1-mini",
+      "max_tokens": 350
+    },
+    "conditions": [
+      "single_pass_18_keep5",
+      "divergent_convergent_18_keep5",
+      "evolutionary_examples"
+    ],
+    "budget": {
+      "max_candidates_per_prompt": 18,
+      "keep_top_k": 5
+    },
+    "sampling": {
+      "single_pass": {
+        "temperature": 0.9,
+        "top_p": 1.0
+      },
+      "reframing": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "num_reformulations": 3
+      },
+      "combinational": {
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "transformational": {
+        "temperature": 1.1,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "judge": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "selection": {
+      "discard_if_constraint_below": 0.4,
+      "constraint_weight": 0.2,
+      "usefulness_weight": 0.2,
+      "breakthrough_weight": 0.6
+    }
+  },
+  "result": {
+    "reformulations": [],
+    "candidates": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the over-centralization of political power within the two major parties, which creates a duopoly that limits political diversity and innovation. This duopolistic structure marginalizes third parties and independent candidates, stifling alternative viewpoints and reducing voter engagement. The winner-takes-all electoral system for most offices incentivizes polarization and discourages compromise, leading to legislative gridlock and public distrust.\n\nA concrete, substantially different solution is to implement a rotating multi-party governance model at the federal level, inspired by certain parliamentary coalition practices but adapted for the American context. Under this system, after an election, the top three parties with the highest vote totals form a proportional coalition government for a fixed term\u2014say two years within the four-year presidential cycle\u2014sharing executive and legislative leadership roles based on their vote shares. Rather than a single president holding all executive power, a council composed of the coalition leaders would make collective decisions, with a rotating chairperson role among them. This model decentralizes power within the executive branch, incentivizes cooperation among diverse political groups, and better reflects the electorate\u2019s spectrum of views, while maintaining stability and accountability through fixed terms and structured rotation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.5,
+          "constraint_overall": 0.75,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The rotating multi-party governance model unlocks numerous new political structures and coalition dynamics beyond the current duopoly.",
+              "explanatory": "It explains how power centralization and winner-takes-all incentives cause polarization and gridlock, proposing a mechanism to distribute power more equitably.",
+              "non_obvious": "The idea of a rotating executive council replacing a single president breaks deeply ingrained assumptions about American executive power.",
+              "scalability": "If implemented, it could transform governance for hundreds of millions of Americans and influence democratic systems worldwide.",
+              "principle": "The insight about decentralizing executive power and incentivizing coalition governance can apply to other political and organizational systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.78,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.5,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"While the proposed rotating multi-party governance model is detailed and addresses power centralization, it is somewhat idealistic and may face significant practical challenges in the U.S. context, reducing its likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The rotating multi-party governance model unlocks numerous new political structures and coalition dynamics beyond the current duopoly.\",\n    \"explanatory\": \"It explains how power centralization and winner-takes-all incentives cause polarization and gridlock, proposing a mechanism to distribute power more equitably.\",\n    \"non_obvious\": \"The idea of a rotating executive council replacing a single president breaks deeply ingrained assumptions about American executive power.\",\n    \"scalability\": \"If implemented, it could transform governance for hundreds of millions of Americans and influence democratic systems worldwide.\",\n    \"principle\": \"The insight about decentralizing executive power and incentivizing coalition governance can apply to other political and organizational systems beyond the U.S.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the hyper-partisan nature of congressional districts, which results in legislative polarization and diminishes incentives for cross-party cooperation. This is largely driven by the use of winner-take-all single-member districts that encourage politicians to cater to extreme bases rather than the median voter. Traditional reform proposals often focus on independent redistricting commissions or proportional representation, approaches that face entrenched political resistance or require sweeping constitutional changes.\n\nA substantially different and feasible solution is to implement a rotating \u201cdistrict partnership\u201d system, where pairs of neighboring congressional districts are combined every two election cycles to elect two representatives jointly through a ranked-choice voting system. This would compel candidates to appeal to a broader, more diverse constituency while maintaining geographic cohesion. By institutionalizing shared accountability and promoting coalition-building within these paired districts, this approach reduces polarization incentives without abolishing single-member districts or requiring a constitutional amendment. The dynamic nature of the partnerships ensures continued reevaluation of political alliances and prevents the entrenchment of safe partisan strongholds.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.72,
+            "rationale": {
+              "generative": "The rotating district partnership system opens new avenues for electoral reform and coalition-building beyond traditional redistricting or voting methods.",
+              "explanatory": "It addresses the root cause of polarization by altering incentives and constituency composition rather than just symptoms like gerrymandering.",
+              "non_obvious": "Combining districts temporarily and using ranked-choice voting to foster cross-party appeal is a novel conceptual leap beyond standard reforms.",
+              "scalability": "If widely adopted, it could transform legislative behavior across all U.S. congressional districts, impacting millions of voters and representatives.",
+              "principle": "The insight about dynamic, shared constituencies to reduce polarization can be adapted to other representative systems facing similar factionalism."
+            }
+          },
+          "breakthrough_potential": 0.72,
+          "discard": false,
+          "final_score": 0.792,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed rotating district partnership system with ranked-choice voting is a concrete mechanism aimed at reducing polarization and encouraging broader representation, making it a plausible and innovative solution, though it may face practical challenges in implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.72,\n  \"rationale\": {\n    \"generative\": \"The rotating district partnership system opens new avenues for electoral reform and coalition-building beyond traditional redistricting or voting methods.\",\n    \"explanatory\": \"It addresses the root cause of polarization by altering incentives and constituency composition rather than just symptoms like gerrymandering.\",\n    \"non_obvious\": \"Combining districts temporarily and using ranked-choice voting to foster cross-party appeal is a novel conceptual leap beyond standard reforms.\",\n    \"scalability\": \"If widely adopted, it could transform legislative behavior across all U.S. congressional districts, impacting millions of voters and representatives.\",\n    \"principle\": \"The insight about dynamic, shared constituencies to reduce polarization can be adapted to other representative systems facing similar factionalism.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the extreme polarization and gridlock resulting from the winner-takes-all, single-member district electoral system, which incentivizes politicians to appeal primarily to their partisan base rather than a broader constituency. This system discourages cooperation and moderates, fostering adversarial politics and legislative stalemate. While typical solutions propose ranked-choice voting or proportional representation, these often face deep political resistance and focus on electoral mechanics rather than institutional incentives.\n\nA substantially different and feasible solution would be to restructure congressional committees as bipartisan teams with enforced power-sharing rules that rotate chairmanship and require supermajority votes within committees to advance legislation. By institutionalizing cooperation at the committee level\u2014where most legislation is refined\u2014this would create built-in incentives for bipartisan negotiation and consensus-building before bills reach the floor. Committees would no longer be dominated by a single party, which reduces zero-sum competition and encourages coalition policymaking. This structural reform leverages internal procedural rules to break polarization dynamics without overhauling electoral systems, making it a practical innovation that directly targets legislative dysfunction at its procedural source.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.68,
+            "rationale": {
+              "generative": "The solution opens new avenues for institutional design focused on procedural incentives rather than electoral reform, enabling derivative innovations in legislative governance.",
+              "explanatory": "It explains the causal mechanism of polarization through committee power dynamics and how altering these can reduce gridlock.",
+              "non_obvious": "The approach breaks from common electoral-focused reforms by targeting internal committee structures and power-sharing rules, which is a less intuitive angle.",
+              "scalability": "If widely adopted, it could transform legislative processes across the entire U.S. Congress, affecting millions through more effective governance.",
+              "principle": "The insight about institutional incentives and enforced bipartisanship can be applied to other polarized decision-making bodies beyond the U.S. government."
+            }
+          },
+          "breakthrough_potential": 0.68,
+          "discard": false,
+          "final_score": 0.768,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution is concrete and plausible, detailing mechanisms like bipartisan committees, rotating chairmanship, and supermajority voting to reduce polarization, making it a practical approach to legislative gridlock.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.68,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for institutional design focused on procedural incentives rather than electoral reform, enabling derivative innovations in legislative governance.\",\n    \"explanatory\": \"It explains the causal mechanism of polarization through committee power dynamics and how altering these can reduce gridlock.\",\n    \"non_obvious\": \"The approach breaks from common electoral-focused reforms by targeting internal committee structures and power-sharing rules, which is a less intuitive angle.\",\n    \"scalability\": \"If widely adopted, it could transform legislative processes across the entire U.S. Congress, affecting millions through more effective governance.\",\n    \"principle\": \"The insight about institutional incentives and enforced bipartisanship can be applied to other polarized decision-making bodies beyond the U.S. government.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the rigid partisanship entrenched by the winner-take-all electoral system, which often leads to polarization and gridlock within Congress. This system incentivizes candidates to appeal primarily to their partisan base rather than to a broader electorate, reinforcing ideological extremes and diminishing bipartisan cooperation. In turn, this dynamic weakens legislative productivity and public trust in government functionality.\n\nA substantially different and concrete solution would be to implement a rotating multi-branch deliberative legislature: a small subset of representatives from each state would be randomly selected every two years from a larger pool of qualified candidates vetted by nonpartisan panels. This rotation would run alongside the traditional election cycle, creating a hybrid body where randomly chosen citizen-legislators serve short terms dedicated to fact-finding, consensus-building, and drafting legislation. By infusing the legislature with temporally limited, diverse, and non-career politicians, this model would reduce entrenched partisan loyalty, encourage deliberative problem-solving, and introduce fresh perspectives regularly, making governance more adaptive and less polarized while preserving democratic legitimacy through continued elected representation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution opens new avenues for hybrid legislative models and citizen participation beyond traditional elections.",
+              "explanatory": "It addresses the root cause of polarization by linking electoral incentives to legislative behavior and proposes a mechanism to disrupt entrenched partisanship.",
+              "non_obvious": "Randomly selecting citizen-legislators to serve alongside elected officials challenges conventional assumptions about representative democracy.",
+              "scalability": "If widely adopted, it could transform legislative processes across states and potentially other democratic systems, affecting millions.",
+              "principle": "The insight about combining random selection with elected representation can be applied to other governance and decision-making contexts."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.776,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed rotating multi-branch deliberative legislature is a novel and detailed mechanism that could reduce partisanship, but its feasibility is somewhat uncertain due to complexity and potential implementation challenges, which lowers the usefulness score.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for hybrid legislative models and citizen participation beyond traditional elections.\",\n    \"explanatory\": \"It addresses the root cause of polarization by linking electoral incentives to legislative behavior and proposes a mechanism to disrupt entrenched partisanship.\",\n    \"non_obvious\": \"Randomly selecting citizen-legislators to serve alongside elected officials challenges conventional assumptions about representative democracy.\",\n    \"scalability\": \"If widely adopted, it could transform legislative processes across states and potentially other democratic systems, affecting millions.\",\n    \"principle\": \"The insight about combining random selection with elected representation can be applied to other governance and decision-making contexts.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the excessive fragmentation and overlap of federal agencies, which often leads to inefficiencies, duplicated efforts, and unclear accountability. For example, multiple agencies may handle similar regulatory or enforcement roles within the same sector, causing confusion and bureaucratic inertia. This fragmentation hinders coherent policy implementation and wastes taxpayer resources, as agencies compete or fail to coordinate effectively.\n\nA novel and concrete solution is to establish a rotating \u201cConsolidation Commission\u201d composed of interdisciplinary experts and technologists, empowered to audit, merge, or dissolve overlapping federal entities on a fixed, cyclical basis\u2014every 5 to 7 years. Unlike typical calls for permanent restructuring, this dynamic approach leverages real-time data analytics and performance metrics to continuously adapt the federal bureaucracy to evolving challenges. By institutionalizing periodic, evidence-driven reorganization, the government can reduce redundancy, improve efficiency, and maintain agility without the political gridlock or entrenched interests that stall lasting reform efforts. This creates a culture of ongoing optimization rather than static institutional inertia.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.7,
+            "rationale": {
+              "generative": "The rotating commission model enables ongoing bureaucratic optimization and could inspire similar dynamic restructuring in other complex systems.",
+              "explanatory": "It addresses the root cause of inefficiency by targeting structural fragmentation and accountability gaps rather than just symptoms.",
+              "non_obvious": "The idea of institutionalizing periodic, data-driven reorganization breaks from traditional static reform approaches and entrenched political inertia.",
+              "scalability": "If widely adopted, it could improve government efficiency at a national scale, affecting millions through better policy implementation and resource use.",
+              "principle": "The concept of cyclical, evidence-based organizational adaptation is transferable to other large institutions beyond government."
+            }
+          },
+          "breakthrough_potential": 0.7,
+          "discard": false,
+          "final_score": 0.76,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed rotating Consolidation Commission is a concrete mechanism with a clear process and justification, though its political feasibility and potential resistance from entrenched interests may limit practical success.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.7,\n  \"rationale\": {\n    \"generative\": \"The rotating commission model enables ongoing bureaucratic optimization and could inspire similar dynamic restructuring in other complex systems.\",\n    \"explanatory\": \"It addresses the root cause of inefficiency by targeting structural fragmentation and accountability gaps rather than just symptoms.\",\n    \"non_obvious\": \"The idea of institutionalizing periodic, data-driven reorganization breaks from traditional static reform approaches and entrenched political inertia.\",\n    \"scalability\": \"If widely adopted, it could improve government efficiency at a national scale, affecting millions through better policy implementation and resource use.\",\n    \"principle\": \"The concept of cyclical, evidence-based organizational adaptation is transferable to other large institutions beyond government.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the persistent gridlock caused by the Senate filibuster, which allows a minority of senators to block legislation indefinitely. This issue hampers the government's ability to respond swiftly and effectively to pressing national challenges, disproportionately empowering obstruction over compromise. While many proposals focus on eliminating or reforming the filibuster directly, these often face steep political resistance or risk weakening minority protections.\n\nA substantially different and more feasible solution would be to establish a rotating \u201cconsensus council\u201d formed by a bipartisan selection of senators tasked with reviewing and prioritizing major legislative initiatives before they reach the floor. This council would operate on strict timelines and be empowered to fast-track consensus bills\u2014validated by a supermajority within the council\u2014bypassing the filibuster in the full Senate vote. By institutionalizing cross-party cooperation early in the process with a smaller, representative group, this approach creates a structural incentive for negotiation while preserving the filibuster\u2019s broader minority protections. It leverages a procedural innovation rather than direct rule change, making it both politically and practically attainable.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.5,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.62,
+            "rationale": {
+              "generative": "The solution introduces a new procedural body that could inspire similar consensus-driven mechanisms in other legislative contexts.",
+              "explanatory": "It addresses the causal mechanism of gridlock by targeting the early legislative process and minority obstruction dynamics.",
+              "non_obvious": "Creating a rotating bipartisan council to bypass filibuster constraints is a novel institutional innovation not commonly proposed.",
+              "scalability": "If adopted, it could significantly improve legislative efficiency and governance affecting the entire U.S. population.",
+              "principle": "The insight of institutionalizing early cross-party consensus to overcome minority obstruction can be adapted to other political or organizational systems."
+            }
+          },
+          "breakthrough_potential": 0.62,
+          "discard": false,
+          "final_score": 0.732,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (Senate filibuster) and proposes a specific, feasible solution (a rotating bipartisan consensus council) within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed solution includes a concrete mechanism to bypass filibuster gridlock while preserving minority protections, making it plausible and politically sensitive, though it may face practical challenges in implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.5,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.62,\n  \"rationale\": {\n    \"generative\": \"The solution introduces a new procedural body that could inspire similar consensus-driven mechanisms in other legislative contexts.\",\n    \"explanatory\": \"It addresses the causal mechanism of gridlock by targeting the early legislative process and minority obstruction dynamics.\",\n    \"non_obvious\": \"Creating a rotating bipartisan council to bypass filibuster constraints is a novel institutional innovation not commonly proposed.\",\n    \"scalability\": \"If adopted, it could significantly improve legislative efficiency and governance affecting the entire U.S. population.\",\n    \"principle\": \"The insight of institutionalizing early cross-party consensus to overcome minority obstruction can be adapted to other political or organizational systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the extreme polarization exacerbated by the winner-take-all single-member district electoral system, which incentivizes political parties to appeal only to their partisan bases rather than to a broader electorate. This zero-sum dynamic entrenches division, diminishes compromise, and undermines governance effectiveness. While reforms like ranked-choice voting or proportional representation are often proposed to address this, these methods either face deep institutional resistance or partial implementation challenges.\n\nA substantially different solution is to restructure Congress around functional expertise rather than purely geographic representation, creating a bicameral legislature where one chamber is elected by district as currently done, but the other is composed of members selected through a national meritocratic system based on demonstrated policy expertise in critical domains (e.g., economy, environment, healthcare). Candidates would be vetted and nominated by independent expert panels and then confirmed by a popular vote weighted by credentials rather than typical campaigning. This model would reduce tribalism by shifting part of lawmaking toward evidence-based, technocratic deliberation, fostering more pragmatic policy outcomes while preserving the democratic legitimacy of geographic representation in the other chamber. It bridges democratic values with expertise-driven governance to address gridlock and polarization innovatively.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution opens new avenues for hybrid governance models combining expertise and democracy, enabling further innovations in political structures.",
+              "explanatory": "It addresses the root cause of polarization by linking electoral incentives to structural representation mechanisms rather than surface symptoms.",
+              "non_obvious": "Proposing a meritocratic chamber alongside a traditional one breaks conventional assumptions about geographic-only representation.",
+              "scalability": "If widely adopted, it could transform legislative processes across large democracies, deeply affecting governance quality and political culture.",
+              "principle": "The insight of blending technocratic expertise with democratic legitimacy can be applied to other complex decision-making systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.7959999999999999,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed meritocratic second chamber is a novel and detailed mechanism that could reduce polarization and improve governance, though its feasibility is somewhat uncertain due to the complexity of implementation and potential political resistance.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for hybrid governance models combining expertise and democracy, enabling further innovations in political structures.\",\n    \"explanatory\": \"It addresses the root cause of polarization by linking electoral incentives to structural representation mechanisms rather than surface symptoms.\",\n    \"non_obvious\": \"Proposing a meritocratic chamber alongside a traditional one breaks conventional assumptions about geographic-only representation.\",\n    \"scalability\": \"If widely adopted, it could transform legislative processes across large democracies, deeply affecting governance quality and political culture.\",\n    \"principle\": \"The insight of blending technocratic expertise with democratic legitimacy can be applied to other complex decision-making systems beyond government.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the disproportionate influence of incumbency in legislative elections, which often discourages political competition and innovation, entrenching power and reducing responsiveness to constituents. The combination of name recognition, fundraising advantages, and district gerrymandering enables incumbents to maintain their seats for extended periods, leading to stagnation and reduced incentives for accountability or policy experimentation.\n\nA novel solution would be to implement a mandatory \u201coffice rotation system\u201d within Congress, whereby each member can serve only a fixed consecutive term\u2014such as two terms in the House and one term in the Senate\u2014after which they must rotate out of their current office for at least one full term before running again. During this hiatus, former legislators could engage in public service roles outside elected office or contribute in advisory capacities. This measure preserves democratic choice while structurally preventing entrenched incumbency, fostering continual inflow of fresh perspectives. Unlike term limits that ban re-election indefinitely, this rotation system respects voter autonomy and encourages dynamic governance, balancing experience with periodic renewal and reducing the insulating effects of entrenched political machines.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.5,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.62,
+            "rationale": {
+              "generative": "The solution opens new possibilities for political renewal and could inspire derivative reforms in other democratic institutions.",
+              "explanatory": "It addresses the root cause of incumbency advantage by structurally limiting tenure, explaining how stagnation arises from entrenched power.",
+              "non_obvious": "Introducing a mandatory rotation with a hiatus period is a novel twist on term limits that challenges conventional approaches to political tenure.",
+              "scalability": "If widely adopted, it could transform legislative bodies across the U.S., affecting millions by enhancing democratic responsiveness.",
+              "principle": "The insight about balancing experience with enforced renewal can apply to governance systems beyond the American context."
+            }
+          },
+          "breakthrough_potential": 0.62,
+          "discard": false,
+          "final_score": 0.712,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed office rotation system is a concrete mechanism that addresses incumbency entrenchment while preserving voter choice, though its political feasibility and potential unintended consequences are not deeply explored, slightly limiting its overall plausibility.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.5,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.62,\n  \"rationale\": {\n    \"generative\": \"The solution opens new possibilities for political renewal and could inspire derivative reforms in other democratic institutions.\",\n    \"explanatory\": \"It addresses the root cause of incumbency advantage by structurally limiting tenure, explaining how stagnation arises from entrenched power.\",\n    \"non_obvious\": \"Introducing a mandatory rotation with a hiatus period is a novel twist on term limits that challenges conventional approaches to political tenure.\",\n    \"scalability\": \"If widely adopted, it could transform legislative bodies across the U.S., affecting millions by enhancing democratic responsiveness.\",\n    \"principle\": \"The insight about balancing experience with enforced renewal can apply to governance systems beyond the American context.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the over-centralization of power within the two-party system, which stifles political innovation and limits diverse representation. This binary framework entrenches polarization, as major parties prioritize winning over compromise, and voters feel forced to choose the \"lesser evil\" rather than candidates who genuinely reflect their views. The dominance of two parties also marginalizes third parties and independent voices, reducing the responsiveness and adaptability of the political system.\n\nA concrete and unconventional solution is to institutionalize \u201crotating multi-party coalitions\u201d within Congress through a mandated, transparent coalition-building process after each election, modeled loosely on parliamentary systems but adapted to the U.S. context. Instead of simply seating a majority party or minority party, Representatives would be required, by law, to form functional legislative caucuses that include multiple parties or independents, with proportional influence and committee representation. This would incentivize cross-party collaboration, reduce binary polarization, and create dynamic policy platforms that reflect a broader range of voter interests. By embedding coalition governance structurally, this approach harnesses diversity and pragmatism without requiring constitutional amendments or abolishing the existing electoral framework.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.68,
+            "rationale": {
+              "generative": "The solution opens new pathways for multi-party collaboration and legislative innovation beyond the traditional two-party system.",
+              "explanatory": "It addresses the root cause of polarization by structurally incentivizing coalition-building rather than just treating symptoms of partisanship.",
+              "non_obvious": "Mandating coalition governance in a U.S. context breaks the entrenched assumption that the two-party system is immutable.",
+              "scalability": "If widely adopted, it could transform the entire legislative process and political culture, affecting millions of voters and representatives.",
+              "principle": "The insight about institutionalizing coalition governance can be adapted to other political systems and organizational structures facing binary dominance."
+            }
+          },
+          "breakthrough_potential": 0.68,
+          "discard": false,
+          "final_score": 0.728,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The solution is detailed and includes a clear mechanism for implementation, but its feasibility is somewhat uncertain given the complexity of mandating coalition-building in a traditionally two-party system without constitutional changes.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.68,\n  \"rationale\": {\n    \"generative\": \"The solution opens new pathways for multi-party collaboration and legislative innovation beyond the traditional two-party system.\",\n    \"explanatory\": \"It addresses the root cause of polarization by structurally incentivizing coalition-building rather than just treating symptoms of partisanship.\",\n    \"non_obvious\": \"Mandating coalition governance in a U.S. context breaks the entrenched assumption that the two-party system is immutable.\",\n    \"scalability\": \"If widely adopted, it could transform the entire legislative process and political culture, affecting millions of voters and representatives.\",\n    \"principle\": \"The insight about institutionalizing coalition governance can be adapted to other political systems and organizational structures facing binary dominance.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the disproportionate influence of the Senate, where each state, regardless of population, receives equal representation. This arrangement leads to a legislative body that often elevates the interests of less populous states, skewing national policy outcomes and hindering responsive governance reflective of the actual population distribution. The result is legislative gridlock and policies that may not align with the preferences of the majority of Americans.\n\nA substantially different solution is to implement a dynamic, population-weighted Senate voting system where each senator retains one vote but these votes are aggregated through a tiered weighting mechanism reflecting their state populations. Senators would caucus in state delegations, casting votes proportionate to their state\u2019s share of the national population, but the physical chamber and equal state representation in debate remain intact to preserve federalism. This approach maintains the Senate\u2019s foundational role as a forum for state interests while ensuring legislative outcomes better reflect contemporary demographic realities. It is politically feasible as it does not abolish the Senate or require a constitutional amendment to its existence but rather reforms its internal voting procedures through congressional statute bolstered by public support for equity and efficiency.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.5,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.64,
+            "rationale": {
+              "generative": "The solution opens new possibilities for legislative reform by introducing weighted voting within an existing structure, enabling derivative innovations in governance models.",
+              "explanatory": "It explains the causal mechanism of disproportionate representation and proposes a structural adjustment that addresses the root cause rather than symptoms.",
+              "non_obvious": "The idea of maintaining equal representation in debate while weighting votes is a conceptual leap that breaks from traditional binary views of Senate reform.",
+              "scalability": "If implemented, it could deeply affect the entire U.S. legislative process and potentially inspire similar reforms in other federal systems.",
+              "principle": "The insight of decoupling representation in debate from weighted voting is transferable to other domains balancing equal representation with population-based influence."
+            }
+          },
+          "breakthrough_potential": 0.64,
+          "discard": false,
+          "final_score": 0.744,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed weighted voting system within the Senate is a concrete mechanism that preserves federalism while addressing population disparities, making it a plausible and potentially effective reform.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.5,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.64,\n  \"rationale\": {\n    \"generative\": \"The solution opens new possibilities for legislative reform by introducing weighted voting within an existing structure, enabling derivative innovations in governance models.\",\n    \"explanatory\": \"It explains the causal mechanism of disproportionate representation and proposes a structural adjustment that addresses the root cause rather than symptoms.\",\n    \"non_obvious\": \"The idea of maintaining equal representation in debate while weighting votes is a conceptual leap that breaks from traditional binary views of Senate reform.\",\n    \"scalability\": \"If implemented, it could deeply affect the entire U.S. legislative process and potentially inspire similar reforms in other federal systems.\",\n    \"principle\": \"The insight of decoupling representation in debate from weighted voting is transferable to other domains balancing equal representation with population-based influence.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the polarization entrenched by the winner-take-all electoral system, particularly in congressional districts. This structure incentivizes politicians to cater to extreme partisan bases rather than moderate or cross-partisan constituencies, reducing cooperation and fostering legislative gridlock. The resulting hyper-partisanship undermines democratic deliberation and effective governance, as elected officials prioritize ideological purity over compromise and policymaking that reflects diverse interests.\n\nA substantially different and feasible solution is to implement a rotating citizen assembly system to complement the existing legislature. Each year, a statistically representative sample of citizens\u2014selected through a rigorous lottery process\u2014would be convened to deliberate on key legislative priorities and propose amendments or new laws. This assembly would have the authority to submit legislation directly to Congress for expedited consideration, providing a regular infusion of diverse, nonpartisan perspectives. By institutionalizing direct citizen involvement, this system would disrupt entrenched party dynamics, encourage broader civic engagement, and create a structural check on partisan-driven legislation without altering electoral mechanisms or court structures. This innovative approach leverages deliberative democracy principles to mitigate polarization from within rather than relying on electoral reforms alone.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.7,
+            "rationale": {
+              "generative": "Introducing rotating citizen assemblies opens new avenues for democratic innovation beyond traditional electoral reforms.",
+              "explanatory": "The solution identifies polarization as a structural issue caused by electoral incentives and proposes a mechanism to inject diverse perspectives, addressing root causes.",
+              "non_obvious": "Using a lottery-based citizen assembly with legislative authority challenges conventional reliance on elected representatives and party politics.",
+              "scalability": "If broadly adopted, this approach could transform legislative processes nationwide, affecting millions by reducing polarization and increasing civic engagement.",
+              "principle": "The concept of deliberative citizen involvement as a structural check can be adapted to various governance systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.7,
+          "discard": false,
+          "final_score": 0.76,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed rotating citizen assembly is a concrete mechanism with a clear role and authority, likely to introduce diverse perspectives and reduce polarization, though its practical implementation and impact on entrenched political dynamics may face challenges.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.7,\n  \"rationale\": {\n    \"generative\": \"Introducing rotating citizen assemblies opens new avenues for democratic innovation beyond traditional electoral reforms.\",\n    \"explanatory\": \"The solution identifies polarization as a structural issue caused by electoral incentives and proposes a mechanism to inject diverse perspectives, addressing root causes.\",\n    \"non_obvious\": \"Using a lottery-based citizen assembly with legislative authority challenges conventional reliance on elected representatives and party politics.\",\n    \"scalability\": \"If broadly adopted, this approach could transform legislative processes nationwide, affecting millions by reducing polarization and increasing civic engagement.\",\n    \"principle\": \"The concept of deliberative citizen involvement as a structural check can be adapted to various governance systems beyond the U.S.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the rigid, winner-take-all, single-member district electoral system for the House of Representatives. This system fosters extreme partisanship, diminishes representation of diverse viewpoints, and incentivizes politicians to cater primarily to their party base rather than a broader constituency. It often leads to safe districts with little competition, entrenching incumbents and reducing accountability. The resultant polarization hampers bipartisan cooperation and legislative effectiveness.\n\nA substantially different and innovative solution would be to implement a rotating multi-seat district system combined with random staggered term lengths. Instead of fixed districts, multiple overlapping, geographically-based constituencies would be rotated every election cycle, with representatives serving terms of varying lengths (e.g., 2, 4, or 6 years) assigned by lottery at the start of their tenure. This structure would disrupt entrenched local political machines by preventing perpetual control over the same voter base, encourage legislators to appeal to a broader array of voters, and maintain continual infusion of fresh perspectives. The randomness in term length would reduce strategic retirements and election timing manipulations. This approach preserves district-based representation but introduces dynamic variability that combats polarization and entrenchment without overhauling the entire electoral framework.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.68,
+            "rationale": {
+              "generative": "The rotating multi-seat district system with random term lengths opens new avenues for electoral reform and could inspire further innovations in political representation.",
+              "explanatory": "It addresses the root causes of polarization and entrenchment by altering incentives and structural dynamics rather than just symptoms.",
+              "non_obvious": "The combination of rotating districts and randomized term lengths breaks conventional assumptions about fixed districts and uniform terms, representing a conceptual leap.",
+              "scalability": "If widely adopted, this system could transform legislative behavior and voter engagement across the entire House of Representatives, affecting millions.",
+              "principle": "The insight about disrupting entrenched power through structural variability can be applied to other governance and organizational systems beyond the U.S. electoral context."
+            }
+          },
+          "breakthrough_potential": 0.68,
+          "discard": false,
+          "final_score": 0.728,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible, and justified solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed rotating multi-seat district system with random staggered terms is innovative and addresses polarization and entrenchment, but its complexity and potential implementation challenges reduce its overall plausibility and likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.68,\n  \"rationale\": {\n    \"generative\": \"The rotating multi-seat district system with random term lengths opens new avenues for electoral reform and could inspire further innovations in political representation.\",\n    \"explanatory\": \"It addresses the root causes of polarization and entrenchment by altering incentives and structural dynamics rather than just symptoms.\",\n    \"non_obvious\": \"The combination of rotating districts and randomized term lengths breaks conventional assumptions about fixed districts and uniform terms, representing a conceptual leap.\",\n    \"scalability\": \"If widely adopted, this system could transform legislative behavior and voter engagement across the entire House of Representatives, affecting millions.\",\n    \"principle\": \"The insight about disrupting entrenched power through structural variability can be applied to other governance and organizational systems beyond the U.S. electoral context.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the misalignment between congressional electoral incentives and long-term policy planning. The two-year House election cycle pressures representatives to prioritize short-term political gains and reactive policymaking over complex, multi-year strategic initiatives. This results in legislative gridlock, policy inconsistency, and underinvestment in critical areas like infrastructure, climate change, and education reform. The structural issue lies not just in partisanship but in the fundamental incentive system that prioritizes frequent campaigning over governance continuity.\n\nA novel and feasible solution is to implement staggered, longer multi-year terms for House members, locked to regional policy boards comprising local experts and civic leaders who co-develop long-term legislative agendas. Specifically, House members would serve six-year terms staggered so only a third face election every two years, while independent regional policy boards\u2014rotating every three years\u2014would work collaboratively with representatives to draft evidence-based multi-decade plans addressing regional priorities. This institutional coupling would shift incentives from short-term campaigning to sustained governance, embed expert input directly into legislative priorities, and create a self-perpetuating cycle focused on long-term regional development. By structurally integrating expert-guided strategic planning with extended terms, the government can overcome the cyclical volatility inherent in current election-driven policymaking.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.7,
+            "rationale": {
+              "generative": "The solution unlocks new institutional designs combining electoral reform with expert regional planning, enabling derivative innovations in governance structures.",
+              "explanatory": "It explains the causal mechanism linking short electoral cycles to policy short-sightedness and legislative gridlock, addressing root incentives rather than symptoms.",
+              "non_obvious": "The integration of staggered longer terms with independent regional policy boards represents a conceptual leap beyond typical electoral reform proposals.",
+              "scalability": "If broadly adopted, it could transform legislative behavior across all House districts, deeply affecting national policy consistency and long-term planning.",
+              "principle": "The insight about aligning electoral incentives with expert-guided long-term planning can be transferred to other governance systems and organizational contexts."
+            }
+          },
+          "breakthrough_potential": 0.7,
+          "discard": false,
+          "final_score": 0.76,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The solution is detailed and plausible, addressing electoral incentives with staggered longer terms and expert regional boards, though it may face practical challenges in implementation and political acceptance.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.7,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new institutional designs combining electoral reform with expert regional planning, enabling derivative innovations in governance structures.\",\n    \"explanatory\": \"It explains the causal mechanism linking short electoral cycles to policy short-sightedness and legislative gridlock, addressing root incentives rather than symptoms.\",\n    \"non_obvious\": \"The integration of staggered longer terms with independent regional policy boards represents a conceptual leap beyond typical electoral reform proposals.\",\n    \"scalability\": \"If broadly adopted, it could transform legislative behavior across all House districts, deeply affecting national policy consistency and long-term planning.\",\n    \"principle\": \"The insight about aligning electoral incentives with expert-guided long-term planning can be transferred to other governance systems and organizational contexts.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the entrenched partisanship amplified by single-member district plurality voting (first-past-the-post), which often results in polarized, unrepresentative outcomes and discourages moderate or cross-party cooperation. This winner-take-all system incentivizes candidates to appeal primarily to their party\u2019s base rather than a broader constituency, deepening political divides and reducing collaboration. Moreover, it contributes to legislative gridlock and voter disenfranchisement, as many votes effectively do not influence outcomes.\n\nA novel solution to mitigate this would be to implement a district-level lottery to assign a subset of legislative seats, alongside traditional elections. For example, after standard elections fill 80% of seats, the remaining 20% would be allocated by randomly selecting from a qualified pool of candidates who meet certain broad eligibility criteria (e.g., residency, basic vetting, no recent criminal offenses), regardless of party affiliation or electoral results. This \u201crandomly selected representatives\u201d approach would introduce fresh perspectives and reduce overreliance on partisan campaigns, incentivizing traditional candidates to collaborate more broadly to maintain legitimacy. It would also increase civic engagement by providing ordinary citizens a tangible pathway to legislative participation, thereby subtly breaking entrenched partisan dynamics without dismantling the electoral framework itself.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.7,
+            "rationale": {
+              "generative": "Introducing lottery-based legislative seats opens new avenues for political representation and hybrid governance models.",
+              "explanatory": "The solution addresses the root cause of partisanship by altering incentives and representation mechanisms rather than just symptoms.",
+              "non_obvious": "Randomly selecting representatives alongside elections challenges conventional democratic assumptions and requires a conceptual leap.",
+              "scalability": "If widely adopted, this approach could transform legislative bodies across many democracies, affecting millions of citizens.",
+              "principle": "The insight of blending random selection with elections can be applied to other governance and organizational decision-making contexts."
+            }
+          },
+          "breakthrough_potential": 0.7,
+          "discard": false,
+          "final_score": 0.74,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution is innovative and includes concrete mechanisms, but the feasibility and effectiveness of randomly assigning legislative seats may face practical and political challenges, reducing its overall likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.7,\n  \"rationale\": {\n    \"generative\": \"Introducing lottery-based legislative seats opens new avenues for political representation and hybrid governance models.\",\n    \"explanatory\": \"The solution addresses the root cause of partisanship by altering incentives and representation mechanisms rather than just symptoms.\",\n    \"non_obvious\": \"Randomly selecting representatives alongside elections challenges conventional democratic assumptions and requires a conceptual leap.\",\n    \"scalability\": \"If widely adopted, this approach could transform legislative bodies across many democracies, affecting millions of citizens.\",\n    \"principle\": \"The insight of blending random selection with elections can be applied to other governance and organizational decision-making contexts.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the extreme polarization and gridlock rooted in its winner-take-all, single-member district electoral system, which incentivizes political parties to cater primarily to ideological extremes rather than the median voter. This system marginalizes independent or moderate voices and entrenches partisanship, resulting in legislative stagnation and reduced public trust. Traditional proposals often focus on proportional representation or ranked-choice voting, but these changes face substantial political resistance and may not fully address systemic incentives toward polarization.\n\nA substantially different solution would be to institutionalize a mandatory, rotating \"Deliberative Legislature\" within Congress composed of randomly selected citizens serving short, non-renewable terms alongside elected representatives. This citizen cohort would participate in drafting, debating, and amending legislation, bringing diverse perspectives disconnected from party pressures or electoral considerations. Their presence could reshape legislative priorities toward pragmatic consensus, incentivize elected officials to engage in genuine negotiation, and foster greater public trust. This structural innovation combines democratic inclusivity with representative government, directly counteracting polarization by embedding a deliberative counterbalance within the legislative process itself.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "Introducing a deliberative citizen legislature opens new avenues for democratic innovation and hybrid governance models.",
+              "explanatory": "The solution addresses root causes of polarization by altering incentives and embedding diverse perspectives in lawmaking.",
+              "non_obvious": "Randomly selected citizen legislators serving alongside elected officials challenges conventional assumptions about representative democracy.",
+              "scalability": "If widely adopted, this model could transform legislative processes across many democratic systems, deeply affecting governance quality.",
+              "principle": "Embedding deliberative, randomly selected citizen bodies alongside elected representatives is a transferable concept applicable beyond the U.S. context."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.82,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific, and justified solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed 'Deliberative Legislature' is a novel and plausible mechanism to reduce polarization by involving randomly selected citizens, though its feasibility may face practical and political challenges, slightly limiting its likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"Introducing a deliberative citizen legislature opens new avenues for democratic innovation and hybrid governance models.\",\n    \"explanatory\": \"The solution addresses root causes of polarization by altering incentives and embedding diverse perspectives in lawmaking.\",\n    \"non_obvious\": \"Randomly selected citizen legislators serving alongside elected officials challenges conventional assumptions about representative democracy.\",\n    \"scalability\": \"If widely adopted, this model could transform legislative processes across many democratic systems, deeply affecting governance quality.\",\n    \"principle\": \"Embedding deliberative, randomly selected citizen bodies alongside elected representatives is a transferable concept applicable beyond the U.S. context.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the persistent fragmentation and polarization caused by the bipartisan winner-takes-all electoral system, which entrenches partisanship and marginalizes moderate or cross-cutting interests. This system incentivizes politicians to cater solely to their base rather than the broader electorate, leading to legislative gridlock and reduced public trust. While reforms like ranked-choice voting or proportional representation are often proposed, these approaches typically focus on electoral mechanics without fundamentally altering the institutional incentives within Congress itself.\n\nA substantially different and feasible solution would be to redesign Congress\u2019s internal committee system to foster genuine bipartisan collaboration by instituting mandatory, rotating \u201cmixed-party\u201d committees for all major legislation. Instead of each party staffing committees independently, a supermajority rule would require at least 40% minority party membership on every committee, with leadership positions shared proportionally. These committees would meet and draft bills in closed sessions that emphasize consensus-building, with public hearings scheduled only after bipartisan proposals emerge. This structural redesign transforms committee dynamics from adversarial to cooperative, incentivizing legislators to develop mutually acceptable policies before facing public scrutiny and floor votes, thus depolarizing the legislative process from within rather than relying on external electoral reforms.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.68,
+            "rationale": {
+              "generative": "The solution opens new avenues for institutional redesign that could inspire further innovations in legislative collaboration.",
+              "explanatory": "It addresses the root cause of polarization by altering committee incentives rather than surface electoral mechanics.",
+              "non_obvious": "Mandating mixed-party committees with shared leadership breaks conventional assumptions about partisan committee control.",
+              "scalability": "If broadly adopted, it could transform legislative processes across federal and state governments, affecting millions.",
+              "principle": "The insight about structuring incentives for cooperation applies beyond the U.S. Congress to other polarized institutions."
+            }
+          },
+          "breakthrough_potential": 0.68,
+          "discard": false,
+          "final_score": 0.768,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution is detailed and plausible, with clear mechanisms for bipartisan committee restructuring that could realistically reduce polarization, though it may face political resistance in practice.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.68,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for institutional redesign that could inspire further innovations in legislative collaboration.\",\n    \"explanatory\": \"It addresses the root cause of polarization by altering committee incentives rather than surface electoral mechanics.\",\n    \"non_obvious\": \"Mandating mixed-party committees with shared leadership breaks conventional assumptions about partisan committee control.\",\n    \"scalability\": \"If broadly adopted, it could transform legislative processes across federal and state governments, affecting millions.\",\n    \"principle\": \"The insight about structuring incentives for cooperation applies beyond the U.S. Congress to other polarized institutions.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the fragmentation and inefficiency caused by the separation of powers combined with rigid partisanship, which often leads to legislative gridlock and diminished responsiveness. This system, while designed to prevent tyranny, can result in the paralysis of essential policymaking, especially when the executive branch and Congress are controlled by opposing parties. Traditional fixes often focus on electoral reform or changing chamber rules, but these have limited impact without addressing the underlying incentive structures that foster division.\n\nA substantially different and underexplored solution would be to institutionalize \u201crotational governance councils\u201d that temporarily consolidate executive and legislative authority on narrowly defined policy areas. For example, for a fixed 6-12 month period, a mixed council of rotating members from Congress, the executive branch, and independent experts would be formed to draft, debate, and implement policy related to a specific domain (e.g., infrastructure, health, or climate). These councils would be empowered to make binding decisions without the usual veto or filibuster constraints, but only within their policy remit and timeframe. This model draws on temporary commissions and technocratic governance but uniquely integrates democratic representation with executive agility. By rotating membership and focus areas, it incentivizes collaboration across branches, bypasses partisan standoffs, and enhances policy continuity while retaining democratic legitimacy.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution opens new governance models by combining executive, legislative, and expert roles in rotating councils, enabling derivative innovations in policy-making structures.",
+              "explanatory": "It addresses the root cause of legislative gridlock by explaining how incentive structures and separation of powers create paralysis, proposing a mechanism to overcome it.",
+              "non_obvious": "The idea of temporarily consolidating authority across branches with rotating membership breaks conventional assumptions about strict separation and fixed roles.",
+              "scalability": "If widely adopted, this model could transform governance efficiency across multiple policy domains, affecting millions through improved responsiveness and reduced gridlock.",
+              "principle": "The insight of rotating, focused governance councils is transferable to other complex systems requiring cross-functional collaboration and temporary authority consolidation."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible, and well-justified solution within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed rotational governance councils offer a concrete mechanism to reduce gridlock by temporarily consolidating authority with defined scope and membership, making it a plausible and innovative approach, though it may face practical challenges in implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution opens new governance models by combining executive, legislative, and expert roles in rotating councils, enabling derivative innovations in policy-making structures.\",\n    \"explanatory\": \"It addresses the root cause of legislative gridlock by explaining how incentive structures and separation of powers create paralysis, proposing a mechanism to overcome it.\",\n    \"non_obvious\": \"The idea of temporarily consolidating authority across branches with rotating membership breaks conventional assumptions about strict separation and fixed roles.\",\n    \"scalability\": \"If widely adopted, this model could transform governance efficiency across multiple policy domains, affecting millions through improved responsiveness and reduced gridlock.\",\n    \"principle\": \"The insight of rotating, focused governance councils is transferable to other complex systems requiring cross-functional collaboration and temporary authority consolidation.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the extreme polarization and gridlock caused by the two-party dominance embedded in its electoral system, particularly in Congress. This binary structure often forces legislators into rigid partisan positions, undermining bipartisan cooperation and effective governance. The winner-take-all approach in single-member districts incentivizes extreme partisanship and discourages moderate or cross-party collaboration, exacerbating legislative standstills and public distrust.\n\nTo address this, a novel and underexplored solution is to implement a tiered legislative delegation system combining multi-member districts with rotating, issue-specific subcommittees. Instead of each district electing a single representative, districts would elect multiple legislators proportionally, but these legislators would then rotate through focused subcommittees formed around major policy areas (e.g., healthcare, infrastructure, foreign policy) on fixed-term cycles. This rotation encourages legislators to collaborate across party lines regularly within their subcommittee, cultivating expertise and bipartisan relationships in specific policy arenas rather than broad ideological battles. By structurally embedding issue-based cooperation and reducing the permanent \u201cus vs. them\u201d dynamic, this system targets polarization at its root cause and fosters a more functional, responsive legislature without upending the entire electoral framework.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.68,
+            "rationale": {
+              "generative": "The solution opens new avenues for legislative design by combining proportional representation with rotating subcommittees, enabling derivative innovations in governance structures.",
+              "explanatory": "It addresses the root cause of polarization by explaining how structural incentives shape partisan behavior and cooperation dynamics.",
+              "non_obvious": "The idea of rotating legislators through issue-specific subcommittees to foster bipartisan collaboration breaks from traditional static representation models.",
+              "scalability": "If widely adopted, it could transform legislative bodies across the U.S., significantly reducing gridlock and improving governance quality.",
+              "principle": "The insight about structuring representation to encourage cross-party collaboration can be adapted to other political systems and organizational contexts."
+            }
+          },
+          "breakthrough_potential": 0.68,
+          "discard": false,
+          "final_score": 0.768,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed tiered legislative delegation system with multi-member districts and rotating subcommittees is a concrete mechanism aimed at reducing polarization and encouraging bipartisan cooperation, making it a plausible and potentially effective reform.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.68,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for legislative design by combining proportional representation with rotating subcommittees, enabling derivative innovations in governance structures.\",\n    \"explanatory\": \"It addresses the root cause of polarization by explaining how structural incentives shape partisan behavior and cooperation dynamics.\",\n    \"non_obvious\": \"The idea of rotating legislators through issue-specific subcommittees to foster bipartisan collaboration breaks from traditional static representation models.\",\n    \"scalability\": \"If widely adopted, it could transform legislative bodies across the U.S., significantly reducing gridlock and improving governance quality.\",\n    \"principle\": \"The insight about structuring representation to encourage cross-party collaboration can be adapted to other political systems and organizational contexts.\"\n  }\n}\n```"
+        }
+      }
+    ],
+    "top_k": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the extreme polarization and gridlock rooted in its winner-take-all, single-member district electoral system, which incentivizes political parties to cater primarily to ideological extremes rather than the median voter. This system marginalizes independent or moderate voices and entrenches partisanship, resulting in legislative stagnation and reduced public trust. Traditional proposals often focus on proportional representation or ranked-choice voting, but these changes face substantial political resistance and may not fully address systemic incentives toward polarization.\n\nA substantially different solution would be to institutionalize a mandatory, rotating \"Deliberative Legislature\" within Congress composed of randomly selected citizens serving short, non-renewable terms alongside elected representatives. This citizen cohort would participate in drafting, debating, and amending legislation, bringing diverse perspectives disconnected from party pressures or electoral considerations. Their presence could reshape legislative priorities toward pragmatic consensus, incentivize elected officials to engage in genuine negotiation, and foster greater public trust. This structural innovation combines democratic inclusivity with representative government, directly counteracting polarization by embedding a deliberative counterbalance within the legislative process itself.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "Introducing a deliberative citizen legislature opens new avenues for democratic innovation and hybrid governance models.",
+              "explanatory": "The solution addresses root causes of polarization by altering incentives and embedding diverse perspectives in lawmaking.",
+              "non_obvious": "Randomly selected citizen legislators serving alongside elected officials challenges conventional assumptions about representative democracy.",
+              "scalability": "If widely adopted, this model could transform legislative processes across many democratic systems, deeply affecting governance quality.",
+              "principle": "Embedding deliberative, randomly selected citizen bodies alongside elected representatives is a transferable concept applicable beyond the U.S. context."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.82,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific, and justified solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed 'Deliberative Legislature' is a novel and plausible mechanism to reduce polarization by involving randomly selected citizens, though its feasibility may face practical and political challenges, slightly limiting its likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"Introducing a deliberative citizen legislature opens new avenues for democratic innovation and hybrid governance models.\",\n    \"explanatory\": \"The solution addresses root causes of polarization by altering incentives and embedding diverse perspectives in lawmaking.\",\n    \"non_obvious\": \"Randomly selected citizen legislators serving alongside elected officials challenges conventional assumptions about representative democracy.\",\n    \"scalability\": \"If widely adopted, this model could transform legislative processes across many democratic systems, deeply affecting governance quality.\",\n    \"principle\": \"Embedding deliberative, randomly selected citizen bodies alongside elected representatives is a transferable concept applicable beyond the U.S. context.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the fragmentation and inefficiency caused by the separation of powers combined with rigid partisanship, which often leads to legislative gridlock and diminished responsiveness. This system, while designed to prevent tyranny, can result in the paralysis of essential policymaking, especially when the executive branch and Congress are controlled by opposing parties. Traditional fixes often focus on electoral reform or changing chamber rules, but these have limited impact without addressing the underlying incentive structures that foster division.\n\nA substantially different and underexplored solution would be to institutionalize \u201crotational governance councils\u201d that temporarily consolidate executive and legislative authority on narrowly defined policy areas. For example, for a fixed 6-12 month period, a mixed council of rotating members from Congress, the executive branch, and independent experts would be formed to draft, debate, and implement policy related to a specific domain (e.g., infrastructure, health, or climate). These councils would be empowered to make binding decisions without the usual veto or filibuster constraints, but only within their policy remit and timeframe. This model draws on temporary commissions and technocratic governance but uniquely integrates democratic representation with executive agility. By rotating membership and focus areas, it incentivizes collaboration across branches, bypasses partisan standoffs, and enhances policy continuity while retaining democratic legitimacy.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution opens new governance models by combining executive, legislative, and expert roles in rotating councils, enabling derivative innovations in policy-making structures.",
+              "explanatory": "It addresses the root cause of legislative gridlock by explaining how incentive structures and separation of powers create paralysis, proposing a mechanism to overcome it.",
+              "non_obvious": "The idea of temporarily consolidating authority across branches with rotating membership breaks conventional assumptions about strict separation and fixed roles.",
+              "scalability": "If widely adopted, this model could transform governance efficiency across multiple policy domains, affecting millions through improved responsiveness and reduced gridlock.",
+              "principle": "The insight of rotating, focused governance councils is transferable to other complex systems requiring cross-functional collaboration and temporary authority consolidation."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible, and well-justified solution within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed rotational governance councils offer a concrete mechanism to reduce gridlock by temporarily consolidating authority with defined scope and membership, making it a plausible and innovative approach, though it may face practical challenges in implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution opens new governance models by combining executive, legislative, and expert roles in rotating councils, enabling derivative innovations in policy-making structures.\",\n    \"explanatory\": \"It addresses the root cause of legislative gridlock by explaining how incentive structures and separation of powers create paralysis, proposing a mechanism to overcome it.\",\n    \"non_obvious\": \"The idea of temporarily consolidating authority across branches with rotating membership breaks conventional assumptions about strict separation and fixed roles.\",\n    \"scalability\": \"If widely adopted, this model could transform governance efficiency across multiple policy domains, affecting millions through improved responsiveness and reduced gridlock.\",\n    \"principle\": \"The insight of rotating, focused governance councils is transferable to other complex systems requiring cross-functional collaboration and temporary authority consolidation.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the extreme polarization exacerbated by the winner-take-all single-member district electoral system, which incentivizes political parties to appeal only to their partisan bases rather than to a broader electorate. This zero-sum dynamic entrenches division, diminishes compromise, and undermines governance effectiveness. While reforms like ranked-choice voting or proportional representation are often proposed to address this, these methods either face deep institutional resistance or partial implementation challenges.\n\nA substantially different solution is to restructure Congress around functional expertise rather than purely geographic representation, creating a bicameral legislature where one chamber is elected by district as currently done, but the other is composed of members selected through a national meritocratic system based on demonstrated policy expertise in critical domains (e.g., economy, environment, healthcare). Candidates would be vetted and nominated by independent expert panels and then confirmed by a popular vote weighted by credentials rather than typical campaigning. This model would reduce tribalism by shifting part of lawmaking toward evidence-based, technocratic deliberation, fostering more pragmatic policy outcomes while preserving the democratic legitimacy of geographic representation in the other chamber. It bridges democratic values with expertise-driven governance to address gridlock and polarization innovatively.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution opens new avenues for hybrid governance models combining expertise and democracy, enabling further innovations in political structures.",
+              "explanatory": "It addresses the root cause of polarization by linking electoral incentives to structural representation mechanisms rather than surface symptoms.",
+              "non_obvious": "Proposing a meritocratic chamber alongside a traditional one breaks conventional assumptions about geographic-only representation.",
+              "scalability": "If widely adopted, it could transform legislative processes across large democracies, deeply affecting governance quality and political culture.",
+              "principle": "The insight of blending technocratic expertise with democratic legitimacy can be applied to other complex decision-making systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.7959999999999999,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed meritocratic second chamber is a novel and detailed mechanism that could reduce polarization and improve governance, though its feasibility is somewhat uncertain due to the complexity of implementation and potential political resistance.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for hybrid governance models combining expertise and democracy, enabling further innovations in political structures.\",\n    \"explanatory\": \"It addresses the root cause of polarization by linking electoral incentives to structural representation mechanisms rather than surface symptoms.\",\n    \"non_obvious\": \"Proposing a meritocratic chamber alongside a traditional one breaks conventional assumptions about geographic-only representation.\",\n    \"scalability\": \"If widely adopted, it could transform legislative processes across large democracies, deeply affecting governance quality and political culture.\",\n    \"principle\": \"The insight of blending technocratic expertise with democratic legitimacy can be applied to other complex decision-making systems beyond government.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the hyper-partisan nature of congressional districts, which results in legislative polarization and diminishes incentives for cross-party cooperation. This is largely driven by the use of winner-take-all single-member districts that encourage politicians to cater to extreme bases rather than the median voter. Traditional reform proposals often focus on independent redistricting commissions or proportional representation, approaches that face entrenched political resistance or require sweeping constitutional changes.\n\nA substantially different and feasible solution is to implement a rotating \u201cdistrict partnership\u201d system, where pairs of neighboring congressional districts are combined every two election cycles to elect two representatives jointly through a ranked-choice voting system. This would compel candidates to appeal to a broader, more diverse constituency while maintaining geographic cohesion. By institutionalizing shared accountability and promoting coalition-building within these paired districts, this approach reduces polarization incentives without abolishing single-member districts or requiring a constitutional amendment. The dynamic nature of the partnerships ensures continued reevaluation of political alliances and prevents the entrenchment of safe partisan strongholds.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.72,
+            "rationale": {
+              "generative": "The rotating district partnership system opens new avenues for electoral reform and coalition-building beyond traditional redistricting or voting methods.",
+              "explanatory": "It addresses the root cause of polarization by altering incentives and constituency composition rather than just symptoms like gerrymandering.",
+              "non_obvious": "Combining districts temporarily and using ranked-choice voting to foster cross-party appeal is a novel conceptual leap beyond standard reforms.",
+              "scalability": "If widely adopted, it could transform legislative behavior across all U.S. congressional districts, impacting millions of voters and representatives.",
+              "principle": "The insight about dynamic, shared constituencies to reduce polarization can be adapted to other representative systems facing similar factionalism."
+            }
+          },
+          "breakthrough_potential": 0.72,
+          "discard": false,
+          "final_score": 0.792,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed rotating district partnership system with ranked-choice voting is a concrete mechanism aimed at reducing polarization and encouraging broader representation, making it a plausible and innovative solution, though it may face practical challenges in implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.72,\n  \"rationale\": {\n    \"generative\": \"The rotating district partnership system opens new avenues for electoral reform and coalition-building beyond traditional redistricting or voting methods.\",\n    \"explanatory\": \"It addresses the root cause of polarization by altering incentives and constituency composition rather than just symptoms like gerrymandering.\",\n    \"non_obvious\": \"Combining districts temporarily and using ranked-choice voting to foster cross-party appeal is a novel conceptual leap beyond standard reforms.\",\n    \"scalability\": \"If widely adopted, it could transform legislative behavior across all U.S. congressional districts, impacting millions of voters and representatives.\",\n    \"principle\": \"The insight about dynamic, shared constituencies to reduce polarization can be adapted to other representative systems facing similar factionalism.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the over-centralization of political power within the two major parties, which creates a duopoly that limits political diversity and innovation. This duopolistic structure marginalizes third parties and independent candidates, stifling alternative viewpoints and reducing voter engagement. The winner-takes-all electoral system for most offices incentivizes polarization and discourages compromise, leading to legislative gridlock and public distrust.\n\nA concrete, substantially different solution is to implement a rotating multi-party governance model at the federal level, inspired by certain parliamentary coalition practices but adapted for the American context. Under this system, after an election, the top three parties with the highest vote totals form a proportional coalition government for a fixed term\u2014say two years within the four-year presidential cycle\u2014sharing executive and legislative leadership roles based on their vote shares. Rather than a single president holding all executive power, a council composed of the coalition leaders would make collective decisions, with a rotating chairperson role among them. This model decentralizes power within the executive branch, incentivizes cooperation among diverse political groups, and better reflects the electorate\u2019s spectrum of views, while maintaining stability and accountability through fixed terms and structured rotation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.5,
+          "constraint_overall": 0.75,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The rotating multi-party governance model unlocks numerous new political structures and coalition dynamics beyond the current duopoly.",
+              "explanatory": "It explains how power centralization and winner-takes-all incentives cause polarization and gridlock, proposing a mechanism to distribute power more equitably.",
+              "non_obvious": "The idea of a rotating executive council replacing a single president breaks deeply ingrained assumptions about American executive power.",
+              "scalability": "If implemented, it could transform governance for hundreds of millions of Americans and influence democratic systems worldwide.",
+              "principle": "The insight about decentralizing executive power and incentivizing coalition governance can apply to other political and organizational systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.78,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.5,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"While the proposed rotating multi-party governance model is detailed and addresses power centralization, it is somewhat idealistic and may face significant practical challenges in the U.S. context, reducing its likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The rotating multi-party governance model unlocks numerous new political structures and coalition dynamics beyond the current duopoly.\",\n    \"explanatory\": \"It explains how power centralization and winner-takes-all incentives cause polarization and gridlock, proposing a mechanism to distribute power more equitably.\",\n    \"non_obvious\": \"The idea of a rotating executive council replacing a single president breaks deeply ingrained assumptions about American executive power.\",\n    \"scalability\": \"If implemented, it could transform governance for hundreds of millions of Americans and influence democratic systems worldwide.\",\n    \"principle\": \"The insight about decentralizing executive power and incentivizing coalition governance can apply to other political and organizational systems beyond the U.S.\"\n  }\n}"
+        }
+      }
+    ],
+    "final_output": "A significant structural problem in the American government is the extreme polarization and gridlock rooted in its winner-take-all, single-member district electoral system, which incentivizes political parties to cater primarily to ideological extremes rather than the median voter. This system marginalizes independent or moderate voices and entrenches partisanship, resulting in legislative stagnation and reduced public trust. Traditional proposals often focus on proportional representation or ranked-choice voting, but these changes face substantial political resistance and may not fully address systemic incentives toward polarization.\n\nA substantially different solution would be to institutionalize a mandatory, rotating \"Deliberative Legislature\" within Congress composed of randomly selected citizens serving short, non-renewable terms alongside elected representatives. This citizen cohort would participate in drafting, debating, and amending legislation, bringing diverse perspectives disconnected from party pressures or electoral considerations. Their presence could reshape legislative priorities toward pragmatic consensus, incentivize elected officials to engage in genuine negotiation, and foster greater public trust. This structural innovation combines democratic inclusivity with representative government, directly counteracting polarization by embedding a deliberative counterbalance within the legislative process itself.",
+    "selected": {
+      "mode": "single_pass",
+      "reformulation": "",
+      "scores": {
+        "constraint_satisfaction": 1.0,
+        "usefulness": 0.7,
+        "constraint_overall": 0.85,
+        "breakthrough_scores": {
+          "generative_power": 0.8,
+          "explanatory_depth": 0.7,
+          "non_obviousness": 0.85,
+          "scalability_of_impact": 0.9,
+          "principle_over_implementation": 0.75,
+          "breakthrough_potential": 0.8,
+          "rationale": {
+            "generative": "Introducing a deliberative citizen legislature opens new avenues for democratic innovation and hybrid governance models.",
+            "explanatory": "The solution addresses root causes of polarization by altering incentives and embedding diverse perspectives in lawmaking.",
+            "non_obvious": "Randomly selected citizen legislators serving alongside elected officials challenges conventional assumptions about representative democracy.",
+            "scalability": "If widely adopted, this model could transform legislative processes across many democratic systems, deeply affecting governance quality.",
+            "principle": "Embedding deliberative, randomly selected citizen bodies alongside elected representatives is a transferable concept applicable beyond the U.S. context."
+          }
+        },
+        "breakthrough_potential": 0.8,
+        "discard": false,
+        "final_score": 0.82,
+        "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific, and justified solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed 'Deliberative Legislature' is a novel and plausible mechanism to reduce polarization by involving randomly selected citizens, though its feasibility may face practical and political challenges, slightly limiting its likelihood of success.\"\n  }\n}",
+        "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"Introducing a deliberative citizen legislature opens new avenues for democratic innovation and hybrid governance models.\",\n    \"explanatory\": \"The solution addresses root causes of polarization by altering incentives and embedding diverse perspectives in lawmaking.\",\n    \"non_obvious\": \"Randomly selected citizen legislators serving alongside elected officials challenges conventional assumptions about representative democracy.\",\n    \"scalability\": \"If widely adopted, this model could transform legislative processes across many democratic systems, deeply affecting governance quality.\",\n    \"principle\": \"Embedding deliberative, randomly selected citizen bodies alongside elected representatives is a transferable concept applicable beyond the U.S. context.\"\n  }\n}"
+      }
+    }
+  },
+  "elapsed_seconds": 263.0995512008667
+}

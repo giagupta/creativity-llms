@@ -4,14 +4,16 @@ You are solving the following problem:
 
 Your task is to generate a solution using transformational creativity: deliberately altering or breaking a core assumption or constraint that defines the current problem space, thereby enabling solutions that are inaccessible under the original framing.
 
+CRITICAL: The assumption you break must lead to a solution substantially different from standard reforms. Aim for a conceptual leap that challenges fundamental premises, not an incremental improvement. Avoid conventional policy proposals.
+
 Example (for illustration only):
 
-Marcel Duchamp’s Fountain transformed the rules of art by rejecting the assumption that art must be handcrafted or visually aesthetic. By presenting a readymade urinal as art, Duchamp redefined what could count as an artwork, creating an entirely new artistic space (conceptual art).
+Marcel Duchamp's Fountain transformed the rules of art by rejecting the assumption that art must be handcrafted or visually aesthetic. By presenting a readymade urinal as art, Duchamp redefined what could count as an artwork, creating an entirely new artistic space (conceptual art).
 
 Proceed as follows:
 1. Identify one central assumption, constraint, or rule that structures how this problem is usually approached.
 2. Deliberately break, invert, or reinterpret this assumption.
-3. Using the newly opened problem space, propose a concrete, feasible solution.
+3. Using the newly opened problem space, propose a concrete, feasible solution that represents a genuine departure from conventional thinking.
 
 In your final response:
 - Explicitly state which assumption or rule you are breaking

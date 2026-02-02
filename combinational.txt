@@ -4,6 +4,8 @@ You are solving the following problem:
 
 Your task is to generate a solution using combinational creativity: transferring a structural pattern from one conceptually unrelated domain into the problem domain.
 
+CRITICAL: Your solution must be genuinely distinct from conventional approaches. Use the domain transfer to find novel insights that wouldn't emerge from typical policy analysis. Avoid standard reforms that are commonly discussed.
+
 Example (for illustration only):
 
 The discovery of the DNA double helix involved importing structural constraints and inference methods from outside biology (e.g., X-ray crystallography and chemical bonding theory) into genetics. The novelty came not from inventing new rules, but from transferring an external structural framework to explain a biological system.
@@ -14,7 +16,7 @@ Proceed as follows:
 1. Use the provided unrelated domain as a structural lens.
 2. Identify one core structural or organizational principle from that domain.
 3. Map that principle onto the problem at a structural level (not surface analogy).
-4. Use this mapping to propose a concrete, feasible solution.
+4. Use this mapping to propose a concrete, feasible solution that is substantially different from obvious reforms.
 
 In your final response:
 - Explicitly name the domain you used.

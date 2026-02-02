@@ -1,0 +1,793 @@
+{
+  "timestamp": "2026-02-01T14:38:16",
+  "prompt_id": "american_government",
+  "prompt": "Analyze the American government. Identify one significant structural problem and propose a concrete solution. The solution should be specific, feasible, and clearly justified. (Maximum two paragraphs.)",
+  "condition": "divergent_convergent_18_keep5",
+  "config": {
+    "model": {
+      "name": "gpt-4.1-mini",
+      "max_tokens": 350
+    },
+    "conditions": [
+      "single_pass_18_keep5",
+      "divergent_convergent_18_keep5",
+      "evolutionary_2gen"
+    ],
+    "budget": {
+      "max_candidates_per_prompt": 18,
+      "keep_top_k": 5
+    },
+    "sampling": {
+      "single_pass": {
+        "temperature": 0.9,
+        "top_p": 1.0
+      },
+      "reframing": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "num_reformulations": 3
+      },
+      "combinational": {
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "transformational": {
+        "temperature": 1.1,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "judge": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "selection": {
+      "discard_if_constraint_below": 0.4,
+      "constraint_weight": 0.2,
+      "usefulness_weight": 0.2,
+      "breakthrough_weight": 0.6
+    }
+  },
+  "result": {
+    "reformulations": [
+      "Examine the foundational incentives within the American government that contribute to systemic inefficiencies. Identify one key incentive structure that undermines effective governance and suggest a targeted modification to realign these incentives for improved functionality.",
+      "Assess one major institutional barrier within the American government that hampers responsiveness or accountability. Describe this structural obstacle and propose a precise institutional reform that would mitigate its negative effects while maintaining democratic principles.",
+      "Analyze the interplay between the branches of the American government to identify a significant structural imbalance or conflict. Propose a concrete adjustment to the distribution of powers or procedural rules that could enhance cooperation and governance effectiveness."
+    ],
+    "candidates": [
+      {
+        "mode": "structural_transfer",
+        "domain": "Coral reef ecosystems",
+        "reformulation": "Examine the foundational incentives within the American government that contribute to systemic inefficiencies. Identify one key incentive structure that undermines effective governance and suggest a targeted modification to realign these incentives for improved functionality.",
+        "text": "Domain used: Coral reef ecosystems.\n\nThe structural problem within the American government is that key incentive structures\u2014such as partisan polarization driven by winner-takes-all elections\u2014create systemic inefficiencies by discouraging cooperation and adaptive problem-solving. Coral reef ecosystems, by contrast, thrive through functional diversity and cooperative symbiosis among many species, each occupying specialized niches but interdependent for mutual benefit. This decentralized, multi-layered interdependence fosters resilience and efficient resource use, contrasting with rigid competitive dominance.\n\nTransferring this principle, a feasible solution is to implement a multi-member district electoral system with ranked-choice voting that encourages coalition-building and functional specialization among legislators. By enabling multiple representatives per district who must collaborate to represent diverse constituencies, the system structurally incentivizes cooperation and symbiotic governance rather than zero-sum competition. This would enhance adaptive responsiveness and policy innovation, reducing gridlock and making governance more efficient and resilient\u2014just as coral reefs flourish through diverse, cooperative networks rather than competition for exclusive dominance.",
+        "judge": {
+          "constraint_satisfaction": 0.8,
+          "usefulness": 0.7,
+          "constraint_overall": 0.75,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.74,
+            "rationale": {
+              "generative": "The solution opens new avenues for electoral reform and cooperative governance models beyond traditional winner-takes-all systems.",
+              "explanatory": "It explains the causal mechanism of polarization through incentive structures and contrasts it with ecological symbiosis to reveal systemic inefficiencies.",
+              "non_obvious": "Drawing an analogy from coral reef ecosystems to political structures requires a significant conceptual leap beyond typical political science frameworks.",
+              "scalability": "If broadly implemented, it could transform legislative behavior across the entire U.S. government, affecting millions of constituents and potentially other democracies.",
+              "principle": "The insight about decentralized, cooperative interdependence as a governance principle is transferable to many complex adaptive systems beyond politics."
+            }
+          },
+          "breakthrough_potential": 0.74,
+          "discard": false,
+          "final_score": 0.744,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.8,\n  \"usefulness\": 0.7,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a significant structural problem (partisan polarization driven by winner-takes-all elections) and proposes a concrete, specific solution (multi-member districts with ranked-choice voting). The response is within two paragraphs and includes justification, though the initial paragraph's analogy to coral reefs is somewhat tangential.\",\n    \"usefulness\": \"The proposed solution is plausible and specific, addressing the mechanism of cooperation incentives in elections. While the analogy is indirect, the electoral reform suggested is a recognized approach to reducing polarization and encouraging collaboration, making the proposal reasonably feasible and potentially effective.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.74,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for electoral reform and cooperative governance models beyond traditional winner-takes-all systems.\",\n    \"explanatory\": \"It explains the causal mechanism of polarization through incentive structures and contrasts it with ecological symbiosis to reveal systemic inefficiencies.\",\n    \"non_obvious\": \"Drawing an analogy from coral reef ecosystems to political structures requires a significant conceptual leap beyond typical political science frameworks.\",\n    \"scalability\": \"If broadly implemented, it could transform legislative behavior across the entire U.S. government, affecting millions of constituents and potentially other democracies.\",\n    \"principle\": \"The insight about decentralized, cooperative interdependence as a governance principle is transferable to many complex adaptive systems beyond politics.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Ant colony behavior",
+        "reformulation": "Examine the foundational incentives within the American government that contribute to systemic inefficiencies. Identify one key incentive structure that undermines effective governance and suggest a targeted modification to realign these incentives for improved functionality.",
+        "text": "Domain used: Ant colony behavior.\n\nStructural problem: In the American government, a core inefficiency arises from siloed incentives and fragmented information flows, where individual actors or branches prioritize short-term, localized goals (e.g., re-election, party advantage) over collective, system-wide efficiency. This misalignment produces redundant efforts, delayed responses, and policy gridlock, as actors lack a coordinated mechanism to dynamically share information and adjust strategies in real time.\n\nSolution informed by ant colony behavior: Ant colonies rely on stigmergy\u2014indirect coordination through environmental markers like pheromone trails\u2014to enable decentralized agents to collectively optimize foraging paths without centralized control. Transferring this principle, the government could implement a real-time, transparent \u201cpolicy feedback network\u201d platform where legislative proposals, agency actions, and outcomes are continuously updated and made publicly accessible. This platform would serve as a shared \u201cinformational pheromone trail,\u201d allowing policymakers, agencies, and the public to dynamically observe, track, and respond to policy impacts and bottlenecks. By creating a living, shared environment for indirect coordination, actors would be incentivized to align their efforts with collective priorities and adapt strategies swiftly, reducing redundancies and improving governance responsiveness in practice.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.71,
+            "rationale": {
+              "generative": "The solution opens pathways for new governance tools and dynamic coordination methods beyond traditional structures.",
+              "explanatory": "It explains the root cause of inefficiency as misaligned incentives and fragmented information flows, linking to systemic coordination failures.",
+              "non_obvious": "Applying stigmergy from ant colonies to government coordination is a novel conceptual leap that breaks from conventional political reform thinking.",
+              "scalability": "If widely adopted, it could transform governance responsiveness and efficiency across all levels of government affecting millions.",
+              "principle": "The insight about decentralized, indirect coordination via shared informational environments can apply to many complex systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.71,
+          "discard": false,
+          "final_score": 0.766,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem in the American government and proposes a concrete, specific, and justified solution within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed solution is plausible and specific, leveraging a real-time transparent platform to improve coordination and information flow, though it may face practical challenges in implementation and adoption.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.71,\n  \"rationale\": {\n    \"generative\": \"The solution opens pathways for new governance tools and dynamic coordination methods beyond traditional structures.\",\n    \"explanatory\": \"It explains the root cause of inefficiency as misaligned incentives and fragmented information flows, linking to systemic coordination failures.\",\n    \"non_obvious\": \"Applying stigmergy from ant colonies to government coordination is a novel conceptual leap that breaks from conventional political reform thinking.\",\n    \"scalability\": \"If widely adopted, it could transform governance responsiveness and efficiency across all levels of government affecting millions.\",\n    \"principle\": \"The insight about decentralized, indirect coordination via shared informational environments can apply to many complex systems beyond government.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Quantum entanglement physics",
+        "reformulation": "Examine the foundational incentives within the American government that contribute to systemic inefficiencies. Identify one key incentive structure that undermines effective governance and suggest a targeted modification to realign these incentives for improved functionality.",
+        "text": "Domain used: Quantum entanglement physics.\n\nStructural problem: The American government\u2019s incentive structure is undermined by siloed, adversarial interactions between branches and political parties, leading to inefficiencies as actors prioritize individual or factional interests over collective outcomes. This separation weakens coordination and trust, producing systemic gridlock and short-termism.\n\nSolution: Transfer the principle of quantum entanglement, where the state of one particle instantaneously constrains and correlates the state of another regardless of distance, to government decision-making by instituting \u201centangled accountability pairs\u201d across branches and parties. Each accountability pair would be composed of members from different branches or opposing parties whose policy outcomes and performance evaluations are interdependently linked\u2014success or failure by one directly affects the other's standing and incentives. This structural coupling would realign incentives toward cooperation and joint optimization of governance outcomes, as actors would be motivated to transparently coordinate and share information to maximize their linked performance metrics.\n\nThis entangled accountability would reduce adversarial siloing by embedding a structural correlation that ties actors\u2019 fates together, promoting systemic coherence akin to quantum correlations. Practically, it leverages mutual dependency to overcome zero-sum thinking, fostering trust and joint problem-solving while preserving institutional independence, thereby improving government functionality and efficiency.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.3,
+          "constraint_overall": 0.65,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.5,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.66,
+            "rationale": {
+              "generative": "The solution opens new avenues for incentive design by linking actors across divides, enabling derivative innovations in governance structures.",
+              "explanatory": "It provides a causal mechanism by addressing incentive misalignment and trust deficits through structural interdependence.",
+              "non_obvious": "Applying quantum entanglement as a metaphor for political accountability pairs is a novel conceptual leap beyond traditional governance reforms.",
+              "scalability": "If broadly adopted, it could transform coordination across multiple government levels and parties, deeply affecting governance efficiency.",
+              "principle": "The insight of coupling incentives across adversarial actors is transferable to other domains facing siloed, competitive dynamics."
+            }
+          },
+          "breakthrough_potential": 0.66,
+          "discard": false,
+          "final_score": 0.656,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.3,\n  \"overall\": 0.65,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a concrete solution within the two-paragraph limit, fulfilling the prompt requirements.\",\n    \"usefulness\": \"While the solution is creative and includes a mechanism to link incentives across branches and parties, it relies on an abstract analogy to quantum entanglement without concrete implementation details, making feasibility and practical success uncertain.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.5,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.66,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for incentive design by linking actors across divides, enabling derivative innovations in governance structures.\",\n    \"explanatory\": \"It provides a causal mechanism by addressing incentive misalignment and trust deficits through structural interdependence.\",\n    \"non_obvious\": \"Applying quantum entanglement as a metaphor for political accountability pairs is a novel conceptual leap beyond traditional governance reforms.\",\n    \"scalability\": \"If broadly adopted, it could transform coordination across multiple government levels and parties, deeply affecting governance efficiency.\",\n    \"principle\": \"The insight of coupling incentives across adversarial actors is transferable to other domains facing siloed, competitive dynamics.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine the foundational incentives within the American government that contribute to systemic inefficiencies. Identify one key incentive structure that undermines effective governance and suggest a targeted modification to realign these incentives for improved functionality.",
+        "text": "The central assumption to break is the notion that electoral accountability must rely solely on fixed-term, winner-take-all elections, which structurally incentivize short-term, partisan competition over long-term cooperative governance. This system creates a recurring cycle where elected officials prioritize re-election by catering to polarized bases and lobbying, undermining consensus-building and efficiency in lawmaking.\n\nBy breaking this assumption, a feasible solution is to implement a continuous, merit-based retention system for legislators, where performance is evaluated regularly through a combination of citizen assemblies, expert panels, and nonpartisan oversight bodies, rather than periodic winner-takes-all elections. Such a system realigns incentives away from partisanship and toward consistent, evidence-based governance because legislators maintain their positions based on demonstrated effectiveness and responsiveness rather than electoral popularity. This would plausibly improve systemic efficiency by fostering accountability through ongoing performance and reducing polarization that hinders cooperation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution opens new avenues for governance models beyond fixed-term elections, enabling derivative innovations in political accountability.",
+              "explanatory": "It explains the causal mechanism linking fixed-term elections to polarization and inefficiency, unifying electoral incentives with legislative behavior.",
+              "non_obvious": "It requires breaking the deeply ingrained assumption of winner-take-all elections and introduces a novel continuous merit-based retention system.",
+              "scalability": "If implemented broadly, it could transform democratic governance systems worldwide, affecting millions by reducing polarization and improving lawmaking.",
+              "principle": "The insight about decoupling accountability from periodic elections can be applied across various governance and organizational domains."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.82,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (fixed-term, winner-take-all elections) and proposes a concrete, specific solution (continuous, merit-based retention system with citizen assemblies, expert panels, and oversight bodies). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"The proposed solution is plausible and includes mechanisms to reduce partisanship and improve accountability, though it may face practical challenges in implementation and acceptance, which slightly lowers its score.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for governance models beyond fixed-term elections, enabling derivative innovations in political accountability.\",\n    \"explanatory\": \"It explains the causal mechanism linking fixed-term elections to polarization and inefficiency, unifying electoral incentives with legislative behavior.\",\n    \"non_obvious\": \"It requires breaking the deeply ingrained assumption of winner-take-all elections and introduces a novel continuous merit-based retention system.\",\n    \"scalability\": \"If implemented broadly, it could transform democratic governance systems worldwide, affecting millions by reducing polarization and improving lawmaking.\",\n    \"principle\": \"The insight about decoupling accountability from periodic elections can be applied across various governance and organizational domains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine the foundational incentives within the American government that contribute to systemic inefficiencies. Identify one key incentive structure that undermines effective governance and suggest a targeted modification to realign these incentives for improved functionality.",
+        "text": "The central assumption I am breaking is that political representatives in Congress must be elected primarily by geographic districts and constantly face re-election pressure within fixed two-year cycles. This geographic, short-term electoral accountability creates a system where politicians prioritize local, immediate interests and partisan positioning over long-term, systemic problem-solving, thereby fostering inefficiencies like gridlock and short-sighted policymaking.\n\nBy reinterpreting this assumption, we could implement a mixed national representation system where a portion of legislators are selected through a meritocratic, performance-based evaluation over longer terms, insulated from direct electoral pressures. For example, part of Congress could be constituted by citizen-elected panels that nominate candidates based on expertise and evidence of effective governance, followed by national ratification through non-partisan referenda every six years. This restructure would realign incentives away from pandering to narrow constituencies and toward durable, evidence-driven policy, reducing gridlock and enabling more coherent long-term governance solutions, as representatives would be motivated to serve broad national interests and measurable outcomes rather than short-term political survival.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "This solution opens new avenues for political representation models beyond traditional geographic districts, enabling derivative innovations in governance structures.",
+              "explanatory": "It explains how short-term electoral pressures causally lead to gridlock and localism, linking structural incentives to systemic dysfunction.",
+              "non_obvious": "The idea of mixing meritocratic, performance-based selection with national referenda breaks conventional assumptions about electoral accountability.",
+              "scalability": "If implemented nationally, it could transform the entire U.S. legislative process, affecting millions and potentially serving as a model for other democracies.",
+              "principle": "The insight about decoupling representation from geographic and short-term electoral pressures can apply broadly to governance and organizational design."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.8,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (short-term electoral pressure and geographic districting) and proposes a concrete, specific solution (a mixed national representation system with meritocratic selection and longer terms). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"The solution is somewhat feasible and specific, involving citizen-elected panels and national referenda, which could reduce short-termism and gridlock. However, the proposal is somewhat idealistic and may face practical challenges in implementation and acceptance, reducing its overall likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"This solution opens new avenues for political representation models beyond traditional geographic districts, enabling derivative innovations in governance structures.\",\n    \"explanatory\": \"It explains how short-term electoral pressures causally lead to gridlock and localism, linking structural incentives to systemic dysfunction.\",\n    \"non_obvious\": \"The idea of mixing meritocratic, performance-based selection with national referenda breaks conventional assumptions about electoral accountability.\",\n    \"scalability\": \"If implemented nationally, it could transform the entire U.S. legislative process, affecting millions and potentially serving as a model for other democracies.\",\n    \"principle\": \"The insight about decoupling representation from geographic and short-term electoral pressures can apply broadly to governance and organizational design.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine the foundational incentives within the American government that contribute to systemic inefficiencies. Identify one key incentive structure that undermines effective governance and suggest a targeted modification to realign these incentives for improved functionality.",
+        "text": "The central assumption I am breaking is: \"Elected officials must primarily secure re-election through appealing to their current constituency (single-member district focus), incentivizing short-term, local interests and partisan positioning over broader, long-term governance.\" This entrenched winner-take-all electoral constraint fosters polarization and discourages compromise, as politicians prioritize narrow voter bases rather than systemic efficiency or cross-cutting solutions.\n\nBy inverting this, imagine a system where elected officials are selected via a multi-dimensional, constituency-agnostic meritocratic deliberation panel combined with random citizen juries rather than direct, geographically bounded elections. This realignment breaks the re-election imperative tied to narrow districts and party machinery, instead incentivizing officials to focus on demonstrable, broadly beneficial policy outcomes and collaborative governance to retain credibility and continued participation. Such a system would plausibly reduce polarization and short-termism by detaching political survival from zero-sum local campaigning, favoring accountability rooted in performance and reasoned judgment, thus enabling structurally more efficient and adaptive governance.",
+        "judge": {
+          "constraint_satisfaction": 0.8,
+          "usefulness": 0.4,
+          "constraint_overall": 0.6000000000000001,
+          "breakthrough_scores": {
+            "generative_power": 0.9,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.85,
+            "rationale": {
+              "generative": "This solution unlocks numerous new governance models by replacing electoral incentives with meritocratic and deliberative mechanisms.",
+              "explanatory": "It explains the root cause of polarization as tied to electoral incentives and shows how changing selection mechanisms alters political behavior.",
+              "non_obvious": "It requires breaking the deeply ingrained assumption of geographically based, direct elections and introduces a novel hybrid selection process.",
+              "scalability": "If widely adopted, it could transform democratic governance globally, affecting millions by reducing polarization and improving policy outcomes.",
+              "principle": "The insight about incentive structures and meritocratic accountability applies broadly beyond American government to other organizational and political systems."
+            }
+          },
+          "breakthrough_potential": 0.85,
+          "discard": false,
+          "final_score": 0.75,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.8,\n  \"usefulness\": 0.4,\n  \"overall\": 0.6,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a significant structural problem and proposes a concrete solution within two paragraphs, meeting the prompt requirements well. The response is clear and focused on the structural issue of electoral incentives.\",\n    \"usefulness\": \"The proposed solution is innovative but somewhat vague and lacks detailed mechanisms for implementation, making it less feasible and realistic. The idea of meritocratic panels and citizen juries is not fully fleshed out, reducing its practical usefulness.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.9,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.85,\n  \"rationale\": {\n    \"generative\": \"This solution unlocks numerous new governance models by replacing electoral incentives with meritocratic and deliberative mechanisms.\",\n    \"explanatory\": \"It explains the root cause of polarization as tied to electoral incentives and shows how changing selection mechanisms alters political behavior.\",\n    \"non_obvious\": \"It requires breaking the deeply ingrained assumption of geographically based, direct elections and introduces a novel hybrid selection process.\",\n    \"scalability\": \"If widely adopted, it could transform democratic governance globally, affecting millions by reducing polarization and improving policy outcomes.\",\n    \"principle\": \"The insight about incentive structures and meritocratic accountability applies broadly beyond American government to other organizational and political systems.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Medieval guild organizational structure",
+        "reformulation": "Assess one major institutional barrier within the American government that hampers responsiveness or accountability. Describe this structural obstacle and propose a precise institutional reform that would mitigate its negative effects while maintaining democratic principles.",
+        "text": "Domain used: Medieval guild organizational structure.\n\nA core structural principle of medieval guilds was their layered accountability system, wherein journeymen and masters were organized within tightly-knit communities that combined apprenticeship, peer-review, and collective responsibility to maintain quality and trustworthiness. This structure ensured members were directly accountable to each other and to the guild\u2019s standards, creating a self-regulating system that balanced individual autonomy with communal oversight.\n\nMapping this principle onto the American government, a major institutional barrier to responsiveness and accountability is the separation of powers and diffuse responsibility, which often leads to gridlock and weak direct oversight of elected officials by their peers and constituents. Inspired by the guild\u2019s internal accountability, a feasible reform would be to introduce \u201cpeer accountability councils\u201d within Congress\u2014cross-party committees composed of elected members who regularly evaluate each other\u2019s legislative performance and adherence to ethical standards, with transparent peer feedback and the power to issue formal censure or recommendations for corrective action. This would embed a structured, collegial review mechanism that increases responsiveness by fostering direct peer oversight, breaking down siloed behavior, and reinforcing norms without undermining democratic election principles. The solution plausibly works as it leverages internal professional community dynamics rather than external enforcement, preserving democratic independence while encouraging accountability through institutionalized peer pressure and support.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.71,
+            "rationale": {
+              "generative": "The solution opens new avenues for institutional peer accountability that could inspire similar reforms in other governance or organizational contexts.",
+              "explanatory": "It explains the causal mechanism of accountability breakdown through diffuse responsibility and proposes a structural fix rooted in peer dynamics.",
+              "non_obvious": "Applying a medieval guild accountability model to modern government requires a significant conceptual leap beyond typical political reforms.",
+              "scalability": "If broadly adopted, peer accountability councils could deeply affect legislative behavior and democratic responsiveness across the entire government.",
+              "principle": "The insight about layered, internal peer accountability is transferable to many domains beyond government, such as corporations or professional bodies."
+            }
+          },
+          "breakthrough_potential": 0.71,
+          "discard": false,
+          "final_score": 0.786,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (diffuse responsibility and gridlock due to separation of powers) and proposes a concrete, specific, and feasible solution (peer accountability councils in Congress) within two paragraphs.\",\n    \"usefulness\": \"The proposed peer accountability councils have a clear mechanism for improving oversight and responsiveness through peer review and ethical evaluation, making the solution plausible and likely to enhance accountability without undermining democratic principles.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.71,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for institutional peer accountability that could inspire similar reforms in other governance or organizational contexts.\",\n    \"explanatory\": \"It explains the causal mechanism of accountability breakdown through diffuse responsibility and proposes a structural fix rooted in peer dynamics.\",\n    \"non_obvious\": \"Applying a medieval guild accountability model to modern government requires a significant conceptual leap beyond typical political reforms.\",\n    \"scalability\": \"If broadly adopted, peer accountability councils could deeply affect legislative behavior and democratic responsiveness across the entire government.\",\n    \"principle\": \"The insight about layered, internal peer accountability is transferable to many domains beyond government, such as corporations or professional bodies.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Symphony orchestra dynamics",
+        "reformulation": "Assess one major institutional barrier within the American government that hampers responsiveness or accountability. Describe this structural obstacle and propose a precise institutional reform that would mitigate its negative effects while maintaining democratic principles.",
+        "text": "Domain used: Symphony orchestra dynamics.\n\nA core structural principle in symphony orchestras is the clear hierarchy coupled with distributed autonomy\u2014while the conductor has overarching authority to unify interpretation and timing, each section (strings, brass, woodwinds, percussion) is led by a principal who manages internal coordination and responsiveness within the group. This layered leadership enables rapid, coherent adjustments during performance, balancing centralized control with sectional expertise and accountability. Mapping this to the American government\u2019s structural barrier of fragmented congressional committees and diffuse legislative authority, which hampers clear responsibility and slows responsiveness, suggests an institutional reform: establish \"legislative conductors\" empowered to coordinate related committees into cohesive, accountable clusters with designated leads. These leads would synthesize hearing schedules, unify legislative priorities, and publicly report on collective progress, akin to orchestra principals managing their sections under the conductor\u2019s direction.\n\nThis reform would plausibly enhance government responsiveness by introducing structured coordination without undermining democratic checks or pluralism. Like a conductor clarifies musical interpretation without silencing individual musicians, legislative conductors would create coherent policy action while preserving committee deliberation and independence. The layering of authority fosters clearer accountability\u2014each cluster lead can be held responsible for progress on related issues\u2014while improving efficiency by reducing inter-committee conflicts and delays. This orchestral model balances unity and autonomy, offering a durable framework for overcoming institutional fragmentation within the legislature.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.7,
+            "rationale": {
+              "generative": "The solution opens new avenues for institutional design by applying orchestral leadership models to legislative coordination, enabling derivative innovations in governance structures.",
+              "explanatory": "It explains the causal mechanism of fragmented authority causing inefficiency and proposes a layered leadership model to unify and streamline legislative processes.",
+              "non_obvious": "Mapping symphony orchestra dynamics to government structure is a novel conceptual leap that breaks conventional assumptions about political organization.",
+              "scalability": "If broadly adopted, this model could improve legislative efficiency and accountability across the entire U.S. government, affecting millions through better policy outcomes.",
+              "principle": "The insight about balancing centralized coordination with distributed autonomy is transferable to many complex organizational systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.7,
+          "discard": false,
+          "final_score": 0.76,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (fragmented congressional committees and diffuse legislative authority) and proposes a concrete, specific, and feasible solution (establishing 'legislative conductors' to coordinate committees). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"The proposed solution is plausible and includes mechanisms for coordination, accountability, and efficiency improvements. However, it relies on a novel institutional role that may face political and practical challenges, and the analogy to orchestras, while illustrative, may oversimplify legislative complexities.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.7,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for institutional design by applying orchestral leadership models to legislative coordination, enabling derivative innovations in governance structures.\",\n    \"explanatory\": \"It explains the causal mechanism of fragmented authority causing inefficiency and proposes a layered leadership model to unify and streamline legislative processes.\",\n    \"non_obvious\": \"Mapping symphony orchestra dynamics to government structure is a novel conceptual leap that breaks conventional assumptions about political organization.\",\n    \"scalability\": \"If broadly adopted, this model could improve legislative efficiency and accountability across the entire U.S. government, affecting millions through better policy outcomes.\",\n    \"principle\": \"The insight about balancing centralized coordination with distributed autonomy is transferable to many complex organizational systems beyond government.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Beekeeping hive management",
+        "reformulation": "Assess one major institutional barrier within the American government that hampers responsiveness or accountability. Describe this structural obstacle and propose a precise institutional reform that would mitigate its negative effects while maintaining democratic principles.",
+        "text": "Domain used: Beekeeping hive management.\n\nA major institutional barrier in the American government is the fragmentation of authority and diffuse responsibility across multiple branches and layers of government, which often results in slow responsiveness and diluted accountability. This structural problem resembles the challenge in hive management, where a beehive\u2019s survival depends on coordinated, decentralized activities of numerous worker bees, yet these activities must be aligned with the queen\u2019s directive for efficient operation. Beekeepers solve this by employing the principle of distributed task allocation coordinated through pheromone signaling: the queen\u2019s pheromones provide a clear, centralized coordinating signal that guides worker behavior, while allowing decentralized, autonomous action without micromanagement.\n\nTransferring this principle, a precise institutional reform would be to create a centralized, nonpartisan \u201cpolicy pheromone\u201d office within the federal government that issues clear, prioritized policy signals based on broad national interests, derived from data-driven criteria and public input. This office would not micromanage agencies or legislators but would coordinate and align their efforts by setting clear, measurable goals and public benchmarks updated frequently. Much like pheromonal coordination enables a hive to self-organize efficiently without losing responsiveness to environmental changes, this reform would harmonize fragmented government units, improving responsiveness and accountability while preserving democratic pluralism by maintaining legislative and bureaucratic autonomy under a unified strategic framework.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.71,
+            "rationale": {
+              "generative": "The solution opens new avenues for coordinating decentralized government functions through centralized signaling, enabling derivative innovations in governance models.",
+              "explanatory": "It explains the causal mechanism of coordination via signaling in complex systems, unifying government fragmentation with biological self-organization.",
+              "non_obvious": "Applying beekeeping pheromone signaling to government coordination is a novel conceptual leap that breaks conventional political reform assumptions.",
+              "scalability": "If implemented broadly, it could harmonize multiple government layers affecting millions, improving responsiveness and accountability at scale.",
+              "principle": "The insight of centralized signaling coordinating decentralized agents is transferable across domains beyond government and beekeeping."
+            }
+          },
+          "breakthrough_potential": 0.71,
+          "discard": false,
+          "final_score": 0.766,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (fragmentation and diffuse responsibility) and proposes a concrete, specific, and feasible solution (a centralized, nonpartisan office issuing clear policy signals). The response is within two paragraphs and includes justification.\",\n    \"usefulness\": \"The proposed solution is plausible and includes a clear mechanism for coordination without micromanagement, improving responsiveness and accountability. However, the analogy to pheromones may oversimplify political complexities, and the feasibility depends on political will and implementation details not fully addressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.71,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for coordinating decentralized government functions through centralized signaling, enabling derivative innovations in governance models.\",\n    \"explanatory\": \"It explains the causal mechanism of coordination via signaling in complex systems, unifying government fragmentation with biological self-organization.\",\n    \"non_obvious\": \"Applying beekeeping pheromone signaling to government coordination is a novel conceptual leap that breaks conventional political reform assumptions.\",\n    \"scalability\": \"If implemented broadly, it could harmonize multiple government layers affecting millions, improving responsiveness and accountability at scale.\",\n    \"principle\": \"The insight of centralized signaling coordinating decentralized agents is transferable across domains beyond government and beekeeping.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Assess one major institutional barrier within the American government that hampers responsiveness or accountability. Describe this structural obstacle and propose a precise institutional reform that would mitigate its negative effects while maintaining democratic principles.",
+        "text": "The central assumption I am breaking is that democratic accountability and responsiveness must operate exclusively through fixed geographic districts represented by elected officials, which often leads to partisan gerrymandering and entrenched incumbency, undermining responsiveness. The structural problem is the rigidity of single-member districts and winner-take-all elections, which create institutional barriers by incentivizing polarization and reducing voters\u2019 ability to hold representatives accountable between elections.\n\nBy reinterpreting representation from single-member districts to a nationwide proportional representation system with multi-member delegations allocated via ranked-choice voting, we can enable a reform where citizens vote for individual candidates from a national pool, and seats are distributed proportionally to parties or coalitions based on total votes. This breaks the geographic silo, dilutes partisan manipulation, and incentivizes representatives to be accountable to a broader electorate rather than safe local bases. Such a system would plausibly increase responsiveness and accountability by fostering cross-cutting political coalitions, reducing polarization, and making it easier for voters to \u201cthrow the bums out\u201d while preserving fundamental democratic principles of electoral choice and representation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "Shifting from geographic districts to nationwide proportional representation opens many new avenues for electoral reform and political innovation.",
+              "explanatory": "It explains how structural incentives in single-member districts cause polarization and unresponsiveness by linking representation to geography and winner-take-all rules.",
+              "non_obvious": "The idea challenges the deeply ingrained assumption that representation must be geographically fixed and winner-take-all, requiring a significant conceptual leap.",
+              "scalability": "If implemented nationally, it could transform the entire U.S. political system, affecting hundreds of millions and potentially serving as a model globally.",
+              "principle": "The insight about decoupling representation from geography and using proportional, ranked-choice voting can apply to many democratic systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.82,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (single-member districts and winner-take-all elections) and proposes a concrete, specific solution (nationwide proportional representation with ranked-choice voting) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution is detailed and plausible, explaining mechanisms to reduce polarization and increase accountability; however, nationwide proportional representation is a major systemic change that may face practical and political challenges, slightly reducing its feasibility score.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"Shifting from geographic districts to nationwide proportional representation opens many new avenues for electoral reform and political innovation.\",\n    \"explanatory\": \"It explains how structural incentives in single-member districts cause polarization and unresponsiveness by linking representation to geography and winner-take-all rules.\",\n    \"non_obvious\": \"The idea challenges the deeply ingrained assumption that representation must be geographically fixed and winner-take-all, requiring a significant conceptual leap.\",\n    \"scalability\": \"If implemented nationally, it could transform the entire U.S. political system, affecting hundreds of millions and potentially serving as a model globally.\",\n    \"principle\": \"The insight about decoupling representation from geography and using proportional, ranked-choice voting can apply to many democratic systems beyond the U.S.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Assess one major institutional barrier within the American government that hampers responsiveness or accountability. Describe this structural obstacle and propose a precise institutional reform that would mitigate its negative effects while maintaining democratic principles.",
+        "text": "The central assumption I am breaking is the traditional principle that elected representatives should exclusively serve fixed, multi-year terms before facing electoral accountability. This constraint underpins the problem: the American government's institutional structure often results in a lag between public will and political responsiveness because officeholders are insulated from immediate voter feedback, causing diminished accountability and responsiveness.\n\nBy reinterpreting this assumption, I propose a system of continuous, real-time electoral feedback through micro-elections or rolling representative recall mechanisms held quarterly at local and national levels. Under this model, rather than waiting years or special occasions to express approval or discontent, voters can periodically reaffirm or rescind their representatives\u2019 mandates based on ongoing performance and responsiveness to constituents. This institutional reform keeps democratic principles intact\u2014maintaining electoral choice and majority rule\u2014while sharply increasing government accountability and encouraging officials to remain closely aligned with public needs. Such a dynamic model, enabled by secure digital voting platforms, would mitigate lagged responsiveness by making political accountability continuous, thereby transforming the traditional \u201cfixed-term\u201d government into a truly responsive and adaptive democracy.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "Introducing continuous electoral feedback unlocks numerous derivative innovations in democratic accountability and governance models.",
+              "explanatory": "The solution explains the causal mechanism of lagged responsiveness by linking fixed terms to diminished accountability.",
+              "non_obvious": "It requires breaking the deeply entrenched assumption of fixed multi-year terms, which is a significant conceptual leap.",
+              "scalability": "If widely adopted, it could transform democratic systems globally, affecting millions by enhancing political responsiveness.",
+              "principle": "The insight about continuous accountability can be transferred to other governance and organizational contexts beyond government."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.8079999999999999,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem\u2014the lag in political responsiveness due to fixed multi-year terms\u2014and proposes a concrete, specific solution of quarterly micro-elections or rolling recalls, all within two paragraphs as required.\",\n    \"usefulness\": \"The solution is innovative and includes a mechanism (secure digital voting platforms) to enable feasibility, but it may face practical challenges in implementation and voter fatigue, which slightly reduces its plausibility.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"Introducing continuous electoral feedback unlocks numerous derivative innovations in democratic accountability and governance models.\",\n    \"explanatory\": \"The solution explains the causal mechanism of lagged responsiveness by linking fixed terms to diminished accountability.\",\n    \"non_obvious\": \"It requires breaking the deeply entrenched assumption of fixed multi-year terms, which is a significant conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could transform democratic systems globally, affecting millions by enhancing political responsiveness.\",\n    \"principle\": \"The insight about continuous accountability can be transferred to other governance and organizational contexts beyond government.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Assess one major institutional barrier within the American government that hampers responsiveness or accountability. Describe this structural obstacle and propose a precise institutional reform that would mitigate its negative effects while maintaining democratic principles.",
+        "text": "The central assumption I am breaking is that elected officials must be chosen exclusively through periodic, district-based, adversarial elections, which limits accountability to voters only at fixed intervals and often favors incumbents and special interests. The structural problem this creates is that the American government frequently faces responsiveness challenges due to partisan gerrymandering, low electoral competition, and long intervals between elections\u2014allowing officials to ignore public concerns without immediate consequences.\n\nBy reinterpreting this assumption, we can implement a continuous, dynamic representation system using real-time digital voting platforms where constituents can provide direct feedback and periodic policy preference inputs that adjust their representative\u2019s policy priorities or even recall representatives between traditional elections. This would create an ongoing accountability loop where elected officials must stay aligned with voter preferences as they evolve, not just every two or four years. Such a system preserves democratic participation but overcomes inertia by making responsiveness a living process rather than a static event, thereby revitalizing citizen influence and drastically reducing the lag that enables institutional unresponsiveness.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "This solution unlocks numerous new possibilities for continuous democratic engagement and derivative innovations in governance technology.",
+              "explanatory": "It explains the causal mechanism of electoral inertia and unresponsiveness by linking fixed-interval elections to accountability gaps.",
+              "non_obvious": "It requires breaking the entrenched assumption of periodic elections and introduces a novel, dynamic feedback loop.",
+              "scalability": "If widely adopted, it could deeply affect millions of voters and reshape democratic responsiveness globally.",
+              "principle": "The insight about continuous accountability through real-time feedback can be applied to other representative systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.8,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed continuous digital voting system is innovative and detailed, but its feasibility is somewhat optimistic given current technological, security, and political challenges, which lowers the usefulness score.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"This solution unlocks numerous new possibilities for continuous democratic engagement and derivative innovations in governance technology.\",\n    \"explanatory\": \"It explains the causal mechanism of electoral inertia and unresponsiveness by linking fixed-interval elections to accountability gaps.\",\n    \"non_obvious\": \"It requires breaking the entrenched assumption of periodic elections and introduces a novel, dynamic feedback loop.\",\n    \"scalability\": \"If widely adopted, it could deeply affect millions of voters and reshape democratic responsiveness globally.\",\n    \"principle\": \"The insight about continuous accountability through real-time feedback can be applied to other representative systems beyond the U.S.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Deep sea volcanic vent ecosystems",
+        "reformulation": "Analyze the interplay between the branches of the American government to identify a significant structural imbalance or conflict. Propose a concrete adjustment to the distribution of powers or procedural rules that could enhance cooperation and governance effectiveness.",
+        "text": "Domain used: Deep sea volcanic vent ecosystems.\n\nStructural problem: The American government\u2019s branches often experience deadlock due to rigid separation and competing authority, leading to ineffective cooperation and governance stalemates. This structural imbalance arises from fixed, siloed powers and adversarial checks without dynamic resource or information sharing.\n\nSolution informed by the transferred structure: Deep sea volcanic vent ecosystems rely on a symbiotic, interdependent network of organisms\u2014each specializing in distinct roles but linked through nutrient and energy exchanges that sustain the entire system. Applying this principle, the branches of government could establish formalized \u201csymbiotic liaison offices\u201d staffed with cross-branch representatives empowered to share real-time information, coordinate joint problem-solving, and facilitate resource exchange (e.g., expertise, data, legislative priorities) without undermining constitutional separation. These liaison offices would have procedural authority to mediate conflicts and propose jointly developed initiatives before formal branch decisions.\n\nWhy it would plausibly work: Like vent ecosystems, where interdependence balances autonomy and cooperation for system resilience, these liaisons would reduce zero-sum competition and increase adaptive collaboration, making governance more responsive and integrated. By institutionalizing structured, ongoing interbranch communication channels with shared goals, this approach preserves separation of powers while directly addressing procedural deadlocks and fostering pragmatic synergy grounded in mutual needs rather than confrontation.",
+        "judge": {
+          "constraint_satisfaction": 0.9,
+          "usefulness": 0.7,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.71,
+            "rationale": {
+              "generative": "The solution opens new avenues for interbranch collaboration and could inspire further innovations in governance structures.",
+              "explanatory": "It explains the causal mechanism of deadlock as a lack of dynamic resource and information exchange, drawing on ecological interdependence.",
+              "non_obvious": "The analogy to deep sea vent ecosystems is a novel conceptual leap that breaks from traditional political science frameworks.",
+              "scalability": "If broadly adopted, it could improve governance effectiveness across the entire U.S. government, impacting millions.",
+              "principle": "The insight about symbiotic interdependence transcends government and can inform cooperation in other complex systems."
+            }
+          },
+          "breakthrough_potential": 0.71,
+          "discard": false,
+          "final_score": 0.746,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.9,\n  \"usefulness\": 0.7,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, feasible solution with justification, all within two paragraphs. The use of an ecological analogy is creative but does not violate any prompt constraints.\",\n    \"usefulness\": \"The proposed 'symbiotic liaison offices' offer a concrete mechanism for improving interbranch communication and reducing deadlock, making the solution plausible and potentially effective, though it may face practical challenges in implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.71,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for interbranch collaboration and could inspire further innovations in governance structures.\",\n    \"explanatory\": \"It explains the causal mechanism of deadlock as a lack of dynamic resource and information exchange, drawing on ecological interdependence.\",\n    \"non_obvious\": \"The analogy to deep sea vent ecosystems is a novel conceptual leap that breaks from traditional political science frameworks.\",\n    \"scalability\": \"If broadly adopted, it could improve governance effectiveness across the entire U.S. government, impacting millions.\",\n    \"principle\": \"The insight about symbiotic interdependence transcends government and can inform cooperation in other complex systems.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Urban traffic signal systems",
+        "reformulation": "Analyze the interplay between the branches of the American government to identify a significant structural imbalance or conflict. Propose a concrete adjustment to the distribution of powers or procedural rules that could enhance cooperation and governance effectiveness.",
+        "text": "Domain used: Urban traffic signal systems.\n\nStructural problem: The American government\u2019s branches\u2014legislative, executive, and judicial\u2014often experience gridlock due to rigid separation of powers and competing veto points, analogous to traffic congestion at intersections without effective coordination. Each branch \u201cwaits\u201d for others to move, leading to conflicts and stalled governance, similar to intersecting traffic flows causing jams when signals are poorly coordinated or lack adaptive control.\n\nSolution: Inspired by adaptive traffic light control systems that use real-time data and centralized coordination to optimize flow, implement an institutional \u201cadaptive coordination council\u201d composed of representatives from each branch empowered to dynamically prioritize legislative and executive actions during crises or essential policymaking periods. This council would have limited, temporary authority to adjust procedural timelines or mediate deadlocks based on predefined metrics (e.g., policy urgency, public impact), akin to traffic signals adapting to changing flow, effectively smoothing inter-branch interactions and reducing deadlock. By enabling flexible, data-informed adjustments rather than rigid standstills, this structural change could enhance cooperation and accelerate governance without undermining fundamental separation of powers.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.7,
+            "rationale": {
+              "generative": "The solution opens new avenues for dynamic inter-branch coordination and could inspire derivative governance innovations.",
+              "explanatory": "It explains gridlock as a systemic coordination failure and proposes a mechanism to adaptively resolve it.",
+              "non_obvious": "Applying adaptive traffic signal control principles to government structure requires a significant conceptual leap.",
+              "scalability": "If broadly adopted, it could improve governance efficiency across all levels of government affecting millions.",
+              "principle": "The insight of adaptive, data-driven coordination transcends government and can apply to other complex institutional systems."
+            }
+          },
+          "breakthrough_potential": 0.7,
+          "discard": false,
+          "final_score": 0.76,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (gridlock due to separation of powers) and proposes a specific, feasible solution (an adaptive coordination council) within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The solution is concrete and justified with a clear mechanism inspired by adaptive traffic systems, making it plausible and potentially effective, though it may face practical challenges in implementation and acceptance.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.7,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for dynamic inter-branch coordination and could inspire derivative governance innovations.\",\n    \"explanatory\": \"It explains gridlock as a systemic coordination failure and proposes a mechanism to adaptively resolve it.\",\n    \"non_obvious\": \"Applying adaptive traffic signal control principles to government structure requires a significant conceptual leap.\",\n    \"scalability\": \"If broadly adopted, it could improve governance efficiency across all levels of government affecting millions.\",\n    \"principle\": \"The insight of adaptive, data-driven coordination transcends government and can apply to other complex institutional systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Traditional Japanese tea ceremony",
+        "reformulation": "Analyze the interplay between the branches of the American government to identify a significant structural imbalance or conflict. Propose a concrete adjustment to the distribution of powers or procedural rules that could enhance cooperation and governance effectiveness.",
+        "text": "Domain used: Traditional Japanese tea ceremony (Chanoyu).\n\nStructural problem: The American government\u2019s three branches\u2014Legislative, Executive, and Judicial\u2014often experience gridlock due to rigid separation of powers and adversarial checks, causing inefficiencies and conflict without fostering genuine collaborative governance.\n\nSolution: Drawing on the tea ceremony\u2019s principle of *harmonious and sequential ritual coordination*\u2014where each participant performs distinct, precisely timed roles with mutual respect to create a seamless, unified experience\u2014restructure interbranch interactions into a formalized, rotating \u201cgovernance choreography.\u201d For example, establish a mandated procedural rhythm where branches engage in phased, interlocking consultations and decision points before legislative or executive actions proceed, similar to the choreographed sequence of tea preparation steps. This procedural rule would require branches to submit proposals or concerns in a timed, turn-based manner, with facilitated mediation after each phase to integrate feedback and prevent unilateral stalls.\n\nThis solution leverages the tea ceremony\u2019s structural focus on deliberate timing, respect, and integrated roles to transform adversarial standoff into a cooperative rhythm. By institutionalizing a sequence that compels branches to act in coordinated stages, it encourages mutual listening and incremental consensus-building, reducing gridlock and enhancing governance effectiveness without sacrificing constitutional independence.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.5,
+          "constraint_overall": 0.75,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.71,
+            "rationale": {
+              "generative": "The solution opens new procedural frameworks for interbranch cooperation that could inspire further governance innovations.",
+              "explanatory": "It explains the causal mechanism of gridlock as a failure of coordinated timing and respect, proposing a structural rhythm to address it.",
+              "non_obvious": "Applying a traditional cultural ritual like the tea ceremony to government structure is a novel and unconventional conceptual leap.",
+              "scalability": "If adopted broadly, it could improve governance efficiency across all levels of government affecting millions.",
+              "principle": "The insight about harmonized, phased collaboration transcends the specific context and can inform other adversarial systems."
+            }
+          },
+          "breakthrough_potential": 0.71,
+          "discard": false,
+          "final_score": 0.726,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.5,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (gridlock due to separation of powers) and proposes a concrete, specific solution with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The solution is innovative and provides a clear mechanism (rotating, phased consultations with mediation) to reduce gridlock, but its feasibility is somewhat uncertain given the complexity of constitutional independence and political realities, making it moderately plausible but not fully assured.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.71,\n  \"rationale\": {\n    \"generative\": \"The solution opens new procedural frameworks for interbranch cooperation that could inspire further governance innovations.\",\n    \"explanatory\": \"It explains the causal mechanism of gridlock as a failure of coordinated timing and respect, proposing a structural rhythm to address it.\",\n    \"non_obvious\": \"Applying a traditional cultural ritual like the tea ceremony to government structure is a novel and unconventional conceptual leap.\",\n    \"scalability\": \"If adopted broadly, it could improve governance efficiency across all levels of government affecting millions.\",\n    \"principle\": \"The insight about harmonized, phased collaboration transcends the specific context and can inform other adversarial systems.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Analyze the interplay between the branches of the American government to identify a significant structural imbalance or conflict. Propose a concrete adjustment to the distribution of powers or procedural rules that could enhance cooperation and governance effectiveness.",
+        "text": "The central assumption I am breaking is the strict separation of powers that enforces rigid institutional independence among the branches of the American government, particularly the notion that the executive, legislative, and judicial branches must operate with mutually exclusive personnel and largely independent agendas. This structural insistence often leads to gridlock, conflict, and inefficiencies, especially when partisan divisions prevent cooperation or check-and-balance mechanisms are weaponized rather than balanced.\n\nBy reinterpreting this assumption, I propose formally institutionalizing a limited, rotating cross-branch membership system where selected individuals from each branch temporarily serve in another branch\u2019s oversight or advisory capacity with constrained decision-making powers\u2014for example, lawmakers periodically serving as advisory judges, or judges spending time in executive policymaking committees. This \u201ccross-pollination\u201d of roles would enhance empathy, communication, and shared understanding across branches without dissolving their core functions or independence. By embedding interbranch experience and discourse into procedural rules, it would break down chronic misunderstandings and incentivize cooperation, thus leading to smoother governance and reducing paralyzing conflicts while respecting constitutional boundaries.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.7,
+            "rationale": {
+              "generative": "The solution opens new avenues for institutional design by enabling cross-branch roles that could inspire further governance innovations.",
+              "explanatory": "It addresses the root cause of interbranch gridlock by revealing how rigid separation fosters misunderstanding and conflict.",
+              "non_obvious": "It challenges a foundational constitutional assumption, requiring a significant conceptual leap beyond traditional separation of powers.",
+              "scalability": "If broadly adopted, it could transform governance dynamics across all levels of government, affecting millions.",
+              "principle": "The insight about cross-institutional empathy and role rotation can be applied to other complex organizational systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.7,
+          "discard": false,
+          "final_score": 0.76,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem\u2014the rigid separation of powers causing gridlock\u2014and proposes a concrete, specific solution within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed rotating cross-branch membership system is a novel mechanism that could plausibly improve interbranch understanding and cooperation, though it may face practical challenges in implementation and constitutional interpretation, slightly limiting its feasibility.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.7,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for institutional design by enabling cross-branch roles that could inspire further governance innovations.\",\n    \"explanatory\": \"It addresses the root cause of interbranch gridlock by revealing how rigid separation fosters misunderstanding and conflict.\",\n    \"non_obvious\": \"It challenges a foundational constitutional assumption, requiring a significant conceptual leap beyond traditional separation of powers.\",\n    \"scalability\": \"If broadly adopted, it could transform governance dynamics across all levels of government, affecting millions.\",\n    \"principle\": \"The insight about cross-institutional empathy and role rotation can be applied to other complex organizational systems beyond government.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Analyze the interplay between the branches of the American government to identify a significant structural imbalance or conflict. Propose a concrete adjustment to the distribution of powers or procedural rules that could enhance cooperation and governance effectiveness.",
+        "text": "**Assumption broken:** The branches of American government must remain strictly separate and autonomous, with checks and balances preventing any one branch from directly controlling or overlapping with another\u2019s personnel or decisions.\n\n**Structural problem:** This rigid separation often results in gridlock, as the executive, legislative, and judicial branches have distinct, sometimes conflicting incentive structures and procedural constraints that hamper cooperation and timely governance, especially in crises.\n\n**Proposed solution:** Introduce a shared \u201cCrisis Governance Council\u201d composed of rotating members drawn simultaneously from all three branches, empowered to make binding decisions on urgent, predefined categories of national issues (e.g., emergencies, budget deadlocks, or national security). Members would serve limited overlapping terms, blending legislative, executive, and judicial perspectives in a collaborative, deliberative body outside the traditional separation framework.\n\n**Why it would work:** By breaking the assumption that branches must remain insulated, this hybrid council incentivizes cross-branch dialogue and accountability while safeguarding democratic legitimacy through rotation and limited jurisdiction. It creates an institutionalized mechanism for cooperation during impasses, reducing gridlock without permanently eroding the balance of powers, thereby enhancing governance effectiveness while preserving the broader constitutional framework.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.68,
+            "rationale": {
+              "generative": "The solution opens new institutional designs blending branches, enabling further innovations in governance structures.",
+              "explanatory": "It explains how rigid separation causes gridlock by highlighting conflicting incentives and procedural barriers.",
+              "non_obvious": "It breaks a core constitutional assumption, requiring a significant conceptual leap beyond traditional separation of powers.",
+              "scalability": "If adopted broadly, it could improve governance effectiveness across all federal crises, impacting millions.",
+              "principle": "The insight about overcoming rigid institutional silos applies to other complex systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.68,
+          "discard": false,
+          "final_score": 0.748,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (gridlock due to strict separation of powers) and proposes a specific, feasible solution (a Crisis Governance Council) with justification, all within two paragraphs.\",\n    \"usefulness\": \"The proposed solution is detailed and includes mechanisms for implementation and safeguards, making it plausible and likely to improve cooperation, though it challenges traditional separation of powers which may face political resistance.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.68,\n  \"rationale\": {\n    \"generative\": \"The solution opens new institutional designs blending branches, enabling further innovations in governance structures.\",\n    \"explanatory\": \"It explains how rigid separation causes gridlock by highlighting conflicting incentives and procedural barriers.\",\n    \"non_obvious\": \"It breaks a core constitutional assumption, requiring a significant conceptual leap beyond traditional separation of powers.\",\n    \"scalability\": \"If adopted broadly, it could improve governance effectiveness across all federal crises, impacting millions.\",\n    \"principle\": \"The insight about overcoming rigid institutional silos applies to other complex systems beyond government.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Analyze the interplay between the branches of the American government to identify a significant structural imbalance or conflict. Propose a concrete adjustment to the distribution of powers or procedural rules that could enhance cooperation and governance effectiveness.",
+        "text": "The central assumption I break is the strict separation of powers between the branches of government\u2014specifically, the idea that the Legislative, Executive, and Judicial branches must operate independently and \"check\" each other primarily through vetoes, rulings, and oversight rather than direct collaboration. This rigid separation often leads to gridlock, partisanship, and conflict, especially when control is split across parties, undermining effective governance.\n\nBy reinterpreting this assumption, I propose the creation of a constitutional mandate for \"Interbranch Governing Councils\" composed of a small, bipartisan, and interbranch delegation from each branch tasked with collaboratively designing key policy agendas and dispute-resolution mechanisms before formal legislative or judicial actions. These councils would operate under clear transparency and share powers temporarily on specific issues to forge compromise and mitigate deadlock. This structural fusion respects each branch\u2019s distinct roles but enables proactive, cooperative lawmaking and checks, thereby transforming oversight from a zero-sum game into a shared governance process, plausibly fostering smoother policymaking and reducing entrenched conflicts.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.71,
+            "rationale": {
+              "generative": "The proposal opens new avenues for collaborative governance structures that could inspire further innovations in political design.",
+              "explanatory": "It addresses the root cause of gridlock by explaining how rigid separation of powers creates systemic conflict and how shared governance can mitigate it.",
+              "non_obvious": "It challenges a foundational constitutional principle, requiring a significant conceptual leap beyond traditional separation of powers thinking.",
+              "scalability": "If broadly adopted, it could transform governance across all levels of government, affecting millions by improving policy effectiveness.",
+              "principle": "The insight about blending separation with collaboration can be applied to other institutional and organizational systems beyond government."
+            }
+          },
+          "breakthrough_potential": 0.71,
+          "discard": false,
+          "final_score": 0.766,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (rigid separation of powers causing gridlock) and proposes a concrete, specific, and feasible solution (Interbranch Governing Councils) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution includes a clear mechanism for bipartisan, interbranch collaboration with transparency and shared powers on specific issues, which is plausible and could reduce deadlock, though it may face practical challenges in implementation and acceptance.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.71,\n  \"rationale\": {\n    \"generative\": \"The proposal opens new avenues for collaborative governance structures that could inspire further innovations in political design.\",\n    \"explanatory\": \"It addresses the root cause of gridlock by explaining how rigid separation of powers creates systemic conflict and how shared governance can mitigate it.\",\n    \"non_obvious\": \"It challenges a foundational constitutional principle, requiring a significant conceptual leap beyond traditional separation of powers thinking.\",\n    \"scalability\": \"If broadly adopted, it could transform governance across all levels of government, affecting millions by improving policy effectiveness.\",\n    \"principle\": \"The insight about blending separation with collaboration can be applied to other institutional and organizational systems beyond government.\"\n  }\n}"
+        }
+      }
+    ],
+    "top_k": [
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine the foundational incentives within the American government that contribute to systemic inefficiencies. Identify one key incentive structure that undermines effective governance and suggest a targeted modification to realign these incentives for improved functionality.",
+        "text": "The central assumption to break is the notion that electoral accountability must rely solely on fixed-term, winner-take-all elections, which structurally incentivize short-term, partisan competition over long-term cooperative governance. This system creates a recurring cycle where elected officials prioritize re-election by catering to polarized bases and lobbying, undermining consensus-building and efficiency in lawmaking.\n\nBy breaking this assumption, a feasible solution is to implement a continuous, merit-based retention system for legislators, where performance is evaluated regularly through a combination of citizen assemblies, expert panels, and nonpartisan oversight bodies, rather than periodic winner-takes-all elections. Such a system realigns incentives away from partisanship and toward consistent, evidence-based governance because legislators maintain their positions based on demonstrated effectiveness and responsiveness rather than electoral popularity. This would plausibly improve systemic efficiency by fostering accountability through ongoing performance and reducing polarization that hinders cooperation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution opens new avenues for governance models beyond fixed-term elections, enabling derivative innovations in political accountability.",
+              "explanatory": "It explains the causal mechanism linking fixed-term elections to polarization and inefficiency, unifying electoral incentives with legislative behavior.",
+              "non_obvious": "It requires breaking the deeply ingrained assumption of winner-take-all elections and introduces a novel continuous merit-based retention system.",
+              "scalability": "If implemented broadly, it could transform democratic governance systems worldwide, affecting millions by reducing polarization and improving lawmaking.",
+              "principle": "The insight about decoupling accountability from periodic elections can be applied across various governance and organizational domains."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.82,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (fixed-term, winner-take-all elections) and proposes a concrete, specific solution (continuous, merit-based retention system with citizen assemblies, expert panels, and oversight bodies). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"The proposed solution is plausible and includes mechanisms to reduce partisanship and improve accountability, though it may face practical challenges in implementation and acceptance, which slightly lowers its score.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for governance models beyond fixed-term elections, enabling derivative innovations in political accountability.\",\n    \"explanatory\": \"It explains the causal mechanism linking fixed-term elections to polarization and inefficiency, unifying electoral incentives with legislative behavior.\",\n    \"non_obvious\": \"It requires breaking the deeply ingrained assumption of winner-take-all elections and introduces a novel continuous merit-based retention system.\",\n    \"scalability\": \"If implemented broadly, it could transform democratic governance systems worldwide, affecting millions by reducing polarization and improving lawmaking.\",\n    \"principle\": \"The insight about decoupling accountability from periodic elections can be applied across various governance and organizational domains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Assess one major institutional barrier within the American government that hampers responsiveness or accountability. Describe this structural obstacle and propose a precise institutional reform that would mitigate its negative effects while maintaining democratic principles.",
+        "text": "The central assumption I am breaking is that democratic accountability and responsiveness must operate exclusively through fixed geographic districts represented by elected officials, which often leads to partisan gerrymandering and entrenched incumbency, undermining responsiveness. The structural problem is the rigidity of single-member districts and winner-take-all elections, which create institutional barriers by incentivizing polarization and reducing voters\u2019 ability to hold representatives accountable between elections.\n\nBy reinterpreting representation from single-member districts to a nationwide proportional representation system with multi-member delegations allocated via ranked-choice voting, we can enable a reform where citizens vote for individual candidates from a national pool, and seats are distributed proportionally to parties or coalitions based on total votes. This breaks the geographic silo, dilutes partisan manipulation, and incentivizes representatives to be accountable to a broader electorate rather than safe local bases. Such a system would plausibly increase responsiveness and accountability by fostering cross-cutting political coalitions, reducing polarization, and making it easier for voters to \u201cthrow the bums out\u201d while preserving fundamental democratic principles of electoral choice and representation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "Shifting from geographic districts to nationwide proportional representation opens many new avenues for electoral reform and political innovation.",
+              "explanatory": "It explains how structural incentives in single-member districts cause polarization and unresponsiveness by linking representation to geography and winner-take-all rules.",
+              "non_obvious": "The idea challenges the deeply ingrained assumption that representation must be geographically fixed and winner-take-all, requiring a significant conceptual leap.",
+              "scalability": "If implemented nationally, it could transform the entire U.S. political system, affecting hundreds of millions and potentially serving as a model globally.",
+              "principle": "The insight about decoupling representation from geography and using proportional, ranked-choice voting can apply to many democratic systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.82,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (single-member districts and winner-take-all elections) and proposes a concrete, specific solution (nationwide proportional representation with ranked-choice voting) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution is detailed and plausible, explaining mechanisms to reduce polarization and increase accountability; however, nationwide proportional representation is a major systemic change that may face practical and political challenges, slightly reducing its feasibility score.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"Shifting from geographic districts to nationwide proportional representation opens many new avenues for electoral reform and political innovation.\",\n    \"explanatory\": \"It explains how structural incentives in single-member districts cause polarization and unresponsiveness by linking representation to geography and winner-take-all rules.\",\n    \"non_obvious\": \"The idea challenges the deeply ingrained assumption that representation must be geographically fixed and winner-take-all, requiring a significant conceptual leap.\",\n    \"scalability\": \"If implemented nationally, it could transform the entire U.S. political system, affecting hundreds of millions and potentially serving as a model globally.\",\n    \"principle\": \"The insight about decoupling representation from geography and using proportional, ranked-choice voting can apply to many democratic systems beyond the U.S.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Assess one major institutional barrier within the American government that hampers responsiveness or accountability. Describe this structural obstacle and propose a precise institutional reform that would mitigate its negative effects while maintaining democratic principles.",
+        "text": "The central assumption I am breaking is the traditional principle that elected representatives should exclusively serve fixed, multi-year terms before facing electoral accountability. This constraint underpins the problem: the American government's institutional structure often results in a lag between public will and political responsiveness because officeholders are insulated from immediate voter feedback, causing diminished accountability and responsiveness.\n\nBy reinterpreting this assumption, I propose a system of continuous, real-time electoral feedback through micro-elections or rolling representative recall mechanisms held quarterly at local and national levels. Under this model, rather than waiting years or special occasions to express approval or discontent, voters can periodically reaffirm or rescind their representatives\u2019 mandates based on ongoing performance and responsiveness to constituents. This institutional reform keeps democratic principles intact\u2014maintaining electoral choice and majority rule\u2014while sharply increasing government accountability and encouraging officials to remain closely aligned with public needs. Such a dynamic model, enabled by secure digital voting platforms, would mitigate lagged responsiveness by making political accountability continuous, thereby transforming the traditional \u201cfixed-term\u201d government into a truly responsive and adaptive democracy.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "Introducing continuous electoral feedback unlocks numerous derivative innovations in democratic accountability and governance models.",
+              "explanatory": "The solution explains the causal mechanism of lagged responsiveness by linking fixed terms to diminished accountability.",
+              "non_obvious": "It requires breaking the deeply entrenched assumption of fixed multi-year terms, which is a significant conceptual leap.",
+              "scalability": "If widely adopted, it could transform democratic systems globally, affecting millions by enhancing political responsiveness.",
+              "principle": "The insight about continuous accountability can be transferred to other governance and organizational contexts beyond government."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.8079999999999999,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem\u2014the lag in political responsiveness due to fixed multi-year terms\u2014and proposes a concrete, specific solution of quarterly micro-elections or rolling recalls, all within two paragraphs as required.\",\n    \"usefulness\": \"The solution is innovative and includes a mechanism (secure digital voting platforms) to enable feasibility, but it may face practical challenges in implementation and voter fatigue, which slightly reduces its plausibility.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"Introducing continuous electoral feedback unlocks numerous derivative innovations in democratic accountability and governance models.\",\n    \"explanatory\": \"The solution explains the causal mechanism of lagged responsiveness by linking fixed terms to diminished accountability.\",\n    \"non_obvious\": \"It requires breaking the deeply entrenched assumption of fixed multi-year terms, which is a significant conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could transform democratic systems globally, affecting millions by enhancing political responsiveness.\",\n    \"principle\": \"The insight about continuous accountability can be transferred to other governance and organizational contexts beyond government.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Examine the foundational incentives within the American government that contribute to systemic inefficiencies. Identify one key incentive structure that undermines effective governance and suggest a targeted modification to realign these incentives for improved functionality.",
+        "text": "The central assumption I am breaking is that political representatives in Congress must be elected primarily by geographic districts and constantly face re-election pressure within fixed two-year cycles. This geographic, short-term electoral accountability creates a system where politicians prioritize local, immediate interests and partisan positioning over long-term, systemic problem-solving, thereby fostering inefficiencies like gridlock and short-sighted policymaking.\n\nBy reinterpreting this assumption, we could implement a mixed national representation system where a portion of legislators are selected through a meritocratic, performance-based evaluation over longer terms, insulated from direct electoral pressures. For example, part of Congress could be constituted by citizen-elected panels that nominate candidates based on expertise and evidence of effective governance, followed by national ratification through non-partisan referenda every six years. This restructure would realign incentives away from pandering to narrow constituencies and toward durable, evidence-driven policy, reducing gridlock and enabling more coherent long-term governance solutions, as representatives would be motivated to serve broad national interests and measurable outcomes rather than short-term political survival.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "This solution opens new avenues for political representation models beyond traditional geographic districts, enabling derivative innovations in governance structures.",
+              "explanatory": "It explains how short-term electoral pressures causally lead to gridlock and localism, linking structural incentives to systemic dysfunction.",
+              "non_obvious": "The idea of mixing meritocratic, performance-based selection with national referenda breaks conventional assumptions about electoral accountability.",
+              "scalability": "If implemented nationally, it could transform the entire U.S. legislative process, affecting millions and potentially serving as a model for other democracies.",
+              "principle": "The insight about decoupling representation from geographic and short-term electoral pressures can apply broadly to governance and organizational design."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.8,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (short-term electoral pressure and geographic districting) and proposes a concrete, specific solution (a mixed national representation system with meritocratic selection and longer terms). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"The solution is somewhat feasible and specific, involving citizen-elected panels and national referenda, which could reduce short-termism and gridlock. However, the proposal is somewhat idealistic and may face practical challenges in implementation and acceptance, reducing its overall likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"This solution opens new avenues for political representation models beyond traditional geographic districts, enabling derivative innovations in governance structures.\",\n    \"explanatory\": \"It explains how short-term electoral pressures causally lead to gridlock and localism, linking structural incentives to systemic dysfunction.\",\n    \"non_obvious\": \"The idea of mixing meritocratic, performance-based selection with national referenda breaks conventional assumptions about electoral accountability.\",\n    \"scalability\": \"If implemented nationally, it could transform the entire U.S. legislative process, affecting millions and potentially serving as a model for other democracies.\",\n    \"principle\": \"The insight about decoupling representation from geographic and short-term electoral pressures can apply broadly to governance and organizational design.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "reformulation": "Assess one major institutional barrier within the American government that hampers responsiveness or accountability. Describe this structural obstacle and propose a precise institutional reform that would mitigate its negative effects while maintaining democratic principles.",
+        "text": "The central assumption I am breaking is that elected officials must be chosen exclusively through periodic, district-based, adversarial elections, which limits accountability to voters only at fixed intervals and often favors incumbents and special interests. The structural problem this creates is that the American government frequently faces responsiveness challenges due to partisan gerrymandering, low electoral competition, and long intervals between elections\u2014allowing officials to ignore public concerns without immediate consequences.\n\nBy reinterpreting this assumption, we can implement a continuous, dynamic representation system using real-time digital voting platforms where constituents can provide direct feedback and periodic policy preference inputs that adjust their representative\u2019s policy priorities or even recall representatives between traditional elections. This would create an ongoing accountability loop where elected officials must stay aligned with voter preferences as they evolve, not just every two or four years. Such a system preserves democratic participation but overcomes inertia by making responsiveness a living process rather than a static event, thereby revitalizing citizen influence and drastically reducing the lag that enables institutional unresponsiveness.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "This solution unlocks numerous new possibilities for continuous democratic engagement and derivative innovations in governance technology.",
+              "explanatory": "It explains the causal mechanism of electoral inertia and unresponsiveness by linking fixed-interval elections to accountability gaps.",
+              "non_obvious": "It requires breaking the entrenched assumption of periodic elections and introduces a novel, dynamic feedback loop.",
+              "scalability": "If widely adopted, it could deeply affect millions of voters and reshape democratic responsiveness globally.",
+              "principle": "The insight about continuous accountability through real-time feedback can be applied to other representative systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.8,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed continuous digital voting system is innovative and detailed, but its feasibility is somewhat optimistic given current technological, security, and political challenges, which lowers the usefulness score.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"This solution unlocks numerous new possibilities for continuous democratic engagement and derivative innovations in governance technology.\",\n    \"explanatory\": \"It explains the causal mechanism of electoral inertia and unresponsiveness by linking fixed-interval elections to accountability gaps.\",\n    \"non_obvious\": \"It requires breaking the entrenched assumption of periodic elections and introduces a novel, dynamic feedback loop.\",\n    \"scalability\": \"If widely adopted, it could deeply affect millions of voters and reshape democratic responsiveness globally.\",\n    \"principle\": \"The insight about continuous accountability through real-time feedback can be applied to other representative systems beyond the U.S.\"\n  }\n}"
+        }
+      }
+    ],
+    "final_output": "The central assumption to break is the notion that electoral accountability must rely solely on fixed-term, winner-take-all elections, which structurally incentivize short-term, partisan competition over long-term cooperative governance. This system creates a recurring cycle where elected officials prioritize re-election by catering to polarized bases and lobbying, undermining consensus-building and efficiency in lawmaking.\n\nBy breaking this assumption, a feasible solution is to implement a continuous, merit-based retention system for legislators, where performance is evaluated regularly through a combination of citizen assemblies, expert panels, and nonpartisan oversight bodies, rather than periodic winner-takes-all elections. Such a system realigns incentives away from partisanship and toward consistent, evidence-based governance because legislators maintain their positions based on demonstrated effectiveness and responsiveness rather than electoral popularity. This would plausibly improve systemic efficiency by fostering accountability through ongoing performance and reducing polarization that hinders cooperation.",
+    "selected": {
+      "mode": "constraint_violation",
+      "reformulation": "Examine the foundational incentives within the American government that contribute to systemic inefficiencies. Identify one key incentive structure that undermines effective governance and suggest a targeted modification to realign these incentives for improved functionality.",
+      "scores": {
+        "constraint_satisfaction": 1.0,
+        "usefulness": 0.7,
+        "constraint_overall": 0.85,
+        "breakthrough_scores": {
+          "generative_power": 0.8,
+          "explanatory_depth": 0.7,
+          "non_obviousness": 0.85,
+          "scalability_of_impact": 0.9,
+          "principle_over_implementation": 0.75,
+          "breakthrough_potential": 0.8,
+          "rationale": {
+            "generative": "The solution opens new avenues for governance models beyond fixed-term elections, enabling derivative innovations in political accountability.",
+            "explanatory": "It explains the causal mechanism linking fixed-term elections to polarization and inefficiency, unifying electoral incentives with legislative behavior.",
+            "non_obvious": "It requires breaking the deeply ingrained assumption of winner-take-all elections and introduces a novel continuous merit-based retention system.",
+            "scalability": "If implemented broadly, it could transform democratic governance systems worldwide, affecting millions by reducing polarization and improving lawmaking.",
+            "principle": "The insight about decoupling accountability from periodic elections can be applied across various governance and organizational domains."
+          }
+        },
+        "breakthrough_potential": 0.8,
+        "discard": false,
+        "final_score": 0.82,
+        "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (fixed-term, winner-take-all elections) and proposes a concrete, specific solution (continuous, merit-based retention system with citizen assemblies, expert panels, and oversight bodies). The response is within the two-paragraph limit and includes justification.\",\n    \"usefulness\": \"The proposed solution is plausible and includes mechanisms to reduce partisanship and improve accountability, though it may face practical challenges in implementation and acceptance, which slightly lowers its score.\"\n  }\n}",
+        "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for governance models beyond fixed-term elections, enabling derivative innovations in political accountability.\",\n    \"explanatory\": \"It explains the causal mechanism linking fixed-term elections to polarization and inefficiency, unifying electoral incentives with legislative behavior.\",\n    \"non_obvious\": \"It requires breaking the deeply ingrained assumption of winner-take-all elections and introduces a novel continuous merit-based retention system.\",\n    \"scalability\": \"If implemented broadly, it could transform democratic governance systems worldwide, affecting millions by reducing polarization and improving lawmaking.\",\n    \"principle\": \"The insight about decoupling accountability from periodic elections can be applied across various governance and organizational domains.\"\n  }\n}"
+      }
+    }
+  },
+  "elapsed_seconds": 186.5669641494751
+}

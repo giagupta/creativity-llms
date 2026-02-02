@@ -1,0 +1,807 @@
+{
+  "timestamp": "2026-02-01T16:53:18",
+  "prompt_id": "education_system",
+  "prompt": "Analyze the education system. Identify one structural problem that meaningfully harms learning or equity and propose a concrete, feasible solution. Explain the mechanism and why it would work. (Maximum two paragraphs.)",
+  "condition": "divergent_convergent_18_keep5",
+  "config": {
+    "model": {
+      "name": "gpt-4.1-mini",
+      "max_tokens": 350
+    },
+    "conditions": [
+      "single_pass_18_keep5",
+      "divergent_convergent_18_keep5",
+      "evolutionary_examples"
+    ],
+    "budget": {
+      "max_candidates_per_prompt": 18,
+      "keep_top_k": 5
+    },
+    "sampling": {
+      "single_pass": {
+        "temperature": 0.9,
+        "top_p": 1.0
+      },
+      "reframing": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "num_reformulations": 3
+      },
+      "combinational": {
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "transformational": {
+        "temperature": 1.1,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "judge": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "selection": {
+      "discard_if_constraint_below": 0.4,
+      "constraint_weight": 0.2,
+      "usefulness_weight": 0.2,
+      "breakthrough_weight": 0.6
+    }
+  },
+  "result": {
+    "reformulations": [
+      "Identify a fundamental incentive misalignment within the education system that undermines equitable learning outcomes, and describe a targeted intervention at the policy or governance level that could realign these incentives to promote fairness and academic success.",
+      "Examine a systemic barrier embedded in the organizational structure of educational institutions that disproportionately affects marginalized students, and articulate a strategic change in institutional design or resource allocation that addresses this inequity.",
+      "Analyze how prevailing assumptions about student assessment or curriculum delivery contribute to disparities in learning opportunities, and propose an alternative framework that challenges these assumptions to foster more inclusive educational practices."
+    ],
+    "candidates": [
+      {
+        "mode": "structural_transfer",
+        "domain": "Deep sea ecosystems",
+        "reformulation": "Identify a fundamental incentive misalignment within the education system that undermines equitable learning outcomes, and describe a targeted intervention at the policy or governance level that could realign these incentives to promote fairness and academic success.",
+        "text": "Domain used: Deep sea ecosystems.\n\nA core structural principle in deep sea ecosystems is the presence of chemosynthetic symbiosis, wherein organisms around hydrothermal vents form mutually beneficial partnerships to survive in nutrient-poor, dark environments. These symbiotic relationships enable energy and resources to be efficiently shared and recycled, allowing diverse species with complementary roles to thrive despite harsh conditions. Structurally, this creates an interdependent network where individual survival depends on balanced collaboration rather than competitive accumulation.\n\nMapping this principle to education reveals a structural misalignment: current systems incentivize competition among schools and teachers for limited resources and rankings, which undermines equitable student outcomes by concentrating advantages unevenly. To realign incentives, policy should establish formalized \u201ceducational symbiotic networks\u201d where schools collaborate by sharing resources, expertise, and students\u2019 learning data transparently, supported by governance mechanisms rewarding collective improvement over individual ranking. For example, districts could mandate joint resource pools and cross-school mentoring anchored in clearly defined shared success metrics, redistributing rewards based on network-wide gains in equity and achievement. This would mimic the deep sea\u2019s cooperative energy-sharing, enabling under-resourced schools to thrive through interdependence, thereby promoting fairness and academic success at scale.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.81,
+            "rationale": {
+              "generative": "The solution opens new avenues for collaborative educational models and resource sharing frameworks beyond traditional competition.",
+              "explanatory": "It explains the causal mechanism of how interdependence and resource sharing can improve equity and learning outcomes by aligning incentives.",
+              "non_obvious": "Drawing a parallel from deep sea symbiosis to education requires a significant conceptual leap beyond common competitive paradigms.",
+              "scalability": "If broadly adopted, it could transform entire school districts and systems, impacting millions of students by fostering equitable collaboration.",
+              "principle": "The insight about symbiotic networks is transferable to other domains where competition undermines collective success."
+            }
+          },
+          "breakthrough_potential": 0.81,
+          "discard": false,
+          "final_score": 0.826,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem in education (competition undermining equity) and proposes a concrete, feasible solution (educational symbiotic networks with shared resources and governance), all within two paragraphs as required.\",\n    \"usefulness\": \"The solution is plausible and includes mechanisms such as resource sharing, transparent data, and collective rewards, which could realistically improve equity; however, some implementation details and potential challenges are not fully addressed, limiting the score slightly.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.81,\n  \"rationale\": {\n    \"generative\": \"The solution opens new avenues for collaborative educational models and resource sharing frameworks beyond traditional competition.\",\n    \"explanatory\": \"It explains the causal mechanism of how interdependence and resource sharing can improve equity and learning outcomes by aligning incentives.\",\n    \"non_obvious\": \"Drawing a parallel from deep sea symbiosis to education requires a significant conceptual leap beyond common competitive paradigms.\",\n    \"scalability\": \"If broadly adopted, it could transform entire school districts and systems, impacting millions of students by fostering equitable collaboration.\",\n    \"principle\": \"The insight about symbiotic networks is transferable to other domains where competition undermines collective success.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Ant colony communication",
+        "reformulation": "Identify a fundamental incentive misalignment within the education system that undermines equitable learning outcomes, and describe a targeted intervention at the policy or governance level that could realign these incentives to promote fairness and academic success.",
+        "text": "Domain used: Ant colony communication\n\nA core structural principle of ant colony communication is the use of pheromone trails that provide collective, real-time feedback enabling ants to dynamically allocate effort toward the most successful foraging paths, effectively aligning individual actions with colony-wide goals. This decentralized feedback loop ensures resources are optimally distributed based on ongoing performance signals rather than fixed hierarchies or isolated decision-making. Translating this principle to education reveals a structural misalignment: current incentive systems often reward schools and educators on narrow, static metrics (e.g., standardized test scores) without adaptive, transparent feedback mechanisms that reflect and respond to diverse student needs or broader equity goals, thus undermining equitable learning outcomes.\n\nThe proposed policy intervention is to establish a dynamic, real-time feedback infrastructure for schools modeled on pheromone trail signaling, where multiple indicators\u2014including equity metrics, student wellbeing, and diverse academic progress\u2014are continuously collected and aggregated across schools within districts or regions. These indicators would form a decentralized \"performance pheromone\" map that highlights where additional support or resources are most effective and needed. Funding, professional development, and policy focus would then flow responsively toward schools demonstrating positive adaptive progress with disadvantaged populations, mirroring how ants reinforce beneficial paths. This would realign incentives by rewarding responsiveness and equity-driven improvement in a continuous, systemic manner, encouraging all actors to collaboratively optimize for fairness and academic success rather than competing on fixed, narrow benchmarks.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.71,
+            "rationale": {
+              "generative": "The solution unlocks new possibilities by enabling continuous, adaptive feedback loops that could inspire further innovations in education and other complex systems.",
+              "explanatory": "It explains the causal mechanism of decentralized, dynamic feedback aligning individual actions with collective goals, addressing root structural misalignments in education incentives.",
+              "non_obvious": "Applying ant colony pheromone communication principles to education systems requires a significant conceptual leap beyond conventional hierarchical or metric-based approaches.",
+              "scalability": "If widely implemented, this approach could impact entire education systems globally by improving equity and learning outcomes for millions of students.",
+              "principle": "The insight about decentralized, adaptive feedback mechanisms is transferable across domains where dynamic resource allocation and equity are challenges."
+            }
+          },
+          "breakthrough_potential": 0.71,
+          "discard": false,
+          "final_score": 0.786,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem in the education system related to static incentive metrics and proposes a concrete, feasible solution involving dynamic, real-time feedback modeled on ant colony communication. The response is within the two-paragraph limit and explains the mechanism and rationale.\",\n    \"usefulness\": \"The proposed solution is specific and plausible, leveraging continuous data collection and adaptive resource allocation to improve equity and learning outcomes. While ambitious, the mechanism is well-explained and grounded in a feasible analogy, making it likely to have positive impact if implemented.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.71,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new possibilities by enabling continuous, adaptive feedback loops that could inspire further innovations in education and other complex systems.\",\n    \"explanatory\": \"It explains the causal mechanism of decentralized, dynamic feedback aligning individual actions with collective goals, addressing root structural misalignments in education incentives.\",\n    \"non_obvious\": \"Applying ant colony pheromone communication principles to education systems requires a significant conceptual leap beyond conventional hierarchical or metric-based approaches.\",\n    \"scalability\": \"If widely implemented, this approach could impact entire education systems globally by improving equity and learning outcomes for millions of students.\",\n    \"principle\": \"The insight about decentralized, adaptive feedback mechanisms is transferable across domains where dynamic resource allocation and equity are challenges.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Quantum computing algorithms",
+        "reformulation": "Identify a fundamental incentive misalignment within the education system that undermines equitable learning outcomes, and describe a targeted intervention at the policy or governance level that could realign these incentives to promote fairness and academic success.",
+        "text": "Domain used: Quantum computing algorithms.\n\nA core structural principle in quantum algorithms is *quantum superposition and interference*, where multiple potential states are represented simultaneously and their constructive or destructive interference guides the system toward an optimal solution. Translating this structurally to education, the misalignment lies in the rigid, linear incentive structures that prioritize narrow metrics (e.g., test scores) and neglect the diverse pathways through which students learn, effectively collapsing all students into a single performance \"state\" that disproportionately rewards a subset. This undermines equitable outcomes by not accounting for varied abilities, backgrounds, and learning styles.\n\nThe proposed solution is to implement a *policy-level multi-dimensional performance evaluation framework* inspired by quantum superposition, where students\u2019 diverse talents, growth trajectories, and contextual factors are simultaneously captured as a superposed state rather than a collapsed single metric. Governance would establish dynamic, interference-informed assessment models that combine multiple data points\u2014academic, socio-emotional, and contextual\u2014to produce composite scores reflecting true potential and progress. Such a framework incentivizes educators and schools to nurture all dimensions of learning, promoting fairness and inclusivity. By harnessing this quantum-inspired structure, the system moves beyond zero-sum ranking and aligns incentives to cultivate varied forms of academic success, improving equitable outcomes in practice.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.7,
+            "rationale": {
+              "generative": "The solution opens new ways to evaluate and incentivize learning by integrating multiple dimensions simultaneously, enabling derivative innovations in assessment design.",
+              "explanatory": "It explains the causal mechanism of how rigid, linear metrics collapse diverse learning states and proposes a structural alternative inspired by quantum principles.",
+              "non_obvious": "Applying quantum superposition as a metaphor for multi-dimensional student evaluation is a conceptual leap that breaks from traditional linear assessment models.",
+              "scalability": "If widely adopted, this framework could transform education systems globally by affecting millions of students and educators with deeper, fairer evaluations.",
+              "principle": "The insight of representing complex, multi-dimensional states simultaneously rather than collapsing to a single metric is transferable across domains beyond education."
+            }
+          },
+          "breakthrough_potential": 0.7,
+          "discard": false,
+          "final_score": 0.76,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem in the education system (rigid, linear incentive structures) and proposes a concrete, feasible solution (a multi-dimensional performance evaluation framework). The response is within two paragraphs and explains the mechanism and rationale.\",\n    \"usefulness\": \"The proposed solution is specific and plausible, addressing equity by capturing diverse student talents and contexts through composite scores. However, the analogy to quantum computing, while creative, may complicate practical implementation and the explanation of governance and interference-informed models is somewhat abstract, reducing clarity on feasibility.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.7,\n  \"rationale\": {\n    \"generative\": \"The solution opens new ways to evaluate and incentivize learning by integrating multiple dimensions simultaneously, enabling derivative innovations in assessment design.\",\n    \"explanatory\": \"It explains the causal mechanism of how rigid, linear metrics collapse diverse learning states and proposes a structural alternative inspired by quantum principles.\",\n    \"non_obvious\": \"Applying quantum superposition as a metaphor for multi-dimensional student evaluation is a conceptual leap that breaks from traditional linear assessment models.\",\n    \"scalability\": \"If widely adopted, this framework could transform education systems globally by affecting millions of students and educators with deeper, fairer evaluations.\",\n    \"principle\": \"The insight of representing complex, multi-dimensional states simultaneously rather than collapsing to a single metric is transferable across domains beyond education.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken:** the education system must be centralized and standardized, with uniform curricula and metr",
+        "reformulation": "Identify a fundamental incentive misalignment within the education system that undermines equitable learning outcomes, and describe a targeted intervention at the policy or governance level that could realign these incentives to promote fairness and academic success.",
+        "text": "**Assumption Broken:** The education system must be centralized and standardized, with uniform curricula and metrics across all schools to ensure fairness.\n\n**Structural Problem:** This centralized model creates incentive misalignments by forcing diverse student populations and local contexts into a one-size-fits-all framework, which undermines equitable learning outcomes\u2014disadvantaging students whose needs or cultural backgrounds do not align with standardized metrics and curricula.\n\n**Solution:** Break centralization by implementing a policy that decentralizes curriculum design and accountability to community-elected, diverse governance bodies representing local student demographics. These bodies would co-create tailored educational goals and assessment criteria aligning with students\u2019 cultural, linguistic, and socio-economic realities, funded and regulated by the state to ensure minimum equity standards but with autonomy in defining success and resource allocation.\n\nThis solution works because it realigns incentives from compliance with an external, uniform standard\u2014often favoring dominant groups\u2014to responsiveness and accountability to the unique needs of local learners. When educators and communities set relevant goals and assessments, all stakeholders have a stake in meaningful academic success, reducing systemic inequities perpetuated by rigid centralization.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "Decentralizing education governance unlocks numerous derivative innovations in localized curricula and assessment methods.",
+              "explanatory": "It explains how centralized standardization misaligns incentives and harms equity by ignoring local diversity and needs.",
+              "non_obvious": "Challenging the entrenched assumption of uniform standards requires a significant conceptual leap.",
+              "scalability": "If broadly adopted, it could transform education systems worldwide, affecting millions of students deeply.",
+              "principle": "The insight about decentralizing control to improve equity and responsiveness applies beyond education to many complex systems."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.8280000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is plausible and specific, addressing incentive misalignment through decentralization and local governance, which could realistically improve equity and learning outcomes, though implementation challenges are not deeply explored.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"Decentralizing education governance unlocks numerous derivative innovations in localized curricula and assessment methods.\",\n    \"explanatory\": \"It explains how centralized standardization misaligns incentives and harms equity by ignoring local diversity and needs.\",\n    \"non_obvious\": \"Challenging the entrenched assumption of uniform standards requires a significant conceptual leap.\",\n    \"scalability\": \"If broadly adopted, it could transform education systems worldwide, affecting millions of students deeply.\",\n    \"principle\": \"The insight about decentralizing control to improve equity and responsiveness applies beyond education to many complex systems.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken:** the education system must rely on traditional teacher-driven, in-person instructional deli",
+        "reformulation": "Identify a fundamental incentive misalignment within the education system that undermines equitable learning outcomes, and describe a targeted intervention at the policy or governance level that could realign these incentives to promote fairness and academic success.",
+        "text": "**Assumption broken:** The education system must rely on traditional teacher-driven, in-person instructional delivery as the primary mode of learning.\n\n**Structural problem:** Incentive misalignment occurs because teachers and schools are often evaluated\u2014and funded\u2014based on students\u2019 standardized test scores gathered through uniform, time-bound classroom instruction. This model undervalues diverse learning paces, styles, and outside-of-classroom educational inputs, reinforcing inequities for students with different needs or resources.\n\n**Solution:** Break the assumption by autonomously decoupling learning from exclusive teacher-led classroom instruction and instead adopting a hybrid learner-centered model where students progress at individual paces using adaptive, AI-driven digital platforms validated as credible alternatives to seat time. Policy can incentivize schools through outcome-based funding that credits demonstrated mastery regardless of how or when learning occurs, encouraging innovative, personalized education and mentorship linkages beyond the classroom.\n\nThis shifts governance focus from controlling \u201ctime in seats\u201d to fostering equitable mastery and engagement, effectively realigning incentives to support all learners equitably. It breaks the one-size-fits-all trap, allowing diverse learners \u2014 including those with socioeconomic barriers \u2014 to access tailored support and succeed on their own terms, thus promoting fairness and academic success more broadly.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.9,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.86,
+            "rationale": {
+              "generative": "Decoupling learning from traditional instruction unlocks numerous new educational models and derivative innovations.",
+              "explanatory": "It explains how incentive structures tied to seat time cause inequities and how shifting to mastery-based funding realigns motivations.",
+              "non_obvious": "Challenging the entrenched assumption of teacher-led, time-bound instruction requires a significant conceptual leap.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of learners deeply.",
+              "principle": "The insight about incentive realignment and learner-centered progression applies broadly beyond education to other institutional systems."
+            }
+          },
+          "breakthrough_potential": 0.86,
+          "discard": false,
+          "final_score": 0.8760000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is specific and plausible, focusing on adaptive AI-driven platforms and outcome-based funding to realign incentives and promote equity, though it may face practical challenges in implementation and validation.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.9,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.86,\n  \"rationale\": {\n    \"generative\": \"Decoupling learning from traditional instruction unlocks numerous new educational models and derivative innovations.\",\n    \"explanatory\": \"It explains how incentive structures tied to seat time cause inequities and how shifting to mastery-based funding realigns motivations.\",\n    \"non_obvious\": \"Challenging the entrenched assumption of teacher-led, time-bound instruction requires a significant conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of learners deeply.\",\n    \"principle\": \"The insight about incentive realignment and learner-centered progression applies broadly beyond education to other institutional systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "** the value and progress of students must always be measured and compared through summative assessm",
+        "reformulation": "Identify a fundamental incentive misalignment within the education system that undermines equitable learning outcomes, and describe a targeted intervention at the policy or governance level that could realign these incentives to promote fairness and academic success.",
+        "text": "**Broken assumption:** The value and progress of students must always be measured and compared through summative assessments (standardized tests, grades) that rank individuals against one another.\n\n**Structural problem:** This incentive alignment pushes schools to prioritize test performance, leading to teaching to the test, neglect of non-testable skills, and disadvantaging students from varied backgrounds who may not excel in these narrow metrics, thus undermining equitable learning outcomes.\n\n**Solution:** Break the assumption by abolishing high-stakes summative assessments as the primary measures of student success and instead implement personalized, narrative-based progress portfolios that students co-create with educators, reflecting holistic learning, growth, and diverse competencies over time. At the policy level, mandate that school funding, resource allocation, and accountability be linked to demonstrated individualized growth, student well-being indicators, and community-defined learning goals rather than comparative test scores.\n\nThis realignment removes the incentive to teach only to narrow tests and reduces stigma tied to percentile rankings, enabling schools to tailor support equitably according to students\u2019 unique trajectories. By valuing diverse ways of learning and development, the system encourages inclusive practices and invests in students\u2019 long-term success, fostering fairness and deeper engagement.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.81,
+            "rationale": {
+              "generative": "Shifting from summative tests to narrative portfolios opens many new educational models and derivative innovations in assessment and pedagogy.",
+              "explanatory": "It explains how incentive structures tied to testing causally distort teaching priorities and equity outcomes.",
+              "non_obvious": "It requires breaking the deeply entrenched assumption that standardized testing is the primary measure of success.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students and educators deeply.",
+              "principle": "The insight about incentive realignment and holistic evaluation applies broadly beyond education to other performance measurement systems."
+            }
+          },
+          "breakthrough_potential": 0.81,
+          "discard": false,
+          "final_score": 0.8460000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution addresses incentive misalignment by removing high-stakes testing and replacing it with personalized portfolios, which is plausible and well-justified, though implementation challenges and scalability are not deeply explored.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.81,\n  \"rationale\": {\n    \"generative\": \"Shifting from summative tests to narrative portfolios opens many new educational models and derivative innovations in assessment and pedagogy.\",\n    \"explanatory\": \"It explains how incentive structures tied to testing causally distort teaching priorities and equity outcomes.\",\n    \"non_obvious\": \"It requires breaking the deeply entrenched assumption that standardized testing is the primary measure of success.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students and educators deeply.\",\n    \"principle\": \"The insight about incentive realignment and holistic evaluation applies broadly beyond education to other performance measurement systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Medieval guild apprenticeship systems",
+        "reformulation": "Examine a systemic barrier embedded in the organizational structure of educational institutions that disproportionately affects marginalized students, and articulate a strategic change in institutional design or resource allocation that addresses this inequity.",
+        "text": "Domain used: Medieval guild apprenticeship systems\n\nStructural problem: Educational institutions often embed systemic barriers through impersonal, rigid curricula and limited individualized mentorship, disproportionately disadvantaging marginalized students who lack tailored guidance and access to networks for skill development and professional socialization.\n\nTransferred principle & solution: Medieval guilds operated on a tiered apprenticeship model where novices learned skills progressively through direct mentorship by master craftsmen within a closely-knit community, emphasizing incremental mastery, personal evaluation, and integration into the professional guild network. Applying this structurally to education, institutions should redesign marginalized students\u2019 learning pathways into formalized \u201cguild-style\u201d mentorship cohorts, pairing each student with a dedicated \u201cmaster\u201d mentor (teacher or industry professional) who guides them through staged competency milestones with personalized feedback. These cohorts would foster peer collaboration, gradual skill acquisition, and structured entry into professional and academic communities, replacing one-size-fits-all instruction with a scaffolded, socially embedded mastery model.\n\nThis solution plausibly works because personal mentorship and incremental learning embed marginalized students into supportive micro-communities, mitigating isolation and systemic bias by providing continuous social capital, tailored skill-building, and accountability. The guild model\u2019s emphasis on mastering skills through relational transmission addresses educational inequities structurally by reshaping institutional design from impersonal mass instruction toward individualized, community-anchored professional development.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution unlocks numerous derivative innovations by reimagining mentorship and skill acquisition in education.",
+              "explanatory": "It explains the causal mechanism of how personalized mentorship and incremental mastery reduce systemic barriers and improve equity.",
+              "non_obvious": "Applying a medieval guild apprenticeship model to modern education requires a significant conceptual leap beyond conventional schooling paradigms.",
+              "scalability": "If widely adopted, it could deeply impact millions of marginalized students by restructuring learning pathways and social capital access.",
+              "principle": "The insight about relational, scaffolded learning and community integration is broadly transferable across educational and professional domains."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem harming equity and learning, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is specific and plausible, leveraging a mentorship model with clear mechanisms for incremental skill mastery and social capital building, though implementation challenges and scalability are not deeply addressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous derivative innovations by reimagining mentorship and skill acquisition in education.\",\n    \"explanatory\": \"It explains the causal mechanism of how personalized mentorship and incremental mastery reduce systemic barriers and improve equity.\",\n    \"non_obvious\": \"Applying a medieval guild apprenticeship model to modern education requires a significant conceptual leap beyond conventional schooling paradigms.\",\n    \"scalability\": \"If widely adopted, it could deeply impact millions of marginalized students by restructuring learning pathways and social capital access.\",\n    \"principle\": \"The insight about relational, scaffolded learning and community integration is broadly transferable across educational and professional domains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Urban traffic flow management",
+        "reformulation": "Examine a systemic barrier embedded in the organizational structure of educational institutions that disproportionately affects marginalized students, and articulate a strategic change in institutional design or resource allocation that addresses this inequity.",
+        "text": "Domain: Urban traffic flow management\n\nStructural problem: Within educational institutions, marginalized students often face systemic barriers due to rigid, one-size-fits-all curricular pacing and centralized resource allocation that create bottlenecks\u2014much like traffic congestion at fixed-interval traffic signals\u2014hindering timely access to academic support and advancement opportunities. This structural rigidity disproportionately delays their progress and limits equitable access to learning resources.\n\nSolution: Drawing from adaptive traffic signal control systems\u2014which dynamically adjust signal timings in real time based on traffic flow data\u2014institutions can implement an adaptive academic pacing and resource allocation framework. Using continuous performance and engagement data, schools would flexibly adjust course pacing, support availability, and resource distribution to meet the evolving needs of marginalized students, effectively \u201cgreen-lighting\u201d accelerated access when students demonstrate readiness or require remediation. This dynamic, feedback-responsive system prevents educational bottlenecks by customizing pathways individually, reducing systemic delays and promoting equitable progression.\n\nThis approach works because, like adaptive traffic controls that optimize flow and minimize congestion by responding to real-time conditions rather than fixed schedules, an education system dynamically responsive to student needs dismantles static barriers and mitigates inequities created by uniform institutional structures. It creates smoother, more efficient pathways tailored to diverse learners, improving retention and success rates for marginalized populations.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.72,
+            "rationale": {
+              "generative": "The solution unlocks new possibilities by enabling dynamic, data-driven customization of educational pacing and resources, which can inspire further innovations in personalized learning systems.",
+              "explanatory": "It explains the causal mechanism of systemic delays as analogous to traffic bottlenecks and how adaptive feedback loops can dismantle these barriers.",
+              "non_obvious": "The analogy to adaptive traffic control systems and applying real-time dynamic adjustments to education is a novel conceptual leap beyond typical static educational reforms.",
+              "scalability": "If widely adopted, this approach could impact millions of marginalized students by fundamentally restructuring how educational resources and pacing are allocated.",
+              "principle": "The core insight of using adaptive, feedback-responsive systems to optimize flow and equity is transferable across domains beyond education and traffic management."
+            }
+          },
+          "breakthrough_potential": 0.72,
+          "discard": false,
+          "final_score": 0.792,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem in education and proposes a concrete, feasible solution with a clear mechanism, all within two paragraphs as required.\",\n    \"usefulness\": \"The solution is plausible and specific, using adaptive pacing and resource allocation informed by real-time data to address inequities, which is a reasonable approach to improving learning outcomes for marginalized students.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.72,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new possibilities by enabling dynamic, data-driven customization of educational pacing and resources, which can inspire further innovations in personalized learning systems.\",\n    \"explanatory\": \"It explains the causal mechanism of systemic delays as analogous to traffic bottlenecks and how adaptive feedback loops can dismantle these barriers.\",\n    \"non_obvious\": \"The analogy to adaptive traffic control systems and applying real-time dynamic adjustments to education is a novel conceptual leap beyond typical static educational reforms.\",\n    \"scalability\": \"If widely adopted, this approach could impact millions of marginalized students by fundamentally restructuring how educational resources and pacing are allocated.\",\n    \"principle\": \"The core insight of using adaptive, feedback-responsive systems to optimize flow and equity is transferable across domains beyond education and traffic management.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Traditional Japanese tea ceremony",
+        "reformulation": "Examine a systemic barrier embedded in the organizational structure of educational institutions that disproportionately affects marginalized students, and articulate a strategic change in institutional design or resource allocation that addresses this inequity.",
+        "text": "Domain: Traditional Japanese tea ceremony\n\nStructural problem: In many educational institutions, marginalized students face a systemic barrier due to rigid, hierarchical classroom interactions and uniform teaching methods that fail to recognize diverse cultural backgrounds, learning paces, and social contexts, leading to their marginalization and disengagement.\n\nSolution: The Traditional Japanese tea ceremony\u2019s core principle is *ichi-go ichi-e* (\u201cone time, one meeting\u201d), emphasizing a uniquely crafted, intentional, and context-specific encounter between host and guest, where every act is carefully adapted and meaningful to the present participants. Transferring this principle structurally to education, institutions could redesign small learning cohorts as distinct \u201cceremonial gatherings\u201d where educators intentionally curate learning experiences uniquely tailored to the individual histories, needs, and cultural identities of each group\u2019s members\u2014moving away from one-size-fits-all curricula and rigid timing. This would involve flexible, slow-paced pedagogical rituals that prioritize mutual respect, attentiveness, and co-creation of knowledge within these cohorts, rather than mass instruction. By embedding this structural intentionality and uniqueness in institutional design, marginalized students receive learning experiences recognized as meaningful and authentic, fostering belonging and engagement.\n\nThis approach plausibly works because it restructures institutional time and interaction norms to break down systemic abstraction and standardization that erase marginalized identities. Like the tea ceremony\u2019s mindful, adaptive hospitality, this design encourages educators and students to deeply attune to one another each session, dismantling alienation and creating a responsive, inclusive educational environment.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.5,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.66,
+            "rationale": {
+              "generative": "The solution opens new possibilities for personalized, culturally responsive education models beyond traditional curricula.",
+              "explanatory": "It explains how rigid institutional norms cause marginalization and how intentional, adaptive interactions can restore engagement.",
+              "non_obvious": "Applying the tea ceremony\u2019s principle to education requires a significant conceptual leap beyond standard pedagogical reforms.",
+              "scalability": "While impactful for marginalized groups, scaling such deeply personalized approaches broadly poses logistical challenges.",
+              "principle": "The core insight about intentional, context-specific interaction can transfer to many relational and institutional domains."
+            }
+          },
+          "breakthrough_potential": 0.66,
+          "discard": false,
+          "final_score": 0.736,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem harming equity and learning, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is plausible and grounded in a clear mechanism of personalized, culturally responsive learning cohorts, though it remains somewhat abstract and may face practical challenges in scaling and implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.5,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.66,\n  \"rationale\": {\n    \"generative\": \"The solution opens new possibilities for personalized, culturally responsive education models beyond traditional curricula.\",\n    \"explanatory\": \"It explains how rigid institutional norms cause marginalization and how intentional, adaptive interactions can restore engagement.\",\n    \"non_obvious\": \"Applying the tea ceremony\u2019s principle to education requires a significant conceptual leap beyond standard pedagogical reforms.\",\n    \"scalability\": \"While impactful for marginalized groups, scaling such deeply personalized approaches broadly poses logistical challenges.\",\n    \"principle\": \"The core insight about intentional, context-specific interaction can transfer to many relational and institutional domains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: educational institutions must maintain a strict separation between academic learning and stu",
+        "reformulation": "Examine a systemic barrier embedded in the organizational structure of educational institutions that disproportionately affects marginalized students, and articulate a strategic change in institutional design or resource allocation that addresses this inequity.",
+        "text": "Assumption broken: Educational institutions must maintain a strict separation between academic learning and students\u2019 lived, cultural, and community experiences (not previously challenged).\n\nStructural problem: Marginalized students often face alienation and disengagement because curricula and institutional priorities ignore or marginalize their cultural identities, experiences, and community knowledge, reinforcing systemic inequities through cultural exclusion.\n\nSolution: By intentionally integrating community-based, culturally sustaining education as a core institutional pillar\u2014where students, families, and local leaders co-create curricula, learning spaces, and assessment rubrics\u2014schools transform into hybrid community hubs. This actively centers students\u2019 identities and knowledge as assets systematically, breaking down barriers of cultural dissonance and fostering belonging and empowerment. Allocating resources to sustain partnerships, train educators in cultural humility, and embed local multilingual and experiential pedagogies creates a flexible, living curriculum ecosystem tailored to diverse student populations.\n\nThis approach plausibly works because it reframes education as co-created community practice rather than top-down delivery, enhancing engagement, identity validation, and intergenerational support crucial to marginalized students\u2019 success. It also decentralizes cultural authority, allowing education to be locally relevant and adaptive rather than alienating and monolithic, thereby addressing systemic exclusion embedded in traditional institutional structures.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "This solution unlocks numerous derivative innovations by redefining curriculum co-creation and community integration in education.",
+              "explanatory": "It explains the causal mechanism of cultural exclusion leading to disengagement and how community-centered education addresses this root cause.",
+              "non_obvious": "It breaks the entrenched assumption of separating academic learning from students\u2019 cultural contexts, which is not commonly challenged.",
+              "scalability": "If widely adopted, it could transform education systems globally, deeply impacting marginalized students and communities.",
+              "principle": "The insight that education should be a co-created, culturally sustaining community practice is transferable across domains involving institutional reform."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.836,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem harming equity and learning, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is specific, actionable, and addresses systemic exclusion by integrating community and cultural knowledge into curricula, with a plausible mechanism for improving engagement and equity.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"This solution unlocks numerous derivative innovations by redefining curriculum co-creation and community integration in education.\",\n    \"explanatory\": \"It explains the causal mechanism of cultural exclusion leading to disengagement and how community-centered education addresses this root cause.\",\n    \"non_obvious\": \"It breaks the entrenched assumption of separating academic learning from students\u2019 cultural contexts, which is not commonly challenged.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, deeply impacting marginalized students and communities.\",\n    \"principle\": \"The insight that education should be a co-created, culturally sustaining community practice is transferable across domains involving institutional reform.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: the allocation of resources and opportunities within educational institutions should be unif",
+        "reformulation": "Examine a systemic barrier embedded in the organizational structure of educational institutions that disproportionately affects marginalized students, and articulate a strategic change in institutional design or resource allocation that addresses this inequity.",
+        "text": "Assumption broken: The allocation of resources and opportunities within educational institutions should be uniform or primarily based on generalized criteria (such as grade level or standardized funding formulas) rather than tailored specifically to students\u2019 diverse socio-emotional and cultural contexts.\n\nStructural problem: Marginalized students often face systemic barriers because educational resources\u2014counseling, mentoring, extracurriculars, and specialized academic supports\u2014are distributed uniformly or based only on general academic metrics, ignoring distinct contextual needs related to cultural background, trauma, or community assets. This \u201cone-size-fits-all\u201d resource allocation fails to address the root inequities embedded in students\u2019 lives outside the classroom, leading to persistent achievement and engagement gaps.\n\nSolution: Break the resource allocation assumption by instituting dynamic, context-responsive \u201cequity budgets\u201d at the school level, where resources are flexibly assigned based on real-time, culturally and personally informed assessments of student and community needs rather than static formulas. This could manifest as community-designed local oversight committees empowered to deploy funds for wraparound services\u2014such as culturally relevant mentorship programs, trauma-informed counseling, language support, or family engagement initiatives\u2014that directly address the systemic barriers marginalized students face. By redistributing resources intentionally and responsively rather than equally, schools can tailor interventions that holistically empower marginalized students, fostering environments that genuinely support their success.\n\nThis solution plausibly works because it shifts the focus from equal inputs to equitable, personalized supports embedded in the students\u2019 lived realities, leveraging community knowledge and data that traditional allocation systems overlook. It creates conditions where marginalized students are not pathologized but understood and supported with adaptive institutional mechanisms that evolve as needs change, thereby addressing deep inequities through systemic redesign rather than surface-level fixes.",
+        "judge": {
+          "constraint_satisfaction": 0.9,
+          "usefulness": 0.8,
+          "constraint_overall": 0.8500000000000001,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution unlocks numerous derivative innovations by enabling dynamic, context-sensitive resource allocation models beyond education.",
+              "explanatory": "It explains the causal mechanism of inequity by linking resource distribution to socio-emotional and cultural contexts rather than uniform metrics.",
+              "non_obvious": "It requires breaking the common assumption of uniform resource allocation and embracing adaptive, community-driven budgeting.",
+              "scalability": "If widely adopted, it could deeply impact millions of marginalized students by transforming systemic educational inequities.",
+              "principle": "The insight about tailoring resources based on lived realities is transferable to other social systems facing structural inequities."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.796,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.9,\n  \"usefulness\": 0.8,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a concrete, feasible solution with a detailed mechanism, all within the two-paragraph limit. The response slightly exceeds typical paragraph length but remains within reasonable bounds.\",\n    \"usefulness\": \"The solution is specific and plausible, focusing on dynamic, context-responsive resource allocation with community oversight, which addresses root inequities and adapts to changing needs, making it likely to improve equity and learning outcomes.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous derivative innovations by enabling dynamic, context-sensitive resource allocation models beyond education.\",\n    \"explanatory\": \"It explains the causal mechanism of inequity by linking resource distribution to socio-emotional and cultural contexts rather than uniform metrics.\",\n    \"non_obvious\": \"It requires breaking the common assumption of uniform resource allocation and embracing adaptive, community-driven budgeting.\",\n    \"scalability\": \"If widely adopted, it could deeply impact millions of marginalized students by transforming systemic educational inequities.\",\n    \"principle\": \"The insight about tailoring resources based on lived realities is transferable to other social systems facing structural inequities.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: the responsibility for educational success and equity rests primarily within the institution",
+        "reformulation": "Examine a systemic barrier embedded in the organizational structure of educational institutions that disproportionately affects marginalized students, and articulate a strategic change in institutional design or resource allocation that addresses this inequity.",
+        "text": "Assumption broken: The responsibility for educational success and equity rests primarily within the institution and its educators.\n\nStructural problem: Marginalized students often face systemic barriers rooted outside the school \u2014 including economic instability, community disinvestment, and non-academic stressors \u2014 yet educational institutions typically do not integrate or coordinate with external social support systems, leaving these needs unmet and undermining educational equity.\n\nSolution: By breaking the assumption that schools operate as isolated entities responsible only for academic outcomes, institutions could be strategically redesigned into integrated community learning hubs. These hubs would coordinate comprehensive wraparound services\u2014such as health care, childcare, housing assistance, and legal aid\u2014in close partnership with local organizations, addressing non-academic barriers that disproportionately impact marginalized students. For instance, allocating resources to embedded social workers and community liaison teams within schools would create a stable ecosystem supporting students holistically.\n\nThis solution would plausibly work because addressing multi-dimensional challenges in a unified institutional framework reduces fragility caused by external inequities, improving students\u2019 readiness and capacity to learn. Empowering schools as the nexus for both education and essential social supports dismantles systemic barriers grounded in external resource inequality, thereby fostering equity in educational attainment.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "This solution unlocks numerous new possibilities by integrating social services with education, enabling derivative innovations in holistic student support.",
+              "explanatory": "It explains the causal mechanism by identifying how external systemic barriers undermine learning and how integrated support can mitigate these effects.",
+              "non_obvious": "It requires breaking the common assumption that schools are isolated academic institutions, representing a significant conceptual leap.",
+              "scalability": "If widely adopted, it could deeply impact millions of marginalized students by addressing root causes of inequity across diverse communities.",
+              "principle": "The insight that institutions must integrate cross-sector supports to address complex social challenges is transferable beyond education."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.848,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem harming equity and learning, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is specific and plausible, addressing external barriers through integrated community services within schools, which is likely to improve equity and learning outcomes by holistically supporting marginalized students.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"This solution unlocks numerous new possibilities by integrating social services with education, enabling derivative innovations in holistic student support.\",\n    \"explanatory\": \"It explains the causal mechanism by identifying how external systemic barriers undermine learning and how integrated support can mitigate these effects.\",\n    \"non_obvious\": \"It requires breaking the common assumption that schools are isolated academic institutions, representing a significant conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could deeply impact millions of marginalized students by addressing root causes of inequity across diverse communities.\",\n    \"principle\": \"The insight that institutions must integrate cross-sector supports to address complex social challenges is transferable beyond education.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Beekeeping hive dynamics",
+        "reformulation": "Analyze how prevailing assumptions about student assessment or curriculum delivery contribute to disparities in learning opportunities, and propose an alternative framework that challenges these assumptions to foster more inclusive educational practices.",
+        "text": "Domain used: Beekeeping hive dynamics\n\nStructural problem: Prevailing assumptions in student assessment and curriculum delivery often treat learners as isolated units evaluated by uniform standards, akin to assessing each bee individually rather than as part of an interdependent colony. This overlooks the dynamic, distributed roles and contextual contributions that shape learning opportunities, resulting in disparities when diverse student strengths and social contexts are ignored.\n\nSolution: Inspired by the hive\u2019s decentralized labor allocation and role flexibility\u2014where bees shift tasks responsively to optimize colony health\u2014restructure educational assessment and curriculum delivery to emphasize fluid, role-based competencies and peer-supported learning networks. Instead of standardized, individual assessments, deploy modular, collaborative projects where students engage in rotating roles (e.g., researcher, presenter, critic) tailored to their evolving strengths and interests. Assessment would aggregate these distributed contributions and adaptive role performances, mirroring hive dynamics that value collective success over isolated outputs. This framework disrupts rigid assumptions by recognizing learning as an emergent, socially embedded process, fostering inclusion by validating diverse pathways to mastery and participation.\n\nThis solution plausibly works as it mirrors a robust natural system optimized for resilience and adaptability: by acknowledging and leveraging the interdependence of learners, it creates multiple entry points and forms of engagement, reducing disparities linked to fixed, one-size-fits-all measures while promoting equitable, contextualized learning opportunities.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution unlocks numerous new educational models by shifting assessment to dynamic, role-based collaboration, enabling derivative innovations in pedagogy and curriculum design.",
+              "explanatory": "It explains the causal mechanism of learning as an emergent, socially embedded process rather than isolated individual achievement, unifying assessment and equity challenges under a systemic framework.",
+              "non_obvious": "The analogy to hive dynamics requires a significant conceptual leap away from traditional individualistic assessment paradigms, breaking common assumptions about learner evaluation.",
+              "scalability": "If widely adopted, this approach could transform education systems globally by affecting millions of learners and educators through more inclusive, adaptive learning environments.",
+              "principle": "The insight about decentralized, interdependent role flexibility applies broadly beyond education, offering a transferable principle for designing resilient, equitable systems in various domains."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem in the education system and proposes a concrete, feasible solution with a clear mechanism, all within two paragraphs as required.\",\n    \"usefulness\": \"The solution is plausible and specific, leveraging peer-supported learning and role flexibility to address equity and learning disparities, though it may require significant systemic change to implement fully.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new educational models by shifting assessment to dynamic, role-based collaboration, enabling derivative innovations in pedagogy and curriculum design.\",\n    \"explanatory\": \"It explains the causal mechanism of learning as an emergent, socially embedded process rather than isolated individual achievement, unifying assessment and equity challenges under a systemic framework.\",\n    \"non_obvious\": \"The analogy to hive dynamics requires a significant conceptual leap away from traditional individualistic assessment paradigms, breaking common assumptions about learner evaluation.\",\n    \"scalability\": \"If widely adopted, this approach could transform education systems globally by affecting millions of learners and educators through more inclusive, adaptive learning environments.\",\n    \"principle\": \"The insight about decentralized, interdependent role flexibility applies broadly beyond education, offering a transferable principle for designing resilient, equitable systems in various domains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Jazz improvisation techniques",
+        "reformulation": "Analyze how prevailing assumptions about student assessment or curriculum delivery contribute to disparities in learning opportunities, and propose an alternative framework that challenges these assumptions to foster more inclusive educational practices.",
+        "text": "Domain used: Jazz improvisation techniques\n\nStructural problem: Prevailing assumptions in student assessment and curriculum delivery often rely on rigid, standardized frameworks that treat learning as linear and uniform, overlooking individual creativity and dynamic responsiveness, which leads to disparities in learning opportunities.\n\nTransferred principle: In Jazz improvisation, musicians operate within a flexible structure (such as a chord progression or mode) but continuously adapt, respond, and build spontaneously on each other\u2019s cues, allowing for personalized expression and collective innovation without losing coherence.\n\nProposed solution: Develop an assessment and curriculum framework modeled on Jazz improvisation\u2019s balance of structure and improvisation by incorporating \u201clearning progressions\u201d as dynamic, adaptable frameworks rather than fixed standards. Students receive core thematic \u201cmotifs\u201d (foundational concepts) but are encouraged to explore, reinterpret, and connect these themes through personalized projects and peer collaborations, with educators acting as facilitators who adapt prompts in real time based on student input and interaction. Assessment moves from static tests to ongoing, dialogic evaluation of students\u2019 evolving understanding and creative applications, much like a jam session\u2019s fluid dialogue.\n\nWhy it would work: This approach leverages the core Jazz principle of co-creative, responsive development, allowing diverse learning styles and cultural backgrounds to shape individual pathways while maintaining shared goals. By valuing adaptive knowledge construction over fixed mastery checkpoints, disparities from rigid assessment can be reduced, engaging students as active agents in their learning and promoting equity through personalized expression and continuous formative feedback.",
+        "judge": {
+          "constraint_satisfaction": 0.8,
+          "usefulness": 0.7,
+          "constraint_overall": 0.75,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution unlocks numerous new educational models by shifting assessment and curriculum design toward dynamic, co-creative processes.",
+              "explanatory": "It explains how rigid structures limit learning by ignoring individual adaptability and interaction, revealing the causal mechanism behind inequity.",
+              "non_obvious": "Applying jazz improvisation principles to education requires a significant conceptual leap beyond conventional linear and standardized frameworks.",
+              "scalability": "If widely adopted, this approach could transform diverse education systems globally, deeply affecting millions of learners and educators.",
+              "principle": "The insight about balancing structure with improvisation is broadly transferable to many domains involving learning, creativity, and assessment."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.78,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.8,\n  \"usefulness\": 0.7,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem related to rigid assessment frameworks and proposes a concrete, feasible solution inspired by jazz improvisation, all within the two-paragraph limit. The response slightly exceeds a strict paragraph count if counting the labeled sections separately, but overall it meets the prompt requirements.\",\n    \"usefulness\": \"The proposed solution includes a plausible mechanism of dynamic, adaptive learning progressions and ongoing dialogic assessment, which could realistically improve equity and engagement. However, the jazz analogy, while creative, may require significant systemic change and teacher training, making feasibility somewhat challenging but not unrealistic.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new educational models by shifting assessment and curriculum design toward dynamic, co-creative processes.\",\n    \"explanatory\": \"It explains how rigid structures limit learning by ignoring individual adaptability and interaction, revealing the causal mechanism behind inequity.\",\n    \"non_obvious\": \"Applying jazz improvisation principles to education requires a significant conceptual leap beyond conventional linear and standardized frameworks.\",\n    \"scalability\": \"If widely adopted, this approach could transform diverse education systems globally, deeply affecting millions of learners and educators.\",\n    \"principle\": \"The insight about balancing structure with improvisation is broadly transferable to many domains involving learning, creativity, and assessment.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Coral reef symbiosis",
+        "reformulation": "Analyze how prevailing assumptions about student assessment or curriculum delivery contribute to disparities in learning opportunities, and propose an alternative framework that challenges these assumptions to foster more inclusive educational practices.",
+        "text": "Domain used: Coral reef symbiosis\n\nStructural problem: Prevailing assumptions in student assessment and curriculum delivery often rely on uniform, standardized evaluation and rigid content sequencing that fail to account for the diverse, interdependent learning needs and strengths of students, thereby perpetuating disparities in educational opportunities.\n\nCoral reef symbiosis is founded on a network of mutually beneficial relationships where different species\u2014corals, algae, fish, and microorganisms\u2014exchange resources and services dynamically to optimize the health and resilience of the entire reef ecosystem. Transferring this principle, I propose an assessment and curriculum framework modeled as a dynamic, interconnected \"learning reef\" system where students, educators, content, and community resources form a symbiotic network. Instead of standardized assessments, students contribute evidence of learning through multiple, interconnected modalities (projects, peer-teaching, community engagement), while educators and curriculum designers iteratively adapt content based on feedback loops between student needs and strengths, much like coral polyps adjusting to environmental changes via their symbiotic partners. This framework fosters learning diversity and resilience by embracing interdependence and continuous adaptive calibration.\n\nSuch a symbiotic model plausibly works in practice because it transforms assessment from a top-down judgment into a collaborative, evolving ecosystem\u2014leveraging the unique contributions of each participant to support others\u2019 growth. By continuously exchanging diverse inputs and adapting responsively, this approach addresses disparities by recognizing and utilizing each student\u2019s \u201cniche\u201d and learning style, promoting inclusion, and enabling equitable access to rich, diversified educational experiences that thrive collectively rather than enforcing uniform standards that marginalize difference.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution unlocks numerous new possibilities by reframing assessment and curriculum as dynamic, interconnected systems enabling derivative innovations in education design.",
+              "explanatory": "It explains the causal mechanism of learning disparities through rigid, uniform systems and proposes adaptive, feedback-driven symbiosis to unify diverse educational needs.",
+              "non_obvious": "Applying coral reef symbiosis to education requires a significant conceptual leap beyond conventional assessment models, breaking standard assumptions.",
+              "scalability": "If widely adopted, this approach could deeply impact millions of learners by fostering equity and resilience across diverse educational contexts.",
+              "principle": "The insight of symbiotic, adaptive networks is transferable across domains where interdependence and diversity are critical for system resilience."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.82,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem in education related to standardized assessment and rigid curriculum sequencing, proposes a concrete and feasible solution inspired by coral reef symbiosis, and explains the mechanism and rationale within two paragraphs as required.\",\n    \"usefulness\": \"The proposed symbiotic, adaptive assessment and curriculum framework is plausible and addresses equity by tailoring to diverse student needs through continuous feedback and collaboration, though it remains somewhat abstract and would require significant systemic change to implement fully.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new possibilities by reframing assessment and curriculum as dynamic, interconnected systems enabling derivative innovations in education design.\",\n    \"explanatory\": \"It explains the causal mechanism of learning disparities through rigid, uniform systems and proposes adaptive, feedback-driven symbiosis to unify diverse educational needs.\",\n    \"non_obvious\": \"Applying coral reef symbiosis to education requires a significant conceptual leap beyond conventional assessment models, breaking standard assumptions.\",\n    \"scalability\": \"If widely adopted, this approach could deeply impact millions of learners by fostering equity and resilience across diverse educational contexts.\",\n    \"principle\": \"The insight of symbiotic, adaptive networks is transferable across domains where interdependence and diversity are critical for system resilience.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: learning should be segmented distinctly by age cohorts within rigid grade levels",
+        "reformulation": "Analyze how prevailing assumptions about student assessment or curriculum delivery contribute to disparities in learning opportunities, and propose an alternative framework that challenges these assumptions to foster more inclusive educational practices.",
+        "text": "Assumption broken: Learning should be segmented distinctly by age cohorts within rigid grade levels.\n\nStructural problem: By strictly grouping students based on age, educational systems often overlook individual differences in maturity, prior knowledge, and learning pace, contributing to disparities because some students are either held back or pushed ahead artificially, limiting personalized learning opportunities and fostering inequity.\n\nSolution: Break the age-grade segregation by implementing fluid, competency-based learning communities where students progress through curricula based on demonstrated mastery rather than age or time. Students of mixed ages collaborate in project-based, interdisciplinary cohorts aligned to interests and skill levels, facilitated by adaptive technologies and mentorship models. This flexible, mastery-oriented framework encourages peer learning, allows tailored pacing, and validates diverse developmental trajectories.\n\nThis approach plausibly works since it shifts focus from arbitrary age-based grouping to actual readiness and understanding, reducing stigma, increasing motivation, and accommodating varied learning needs. Students who excel can advance without constraints, while those needing more time are supported without penalty, fostering inclusivity and equitable learning access.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "Shifting from age-based cohorts to competency-based progression opens numerous new educational models and derivative innovations.",
+              "explanatory": "It explains how rigid age grouping causally limits personalized learning and equity by ignoring individual readiness and mastery.",
+              "non_obvious": "It requires breaking the deeply ingrained assumption that age should dictate educational grouping, which is not commonly challenged.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students with deep, systemic impact.",
+              "principle": "The insight about mastery-based progression over arbitrary segmentation applies broadly beyond education to other developmental and organizational systems."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.836,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is specific, plausible, and well-justified, focusing on competency-based progression and mixed-age cohorts to improve equity and learning outcomes.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"Shifting from age-based cohorts to competency-based progression opens numerous new educational models and derivative innovations.\",\n    \"explanatory\": \"It explains how rigid age grouping causally limits personalized learning and equity by ignoring individual readiness and mastery.\",\n    \"non_obvious\": \"It requires breaking the deeply ingrained assumption that age should dictate educational grouping, which is not commonly challenged.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students with deep, systemic impact.\",\n    \"principle\": \"The insight about mastery-based progression over arbitrary segmentation applies broadly beyond education to other developmental and organizational systems.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: the notion that knowledge and skills must be compartmentalized into fixed subject areas (e",
+        "reformulation": "Analyze how prevailing assumptions about student assessment or curriculum delivery contribute to disparities in learning opportunities, and propose an alternative framework that challenges these assumptions to foster more inclusive educational practices.",
+        "text": "Assumption broken: The notion that knowledge and skills must be compartmentalized into fixed subject areas (e.g., math, science, language arts), shaping assessment and curriculum delivery around these siloed disciplines.\n\nStructural problem: This compartmentalization enforces artificial boundaries that limit students' ability to engage in holistic, meaningful learning experiences, disproportionately disadvantaging those whose talents or needs straddle multiple domains or do not align neatly with traditional subject divisions. It fragments knowledge, impeding connections and reinforcing inequities in access to diverse learning pathways.\n\nSolution: Break down disciplinary silos entirely by designing an integrated, thematic curriculum where students explore broad, real-world problems (e.g., climate change, social justice, urban design) through interdisciplinary teams. Assessment would be purpose-driven and project-based, emphasizing the application of diverse skills and collaborative problem-solving instead of isolated subject mastery. This system leverages students\u2019 varied strengths, encourages personalized learning trajectories, and naturally embeds inclusivity by providing multiple entry points and modes of participation across different intelligences and cultural backgrounds.\n\nThis approach works because it dissolves rigid constraints that marginalize learners whose abilities or interests don\u2019t align with traditional subjects, fosters deeper engagement through relevance and collaboration, and democratizes learning by recognizing multiple ways of knowing and contributing, thereby expanding equitable learning opportunities.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.85,
+            "explanatory_depth": 0.75,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.83,
+            "rationale": {
+              "generative": "By dismantling subject silos, it opens numerous pathways for innovative interdisciplinary curricula and assessment models.",
+              "explanatory": "It explains how compartmentalization fragments knowledge and marginalizes diverse learners, revealing the causal mechanism behind inequity and disengagement.",
+              "non_obvious": "It requires a significant conceptual leap to reject entrenched disciplinary boundaries and reimagine education around integrated real-world problems.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students and promoting equity at scale.",
+              "principle": "The insight about breaking down artificial boundaries to foster holistic learning applies broadly beyond education to other knowledge and organizational systems."
+            }
+          },
+          "breakthrough_potential": 0.83,
+          "discard": false,
+          "final_score": 0.858,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is specific and plausible, with a clear mechanism linking interdisciplinary, project-based learning to improved engagement and equity, though implementation challenges are not deeply addressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.85,\n  \"explanatory_depth\": 0.75,\n  \"non_obviousness\": 0.80,\n  \"scalability_of_impact\": 0.90,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.83,\n  \"rationale\": {\n    \"generative\": \"By dismantling subject silos, it opens numerous pathways for innovative interdisciplinary curricula and assessment models.\",\n    \"explanatory\": \"It explains how compartmentalization fragments knowledge and marginalizes diverse learners, revealing the causal mechanism behind inequity and disengagement.\",\n    \"non_obvious\": \"It requires a significant conceptual leap to reject entrenched disciplinary boundaries and reimagine education around integrated real-world problems.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students and promoting equity at scale.\",\n    \"principle\": \"The insight about breaking down artificial boundaries to foster holistic learning applies broadly beyond education to other knowledge and organizational systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: the learner\u2019s identity and context (such as culture, language, socio-economic background) mu",
+        "reformulation": "Analyze how prevailing assumptions about student assessment or curriculum delivery contribute to disparities in learning opportunities, and propose an alternative framework that challenges these assumptions to foster more inclusive educational practices.",
+        "text": "Assumption broken: The learner\u2019s identity and context (such as culture, language, socio-economic background) must be neutralized or standardized to fit a uniform curriculum or assessment model.\n\nStructural problem: Prevailing educational practices often treat all students as blank slates or uniform recipients of knowledge, ignoring how their unique identities and lived experiences impact how they engage with curriculum and assessments. This one-size-fits-all approach perpetuates disparities because it fails to validate or leverage diverse perspectives and strengths, marginalizing students whose backgrounds do not align with dominant norms.\n\nSolution: By breaking the assumption of neutrality, design an adaptive, identity-affirming framework where curriculum and assessment co-evolve dynamically with the student\u2019s cultural context and personal narratives. For example, build learning modules as customizable \u201clearning ecosystems\u201d where students choose themes, materials, and projects rooted in their own experiences and communities, while assessment becomes a reflective, portfolio-based dialogue emphasizing growth and real-life impact rather than abstract metrics. Such a system empowers marginalized learners, cultivates cultural relevance, and positions differences as assets rather than deficits, fostering authentic engagement and equitable opportunities.\n\nThis would plausibly work because by centering identity and lived experience, students see themselves as contributors rather than passive recipients, increasing motivation and ownership. Teachers act as facilitators and co-creators rather than auditors, enabling flexible scaffolding tailored to each learner\u2019s context. The dynamic, dialogic assessment dismantles rigid, biased measurement systems, promoting continuous improvement that respects diverse ways of knowing and expressing understanding, thus reducing disparities rooted in systemic cultural mismatches.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.9,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.84,
+            "rationale": {
+              "generative": "This approach unlocks numerous new educational models and derivative innovations by centering identity and context.",
+              "explanatory": "It explains how systemic cultural mismatches cause disparities and how adaptive frameworks can address them at a causal level.",
+              "non_obvious": "It requires breaking the deep-rooted assumption of learner neutrality, which is not commonly challenged in mainstream education.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of learners and educators deeply.",
+              "principle": "The insight about centering identity and context is broadly transferable beyond education to other systems requiring personalization and equity."
+            }
+          },
+          "breakthrough_potential": 0.84,
+          "discard": false,
+          "final_score": 0.8640000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is specific and plausible, focusing on adaptive, identity-affirming curricula and assessments that address equity by validating diverse experiences, which is likely to improve engagement and reduce disparities.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.9,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.84,\n  \"rationale\": {\n    \"generative\": \"This approach unlocks numerous new educational models and derivative innovations by centering identity and context.\",\n    \"explanatory\": \"It explains how systemic cultural mismatches cause disparities and how adaptive frameworks can address them at a causal level.\",\n    \"non_obvious\": \"It requires breaking the deep-rooted assumption of learner neutrality, which is not commonly challenged in mainstream education.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of learners and educators deeply.\",\n    \"principle\": \"The insight about centering identity and context is broadly transferable beyond education to other systems requiring personalization and equity.\"\n  }\n}\n```"
+        }
+      }
+    ],
+    "top_k": [
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken:** the education system must rely on traditional teacher-driven, in-person instructional deli",
+        "reformulation": "Identify a fundamental incentive misalignment within the education system that undermines equitable learning outcomes, and describe a targeted intervention at the policy or governance level that could realign these incentives to promote fairness and academic success.",
+        "text": "**Assumption broken:** The education system must rely on traditional teacher-driven, in-person instructional delivery as the primary mode of learning.\n\n**Structural problem:** Incentive misalignment occurs because teachers and schools are often evaluated\u2014and funded\u2014based on students\u2019 standardized test scores gathered through uniform, time-bound classroom instruction. This model undervalues diverse learning paces, styles, and outside-of-classroom educational inputs, reinforcing inequities for students with different needs or resources.\n\n**Solution:** Break the assumption by autonomously decoupling learning from exclusive teacher-led classroom instruction and instead adopting a hybrid learner-centered model where students progress at individual paces using adaptive, AI-driven digital platforms validated as credible alternatives to seat time. Policy can incentivize schools through outcome-based funding that credits demonstrated mastery regardless of how or when learning occurs, encouraging innovative, personalized education and mentorship linkages beyond the classroom.\n\nThis shifts governance focus from controlling \u201ctime in seats\u201d to fostering equitable mastery and engagement, effectively realigning incentives to support all learners equitably. It breaks the one-size-fits-all trap, allowing diverse learners \u2014 including those with socioeconomic barriers \u2014 to access tailored support and succeed on their own terms, thus promoting fairness and academic success more broadly.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.9,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.86,
+            "rationale": {
+              "generative": "Decoupling learning from traditional instruction unlocks numerous new educational models and derivative innovations.",
+              "explanatory": "It explains how incentive structures tied to seat time cause inequities and how shifting to mastery-based funding realigns motivations.",
+              "non_obvious": "Challenging the entrenched assumption of teacher-led, time-bound instruction requires a significant conceptual leap.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of learners deeply.",
+              "principle": "The insight about incentive realignment and learner-centered progression applies broadly beyond education to other institutional systems."
+            }
+          },
+          "breakthrough_potential": 0.86,
+          "discard": false,
+          "final_score": 0.8760000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is specific and plausible, focusing on adaptive AI-driven platforms and outcome-based funding to realign incentives and promote equity, though it may face practical challenges in implementation and validation.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.9,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.86,\n  \"rationale\": {\n    \"generative\": \"Decoupling learning from traditional instruction unlocks numerous new educational models and derivative innovations.\",\n    \"explanatory\": \"It explains how incentive structures tied to seat time cause inequities and how shifting to mastery-based funding realigns motivations.\",\n    \"non_obvious\": \"Challenging the entrenched assumption of teacher-led, time-bound instruction requires a significant conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of learners deeply.\",\n    \"principle\": \"The insight about incentive realignment and learner-centered progression applies broadly beyond education to other institutional systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: the learner\u2019s identity and context (such as culture, language, socio-economic background) mu",
+        "reformulation": "Analyze how prevailing assumptions about student assessment or curriculum delivery contribute to disparities in learning opportunities, and propose an alternative framework that challenges these assumptions to foster more inclusive educational practices.",
+        "text": "Assumption broken: The learner\u2019s identity and context (such as culture, language, socio-economic background) must be neutralized or standardized to fit a uniform curriculum or assessment model.\n\nStructural problem: Prevailing educational practices often treat all students as blank slates or uniform recipients of knowledge, ignoring how their unique identities and lived experiences impact how they engage with curriculum and assessments. This one-size-fits-all approach perpetuates disparities because it fails to validate or leverage diverse perspectives and strengths, marginalizing students whose backgrounds do not align with dominant norms.\n\nSolution: By breaking the assumption of neutrality, design an adaptive, identity-affirming framework where curriculum and assessment co-evolve dynamically with the student\u2019s cultural context and personal narratives. For example, build learning modules as customizable \u201clearning ecosystems\u201d where students choose themes, materials, and projects rooted in their own experiences and communities, while assessment becomes a reflective, portfolio-based dialogue emphasizing growth and real-life impact rather than abstract metrics. Such a system empowers marginalized learners, cultivates cultural relevance, and positions differences as assets rather than deficits, fostering authentic engagement and equitable opportunities.\n\nThis would plausibly work because by centering identity and lived experience, students see themselves as contributors rather than passive recipients, increasing motivation and ownership. Teachers act as facilitators and co-creators rather than auditors, enabling flexible scaffolding tailored to each learner\u2019s context. The dynamic, dialogic assessment dismantles rigid, biased measurement systems, promoting continuous improvement that respects diverse ways of knowing and expressing understanding, thus reducing disparities rooted in systemic cultural mismatches.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.9,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.84,
+            "rationale": {
+              "generative": "This approach unlocks numerous new educational models and derivative innovations by centering identity and context.",
+              "explanatory": "It explains how systemic cultural mismatches cause disparities and how adaptive frameworks can address them at a causal level.",
+              "non_obvious": "It requires breaking the deep-rooted assumption of learner neutrality, which is not commonly challenged in mainstream education.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of learners and educators deeply.",
+              "principle": "The insight about centering identity and context is broadly transferable beyond education to other systems requiring personalization and equity."
+            }
+          },
+          "breakthrough_potential": 0.84,
+          "discard": false,
+          "final_score": 0.8640000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is specific and plausible, focusing on adaptive, identity-affirming curricula and assessments that address equity by validating diverse experiences, which is likely to improve engagement and reduce disparities.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.9,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.84,\n  \"rationale\": {\n    \"generative\": \"This approach unlocks numerous new educational models and derivative innovations by centering identity and context.\",\n    \"explanatory\": \"It explains how systemic cultural mismatches cause disparities and how adaptive frameworks can address them at a causal level.\",\n    \"non_obvious\": \"It requires breaking the deep-rooted assumption of learner neutrality, which is not commonly challenged in mainstream education.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of learners and educators deeply.\",\n    \"principle\": \"The insight about centering identity and context is broadly transferable beyond education to other systems requiring personalization and equity.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: the notion that knowledge and skills must be compartmentalized into fixed subject areas (e",
+        "reformulation": "Analyze how prevailing assumptions about student assessment or curriculum delivery contribute to disparities in learning opportunities, and propose an alternative framework that challenges these assumptions to foster more inclusive educational practices.",
+        "text": "Assumption broken: The notion that knowledge and skills must be compartmentalized into fixed subject areas (e.g., math, science, language arts), shaping assessment and curriculum delivery around these siloed disciplines.\n\nStructural problem: This compartmentalization enforces artificial boundaries that limit students' ability to engage in holistic, meaningful learning experiences, disproportionately disadvantaging those whose talents or needs straddle multiple domains or do not align neatly with traditional subject divisions. It fragments knowledge, impeding connections and reinforcing inequities in access to diverse learning pathways.\n\nSolution: Break down disciplinary silos entirely by designing an integrated, thematic curriculum where students explore broad, real-world problems (e.g., climate change, social justice, urban design) through interdisciplinary teams. Assessment would be purpose-driven and project-based, emphasizing the application of diverse skills and collaborative problem-solving instead of isolated subject mastery. This system leverages students\u2019 varied strengths, encourages personalized learning trajectories, and naturally embeds inclusivity by providing multiple entry points and modes of participation across different intelligences and cultural backgrounds.\n\nThis approach works because it dissolves rigid constraints that marginalize learners whose abilities or interests don\u2019t align with traditional subjects, fosters deeper engagement through relevance and collaboration, and democratizes learning by recognizing multiple ways of knowing and contributing, thereby expanding equitable learning opportunities.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.85,
+            "explanatory_depth": 0.75,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.83,
+            "rationale": {
+              "generative": "By dismantling subject silos, it opens numerous pathways for innovative interdisciplinary curricula and assessment models.",
+              "explanatory": "It explains how compartmentalization fragments knowledge and marginalizes diverse learners, revealing the causal mechanism behind inequity and disengagement.",
+              "non_obvious": "It requires a significant conceptual leap to reject entrenched disciplinary boundaries and reimagine education around integrated real-world problems.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students and promoting equity at scale.",
+              "principle": "The insight about breaking down artificial boundaries to foster holistic learning applies broadly beyond education to other knowledge and organizational systems."
+            }
+          },
+          "breakthrough_potential": 0.83,
+          "discard": false,
+          "final_score": 0.858,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is specific and plausible, with a clear mechanism linking interdisciplinary, project-based learning to improved engagement and equity, though implementation challenges are not deeply addressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.85,\n  \"explanatory_depth\": 0.75,\n  \"non_obviousness\": 0.80,\n  \"scalability_of_impact\": 0.90,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.83,\n  \"rationale\": {\n    \"generative\": \"By dismantling subject silos, it opens numerous pathways for innovative interdisciplinary curricula and assessment models.\",\n    \"explanatory\": \"It explains how compartmentalization fragments knowledge and marginalizes diverse learners, revealing the causal mechanism behind inequity and disengagement.\",\n    \"non_obvious\": \"It requires a significant conceptual leap to reject entrenched disciplinary boundaries and reimagine education around integrated real-world problems.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students and promoting equity at scale.\",\n    \"principle\": \"The insight about breaking down artificial boundaries to foster holistic learning applies broadly beyond education to other knowledge and organizational systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: the responsibility for educational success and equity rests primarily within the institution",
+        "reformulation": "Examine a systemic barrier embedded in the organizational structure of educational institutions that disproportionately affects marginalized students, and articulate a strategic change in institutional design or resource allocation that addresses this inequity.",
+        "text": "Assumption broken: The responsibility for educational success and equity rests primarily within the institution and its educators.\n\nStructural problem: Marginalized students often face systemic barriers rooted outside the school \u2014 including economic instability, community disinvestment, and non-academic stressors \u2014 yet educational institutions typically do not integrate or coordinate with external social support systems, leaving these needs unmet and undermining educational equity.\n\nSolution: By breaking the assumption that schools operate as isolated entities responsible only for academic outcomes, institutions could be strategically redesigned into integrated community learning hubs. These hubs would coordinate comprehensive wraparound services\u2014such as health care, childcare, housing assistance, and legal aid\u2014in close partnership with local organizations, addressing non-academic barriers that disproportionately impact marginalized students. For instance, allocating resources to embedded social workers and community liaison teams within schools would create a stable ecosystem supporting students holistically.\n\nThis solution would plausibly work because addressing multi-dimensional challenges in a unified institutional framework reduces fragility caused by external inequities, improving students\u2019 readiness and capacity to learn. Empowering schools as the nexus for both education and essential social supports dismantles systemic barriers grounded in external resource inequality, thereby fostering equity in educational attainment.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "This solution unlocks numerous new possibilities by integrating social services with education, enabling derivative innovations in holistic student support.",
+              "explanatory": "It explains the causal mechanism by identifying how external systemic barriers undermine learning and how integrated support can mitigate these effects.",
+              "non_obvious": "It requires breaking the common assumption that schools are isolated academic institutions, representing a significant conceptual leap.",
+              "scalability": "If widely adopted, it could deeply impact millions of marginalized students by addressing root causes of inequity across diverse communities.",
+              "principle": "The insight that institutions must integrate cross-sector supports to address complex social challenges is transferable beyond education."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.848,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem harming equity and learning, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is specific and plausible, addressing external barriers through integrated community services within schools, which is likely to improve equity and learning outcomes by holistically supporting marginalized students.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"This solution unlocks numerous new possibilities by integrating social services with education, enabling derivative innovations in holistic student support.\",\n    \"explanatory\": \"It explains the causal mechanism by identifying how external systemic barriers undermine learning and how integrated support can mitigate these effects.\",\n    \"non_obvious\": \"It requires breaking the common assumption that schools are isolated academic institutions, representing a significant conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could deeply impact millions of marginalized students by addressing root causes of inequity across diverse communities.\",\n    \"principle\": \"The insight that institutions must integrate cross-sector supports to address complex social challenges is transferable beyond education.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "** the value and progress of students must always be measured and compared through summative assessm",
+        "reformulation": "Identify a fundamental incentive misalignment within the education system that undermines equitable learning outcomes, and describe a targeted intervention at the policy or governance level that could realign these incentives to promote fairness and academic success.",
+        "text": "**Broken assumption:** The value and progress of students must always be measured and compared through summative assessments (standardized tests, grades) that rank individuals against one another.\n\n**Structural problem:** This incentive alignment pushes schools to prioritize test performance, leading to teaching to the test, neglect of non-testable skills, and disadvantaging students from varied backgrounds who may not excel in these narrow metrics, thus undermining equitable learning outcomes.\n\n**Solution:** Break the assumption by abolishing high-stakes summative assessments as the primary measures of student success and instead implement personalized, narrative-based progress portfolios that students co-create with educators, reflecting holistic learning, growth, and diverse competencies over time. At the policy level, mandate that school funding, resource allocation, and accountability be linked to demonstrated individualized growth, student well-being indicators, and community-defined learning goals rather than comparative test scores.\n\nThis realignment removes the incentive to teach only to narrow tests and reduces stigma tied to percentile rankings, enabling schools to tailor support equitably according to students\u2019 unique trajectories. By valuing diverse ways of learning and development, the system encourages inclusive practices and invests in students\u2019 long-term success, fostering fairness and deeper engagement.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.81,
+            "rationale": {
+              "generative": "Shifting from summative tests to narrative portfolios opens many new educational models and derivative innovations in assessment and pedagogy.",
+              "explanatory": "It explains how incentive structures tied to testing causally distort teaching priorities and equity outcomes.",
+              "non_obvious": "It requires breaking the deeply entrenched assumption that standardized testing is the primary measure of success.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students and educators deeply.",
+              "principle": "The insight about incentive realignment and holistic evaluation applies broadly beyond education to other performance measurement systems."
+            }
+          },
+          "breakthrough_potential": 0.81,
+          "discard": false,
+          "final_score": 0.8460000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution addresses incentive misalignment by removing high-stakes testing and replacing it with personalized portfolios, which is plausible and well-justified, though implementation challenges and scalability are not deeply explored.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.81,\n  \"rationale\": {\n    \"generative\": \"Shifting from summative tests to narrative portfolios opens many new educational models and derivative innovations in assessment and pedagogy.\",\n    \"explanatory\": \"It explains how incentive structures tied to testing causally distort teaching priorities and equity outcomes.\",\n    \"non_obvious\": \"It requires breaking the deeply entrenched assumption that standardized testing is the primary measure of success.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students and educators deeply.\",\n    \"principle\": \"The insight about incentive realignment and holistic evaluation applies broadly beyond education to other performance measurement systems.\"\n  }\n}"
+        }
+      }
+    ],
+    "final_output": "**Assumption broken:** The education system must rely on traditional teacher-driven, in-person instructional delivery as the primary mode of learning.\n\n**Structural problem:** Incentive misalignment occurs because teachers and schools are often evaluated\u2014and funded\u2014based on students\u2019 standardized test scores gathered through uniform, time-bound classroom instruction. This model undervalues diverse learning paces, styles, and outside-of-classroom educational inputs, reinforcing inequities for students with different needs or resources.\n\n**Solution:** Break the assumption by autonomously decoupling learning from exclusive teacher-led classroom instruction and instead adopting a hybrid learner-centered model where students progress at individual paces using adaptive, AI-driven digital platforms validated as credible alternatives to seat time. Policy can incentivize schools through outcome-based funding that credits demonstrated mastery regardless of how or when learning occurs, encouraging innovative, personalized education and mentorship linkages beyond the classroom.\n\nThis shifts governance focus from controlling \u201ctime in seats\u201d to fostering equitable mastery and engagement, effectively realigning incentives to support all learners equitably. It breaks the one-size-fits-all trap, allowing diverse learners \u2014 including those with socioeconomic barriers \u2014 to access tailored support and succeed on their own terms, thus promoting fairness and academic success more broadly.",
+    "selected": {
+      "mode": "constraint_violation",
+      "reformulation": "Identify a fundamental incentive misalignment within the education system that undermines equitable learning outcomes, and describe a targeted intervention at the policy or governance level that could realign these incentives to promote fairness and academic success.",
+      "scores": {
+        "constraint_satisfaction": 1.0,
+        "usefulness": 0.8,
+        "constraint_overall": 0.9,
+        "breakthrough_scores": {
+          "generative_power": 0.9,
+          "explanatory_depth": 0.8,
+          "non_obviousness": 0.85,
+          "scalability_of_impact": 0.9,
+          "principle_over_implementation": 0.85,
+          "breakthrough_potential": 0.86,
+          "rationale": {
+            "generative": "Decoupling learning from traditional instruction unlocks numerous new educational models and derivative innovations.",
+            "explanatory": "It explains how incentive structures tied to seat time cause inequities and how shifting to mastery-based funding realigns motivations.",
+            "non_obvious": "Challenging the entrenched assumption of teacher-led, time-bound instruction requires a significant conceptual leap.",
+            "scalability": "If widely adopted, it could transform education systems globally, affecting millions of learners deeply.",
+            "principle": "The insight about incentive realignment and learner-centered progression applies broadly beyond education to other institutional systems."
+          }
+        },
+        "breakthrough_potential": 0.86,
+        "discard": false,
+        "final_score": 0.8760000000000001,
+        "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is specific and plausible, focusing on adaptive AI-driven platforms and outcome-based funding to realign incentives and promote equity, though it may face practical challenges in implementation and validation.\"\n  }\n}",
+        "raw_breakthrough_judge": "{\n  \"generative_power\": 0.9,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.86,\n  \"rationale\": {\n    \"generative\": \"Decoupling learning from traditional instruction unlocks numerous new educational models and derivative innovations.\",\n    \"explanatory\": \"It explains how incentive structures tied to seat time cause inequities and how shifting to mastery-based funding realigns motivations.\",\n    \"non_obvious\": \"Challenging the entrenched assumption of teacher-led, time-bound instruction requires a significant conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of learners deeply.\",\n    \"principle\": \"The insight about incentive realignment and learner-centered progression applies broadly beyond education to other institutional systems.\"\n  }\n}"
+      }
+    }
+  },
+  "elapsed_seconds": 213.08329796791077
+}

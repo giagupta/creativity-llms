@@ -1,0 +1,780 @@
+{
+  "timestamp": "2026-02-01T16:38:50",
+  "prompt_id": "climate_change",
+  "prompt": "Identify one major structural bottleneck that prevents effective climate action and propose a concrete, feasible intervention that targets this bottleneck. Explain why it would have outsized impact. (Maximum two paragraphs.)",
+  "condition": "single_pass_18_keep5",
+  "config": {
+    "model": {
+      "name": "gpt-4.1-mini",
+      "max_tokens": 350
+    },
+    "conditions": [
+      "single_pass_18_keep5",
+      "divergent_convergent_18_keep5",
+      "evolutionary_examples"
+    ],
+    "budget": {
+      "max_candidates_per_prompt": 18,
+      "keep_top_k": 5
+    },
+    "sampling": {
+      "single_pass": {
+        "temperature": 0.9,
+        "top_p": 1.0
+      },
+      "reframing": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "num_reformulations": 3
+      },
+      "combinational": {
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "transformational": {
+        "temperature": 1.1,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "judge": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "selection": {
+      "discard_if_constraint_below": 0.4,
+      "constraint_weight": 0.2,
+      "usefulness_weight": 0.2,
+      "breakthrough_weight": 0.6
+    }
+  },
+  "result": {
+    "reformulations": [],
+    "candidates": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck hindering effective climate action is the fragmented ownership and control over urban land, which impedes scalable, coordinated deployment of climate-positive infrastructure such as green spaces, renewable microgrids, and resilient housing. Current property rights systems, often rigid and locally siloed, discourage collective investments that benefit entire neighborhoods or cities, resulting in disjointed, piecemeal interventions that fail to capitalize on synergies or economies of scale across urban environments.\n\nA feasible, unconventional intervention would be to establish semi-public \u201cClimate Commons Districts\u201d (CCDs) within metropolitan areas, where land ownership rights are pooled into community-managed trusts that enable integrated planning and deployment of climate infrastructure. These trusts would balance private interests with binding community stewardship, facilitating cross-property upgrades like interconnected green roofs, shared solar arrays, and flood management systems. By institutionalizing shared land governance dedicated to climate resilience and emissions reduction, CCDs would unlock cooperative investment at scales impossible under fragmented ownership, dramatically accelerating urban climate adaptation while fostering equitable benefit-sharing. This approach leverages legal innovation for systemic change, sidestepping entrenched market and policy deadlocks.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "Pooling land ownership into community trusts opens many new avenues for integrated climate infrastructure and cooperative urban development.",
+              "explanatory": "It identifies fragmented land ownership as a root structural bottleneck and explains how collective governance can overcome coordination failures.",
+              "non_obvious": "The idea of semi-public land trusts dedicated to climate action breaks conventional assumptions about private property and urban planning.",
+              "scalability": "If widely adopted, it could transform urban areas globally, affecting millions through systemic climate resilience and emissions reduction.",
+              "principle": "The concept of shared governance of critical resources for collective benefit can be adapted beyond urban land to other domains facing fragmentation."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck (fragmented urban land ownership) and proposes a concrete, feasible intervention (Climate Commons Districts) within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed intervention is specific, with mechanisms for pooled land ownership and community-managed trusts enabling coordinated climate infrastructure deployment, making it plausible and likely to have significant impact, though some implementation challenges remain unaddressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"Pooling land ownership into community trusts opens many new avenues for integrated climate infrastructure and cooperative urban development.\",\n    \"explanatory\": \"It identifies fragmented land ownership as a root structural bottleneck and explains how collective governance can overcome coordination failures.\",\n    \"non_obvious\": \"The idea of semi-public land trusts dedicated to climate action breaks conventional assumptions about private property and urban planning.\",\n    \"scalability\": \"If widely adopted, it could transform urban areas globally, affecting millions through systemic climate resilience and emissions reduction.\",\n    \"principle\": \"The concept of shared governance of critical resources for collective benefit can be adapted beyond urban land to other domains facing fragmentation.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck in climate action is the fragmentation and misalignment of incentives within global supply chains, which dilute responsibility and hinder coordinated emissions reduction. Many companies outsource production and emissions-intensive activities to regions with weaker regulations, obscuring the true carbon footprint and enabling \"carbon leakage.\" This systemic opacity perpetuates competitive pressures to externalize environmental costs, stalling comprehensive supply chain decarbonization.\n\nA feasible intervention is to establish an internationally governed, blockchain-based \u201ccarbon responsibility ledger\u201d that tracks emissions embedded in traded goods transparently from raw materials to final products. By cryptographically linking each supply chain actor\u2019s emissions data and assigning shared accountability proportionate to product lifecycle contributions, this ledger would create immutable, verifiable carbon footprints. It would empower regulators and consumers with clear attribution, incentivizing upstream actors to reduce emissions collaboratively rather than shifting burdens downstream. Unlike traditional carbon taxes or voluntary reporting, this structural transparency fundamentally reshapes incentives, enabling systemic decarbonization aligned with global climate goals. Its outsized impact lies in transforming diffuse supply chain emissions into collectively manageable units, breaking the deadlock of fragmented climate responsibility.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution unlocks new possibilities by enabling transparent, shared accountability across complex supply chains, which can inspire further innovations in emissions tracking and collaborative reduction strategies.",
+              "explanatory": "It reveals the causal mechanism of fragmented incentives and opacity in supply chains that prevent coordinated climate action, unifying disparate emissions sources under a single accountability framework.",
+              "non_obvious": "Using blockchain to cryptographically link emissions data and assign shared responsibility breaks conventional assumptions about isolated corporate accountability and reporting.",
+              "scalability": "If widely adopted, it could impact global supply chains across industries, affecting billions of consumers and producers by fundamentally reshaping emissions management.",
+              "principle": "The insight of creating immutable, transparent accountability systems for shared environmental responsibility can be transferred to other domains with fragmented incentives and externalized costs."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed blockchain-based carbon responsibility ledger is a specific mechanism that addresses transparency and accountability in supply chains, which is plausible and could have significant impact, though implementation challenges remain.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new possibilities by enabling transparent, shared accountability across complex supply chains, which can inspire further innovations in emissions tracking and collaborative reduction strategies.\",\n    \"explanatory\": \"It reveals the causal mechanism of fragmented incentives and opacity in supply chains that prevent coordinated climate action, unifying disparate emissions sources under a single accountability framework.\",\n    \"non_obvious\": \"Using blockchain to cryptographically link emissions data and assign shared responsibility breaks conventional assumptions about isolated corporate accountability and reporting.\",\n    \"scalability\": \"If widely adopted, it could impact global supply chains across industries, affecting billions of consumers and producers by fundamentally reshaping emissions management.\",\n    \"principle\": \"The insight of creating immutable, transparent accountability systems for shared environmental responsibility can be transferred to other domains with fragmented incentives and externalized costs.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One major structural bottleneck in effective climate action is the fragmented nature of global financial flows, which remain primarily oriented toward short-term returns and siloed national interests, rather than systemic, long-term environmental sustainability. This fragmentation breeds inefficiency and misalignment, as capital rarely flows directly to projects that integrate climate adaptation, mitigation, and social equity across borders and sectors. The complexity and opacity of financial markets create barriers to mobilizing and coordinating investments at the scale and speed climate action demands, hampering innovation in climate solutions that require sustained, multidimensional funding.\n\nA novel and feasible intervention would be the creation of a \u201cGlobal Climate Investment Clearinghouse\u201d (GCIC), a publicly governed digital platform leveraging blockchain and AI to transparently aggregate and pool cross-border capital from governments, private investors, and multilateral institutions into integrated portfolios explicitly designed for climate resilience and decarbonization. By embedding real-time climate risk data and standardized impact metrics, the GCIC would enable dynamic, data-driven reallocation of funds toward projects with the highest systemic impact, incentivize long-term commitments through tokenized returns linked to verified climate outcomes, and lower transaction costs by automating due diligence and compliance. This intervention would have outsized impact by shifting investment flows from fragmented, short-term bets to a coordinated, high-impact global climate finance ecosystem, thereby unlocking trillions in capital needed for transformative climate action beyond the reach of traditional approaches.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.74,
+            "rationale": {
+              "generative": "The solution unlocks new possibilities by enabling integrated, cross-border climate finance and dynamic reallocation of capital, fostering derivative innovations in investment mechanisms.",
+              "explanatory": "It explains the causal bottleneck of fragmented financial flows and how systemic coordination and transparency can overcome inefficiencies in climate investment.",
+              "non_obvious": "Leveraging blockchain and AI to create a global clearinghouse for climate finance represents a conceptual leap beyond traditional siloed funding approaches.",
+              "scalability": "If fully deployed, it could mobilize trillions in capital globally, affecting multiple sectors and countries with deep systemic impact on climate resilience and decarbonization.",
+              "principle": "The insight of coordinating fragmented capital flows through transparent, data-driven platforms can be applied to other global challenges beyond climate finance."
+            }
+          },
+          "breakthrough_potential": 0.74,
+          "discard": false,
+          "final_score": 0.804,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed Global Climate Investment Clearinghouse is specific, with mechanisms like blockchain, AI, real-time data, and tokenized returns, making it a plausible and impactful solution to coordinate and scale climate finance.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.74,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new possibilities by enabling integrated, cross-border climate finance and dynamic reallocation of capital, fostering derivative innovations in investment mechanisms.\",\n    \"explanatory\": \"It explains the causal bottleneck of fragmented financial flows and how systemic coordination and transparency can overcome inefficiencies in climate investment.\",\n    \"non_obvious\": \"Leveraging blockchain and AI to create a global clearinghouse for climate finance represents a conceptual leap beyond traditional siloed funding approaches.\",\n    \"scalability\": \"If fully deployed, it could mobilize trillions in capital globally, affecting multiple sectors and countries with deep systemic impact on climate resilience and decarbonization.\",\n    \"principle\": \"The insight of coordinating fragmented capital flows through transparent, data-driven platforms can be applied to other global challenges beyond climate finance.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck hindering effective climate action is the fragmented and siloed nature of global supply chains, which obscures the full carbon footprint of products and delays coordinated responses. Despite growing corporate commitments to sustainability, the true environmental impact is often hidden within multi-tier suppliers, making emissions data incomplete and accountability diffuse. This fragmentation prevents systemic shifts in production practices and consumer behavior, as neither regulators nor companies have a clear, comprehensive view of upstream emissions or leverage over every actor along the chain.\n\nA concrete intervention to target this bottleneck is the establishment of an independent, blockchain-based Emissions Transparency Consortium (ETC) that mandates real-time, verifiable carbon tracking at every stage of product lifecycles, from raw material extraction to retail. Companies participating in global markets would be required by trade agreements to log emissions data to this decentralized ledger, making it publicly and permanently accessible. This intervention would produce outsized impact by unlocking unprecedented visibility, enabling dynamic regulatory adjustments, incentivizing cleaner suppliers through market pressures, and empowering consumers with credible carbon labels. Unlike typical top-down regulation or isolated corporate commitments, this approach leverages emergent digital infrastructure and global trade frameworks to transform opacity into systemic accountability at scale.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution unlocks new possibilities by enabling transparent, real-time emissions tracking that can inspire further innovations in supply chain accountability and consumer empowerment.",
+              "explanatory": "It explains the causal bottleneck of fragmented supply chains obscuring emissions data and how systemic transparency can address this root cause.",
+              "non_obvious": "Using blockchain combined with trade agreement mandates to enforce global emissions transparency is a novel conceptual leap beyond typical regulatory or corporate approaches.",
+              "scalability": "If widely adopted, it could impact global supply chains across industries, affecting billions of consumers and producers by transforming accountability at scale.",
+              "principle": "The insight of leveraging decentralized, verifiable data infrastructures to overcome opacity is transferable to other domains facing fragmented accountability challenges."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed blockchain-based consortium is specific and plausible, leveraging existing digital infrastructure and trade agreements to improve transparency and accountability, though implementation challenges and global coordination complexities may limit immediate success.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new possibilities by enabling transparent, real-time emissions tracking that can inspire further innovations in supply chain accountability and consumer empowerment.\",\n    \"explanatory\": \"It explains the causal bottleneck of fragmented supply chains obscuring emissions data and how systemic transparency can address this root cause.\",\n    \"non_obvious\": \"Using blockchain combined with trade agreement mandates to enforce global emissions transparency is a novel conceptual leap beyond typical regulatory or corporate approaches.\",\n    \"scalability\": \"If widely adopted, it could impact global supply chains across industries, affecting billions of consumers and producers by transforming accountability at scale.\",\n    \"principle\": \"The insight of leveraging decentralized, verifiable data infrastructures to overcome opacity is transferable to other domains facing fragmented accountability challenges.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck in effective climate action is the fragmentation and misalignment of local governance and informal community networks in climate-vulnerable regions. While national and international policies set broad climate goals, the lack of integration between formal authorities and grassroots social structures prevents localized, context-sensitive responses from emerging and scaling. This disconnect undermines trust, information flow, and resource coordination, which are essential for adaptive climate resilience measures that are culturally appropriate and economically viable at the community level.\n\nA concrete, feasible intervention would be the establishment of \u201cClimate Civic Assemblies\u201d embedded directly within local governance frameworks, but uniquely co-led by informal community leaders, indigenous representatives, and local technical experts. These assemblies would possess budgetary authority delegated from municipal governments to implement hyper-local adaptation projects, such as microgrids or flood defenses tailored to specific neighborhoods. By institutionalizing this hybrid governance layer, trust and collaboration improve, accelerating grassroots innovation uptake and aligning local climate action with broader policy goals. This intervention would have an outsized impact by overcoming the bottleneck of governance fragmentation, unlocking bottom-up momentum while ensuring resources and policies are harmonized\u2014transforming climate action from a top-down mandate into a living, adaptive social contract.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.7,
+            "rationale": {
+              "generative": "The solution unlocks numerous new governance models and community-driven climate adaptations beyond the initial proposal.",
+              "explanatory": "It explains the causal bottleneck of governance fragmentation and how integrating formal and informal structures can improve climate action.",
+              "non_obvious": "Embedding co-led civic assemblies with budget authority challenges conventional top-down governance assumptions.",
+              "scalability": "If widely adopted, it could impact millions by transforming local climate resilience efforts globally.",
+              "principle": "The insight about hybrid governance layers applies broadly to other domains requiring alignment between formal institutions and grassroots actors."
+            }
+          },
+          "breakthrough_potential": 0.7,
+          "discard": false,
+          "final_score": 0.8,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed Climate Civic Assemblies are specific, plausible, and include mechanisms for budget authority and local adaptation projects, making the solution likely to succeed if implemented.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.7,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new governance models and community-driven climate adaptations beyond the initial proposal.\",\n    \"explanatory\": \"It explains the causal bottleneck of governance fragmentation and how integrating formal and informal structures can improve climate action.\",\n    \"non_obvious\": \"Embedding co-led civic assemblies with budget authority challenges conventional top-down governance assumptions.\",\n    \"scalability\": \"If widely adopted, it could impact millions by transforming local climate resilience efforts globally.\",\n    \"principle\": \"The insight about hybrid governance layers applies broadly to other domains requiring alignment between formal institutions and grassroots actors.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck in effective climate action is the fragmented and misaligned incentives within global supply chains, where environmental costs are externalized, and short-term profit motives dominate. Companies and suppliers often operate under isolated performance metrics that overlook long-term systemic risks like climate impacts, leading to incremental, insufficient gains that fail to aggregate into meaningful global progress. This fragmentation hinders coordinated accountability and innovation across industries and borders, as no single actor has the leverage or motivation to overhaul entrenched, carbon-intensive practices.\n\nA concrete intervention targeting this bottleneck would be the creation of an international \"Supply Chain Climate Accountability Network\" (SCCAN), a decentralized blockchain-based platform that transparently records climate-related performance metrics for every node in multinational supply chains, from raw material extraction to retail. By integrating smart contracts, SCCAN would automatically adjust trade terms, tariffs, or financing costs based on verified emissions and resilience benchmarks, enforced by participating governments and financial institutions. This intervention leverages real-time data and economic incentives to align every actor\u2019s profit motives with decarbonization, compelling systemic change through market forces rather than voluntary pledges. Its outsized impact comes from re-engineering the fundamental economic logic of supply chains, turning climate action from a cost center into a competitive advantage that scales rapidly without reliance on traditional regulatory or consumer pressure mechanisms.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution unlocks numerous derivative innovations by enabling transparent, incentive-aligned supply chain transformations across industries.",
+              "explanatory": "It reveals the causal mechanism of fragmented incentives and externalized costs as core barriers to climate action, unifying economic and environmental dynamics.",
+              "non_obvious": "Leveraging blockchain and smart contracts to enforce climate accountability in supply chains is a conceptual leap beyond traditional regulatory or voluntary approaches.",
+              "scalability": "If widely adopted, it could impact global supply chains affecting billions of consumers and producers, driving systemic decarbonization at scale.",
+              "principle": "The insight of aligning economic incentives through transparent, automated accountability mechanisms can transfer to other domains facing fragmented responsibility."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, including a justification for its outsized impact.\",\n    \"usefulness\": \"The proposed blockchain-based platform with smart contracts is a specific mechanism that plausibly aligns incentives across global supply chains, making the solution likely to drive systemic change, though implementation complexity and global coordination challenges slightly reduce the score.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous derivative innovations by enabling transparent, incentive-aligned supply chain transformations across industries.\",\n    \"explanatory\": \"It reveals the causal mechanism of fragmented incentives and externalized costs as core barriers to climate action, unifying economic and environmental dynamics.\",\n    \"non_obvious\": \"Leveraging blockchain and smart contracts to enforce climate accountability in supply chains is a conceptual leap beyond traditional regulatory or voluntary approaches.\",\n    \"scalability\": \"If widely adopted, it could impact global supply chains affecting billions of consumers and producers, driving systemic decarbonization at scale.\",\n    \"principle\": \"The insight of aligning economic incentives through transparent, automated accountability mechanisms can transfer to other domains facing fragmented responsibility.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck in climate action is the fragmentation and misalignment of governance across local, regional, and global scales, which results in inconsistent policies and weakened enforcement. Instead of focusing solely on national commitments or top-down international agreements, this governance gap dilutes accountability and slows coordinated responses. This is amplified by the lack of integrated data-sharing frameworks that prevent real-time, cross-jurisdictional monitoring of emissions and climate impacts, undermining adaptive management.\n\nA concrete intervention is to establish a decentralized, blockchain-enabled climate governance network that transparently links local governments, NGOs, private sector actors, and communities in a verifiable ecosystem of climate actions and outcomes. By embedding smart contracts tied to emission reductions and resilience milestones, it can automate verification and funding disbursement across scales and sectors, overcoming trust deficits and bureaucratic delays. This intervention would have an outsized impact because it transforms climate governance into a dynamic, participatory, and self-enforcing system, aligning incentives and enabling rapid scaling of effective solutions beyond the limitations of traditional regulatory frameworks.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.74,
+            "rationale": {
+              "generative": "The solution unlocks numerous new possibilities by enabling decentralized, automated climate governance that can inspire derivative innovations in other sectors.",
+              "explanatory": "It explains the causal bottleneck of fragmented governance and lack of trust, linking these to enforcement and coordination failures.",
+              "non_obvious": "Using blockchain and smart contracts to integrate multi-level climate governance is a conceptual leap beyond traditional regulatory approaches.",
+              "scalability": "If widely adopted, it could affect global climate governance systems, impacting billions through improved accountability and rapid scaling of solutions.",
+              "principle": "The insight about decentralized, transparent, and automated governance systems can transfer to other complex, multi-stakeholder challenges beyond climate."
+            }
+          },
+          "breakthrough_potential": 0.74,
+          "discard": false,
+          "final_score": 0.784,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed blockchain-enabled governance network is specific and includes mechanisms like smart contracts for verification and funding, making it plausible, though the complexity and scalability challenges of blockchain in governance slightly reduce its likelihood of success.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.74,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new possibilities by enabling decentralized, automated climate governance that can inspire derivative innovations in other sectors.\",\n    \"explanatory\": \"It explains the causal bottleneck of fragmented governance and lack of trust, linking these to enforcement and coordination failures.\",\n    \"non_obvious\": \"Using blockchain and smart contracts to integrate multi-level climate governance is a conceptual leap beyond traditional regulatory approaches.\",\n    \"scalability\": \"If widely adopted, it could affect global climate governance systems, impacting billions through improved accountability and rapid scaling of solutions.\",\n    \"principle\": \"The insight about decentralized, transparent, and automated governance systems can transfer to other complex, multi-stakeholder challenges beyond climate.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck hindering effective climate action is the fragmented governance and regulatory misalignment between local, national, and global levels. Climate solutions often falter because policies and incentives are developed within silos, lacking coherent coordination across jurisdictions and sectors. This fragmentation leads to duplication, gaps, and contradictory regulations that dilute efforts and confuse stakeholders\u2014from investors to communities\u2014about priorities and compliance requirements. The resultant inefficiencies slow down large-scale deployment of climate innovations and obstruct alignment of economic incentives necessary for systemic transformation.\n\nTo tackle this, an unconventional but feasible intervention is the creation of a trans-jurisdictional Climate Arbitration Tribunal empowered to harmonize climate regulations and resolve conflicts across governance levels and sectors. Modeled on international trade dispute mechanisms but focused solely on climate policies, this tribunal would serve as an authoritative, transparent platform where local, national, and international actors can negotiate binding, coherent climate standards and settle regulatory disputes swiftly. By reducing policy uncertainty and misalignment, it would unleash private investment and innovation that depend on clear, predictable frameworks. Its outsized impact stems from transforming a core governance challenge\u2014fragmentation\u2014into a streamlined process, enabling scalable and synchronized climate action unseen in typical top-down mandates or isolated local initiatives.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.74,
+            "rationale": {
+              "generative": "The solution unlocks new possibilities by enabling coordinated regulatory frameworks that can inspire derivative governance innovations.",
+              "explanatory": "It explains the causal mechanism of fragmentation in governance as a root bottleneck and how harmonization can resolve systemic inefficiencies.",
+              "non_obvious": "Creating a trans-jurisdictional arbitration tribunal for climate policy is a novel conceptual leap beyond typical policy coordination approaches.",
+              "scalability": "If fully implemented, it could harmonize climate action across all governance levels globally, affecting billions and systemic economic sectors.",
+              "principle": "The insight about resolving multi-level governance fragmentation through arbitration is transferable to other complex policy domains."
+            }
+          },
+          "breakthrough_potential": 0.74,
+          "discard": false,
+          "final_score": 0.804,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed Climate Arbitration Tribunal is a specific mechanism with a clear role in harmonizing regulations and resolving conflicts, which plausibly addresses fragmentation and could have significant impact, though its implementation complexity and political feasibility are not deeply explored.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.74,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new possibilities by enabling coordinated regulatory frameworks that can inspire derivative governance innovations.\",\n    \"explanatory\": \"It explains the causal mechanism of fragmentation in governance as a root bottleneck and how harmonization can resolve systemic inefficiencies.\",\n    \"non_obvious\": \"Creating a trans-jurisdictional arbitration tribunal for climate policy is a novel conceptual leap beyond typical policy coordination approaches.\",\n    \"scalability\": \"If fully implemented, it could harmonize climate action across all governance levels globally, affecting billions and systemic economic sectors.\",\n    \"principle\": \"The insight about resolving multi-level governance fragmentation through arbitration is transferable to other complex policy domains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major but under-recognized structural bottleneck in climate action is the fragmented and siloed nature of global supply chains combined with opaque data flows, which obscure the true carbon footprint of goods and services. Companies and consumers often lack detailed, transparent lifecycle emissions data across multiple tiers of suppliers, making it nearly impossible to accurately prioritize or enforce meaningful decarbonization strategies. This fragmentation entrenches inefficiencies and allows high-emitting practices to persist unchallenged deep within supply networks, even as frontline actors attempt incremental improvements.\n\nA concrete, feasible intervention is to establish an open-source, blockchain-based international carbon ledger that standardizes, verifies, and publicly records carbon emissions embedded in every stage of commodity production and trade. This ledger would leverage decentralized data inputs from sensors, audits, and supplier reports, incentivized through trade benefits and compliance credits, to create a universally trusted carbon \"passport\" for goods. By dramatically increasing supply chain emissions visibility and accountability, this intervention would catalyze systemic changes in procurement, investment, and consumer choices far beyond isolated corporate commitments, unlocking cascading decarbonization incentives worldwide with minimal reliance on traditional regulatory complexity. This approach moves beyond voluntary pledges by embedding transparency into the economic mechanics that sustain high-carbon supply chains.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution enables numerous derivative innovations in supply chain transparency and carbon accounting across industries.",
+              "explanatory": "It reveals the causal bottleneck of fragmented data flows and lack of transparency as a root cause of ineffective climate action.",
+              "non_obvious": "Using blockchain to create a universally trusted carbon ledger breaks conventional assumptions about data sharing and verification in global trade.",
+              "scalability": "If widely adopted, it could transform global supply chains affecting billions of consumers and producers, driving systemic decarbonization.",
+              "principle": "The insight about embedding transparency into economic mechanics can be applied to other domains with complex, opaque value chains."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed blockchain-based carbon ledger is a specific, plausible mechanism that addresses transparency and accountability in supply chains, likely enabling systemic decarbonization, though some implementation challenges remain unaddressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution enables numerous derivative innovations in supply chain transparency and carbon accounting across industries.\",\n    \"explanatory\": \"It reveals the causal bottleneck of fragmented data flows and lack of transparency as a root cause of ineffective climate action.\",\n    \"non_obvious\": \"Using blockchain to create a universally trusted carbon ledger breaks conventional assumptions about data sharing and verification in global trade.\",\n    \"scalability\": \"If widely adopted, it could transform global supply chains affecting billions of consumers and producers, driving systemic decarbonization.\",\n    \"principle\": \"The insight about embedding transparency into economic mechanics can be applied to other domains with complex, opaque value chains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck hindering effective climate action is the fragmentation and misalignment between local land use planning and broader climate policies. Often, climate goals set at national or international levels fail to translate into actionable mandates within local zoning, infrastructure development, and resource allocation, which ultimately determine emissions trajectories in transportation, housing, and agriculture. This disconnect arises because local governments operate under diverse political pressures and incentives that prioritize short-term economic growth over long-term climate resilience, resulting in piecemeal or contradictory policies that undermine national commitments.\n\nA concrete, feasible intervention is the establishment of a legally mandated \"climate congruence audit\" embedded within local government budgeting and planning cycles. This audit would assess every infrastructure and land-use decision for consistency with nationally determined climate targets, and crucially, link local government funding and fiscal transfers to successful alignment outcomes. By financially incentivizing local authorities to prioritize climate-compatible urban and rural development at the ground level, this approach shifts leverage from top-down directives to embedded fiscal mechanisms that reshape incentives and planning cultures. Its outsized impact lies in bridging the persistent gap between macro-level climate ambitions and micro-level implementation, ensuring that the sprawling, diverse patchwork of local decisions cumulatively supports\u2014and accelerates\u2014systemic decarbonization and resilience measures.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.6,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.74,
+            "rationale": {
+              "generative": "The solution unlocks new possibilities by creating a fiscal mechanism that can inspire derivative innovations in local governance and climate policy integration.",
+              "explanatory": "It explains the causal bottleneck of misaligned incentives between local and national levels and how embedding audits can realign these mechanisms.",
+              "non_obvious": "Linking local government funding directly to climate alignment is a conceptual leap beyond typical top-down mandates or voluntary guidelines.",
+              "scalability": "If widely adopted, it could influence thousands of local governments globally, deeply embedding climate goals into everyday planning decisions.",
+              "principle": "The insight about aligning incentives through embedded fiscal audits can transfer to other domains where local-national policy gaps hinder systemic progress."
+            }
+          },
+          "breakthrough_potential": 0.74,
+          "discard": false,
+          "final_score": 0.8240000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed 'climate congruence audit' with financial incentives is a specific, plausible mechanism that targets the misalignment between local and national climate policies, likely to have a meaningful impact on implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.6,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.74,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new possibilities by creating a fiscal mechanism that can inspire derivative innovations in local governance and climate policy integration.\",\n    \"explanatory\": \"It explains the causal bottleneck of misaligned incentives between local and national levels and how embedding audits can realign these mechanisms.\",\n    \"non_obvious\": \"Linking local government funding directly to climate alignment is a conceptual leap beyond typical top-down mandates or voluntary guidelines.\",\n    \"scalability\": \"If widely adopted, it could influence thousands of local governments globally, deeply embedding climate goals into everyday planning decisions.\",\n    \"principle\": \"The insight about aligning incentives through embedded fiscal audits can transfer to other domains where local-national policy gaps hinder systemic progress.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck hindering effective climate action is the fragmented and siloed nature of global supply chains and information flows, which limits coordinated decarbonization efforts across industries and borders. While most climate interventions focus on national policies or consumer behavior, the underlying infrastructure that connects producers, suppliers, and markets lacks transparency and alignment on emissions data and standards. This fragmentation prevents systemic shifts because no single actor has full visibility or incentive to innovate beyond their immediate segment, resulting in incremental, localized improvements rather than transformative, systemic change.\n\nA concrete, feasible intervention is the creation of an interoperable, blockchain-enabled \"Climate Impact Ledger\" standardized across key global industries. This ledger would provide real-time, verifiable emissions data tied directly to each product\u2019s lifecycle and supply chain transactions, accessible to all stakeholders from manufacturers to regulators to consumers. By embedding trustworthy data transparency at the transactional level, this system would shift incentives toward decarbonization through market-driven accountability and enable dynamic, cross-sector collaboration on climate solutions. Its outsized impact lies in overcoming trust and coordination barriers, unlocking cascades of innovation and disclosure that amplify beyond what isolated policy or corporate pledges can achieve alone.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.6,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.74,
+            "rationale": {
+              "generative": "The solution enables numerous derivative innovations by creating a transparent, interoperable data infrastructure that can be built upon across industries.",
+              "explanatory": "It reveals the causal bottleneck of fragmented supply chains and lack of shared emissions data as a root cause limiting systemic climate action.",
+              "non_obvious": "Applying blockchain technology to unify global supply chain emissions data is a conceptual leap beyond typical policy or consumer-focused approaches.",
+              "scalability": "If widely adopted, it could impact global industries and supply chains, affecting billions of consumers and producers with deep systemic change.",
+              "principle": "The insight about transparency and aligned incentives through shared data infrastructure can transfer to other domains facing coordination failures."
+            }
+          },
+          "breakthrough_potential": 0.74,
+          "discard": false,
+          "final_score": 0.804,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed blockchain-enabled Climate Impact Ledger is a specific, plausible mechanism that addresses transparency and coordination issues, likely to have significant impact, though implementation challenges and adoption barriers are not deeply discussed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.6,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.74,\n  \"rationale\": {\n    \"generative\": \"The solution enables numerous derivative innovations by creating a transparent, interoperable data infrastructure that can be built upon across industries.\",\n    \"explanatory\": \"It reveals the causal bottleneck of fragmented supply chains and lack of shared emissions data as a root cause limiting systemic climate action.\",\n    \"non_obvious\": \"Applying blockchain technology to unify global supply chain emissions data is a conceptual leap beyond typical policy or consumer-focused approaches.\",\n    \"scalability\": \"If widely adopted, it could impact global industries and supply chains, affecting billions of consumers and producers with deep systemic change.\",\n    \"principle\": \"The insight about transparency and aligned incentives through shared data infrastructure can transfer to other domains facing coordination failures.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck obstructing effective climate action is the fragmented governance of land use and natural resources, where overlapping jurisdictions and competing mandates among local, regional, and national agencies create inertia and gridlock. This fragmentation inhibits coherent policies for conservation, sustainable agriculture, and reforestation that are critical for carbon sequestration and ecosystem resilience. Because land use decisions directly affect emissions and biodiversity, the inability to align stakeholders under a unified framework results in suboptimal, contradictory interventions that undermine climate goals.\n\nA novel intervention to address this bottleneck is the creation of a decentralized yet integrative \u201cClimate Commons Protocol\u201d (CCP) \u2014 a blockchain-enabled platform that transparently codifies and coordinates land-use rights, carbon accounting, and ecosystem service payments across jurisdictions and stakeholders. By embedding smart contracts and real-time environmental monitoring, the CCP would automatically enforce compliance with shared climate targets while enabling communities, governments, and companies to trade ecosystem credits and fund restoration projects seamlessly. This approach bypasses traditional bureaucratic hurdles by fostering trust and accountability through technology, and it incentivizes collaboration based on measurable environmental outcomes. Its outsized impact stems from transforming fragmented governance into a self-organizing system, unlocking scalable climate solutions embedded in land use without relying on slow legislative reforms.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.74,
+            "rationale": {
+              "generative": "The solution unlocks new possibilities by enabling decentralized coordination and ecosystem credit trading that can inspire further innovations in governance and environmental finance.",
+              "explanatory": "It explains the causal bottleneck of fragmented governance and how integrating land-use rights and carbon accounting can address systemic inertia.",
+              "non_obvious": "Using blockchain and smart contracts to unify multi-jurisdictional land governance is a conceptual leap beyond traditional policy reforms.",
+              "scalability": "If widely adopted, it could transform land-use governance globally, affecting emissions, biodiversity, and climate resilience at large scale.",
+              "principle": "The insight of leveraging decentralized, transparent protocols to overcome fragmented governance can apply across domains beyond climate action."
+            }
+          },
+          "breakthrough_potential": 0.74,
+          "discard": false,
+          "final_score": 0.784,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed blockchain-enabled platform is specific and includes mechanisms like smart contracts and real-time monitoring, making it plausible and potentially impactful, though the technological and governance challenges may limit immediate feasibility.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.74,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new possibilities by enabling decentralized coordination and ecosystem credit trading that can inspire further innovations in governance and environmental finance.\",\n    \"explanatory\": \"It explains the causal bottleneck of fragmented governance and how integrating land-use rights and carbon accounting can address systemic inertia.\",\n    \"non_obvious\": \"Using blockchain and smart contracts to unify multi-jurisdictional land governance is a conceptual leap beyond traditional policy reforms.\",\n    \"scalability\": \"If widely adopted, it could transform land-use governance globally, affecting emissions, biodiversity, and climate resilience at large scale.\",\n    \"principle\": \"The insight of leveraging decentralized, transparent protocols to overcome fragmented governance can apply across domains beyond climate action.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck in climate action is the fragmented and short-term nature of financial incentives across multiple sectors. Current funding mechanisms often prioritize immediate, quantifiable returns with short investment horizons, discouraging systemic, long-term infrastructure changes that would yield deep decarbonization but require years or decades to mature. This misalignment leads to piecemeal solutions rather than integrated, scalable transformations, such as rethinking industrial processes or urban planning with climate resilience embedded from inception.\n\nA concrete, feasible intervention is the creation of a public-private \u201cClimate Outcome Futures Exchange\u201d where investors and governments can trade contracts based on long-term, measurable climate outcomes (e.g., reductions in embodied carbon in infrastructure projects 10-15 years in the future). This market would align financial returns with sustained impact rather than immediate outputs, incentivizing patient capital and holistic projects that integrate climate benefits into core economic activities. By making long-term climate performance tradable and financially rewarding, this mechanism breaks the short-termism bottleneck and has outsized potential to redirect capital flows towards the systemic transitions critical for robust, durable climate action.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "The solution unlocks new financial instruments that could catalyze diverse long-term climate investments beyond current funding models.",
+              "explanatory": "It identifies the root cause of short-termism in finance and explains how aligning incentives with long-term outcomes can drive systemic change.",
+              "non_obvious": "Creating a tradable futures market for climate outcomes requires a conceptual leap beyond traditional investment and policy frameworks.",
+              "scalability": "If widely adopted, it could redirect vast capital flows globally, impacting multiple sectors and accelerating deep decarbonization.",
+              "principle": "The insight about aligning financial incentives with long-term systemic goals can be applied to other complex, multi-stakeholder challenges."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.8280000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed Climate Outcome Futures Exchange is a specific mechanism that plausibly aligns long-term financial incentives with climate goals, addressing short-termism effectively, though practical implementation challenges remain.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new financial instruments that could catalyze diverse long-term climate investments beyond current funding models.\",\n    \"explanatory\": \"It identifies the root cause of short-termism in finance and explains how aligning incentives with long-term outcomes can drive systemic change.\",\n    \"non_obvious\": \"Creating a tradable futures market for climate outcomes requires a conceptual leap beyond traditional investment and policy frameworks.\",\n    \"scalability\": \"If widely adopted, it could redirect vast capital flows globally, impacting multiple sectors and accelerating deep decarbonization.\",\n    \"principle\": \"The insight about aligning financial incentives with long-term systemic goals can be applied to other complex, multi-stakeholder challenges.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural bottleneck impeding effective climate action is the fragmented and siloed nature of financial governance across international jurisdictions. While climate finance mobilization is widely discussed, the underlying architecture of global financial regulation remains compartmentalized, with differing standards, reporting requirements, and risk assessments that hinder coherent, large-scale investment in climate solutions. This fragmentation undermines trust and transparency, limits cross-border capital flows into green innovation, and slows down the integration of climate risks into mainstream financial decision-making.\n\nA concrete, feasible intervention would be the establishment of an independent, supranational Climate Financial Integration Authority (CFIA) with the mandate to harmonize climate-related financial disclosures, risk assessment models, and green investment taxonomies across key financial centers worldwide. Unlike existing initiatives that rely on voluntary standards or decentralized coalitions, this authority would operate akin to an international central bank but focused on climate finance, empowered by a coalition of willing nations and major financial hubs. By creating a unified regulatory framework and real-time data exchange platform, CFIA would drastically reduce transaction costs, enable global capital markets to price climate risk accurately, and accelerate investment flows toward sustainable infrastructure and technologies. Its outsized impact stems from transforming the global financial system\u2019s backbone, unlocking trillions in sustainable capital otherwise stranded by regulatory uncertainty and jurisdictional fragmentation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.77,
+            "rationale": {
+              "generative": "Harmonizing financial regulations globally could unlock numerous derivative innovations in climate finance and investment mechanisms.",
+              "explanatory": "It addresses the root cause of fragmented financial governance that impedes coherent climate investment flows.",
+              "non_obvious": "Proposing a supranational authority akin to an international central bank for climate finance requires a significant conceptual leap beyond current voluntary coalitions.",
+              "scalability": "If fully implemented, it could mobilize trillions in sustainable capital affecting global financial markets and climate outcomes.",
+              "principle": "The insight of integrating fragmented regulatory frameworks applies broadly to other global challenges requiring coordinated financial governance."
+            }
+          },
+          "breakthrough_potential": 0.77,
+          "discard": false,
+          "final_score": 0.8220000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed Climate Financial Integration Authority is a specific and plausible mechanism with clear functions and potential for outsized impact, though its implementation complexity and political feasibility may pose challenges.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.77,\n  \"rationale\": {\n    \"generative\": \"Harmonizing financial regulations globally could unlock numerous derivative innovations in climate finance and investment mechanisms.\",\n    \"explanatory\": \"It addresses the root cause of fragmented financial governance that impedes coherent climate investment flows.\",\n    \"non_obvious\": \"Proposing a supranational authority akin to an international central bank for climate finance requires a significant conceptual leap beyond current voluntary coalitions.\",\n    \"scalability\": \"If fully implemented, it could mobilize trillions in sustainable capital affecting global financial markets and climate outcomes.\",\n    \"principle\": \"The insight of integrating fragmented regulatory frameworks applies broadly to other global challenges requiring coordinated financial governance.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck hindering effective climate action is the fragmented governance of land use and urban planning, where multiple overlapping authorities and siloed regulatory frameworks prevent cohesive strategies for sustainable development. This fragmentation leads to conflicting policies that undermine efforts to preserve ecosystems, reduce emissions, and foster climate resilience. For example, transportation departments prioritize road expansion without coordination with environmental agencies or housing authorities, resulting in increased sprawl, emissions, and habitat loss. This structural complexity dilutes accountability and stymies integrated solutions critical for systemic change.\n\nA concrete, feasible intervention is the creation of \u201cClimate Urban Ecosystem Authorities\u201d (CUEAs) at regional scales that consolidate jurisdiction over land use, transportation, housing, and environmental protection within a single, empowered agency mandated to prioritize climate objectives above traditional sectoral interests. CUEAs would use adaptive, data-driven governance tools to harmonize policies, optimize land use patterns, and coordinate infrastructure investments with climate mitigation and adaptation goals. By overcoming institutional silos and centralizing authority, this intervention would enable coherent, large-scale transformations in urban and peri-urban landscapes \u2014 the frontline of emissions and vulnerability\u2014 thus producing outsized impacts on carbon reduction, biodiversity preservation, and social equity beyond piecemeal sectoral reforms.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.6,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.68,
+            "rationale": {
+              "generative": "Consolidating fragmented governance unlocks multiple new pathways for integrated climate solutions and derivative innovations in urban planning.",
+              "explanatory": "It explains how siloed authorities cause policy conflicts and dilute accountability, revealing the causal mechanism behind ineffective climate action.",
+              "non_obvious": "The idea of creating a single empowered regional authority that prioritizes climate objectives breaks conventional sectoral governance assumptions.",
+              "scalability": "If widely adopted, it could transform urban and peri-urban areas globally, affecting billions through systemic emissions reductions and resilience improvements.",
+              "principle": "The insight of overcoming institutional fragmentation to enable integrated governance can apply across various complex policy domains beyond climate."
+            }
+          },
+          "breakthrough_potential": 0.68,
+          "discard": false,
+          "final_score": 0.768,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed Climate Urban Ecosystem Authorities offer a plausible mechanism to overcome fragmented governance by consolidating jurisdiction and using data-driven tools, which could realistically enable coordinated climate action with significant impact.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.6,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.68,\n  \"rationale\": {\n    \"generative\": \"Consolidating fragmented governance unlocks multiple new pathways for integrated climate solutions and derivative innovations in urban planning.\",\n    \"explanatory\": \"It explains how siloed authorities cause policy conflicts and dilute accountability, revealing the causal mechanism behind ineffective climate action.\",\n    \"non_obvious\": \"The idea of creating a single empowered regional authority that prioritizes climate objectives breaks conventional sectoral governance assumptions.\",\n    \"scalability\": \"If widely adopted, it could transform urban and peri-urban areas globally, affecting billions through systemic emissions reductions and resilience improvements.\",\n    \"principle\": \"The insight of overcoming institutional fragmentation to enable integrated governance can apply across various complex policy domains beyond climate.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck in climate action is the entrenchment of short-term fiduciary responsibility within financial institutions, which prioritizes immediate profits over long-term sustainability. This systemic design limits investment in climate-resilient infrastructure and innovative but initially unprofitable green technologies. The pressure on fund managers to deliver quarterly returns discourages financing for projects whose benefits and risks unfold over decades, effectively sidelining climate mitigation and adaptation efforts that require patient capital.\n\nA concrete, feasible intervention is to create a legally mandated \u201clong-term fiduciary framework\u201d that redefines fiduciary duty for institutional investors, requiring them to integrate multi-decade climate risks and societal impacts into their core decision-making processes. This could be operationalized through a global regulatory standard, backed by international financial governance bodies, compelling transparency and stewardship reports that assess performance over 20+ year horizons. By structurally shifting fiduciary norms, this approach would unlock vast pools of capital for durable, transformative climate solutions, aligning financial incentives with planetary health and overcoming the pervasive short-termism bottleneck that no amount of subsidies or technology can fully address alone.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "Redefining fiduciary duty unlocks new financial models and investment strategies that prioritize long-term sustainability, enabling multiple derivative innovations.",
+              "explanatory": "It reveals the causal mechanism of short-termism in finance as a root structural barrier to climate investment, linking fiduciary responsibility to systemic underinvestment in climate solutions.",
+              "non_obvious": "Challenging entrenched legal and financial norms about fiduciary duty requires a significant conceptual leap beyond typical climate policy approaches focused on subsidies or technology.",
+              "scalability": "If adopted globally, this intervention could redirect vast institutional capital flows, impacting economies and societies worldwide over multiple decades.",
+              "principle": "The insight about aligning fiduciary duty with long-term societal outcomes is transferable to other domains where short-term incentives undermine systemic resilience."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.836,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed intervention is specific, actionable, and plausible, targeting fiduciary duty reforms through global regulatory standards, which could realistically shift investment behaviors and unlock long-term capital for climate action.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"Redefining fiduciary duty unlocks new financial models and investment strategies that prioritize long-term sustainability, enabling multiple derivative innovations.\",\n    \"explanatory\": \"It reveals the causal mechanism of short-termism in finance as a root structural barrier to climate investment, linking fiduciary responsibility to systemic underinvestment in climate solutions.\",\n    \"non_obvious\": \"Challenging entrenched legal and financial norms about fiduciary duty requires a significant conceptual leap beyond typical climate policy approaches focused on subsidies or technology.\",\n    \"scalability\": \"If adopted globally, this intervention could redirect vast institutional capital flows, impacting economies and societies worldwide over multiple decades.\",\n    \"principle\": \"The insight about aligning fiduciary duty with long-term societal outcomes is transferable to other domains where short-term incentives undermine systemic resilience.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck in climate action is the fragmentation of decision-making authority across multiple, often siloed, governmental and private sector entities, which impedes coherent and swift policy implementation. This fragmentation leads to misaligned incentives, duplicated efforts, and regulatory gaps that slow down the deployment of effective climate solutions. Instead of focusing solely on improving technology or financing, addressing the governance architecture itself is critical \u2014 yet rarely targeted directly.\n\nA feasible intervention is the creation of legally mandated Climate Governance Councils (CGCs) with binding cross-sector jurisdiction at the metropolitan or regional level, empowered by national legislation. These CGCs would integrate urban planning, energy regulation, transportation, and economic development under one decision-making body with authority to enforce climate-aligned policies and budgets. The innovation lies in institutionalizing integrative governance rather than piecemeal coordination, enabling rapid, context-specific climate action while balancing diverse stakeholder interests. By unlocking systemic alignment and eliminating bureaucratic inertia, CGCs would generate outsized impact through accelerated policy coherence and execution, which conventional single-issue agencies or voluntary coalitions have persistently failed to achieve.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.7,
+            "rationale": {
+              "generative": "By restructuring governance, this solution unlocks numerous new pathways for integrated climate policies and derivative innovations in cross-sector collaboration.",
+              "explanatory": "It addresses the root cause of fragmented authority, explaining how siloed governance mechanisms impede effective climate action.",
+              "non_obvious": "The approach requires a conceptual leap from improving isolated policies to fundamentally redesigning institutional frameworks.",
+              "scalability": "If widely adopted, it could transform metropolitan and regional governance globally, affecting millions through systemic policy coherence.",
+              "principle": "The insight about integrative governance bodies applies broadly to complex systemic challenges beyond climate, such as urban development and public health."
+            }
+          },
+          "breakthrough_potential": 0.7,
+          "discard": false,
+          "final_score": 0.8,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed Climate Governance Councils are specific, plausible, and include mechanisms for cross-sector integration and legal authority, making the solution likely to have a significant impact if implemented.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.7,\n  \"rationale\": {\n    \"generative\": \"By restructuring governance, this solution unlocks numerous new pathways for integrated climate policies and derivative innovations in cross-sector collaboration.\",\n    \"explanatory\": \"It addresses the root cause of fragmented authority, explaining how siloed governance mechanisms impede effective climate action.\",\n    \"non_obvious\": \"The approach requires a conceptual leap from improving isolated policies to fundamentally redesigning institutional frameworks.\",\n    \"scalability\": \"If widely adopted, it could transform metropolitan and regional governance globally, affecting millions through systemic policy coherence.\",\n    \"principle\": \"The insight about integrative governance bodies applies broadly to complex systemic challenges beyond climate, such as urban development and public health.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck in effective climate action is the fragmented and siloed nature of data governance across local, national, and international bodies. This fragmentation limits timely access to accurate, harmonized climate risk and emissions data, which is crucial for coordinated policy-making and investment decisions. Without a unified, interoperable data framework, disparate actors operate with misaligned priorities and incomplete information, slowing down targeted and scalable interventions.\n\nA feasible intervention is the creation of an independent \u201cClimate Data Commons\u201d governed by a multistakeholder consortium, which mandates open, standardized real-time sharing of climate metrics and emissions data globally. This platform would leverage blockchain for transparency and secure data provenance, while AI algorithms ensure data harmonization and predictive modeling. By removing data silos and enabling a shared decision-making infrastructure, this intervention would catalyze faster policy alignment, enable dynamic carbon markets, and mobilize capital flows more efficiently\u2014resulting in outsized systemic impact beyond fragmented efforts.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.66,
+            "rationale": {
+              "generative": "The solution unlocks numerous derivative innovations by enabling interoperable data sharing and AI-driven insights across climate actors.",
+              "explanatory": "It identifies data fragmentation as a root structural bottleneck and explains how unified data governance can align policies and investments.",
+              "non_obvious": "Proposing a blockchain-enabled global data commons governed by a multistakeholder consortium requires a conceptual leap beyond typical siloed approaches.",
+              "scalability": "If fully implemented, it could impact global climate governance, affecting billions through improved policy and market mechanisms.",
+              "principle": "The insight about unified, transparent data governance applies broadly to other complex global challenges beyond climate."
+            }
+          },
+          "breakthrough_potential": 0.66,
+          "discard": false,
+          "final_score": 0.756,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed Climate Data Commons with blockchain and AI integration is a specific, plausible solution that addresses data fragmentation and could have systemic impact, though implementation challenges and governance complexities may affect success.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.66,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous derivative innovations by enabling interoperable data sharing and AI-driven insights across climate actors.\",\n    \"explanatory\": \"It identifies data fragmentation as a root structural bottleneck and explains how unified data governance can align policies and investments.\",\n    \"non_obvious\": \"Proposing a blockchain-enabled global data commons governed by a multistakeholder consortium requires a conceptual leap beyond typical siloed approaches.\",\n    \"scalability\": \"If fully implemented, it could impact global climate governance, affecting billions through improved policy and market mechanisms.\",\n    \"principle\": \"The insight about unified, transparent data governance applies broadly to other complex global challenges beyond climate.\"\n  }\n}"
+        }
+      }
+    ],
+    "top_k": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck in climate action is the entrenchment of short-term fiduciary responsibility within financial institutions, which prioritizes immediate profits over long-term sustainability. This systemic design limits investment in climate-resilient infrastructure and innovative but initially unprofitable green technologies. The pressure on fund managers to deliver quarterly returns discourages financing for projects whose benefits and risks unfold over decades, effectively sidelining climate mitigation and adaptation efforts that require patient capital.\n\nA concrete, feasible intervention is to create a legally mandated \u201clong-term fiduciary framework\u201d that redefines fiduciary duty for institutional investors, requiring them to integrate multi-decade climate risks and societal impacts into their core decision-making processes. This could be operationalized through a global regulatory standard, backed by international financial governance bodies, compelling transparency and stewardship reports that assess performance over 20+ year horizons. By structurally shifting fiduciary norms, this approach would unlock vast pools of capital for durable, transformative climate solutions, aligning financial incentives with planetary health and overcoming the pervasive short-termism bottleneck that no amount of subsidies or technology can fully address alone.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "Redefining fiduciary duty unlocks new financial models and investment strategies that prioritize long-term sustainability, enabling multiple derivative innovations.",
+              "explanatory": "It reveals the causal mechanism of short-termism in finance as a root structural barrier to climate investment, linking fiduciary responsibility to systemic underinvestment in climate solutions.",
+              "non_obvious": "Challenging entrenched legal and financial norms about fiduciary duty requires a significant conceptual leap beyond typical climate policy approaches focused on subsidies or technology.",
+              "scalability": "If adopted globally, this intervention could redirect vast institutional capital flows, impacting economies and societies worldwide over multiple decades.",
+              "principle": "The insight about aligning fiduciary duty with long-term societal outcomes is transferable to other domains where short-term incentives undermine systemic resilience."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.836,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed intervention is specific, actionable, and plausible, targeting fiduciary duty reforms through global regulatory standards, which could realistically shift investment behaviors and unlock long-term capital for climate action.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"Redefining fiduciary duty unlocks new financial models and investment strategies that prioritize long-term sustainability, enabling multiple derivative innovations.\",\n    \"explanatory\": \"It reveals the causal mechanism of short-termism in finance as a root structural barrier to climate investment, linking fiduciary responsibility to systemic underinvestment in climate solutions.\",\n    \"non_obvious\": \"Challenging entrenched legal and financial norms about fiduciary duty requires a significant conceptual leap beyond typical climate policy approaches focused on subsidies or technology.\",\n    \"scalability\": \"If adopted globally, this intervention could redirect vast institutional capital flows, impacting economies and societies worldwide over multiple decades.\",\n    \"principle\": \"The insight about aligning fiduciary duty with long-term societal outcomes is transferable to other domains where short-term incentives undermine systemic resilience.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck in climate action is the fragmented and short-term nature of financial incentives across multiple sectors. Current funding mechanisms often prioritize immediate, quantifiable returns with short investment horizons, discouraging systemic, long-term infrastructure changes that would yield deep decarbonization but require years or decades to mature. This misalignment leads to piecemeal solutions rather than integrated, scalable transformations, such as rethinking industrial processes or urban planning with climate resilience embedded from inception.\n\nA concrete, feasible intervention is the creation of a public-private \u201cClimate Outcome Futures Exchange\u201d where investors and governments can trade contracts based on long-term, measurable climate outcomes (e.g., reductions in embodied carbon in infrastructure projects 10-15 years in the future). This market would align financial returns with sustained impact rather than immediate outputs, incentivizing patient capital and holistic projects that integrate climate benefits into core economic activities. By making long-term climate performance tradable and financially rewarding, this mechanism breaks the short-termism bottleneck and has outsized potential to redirect capital flows towards the systemic transitions critical for robust, durable climate action.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "The solution unlocks new financial instruments that could catalyze diverse long-term climate investments beyond current funding models.",
+              "explanatory": "It identifies the root cause of short-termism in finance and explains how aligning incentives with long-term outcomes can drive systemic change.",
+              "non_obvious": "Creating a tradable futures market for climate outcomes requires a conceptual leap beyond traditional investment and policy frameworks.",
+              "scalability": "If widely adopted, it could redirect vast capital flows globally, impacting multiple sectors and accelerating deep decarbonization.",
+              "principle": "The insight about aligning financial incentives with long-term systemic goals can be applied to other complex, multi-stakeholder challenges."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.8280000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed Climate Outcome Futures Exchange is a specific mechanism that plausibly aligns long-term financial incentives with climate goals, addressing short-termism effectively, though practical implementation challenges remain.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new financial instruments that could catalyze diverse long-term climate investments beyond current funding models.\",\n    \"explanatory\": \"It identifies the root cause of short-termism in finance and explains how aligning incentives with long-term outcomes can drive systemic change.\",\n    \"non_obvious\": \"Creating a tradable futures market for climate outcomes requires a conceptual leap beyond traditional investment and policy frameworks.\",\n    \"scalability\": \"If widely adopted, it could redirect vast capital flows globally, impacting multiple sectors and accelerating deep decarbonization.\",\n    \"principle\": \"The insight about aligning financial incentives with long-term systemic goals can be applied to other complex, multi-stakeholder challenges.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck hindering effective climate action is the fragmentation and misalignment between local land use planning and broader climate policies. Often, climate goals set at national or international levels fail to translate into actionable mandates within local zoning, infrastructure development, and resource allocation, which ultimately determine emissions trajectories in transportation, housing, and agriculture. This disconnect arises because local governments operate under diverse political pressures and incentives that prioritize short-term economic growth over long-term climate resilience, resulting in piecemeal or contradictory policies that undermine national commitments.\n\nA concrete, feasible intervention is the establishment of a legally mandated \"climate congruence audit\" embedded within local government budgeting and planning cycles. This audit would assess every infrastructure and land-use decision for consistency with nationally determined climate targets, and crucially, link local government funding and fiscal transfers to successful alignment outcomes. By financially incentivizing local authorities to prioritize climate-compatible urban and rural development at the ground level, this approach shifts leverage from top-down directives to embedded fiscal mechanisms that reshape incentives and planning cultures. Its outsized impact lies in bridging the persistent gap between macro-level climate ambitions and micro-level implementation, ensuring that the sprawling, diverse patchwork of local decisions cumulatively supports\u2014and accelerates\u2014systemic decarbonization and resilience measures.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.6,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.74,
+            "rationale": {
+              "generative": "The solution unlocks new possibilities by creating a fiscal mechanism that can inspire derivative innovations in local governance and climate policy integration.",
+              "explanatory": "It explains the causal bottleneck of misaligned incentives between local and national levels and how embedding audits can realign these mechanisms.",
+              "non_obvious": "Linking local government funding directly to climate alignment is a conceptual leap beyond typical top-down mandates or voluntary guidelines.",
+              "scalability": "If widely adopted, it could influence thousands of local governments globally, deeply embedding climate goals into everyday planning decisions.",
+              "principle": "The insight about aligning incentives through embedded fiscal audits can transfer to other domains where local-national policy gaps hinder systemic progress."
+            }
+          },
+          "breakthrough_potential": 0.74,
+          "discard": false,
+          "final_score": 0.8240000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed 'climate congruence audit' with financial incentives is a specific, plausible mechanism that targets the misalignment between local and national climate policies, likely to have a meaningful impact on implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.6,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.74,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new possibilities by creating a fiscal mechanism that can inspire derivative innovations in local governance and climate policy integration.\",\n    \"explanatory\": \"It explains the causal bottleneck of misaligned incentives between local and national levels and how embedding audits can realign these mechanisms.\",\n    \"non_obvious\": \"Linking local government funding directly to climate alignment is a conceptual leap beyond typical top-down mandates or voluntary guidelines.\",\n    \"scalability\": \"If widely adopted, it could influence thousands of local governments globally, deeply embedding climate goals into everyday planning decisions.\",\n    \"principle\": \"The insight about aligning incentives through embedded fiscal audits can transfer to other domains where local-national policy gaps hinder systemic progress.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural bottleneck impeding effective climate action is the fragmented and siloed nature of financial governance across international jurisdictions. While climate finance mobilization is widely discussed, the underlying architecture of global financial regulation remains compartmentalized, with differing standards, reporting requirements, and risk assessments that hinder coherent, large-scale investment in climate solutions. This fragmentation undermines trust and transparency, limits cross-border capital flows into green innovation, and slows down the integration of climate risks into mainstream financial decision-making.\n\nA concrete, feasible intervention would be the establishment of an independent, supranational Climate Financial Integration Authority (CFIA) with the mandate to harmonize climate-related financial disclosures, risk assessment models, and green investment taxonomies across key financial centers worldwide. Unlike existing initiatives that rely on voluntary standards or decentralized coalitions, this authority would operate akin to an international central bank but focused on climate finance, empowered by a coalition of willing nations and major financial hubs. By creating a unified regulatory framework and real-time data exchange platform, CFIA would drastically reduce transaction costs, enable global capital markets to price climate risk accurately, and accelerate investment flows toward sustainable infrastructure and technologies. Its outsized impact stems from transforming the global financial system\u2019s backbone, unlocking trillions in sustainable capital otherwise stranded by regulatory uncertainty and jurisdictional fragmentation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.77,
+            "rationale": {
+              "generative": "Harmonizing financial regulations globally could unlock numerous derivative innovations in climate finance and investment mechanisms.",
+              "explanatory": "It addresses the root cause of fragmented financial governance that impedes coherent climate investment flows.",
+              "non_obvious": "Proposing a supranational authority akin to an international central bank for climate finance requires a significant conceptual leap beyond current voluntary coalitions.",
+              "scalability": "If fully implemented, it could mobilize trillions in sustainable capital affecting global financial markets and climate outcomes.",
+              "principle": "The insight of integrating fragmented regulatory frameworks applies broadly to other global challenges requiring coordinated financial governance."
+            }
+          },
+          "breakthrough_potential": 0.77,
+          "discard": false,
+          "final_score": 0.8220000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed Climate Financial Integration Authority is a specific and plausible mechanism with clear functions and potential for outsized impact, though its implementation complexity and political feasibility may pose challenges.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.77,\n  \"rationale\": {\n    \"generative\": \"Harmonizing financial regulations globally could unlock numerous derivative innovations in climate finance and investment mechanisms.\",\n    \"explanatory\": \"It addresses the root cause of fragmented financial governance that impedes coherent climate investment flows.\",\n    \"non_obvious\": \"Proposing a supranational authority akin to an international central bank for climate finance requires a significant conceptual leap beyond current voluntary coalitions.\",\n    \"scalability\": \"If fully implemented, it could mobilize trillions in sustainable capital affecting global financial markets and climate outcomes.\",\n    \"principle\": \"The insight of integrating fragmented regulatory frameworks applies broadly to other global challenges requiring coordinated financial governance.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A major structural bottleneck hindering effective climate action is the fragmented ownership and control over urban land, which impedes scalable, coordinated deployment of climate-positive infrastructure such as green spaces, renewable microgrids, and resilient housing. Current property rights systems, often rigid and locally siloed, discourage collective investments that benefit entire neighborhoods or cities, resulting in disjointed, piecemeal interventions that fail to capitalize on synergies or economies of scale across urban environments.\n\nA feasible, unconventional intervention would be to establish semi-public \u201cClimate Commons Districts\u201d (CCDs) within metropolitan areas, where land ownership rights are pooled into community-managed trusts that enable integrated planning and deployment of climate infrastructure. These trusts would balance private interests with binding community stewardship, facilitating cross-property upgrades like interconnected green roofs, shared solar arrays, and flood management systems. By institutionalizing shared land governance dedicated to climate resilience and emissions reduction, CCDs would unlock cooperative investment at scales impossible under fragmented ownership, dramatically accelerating urban climate adaptation while fostering equitable benefit-sharing. This approach leverages legal innovation for systemic change, sidestepping entrenched market and policy deadlocks.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "Pooling land ownership into community trusts opens many new avenues for integrated climate infrastructure and cooperative urban development.",
+              "explanatory": "It identifies fragmented land ownership as a root structural bottleneck and explains how collective governance can overcome coordination failures.",
+              "non_obvious": "The idea of semi-public land trusts dedicated to climate action breaks conventional assumptions about private property and urban planning.",
+              "scalability": "If widely adopted, it could transform urban areas globally, affecting millions through systemic climate resilience and emissions reduction.",
+              "principle": "The concept of shared governance of critical resources for collective benefit can be adapted beyond urban land to other domains facing fragmentation."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck (fragmented urban land ownership) and proposes a concrete, feasible intervention (Climate Commons Districts) within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed intervention is specific, with mechanisms for pooled land ownership and community-managed trusts enabling coordinated climate infrastructure deployment, making it plausible and likely to have significant impact, though some implementation challenges remain unaddressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"Pooling land ownership into community trusts opens many new avenues for integrated climate infrastructure and cooperative urban development.\",\n    \"explanatory\": \"It identifies fragmented land ownership as a root structural bottleneck and explains how collective governance can overcome coordination failures.\",\n    \"non_obvious\": \"The idea of semi-public land trusts dedicated to climate action breaks conventional assumptions about private property and urban planning.\",\n    \"scalability\": \"If widely adopted, it could transform urban areas globally, affecting millions through systemic climate resilience and emissions reduction.\",\n    \"principle\": \"The concept of shared governance of critical resources for collective benefit can be adapted beyond urban land to other domains facing fragmentation.\"\n  }\n}"
+        }
+      }
+    ],
+    "final_output": "A major structural bottleneck in climate action is the entrenchment of short-term fiduciary responsibility within financial institutions, which prioritizes immediate profits over long-term sustainability. This systemic design limits investment in climate-resilient infrastructure and innovative but initially unprofitable green technologies. The pressure on fund managers to deliver quarterly returns discourages financing for projects whose benefits and risks unfold over decades, effectively sidelining climate mitigation and adaptation efforts that require patient capital.\n\nA concrete, feasible intervention is to create a legally mandated \u201clong-term fiduciary framework\u201d that redefines fiduciary duty for institutional investors, requiring them to integrate multi-decade climate risks and societal impacts into their core decision-making processes. This could be operationalized through a global regulatory standard, backed by international financial governance bodies, compelling transparency and stewardship reports that assess performance over 20+ year horizons. By structurally shifting fiduciary norms, this approach would unlock vast pools of capital for durable, transformative climate solutions, aligning financial incentives with planetary health and overcoming the pervasive short-termism bottleneck that no amount of subsidies or technology can fully address alone.",
+    "selected": {
+      "mode": "single_pass",
+      "reformulation": "",
+      "scores": {
+        "constraint_satisfaction": 1.0,
+        "usefulness": 0.9,
+        "constraint_overall": 0.95,
+        "breakthrough_scores": {
+          "generative_power": 0.8,
+          "explanatory_depth": 0.7,
+          "non_obviousness": 0.75,
+          "scalability_of_impact": 0.85,
+          "principle_over_implementation": 0.8,
+          "breakthrough_potential": 0.76,
+          "rationale": {
+            "generative": "Redefining fiduciary duty unlocks new financial models and investment strategies that prioritize long-term sustainability, enabling multiple derivative innovations.",
+            "explanatory": "It reveals the causal mechanism of short-termism in finance as a root structural barrier to climate investment, linking fiduciary responsibility to systemic underinvestment in climate solutions.",
+            "non_obvious": "Challenging entrenched legal and financial norms about fiduciary duty requires a significant conceptual leap beyond typical climate policy approaches focused on subsidies or technology.",
+            "scalability": "If adopted globally, this intervention could redirect vast institutional capital flows, impacting economies and societies worldwide over multiple decades.",
+            "principle": "The insight about aligning fiduciary duty with long-term societal outcomes is transferable to other domains where short-term incentives undermine systemic resilience."
+          }
+        },
+        "breakthrough_potential": 0.76,
+        "discard": false,
+        "final_score": 0.836,
+        "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed intervention is specific, actionable, and plausible, targeting fiduciary duty reforms through global regulatory standards, which could realistically shift investment behaviors and unlock long-term capital for climate action.\"\n  }\n}",
+        "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"Redefining fiduciary duty unlocks new financial models and investment strategies that prioritize long-term sustainability, enabling multiple derivative innovations.\",\n    \"explanatory\": \"It reveals the causal mechanism of short-termism in finance as a root structural barrier to climate investment, linking fiduciary responsibility to systemic underinvestment in climate solutions.\",\n    \"non_obvious\": \"Challenging entrenched legal and financial norms about fiduciary duty requires a significant conceptual leap beyond typical climate policy approaches focused on subsidies or technology.\",\n    \"scalability\": \"If adopted globally, this intervention could redirect vast institutional capital flows, impacting economies and societies worldwide over multiple decades.\",\n    \"principle\": \"The insight about aligning fiduciary duty with long-term societal outcomes is transferable to other domains where short-term incentives undermine systemic resilience.\"\n  }\n}\n```"
+      }
+    }
+  },
+  "elapsed_seconds": 183.04786586761475
+}

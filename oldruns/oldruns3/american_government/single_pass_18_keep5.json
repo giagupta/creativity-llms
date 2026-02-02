@@ -1,0 +1,780 @@
+{
+  "timestamp": "2026-02-01T14:35:03",
+  "prompt_id": "american_government",
+  "prompt": "Analyze the American government. Identify one significant structural problem and propose a concrete solution. The solution should be specific, feasible, and clearly justified. (Maximum two paragraphs.)",
+  "condition": "single_pass_18_keep5",
+  "config": {
+    "model": {
+      "name": "gpt-4.1-mini",
+      "max_tokens": 350
+    },
+    "conditions": [
+      "single_pass_18_keep5",
+      "divergent_convergent_18_keep5",
+      "evolutionary_2gen"
+    ],
+    "budget": {
+      "max_candidates_per_prompt": 18,
+      "keep_top_k": 5
+    },
+    "sampling": {
+      "single_pass": {
+        "temperature": 0.9,
+        "top_p": 1.0
+      },
+      "reframing": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "num_reformulations": 3
+      },
+      "combinational": {
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "transformational": {
+        "temperature": 1.1,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "judge": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "selection": {
+      "discard_if_constraint_below": 0.4,
+      "constraint_weight": 0.2,
+      "usefulness_weight": 0.2,
+      "breakthrough_weight": 0.6
+    }
+  },
+  "result": {
+    "reformulations": [],
+    "candidates": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the increasing partisanship and gridlock within Congress, largely driven by the Senate filibuster rule. The filibuster allows a minority of senators to block legislation unless 60 votes are secured, which often leads to legislative stalemate, especially in a highly polarized environment. This undermines the government's ability to effectively address urgent issues and erodes public trust in democratic institutions.\n\nA concrete solution is to reform the filibuster by adopting a \"talking filibuster\" requirement, where senators must continuously speak on the floor to maintain the filibuster, combined with a gradual reduction of the vote threshold over time if the filibuster is sustained without progress. This approach preserves minority rights by making obstruction more effortful and transparent, while incentivizing compromise and reducing gridlock. It is feasible because it does not require a constitutional amendment and respects Senate tradition, yet it directly addresses the paralysis caused by unlimited silent filibusters.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.3,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.44,
+            "rationale": {
+              "generative": "The solution enables derivative innovations in legislative procedure reform but is somewhat limited to filibuster-related changes.",
+              "explanatory": "It explains the mechanism of legislative gridlock through the filibuster but does not deeply unify broader political dysfunction causes.",
+              "non_obvious": "Requiring continuous speech and gradual vote threshold reduction is a moderately novel approach that challenges current Senate norms.",
+              "scalability": "If implemented, it could significantly improve legislative efficiency affecting the entire U.S. population and government function.",
+              "principle": "The insight about balancing minority rights with procedural transparency can be adapted to other deliberative bodies beyond the U.S. Senate."
+            }
+          },
+          "breakthrough_potential": 0.44,
+          "discard": false,
+          "final_score": 0.644,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The proposed 'talking filibuster' with a gradual vote threshold reduction is a concrete mechanism that balances minority rights and reduces gridlock, making it a plausible and actionable reform.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.3,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.44,\n  \"rationale\": {\n    \"generative\": \"The solution enables derivative innovations in legislative procedure reform but is somewhat limited to filibuster-related changes.\",\n    \"explanatory\": \"It explains the mechanism of legislative gridlock through the filibuster but does not deeply unify broader political dysfunction causes.\",\n    \"non_obvious\": \"Requiring continuous speech and gradual vote threshold reduction is a moderately novel approach that challenges current Senate norms.\",\n    \"scalability\": \"If implemented, it could significantly improve legislative efficiency affecting the entire U.S. population and government function.\",\n    \"principle\": \"The insight about balancing minority rights with procedural transparency can be adapted to other deliberative bodies beyond the U.S. Senate.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the increasing polarization and gridlock in Congress, largely driven by the winner-take-all electoral system and extreme partisanship. This system discourages moderate candidates and incentivizes politicians to cater to the more polarized ends of their party bases, exacerbating division and making bipartisan cooperation difficult. Consequently, legislation often stalls, undermining effective governance and public trust.\n\nA concrete and feasible solution is to implement ranked-choice voting (RCV) for congressional elections nationwide. RCV allows voters to rank candidates by preference, ensuring that winners have majority support without relying on a simple plurality. This system encourages candidates to appeal to a broader electorate, incentivizes moderation, and reduces negative campaigning. By fostering more centrist, consensus-driven representatives, RCV can help mitigate polarization, enhance legislative collaboration, and improve the functionality of Congress without requiring constitutional amendments, making it an achievable reform at the state level or through federal legislation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.5,
+            "non_obviousness": 0.4,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.56,
+            "rationale": {
+              "generative": "Ranked-choice voting opens pathways for new electoral reforms and more nuanced democratic processes beyond simple plurality systems.",
+              "explanatory": "The solution identifies the causal link between winner-take-all elections, polarization, and legislative gridlock, explaining how voting mechanics influence political behavior.",
+              "non_obvious": "While electoral reform is a known topic, applying ranked-choice voting nationwide as a direct remedy to polarization requires a moderate conceptual leap beyond typical partisan solutions.",
+              "scalability": "If adopted broadly, this reform could affect all congressional elections, impacting millions of voters and potentially transforming legislative dynamics at a national scale.",
+              "principle": "The insight that voting system design shapes political incentives and polarization can be applied to other democratic institutions and electoral contexts globally."
+            }
+          },
+          "breakthrough_potential": 0.56,
+          "discard": false,
+          "final_score": 0.716,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-explained, plausible reform with clear mechanisms to reduce polarization and improve governance, making it a highly useful solution.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.5,\n  \"non_obviousness\": 0.4,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.56,\n  \"rationale\": {\n    \"generative\": \"Ranked-choice voting opens pathways for new electoral reforms and more nuanced democratic processes beyond simple plurality systems.\",\n    \"explanatory\": \"The solution identifies the causal link between winner-take-all elections, polarization, and legislative gridlock, explaining how voting mechanics influence political behavior.\",\n    \"non_obvious\": \"While electoral reform is a known topic, applying ranked-choice voting nationwide as a direct remedy to polarization requires a moderate conceptual leap beyond typical partisan solutions.\",\n    \"scalability\": \"If adopted broadly, this reform could affect all congressional elections, impacting millions of voters and potentially transforming legislative dynamics at a national scale.\",\n    \"principle\": \"The insight that voting system design shapes political incentives and polarization can be applied to other democratic institutions and electoral contexts globally.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the polarization and gridlock within Congress, particularly exacerbated by the Senate filibuster rule. The filibuster allows a minority of senators to block legislation unless 60 out of 100 senators agree to cloture, which often results in legislative stagnation even when there is majority support. This structure amplifies partisan divides and hampers the government\u2019s ability to respond efficiently to pressing issues, such as infrastructure, healthcare, and climate change.\n\nA concrete and feasible solution is to reform the filibuster by returning it to its original purpose of extended debate rather than requiring a supermajority to end debate. Specifically, the Senate could implement a \u201ctalking filibuster\u201d rule, requiring senators who want to block legislation to continuously speak on the floor, thereby making obstruction more costly and visible. This approach has historical precedent and has been suggested by many senators and scholars as a way to incentivize compromise while preserving minority rights to debate. By increasing the political and time costs of filibustering, this reform would reduce gridlock, encourage bipartisan dialogue, and allow the government to function more effectively without completely eliminating minority influence.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.5,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.46,
+            "rationale": {
+              "generative": "Reforming the filibuster could inspire further innovations in legislative procedures and minority rights protections.",
+              "explanatory": "The solution explains how the filibuster mechanism causes gridlock by enabling minority obstruction and how changing its use can alter legislative dynamics.",
+              "non_obvious": "While the filibuster is well-known, the idea of a 'talking filibuster' as a practical reform is less commonly proposed and requires rethinking entrenched norms.",
+              "scalability": "If implemented, this reform could significantly improve legislative efficiency affecting the entire U.S. population and potentially serve as a model for other deliberative bodies.",
+              "principle": "The insight about balancing minority rights with majority rule through procedural costs can apply to other governance and decision-making systems beyond the U.S. Senate."
+            }
+          },
+          "breakthrough_potential": 0.46,
+          "discard": false,
+          "final_score": 0.656,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (Senate filibuster) and proposes a specific, feasible solution (talking filibuster) within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed talking filibuster is a well-defined mechanism with historical precedent and clear incentives to reduce gridlock while preserving minority rights, making it a plausible and effective reform.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.5,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.46,\n  \"rationale\": {\n    \"generative\": \"Reforming the filibuster could inspire further innovations in legislative procedures and minority rights protections.\",\n    \"explanatory\": \"The solution explains how the filibuster mechanism causes gridlock by enabling minority obstruction and how changing its use can alter legislative dynamics.\",\n    \"non_obvious\": \"While the filibuster is well-known, the idea of a 'talking filibuster' as a practical reform is less commonly proposed and requires rethinking entrenched norms.\",\n    \"scalability\": \"If implemented, this reform could significantly improve legislative efficiency affecting the entire U.S. population and potentially serve as a model for other deliberative bodies.\",\n    \"principle\": \"The insight about balancing minority rights with majority rule through procedural costs can apply to other governance and decision-making systems beyond the U.S. Senate.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the Senate\u2019s representation system, which gives equal voting power to states regardless of population size. This design disproportionately amplifies the influence of less populous states, leading to legislative outcomes that may not reflect the preferences of the majority of Americans. For example, smaller states with fewer residents have the same number of senators as large states like California or Texas, skewing policy priorities and contributing to political polarization and gridlock.\n\nA concrete solution is to implement a weighted voting system within the Senate where each senator\u2019s vote is proportional to their state\u2019s population. For instance, a senator from a state with twice the population of another would have twice the voting weight. This reform could be enacted through a constitutional amendment or a national compact among states, starting with voluntary adoption by a critical mass of states to create pressure for broader change. By aligning Senate voting power more closely with population, this approach preserves the institution while enhancing democratic fairness and legislative efficiency, ensuring that the Senate better represents the will of the American people.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.5,
+          "constraint_overall": 0.75,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.3,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.46,
+            "rationale": {
+              "generative": "The solution opens possibilities for rethinking representation systems and weighted voting in other legislative bodies.",
+              "explanatory": "It identifies the root cause of disproportionate influence as the equal representation regardless of population, explaining the mechanism behind legislative imbalance.",
+              "non_obvious": "Proposing weighted votes within the Senate challenges the entrenched assumption of equal state representation and requires a conceptual leap.",
+              "scalability": "If implemented nationwide, it could significantly affect the governance of the entire U.S. population and potentially inspire reforms in other federations.",
+              "principle": "The insight about proportional representation versus equal representation can be applied to other political and organizational decision-making systems."
+            }
+          },
+          "breakthrough_potential": 0.46,
+          "discard": false,
+          "final_score": 0.5760000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.5,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution with justification, all within two paragraphs as required.\",\n    \"usefulness\": \"The proposed weighted voting system is specific and addresses the problem directly, but its feasibility is questionable given the constitutional challenges and political resistance, which lowers the likelihood of successful implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.3,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.46,\n  \"rationale\": {\n    \"generative\": \"The solution opens possibilities for rethinking representation systems and weighted voting in other legislative bodies.\",\n    \"explanatory\": \"It identifies the root cause of disproportionate influence as the equal representation regardless of population, explaining the mechanism behind legislative imbalance.\",\n    \"non_obvious\": \"Proposing weighted votes within the Senate challenges the entrenched assumption of equal state representation and requires a conceptual leap.\",\n    \"scalability\": \"If implemented nationwide, it could significantly affect the governance of the entire U.S. population and potentially inspire reforms in other federations.\",\n    \"principle\": \"The insight about proportional representation versus equal representation can be applied to other political and organizational decision-making systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the polarization and gridlock in Congress, largely driven by the Senate\u2019s filibuster rule. The filibuster allows a minority of senators (currently 41 out of 100) to block legislation, requiring a supermajority of 60 votes to advance most bills. This mechanism often leads to legislative paralysis, preventing the passage of important policies even when a clear majority supports them. As a result, critical issues such as healthcare reform, climate action, and infrastructure improvements face significant delays, undermining public trust in government efficacy.\n\nA concrete solution is to reform the filibuster by requiring a \"talking filibuster,\" where senators must continuously debate on the floor to maintain a filibuster rather than allowing a silent one. This reform is specific and feasible because it maintains minority rights to extended debate while substantially increasing the cost of obstruction. Senators would need to physically remain and engage in debate, discouraging frivolous or purely strategic use of the filibuster. This change could be implemented through Senate rule adjustments without constitutional amendments, restoring legislative functionality and encouraging more bipartisan negotiation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.3,
+            "explanatory_depth": 0.4,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.42,
+            "rationale": {
+              "generative": "The solution unlocks some new possibilities for legislative reform but is largely a modification of an existing mechanism rather than a foundational innovation.",
+              "explanatory": "It explains the causal role of the filibuster in legislative gridlock but does not deeply unify broader political dysfunction or systemic causes.",
+              "non_obvious": "Requiring a talking filibuster is a known reform idea and does not break major assumptions or require conceptual leaps.",
+              "scalability": "If implemented, it could significantly improve legislative efficiency affecting the entire U.S. population and government functioning.",
+              "principle": "The insight about increasing the cost of obstruction to improve negotiation could apply in other deliberative bodies, but it remains somewhat context-specific."
+            }
+          },
+          "breakthrough_potential": 0.42,
+          "discard": false,
+          "final_score": 0.632,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed 'talking filibuster' reform is a concrete mechanism that increases the cost of obstruction while preserving minority rights, making it a plausible and practical solution to reduce legislative gridlock.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.3,\n  \"explanatory_depth\": 0.4,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.42,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks some new possibilities for legislative reform but is largely a modification of an existing mechanism rather than a foundational innovation.\",\n    \"explanatory\": \"It explains the causal role of the filibuster in legislative gridlock but does not deeply unify broader political dysfunction or systemic causes.\",\n    \"non_obvious\": \"Requiring a talking filibuster is a known reform idea and does not break major assumptions or require conceptual leaps.\",\n    \"scalability\": \"If implemented, it could significantly improve legislative efficiency affecting the entire U.S. population and government functioning.\",\n    \"principle\": \"The insight about increasing the cost of obstruction to improve negotiation could apply in other deliberative bodies, but it remains somewhat context-specific.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the extreme polarization and gridlock in Congress, partly driven by the winner-take-all electoral system and partisan gerrymandering. This system often results in safe seats for one party, reducing incentives for compromise and leading to legislative stagnation, where important policies are delayed or blocked due to partisan conflicts rather than substantive debate.\n\nA concrete solution to this problem is the adoption of independent redistricting commissions in every state combined with ranked-choice voting for congressional elections. Independent commissions, rather than state legislatures, would draw district boundaries transparently and based on neutral criteria, reducing gerrymandering and creating more competitive districts. Ranked-choice voting allows voters to rank candidates by preference, promoting candidates with broader appeal and reducing extreme partisanship. Together, these reforms would encourage elected officials to be more responsive to a wider range of constituents, fostering cooperation and reducing legislative deadlock. Several states have already implemented these changes with positive effects, making this solution both feasible and justified.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.5,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.4,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.56,
+            "rationale": {
+              "generative": "The solution enables derivative innovations in electoral reform and governance by combining two complementary mechanisms.",
+              "explanatory": "It explains the causal link between electoral systems, districting, and legislative gridlock, addressing root causes rather than symptoms.",
+              "non_obvious": "While electoral reform is discussed, combining independent commissions with ranked-choice voting is not a widely intuitive or mainstream approach.",
+              "scalability": "If fully implemented nationwide, it could deeply affect the entire U.S. political system and potentially inspire reforms in other democracies.",
+              "principle": "The insight about reducing structural incentives for polarization through system design can be applied to other political and organizational contexts."
+            }
+          },
+          "breakthrough_potential": 0.56,
+          "discard": false,
+          "final_score": 0.716,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible, and well-justified solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed solution of independent redistricting commissions combined with ranked-choice voting is specific, plausible, and addresses the root causes of polarization and gridlock, making it highly likely to improve legislative cooperation.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.5,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.4,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.56,\n  \"rationale\": {\n    \"generative\": \"The solution enables derivative innovations in electoral reform and governance by combining two complementary mechanisms.\",\n    \"explanatory\": \"It explains the causal link between electoral systems, districting, and legislative gridlock, addressing root causes rather than symptoms.\",\n    \"non_obvious\": \"While electoral reform is discussed, combining independent commissions with ranked-choice voting is not a widely intuitive or mainstream approach.\",\n    \"scalability\": \"If fully implemented nationwide, it could deeply affect the entire U.S. political system and potentially inspire reforms in other democracies.\",\n    \"principle\": \"The insight about reducing structural incentives for polarization through system design can be applied to other political and organizational contexts.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the increasing polarization and gridlock in Congress, largely driven by the winner-take-all, single-member district electoral system. This system incentivizes candidates to appeal primarily to their party\u2019s base, resulting in the election of more ideologically extreme representatives and reduced incentives for bipartisan cooperation. Consequently, legislative stalemates often occur, hampering effective governance and diminishing public trust in democratic institutions.\n\nA concrete solution is to implement ranked-choice voting (RCV) for congressional elections. RCV allows voters to rank candidates by preference, which encourages candidates to appeal to a broader electorate rather than just the partisan base, as winning requires broader support. This system can reduce polarization by promoting more moderate and consensus-driven candidates and increasing electoral competitiveness. Several jurisdictions in the U.S., including Maine, have successfully adopted RCV, demonstrating its feasibility. By fostering more representative and cooperative legislatures, RCV could alleviate gridlock and improve the functionality of the American government.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.64,
+            "rationale": {
+              "generative": "Ranked-choice voting opens new possibilities for electoral reform and can inspire further innovations in democratic processes.",
+              "explanatory": "The solution explains how the electoral system's incentives cause polarization and gridlock, addressing root mechanisms rather than symptoms.",
+              "non_obvious": "While electoral reform is discussed, adopting ranked-choice voting as a direct solution requires a conceptual shift from traditional plurality systems.",
+              "scalability": "If widely implemented, ranked-choice voting could impact millions of voters and transform legislative dynamics across the entire country.",
+              "principle": "The insight about electoral incentives shaping political behavior can apply to various democratic systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.64,
+          "discard": false,
+          "final_score": 0.764,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-explained, plausible mechanism to reduce polarization and gridlock, supported by real-world examples, making it a highly useful solution.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.64,\n  \"rationale\": {\n    \"generative\": \"Ranked-choice voting opens new possibilities for electoral reform and can inspire further innovations in democratic processes.\",\n    \"explanatory\": \"The solution explains how the electoral system's incentives cause polarization and gridlock, addressing root mechanisms rather than symptoms.\",\n    \"non_obvious\": \"While electoral reform is discussed, adopting ranked-choice voting as a direct solution requires a conceptual shift from traditional plurality systems.\",\n    \"scalability\": \"If widely implemented, ranked-choice voting could impact millions of voters and transform legislative dynamics across the entire country.\",\n    \"principle\": \"The insight about electoral incentives shaping political behavior can apply to various democratic systems beyond the U.S.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the increasing polarization and gridlock in Congress, largely driven by the Senate\u2019s filibuster rule. The filibuster allows a minority of senators to block legislation by requiring a supermajority of 60 votes to end debate and proceed to a vote. This has made it exceedingly difficult to pass substantive legislation, even when there is a simple majority consensus, leading to legislative stagnation and public frustration.\n\nA concrete and feasible solution is to reform the filibuster by adopting a \"talking filibuster\" model, requiring senators who wish to block legislation to physically hold the floor and speak continuously on the topic. This method preserves the filibuster\u2019s intent to protect minority rights but raises the cost of obstruction, encouraging compromise and more deliberate use of the tool. Such a reform has precedent in Senate rules discussions and is achievable through a simple majority vote, making it both practical and effective in reducing gridlock while maintaining Senate tradition.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.3,
+            "explanatory_depth": 0.4,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.42,
+            "rationale": {
+              "generative": "The solution opens some new possibilities for legislative reform but is largely a modification of an existing mechanism rather than a foundational innovation.",
+              "explanatory": "It explains the causal role of the filibuster in legislative gridlock but does not deeply unify broader political dysfunctions.",
+              "non_obvious": "Requiring continuous speech to maintain a filibuster is a known concept and does not represent a radical conceptual leap.",
+              "scalability": "If implemented, it could significantly reduce gridlock affecting the entire U.S. legislative process and millions of citizens.",
+              "principle": "The insight about raising the cost of obstruction to encourage compromise could apply to other deliberative bodies, but it remains somewhat context-specific."
+            }
+          },
+          "breakthrough_potential": 0.42,
+          "discard": false,
+          "final_score": 0.632,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed 'talking filibuster' reform is a concrete mechanism with a clear procedural impact, balancing minority rights and reducing gridlock, making it a plausible and effective solution.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.3,\n  \"explanatory_depth\": 0.4,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.42,\n  \"rationale\": {\n    \"generative\": \"The solution opens some new possibilities for legislative reform but is largely a modification of an existing mechanism rather than a foundational innovation.\",\n    \"explanatory\": \"It explains the causal role of the filibuster in legislative gridlock but does not deeply unify broader political dysfunctions.\",\n    \"non_obvious\": \"Requiring continuous speech to maintain a filibuster is a known concept and does not represent a radical conceptual leap.\",\n    \"scalability\": \"If implemented, it could significantly reduce gridlock affecting the entire U.S. legislative process and millions of citizens.\",\n    \"principle\": \"The insight about raising the cost of obstruction to encourage compromise could apply to other deliberative bodies, but it remains somewhat context-specific.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the polarization and gridlock in Congress, largely fueled by the winner-take-all, single-member district electoral system. This system incentivizes politicians to cater primarily to their party\u2019s base rather than the broader electorate, reinforcing partisan divides and stymying compromise. As a result, legislative productivity declines, and public trust diminishes, undermining effective governance.\n\nA concrete, feasible solution is to implement ranked-choice voting (RCV) for all congressional elections. RCV allows voters to rank candidates by preference, ensuring that winners have broader support and reducing the incentive for extreme partisanship. This system encourages candidates to appeal to a wider constituency, fostering more moderate and cooperative lawmakers. Several states and cities have successfully adopted RCV, demonstrating its viability. By promoting more representative outcomes and encouraging cross-party collaboration, RCV could mitigate polarization and help restore functional governance in Congress.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.64,
+            "rationale": {
+              "generative": "Implementing ranked-choice voting opens pathways for new electoral reforms and more nuanced democratic innovations.",
+              "explanatory": "The solution identifies the causal mechanism of winner-take-all incentives driving polarization and explains how RCV changes candidate behavior.",
+              "non_obvious": "While electoral reform is a known topic, applying ranked-choice voting broadly to reduce polarization requires a conceptual leap beyond typical partisan fixes.",
+              "scalability": "If adopted nationwide, this reform could deeply affect the entire U.S. political system and potentially inspire similar changes globally.",
+              "principle": "The insight about how electoral systems shape political incentives can be transferred to other governance contexts beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.64,
+          "discard": false,
+          "final_score": 0.764,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"Ranked-choice voting is a well-defined, plausible reform with a clear mechanism to reduce polarization by encouraging broader appeal, making the solution highly useful and likely to improve governance.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.64,\n  \"rationale\": {\n    \"generative\": \"Implementing ranked-choice voting opens pathways for new electoral reforms and more nuanced democratic innovations.\",\n    \"explanatory\": \"The solution identifies the causal mechanism of winner-take-all incentives driving polarization and explains how RCV changes candidate behavior.\",\n    \"non_obvious\": \"While electoral reform is a known topic, applying ranked-choice voting broadly to reduce polarization requires a conceptual leap beyond typical partisan fixes.\",\n    \"scalability\": \"If adopted nationwide, this reform could deeply affect the entire U.S. political system and potentially inspire similar changes globally.\",\n    \"principle\": \"The insight about how electoral systems shape political incentives can be transferred to other governance contexts beyond the U.S.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the increasing polarization and dysfunction stemming from the Senate\u2019s filibuster rule. This rule requires a supermajority of 60 votes to pass most legislation, allowing a minority of senators to block bills even when there is majority support. This dynamic often leads to legislative gridlock, undermining the government\u2019s ability to respond effectively to pressing issues and eroding public trust.\n\nA concrete solution is to reform the filibuster by instituting a \u201ctalking filibuster\u201d requirement, where senators must continuously speak on the floor to maintain a filibuster, rather than simply signaling intent to filibuster. This would raise the cost of obstruction, encouraging compromise and careful use of the tool, while preserving minority rights. This reform has historical precedent and can be implemented through Senate rule changes without constitutional amendments, making it both feasible and pragmatic. By fostering more productive debate and negotiation, this approach could reduce paralysis and improve legislative efficacy.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.5,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.46,
+            "rationale": {
+              "generative": "The solution enables derivative innovations in legislative procedure reform but is somewhat narrow in scope.",
+              "explanatory": "It explains the causal mechanism of legislative gridlock through the filibuster rule rather than just addressing symptoms.",
+              "non_obvious": "While the talking filibuster has historical precedent, it requires reconsidering entrenched norms about minority rights in the Senate.",
+              "scalability": "If widely adopted, it could significantly improve legislative efficiency affecting the entire U.S. government and its citizens.",
+              "principle": "The insight about raising the cost of obstruction to encourage compromise can apply to other decision-making bodies beyond the Senate."
+            }
+          },
+          "breakthrough_potential": 0.46,
+          "discard": false,
+          "final_score": 0.656,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed 'talking filibuster' reform is a well-defined mechanism with historical precedent and practical feasibility, likely to reduce legislative gridlock while preserving minority rights, making it a highly useful solution.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.5,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.46,\n  \"rationale\": {\n    \"generative\": \"The solution enables derivative innovations in legislative procedure reform but is somewhat narrow in scope.\",\n    \"explanatory\": \"It explains the causal mechanism of legislative gridlock through the filibuster rule rather than just addressing symptoms.\",\n    \"non_obvious\": \"While the talking filibuster has historical precedent, it requires reconsidering entrenched norms about minority rights in the Senate.\",\n    \"scalability\": \"If widely adopted, it could significantly improve legislative efficiency affecting the entire U.S. government and its citizens.\",\n    \"principle\": \"The insight about raising the cost of obstruction to encourage compromise can apply to other decision-making bodies beyond the Senate.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the phenomenon of partisan gerrymandering, where electoral district boundaries are drawn to advantage a particular political party. This practice undermines democratic representation by allowing legislators to entrench their power, reduce electoral competition, and distort voter preferences. As a result, elected bodies may not accurately reflect the political will of the populace, eroding public trust and contributing to legislative gridlock.\n\nA concrete solution is to establish independent, nonpartisan redistricting commissions at the state level, tasked solely with drawing electoral maps based on objective criteria such as compactness, contiguity, and respect for existing political boundaries without political bias. This approach has been successfully implemented in states like California and Arizona, resulting in fairer, more competitive districts. By removing direct legislative control over redistricting, these commissions can enhance electoral fairness, increase voter confidence, and foster more responsive governance, making this a specific and feasible reform to address the structural flaw of gerrymandering.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 1.0,
+          "constraint_overall": 1.0,
+          "breakthrough_scores": {
+            "generative_power": 0.3,
+            "explanatory_depth": 0.4,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.44,
+            "rationale": {
+              "generative": "The solution enables derivative innovations in electoral reform but is primarily focused on one specific issue.",
+              "explanatory": "It explains the mechanism of partisan gerrymandering and how independent commissions can mitigate it, addressing root causes rather than symptoms.",
+              "non_obvious": "While the idea of independent commissions exists, it requires overcoming entrenched political interests and assumptions about legislative control.",
+              "scalability": "If widely adopted, it could significantly improve democratic representation across all states, affecting millions of voters.",
+              "principle": "The insight about removing partisan control to ensure fairness can be applied to other domains requiring impartial oversight."
+            }
+          },
+          "breakthrough_potential": 0.44,
+          "discard": false,
+          "final_score": 0.664,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 1.0,\n  \"overall\": 1.0,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem (partisan gerrymandering) and proposes a specific, feasible solution (independent redistricting commissions) within the two-paragraph limit.\",\n    \"usefulness\": \"The solution is concrete, with clear mechanisms and examples of successful implementation, making it plausible and likely to improve electoral fairness and governance.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.3,\n  \"explanatory_depth\": 0.4,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.44,\n  \"rationale\": {\n    \"generative\": \"The solution enables derivative innovations in electoral reform but is primarily focused on one specific issue.\",\n    \"explanatory\": \"It explains the mechanism of partisan gerrymandering and how independent commissions can mitigate it, addressing root causes rather than symptoms.\",\n    \"non_obvious\": \"While the idea of independent commissions exists, it requires overcoming entrenched political interests and assumptions about legislative control.\",\n    \"scalability\": \"If widely adopted, it could significantly improve democratic representation across all states, affecting millions of voters.\",\n    \"principle\": \"The insight about removing partisan control to ensure fairness can be applied to other domains requiring impartial oversight.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the Senate\u2019s equal representation of states regardless of population size. This arrangement results in disproportionate political influence for smaller states, often skewing legislative outcomes and policy priorities away from the preferences of the majority of the population. Because every state, whether California with nearly 40 million people or Wyoming with fewer than 600,000, receives two senators, the Senate can fail to represent the demographic and political realities of the country, leading to gridlock and policy decisions that do not reflect the popular will.\n\nA concrete and feasible solution is to implement a weighted voting system within the Senate, where each senator\u2019s vote is proportionate to their state\u2019s population. This could be codified through a constitutional amendment or an agreement among states ratifying a new voting rule, starting with a pilot in certain committees to test its effectiveness. Weighted voting would preserve equal state representation in terms of voice and presence but ensure legislative power better mirrors population distribution. This approach balances federalism with democratic representation, making the Senate more responsive and reducing policy distortions caused by oversized influence from less populous states while maintaining the Senate\u2019s foundational role in protecting state interests.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.5,
+          "constraint_overall": 0.75,
+          "breakthrough_scores": {
+            "generative_power": 0.3,
+            "explanatory_depth": 0.4,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.46,
+            "rationale": {
+              "generative": "The solution opens possibilities for new voting systems and federal reforms but remains focused on a specific institutional change.",
+              "explanatory": "It explains the causal mechanism of disproportionate influence due to equal representation and proposes a structural adjustment to address it.",
+              "non_obvious": "Introducing weighted voting in the Senate challenges the entrenched norm of equal state representation, requiring a conceptual leap.",
+              "scalability": "If implemented, it could affect the entire U.S. legislative process and potentially inspire similar reforms in other federations.",
+              "principle": "The insight about balancing representation and population weighting can apply to other governance systems beyond the U.S. context."
+            }
+          },
+          "breakthrough_potential": 0.46,
+          "discard": false,
+          "final_score": 0.5760000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.5,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a concrete, specific, and justified solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed weighted voting system is specific and includes a mechanism for implementation, but it relies on a constitutional amendment or state agreement, which is politically challenging, making the solution moderately feasible but not highly likely to succeed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.3,\n  \"explanatory_depth\": 0.4,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.46,\n  \"rationale\": {\n    \"generative\": \"The solution opens possibilities for new voting systems and federal reforms but remains focused on a specific institutional change.\",\n    \"explanatory\": \"It explains the causal mechanism of disproportionate influence due to equal representation and proposes a structural adjustment to address it.\",\n    \"non_obvious\": \"Introducing weighted voting in the Senate challenges the entrenched norm of equal state representation, requiring a conceptual leap.\",\n    \"scalability\": \"If implemented, it could affect the entire U.S. legislative process and potentially inspire similar reforms in other federations.\",\n    \"principle\": \"The insight about balancing representation and population weighting can apply to other governance systems beyond the U.S. context.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the Senate\u2019s equal representation of states regardless of population size. This arrangement grants disproportionate power to less populous states, often skewing legislative outcomes and policy priorities away from the preferences of the majority of Americans. For example, states with small populations like Wyoming have two senators just like California, which has nearly 70 times more people. This malapportionment undermines democratic representation and can obstruct legislation favored by a large majority.\n\nA concrete and feasible solution is to implement a graduated voting system within the Senate, where each senator\u2019s vote is weighted according to their state\u2019s population. For instance, a senator from a state with a population of 1 million might have one vote, while a senator from a state with 10 million would have ten votes. This reform could be enacted through a constitutional amendment or a statutory change if supported by a supermajority in Congress and ratified by states. By preserving two senators per state for representation and debate purposes, but adjusting vote weight to reflect population, the Senate would become more democratic while respecting the federal structure. This change would enhance policy legitimacy and better align Senate decisions with the will of the American populace.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.3,
+          "constraint_overall": 0.65,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.3,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.46,
+            "rationale": {
+              "generative": "The solution opens possibilities for weighted voting systems in other federal or representative bodies, but remains largely focused on the Senate structure.",
+              "explanatory": "It addresses the root cause of malapportionment by linking vote weight to population, explaining how disproportionate power arises and can be corrected.",
+              "non_obvious": "Weighting votes within a traditionally equal-representation chamber challenges entrenched assumptions about Senate design and federalism.",
+              "scalability": "If implemented, it would affect the entire U.S. legislative process and could inspire reforms in other federations, impacting millions.",
+              "principle": "The insight about balancing equal representation with population-based influence can be adapted to other governance and decision-making systems."
+            }
+          },
+          "breakthrough_potential": 0.46,
+          "discard": false,
+          "final_score": 0.536,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.3,\n  \"overall\": 0.65,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"While the solution is specific and justified, it is unlikely to be politically feasible due to the difficulty of amending the Constitution and the entrenched interests supporting equal state representation in the Senate.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.3,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.46,\n  \"rationale\": {\n    \"generative\": \"The solution opens possibilities for weighted voting systems in other federal or representative bodies, but remains largely focused on the Senate structure.\",\n    \"explanatory\": \"It addresses the root cause of malapportionment by linking vote weight to population, explaining how disproportionate power arises and can be corrected.\",\n    \"non_obvious\": \"Weighting votes within a traditionally equal-representation chamber challenges entrenched assumptions about Senate design and federalism.\",\n    \"scalability\": \"If implemented, it would affect the entire U.S. legislative process and could inspire reforms in other federations, impacting millions.\",\n    \"principle\": \"The insight about balancing equal representation with population-based influence can be adapted to other governance and decision-making systems.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the polarization and gridlock within the legislative branch, largely driven by the winner-take-all electoral system and partisan gerrymandering. This structure incentivizes extreme partisanship because primary elections often favor more ideologically extreme candidates, and district boundaries are drawn to create \u201csafe\u201d seats, reducing incentives for compromise. Consequently, Congress frequently struggles to pass legislation, undermining effective governance and public trust.\n\nA concrete and feasible solution is to implement independent, nonpartisan commissions for redistricting in all states, coupled with the adoption of ranked-choice voting (RCV) for congressional elections. Independent commissions reduce partisan manipulation of district boundaries, creating more competitive districts that encourage candidates to appeal to a broader electorate. Ranked-choice voting diminishes the spoiler effect and incentivizes candidates to adopt more moderate positions to gain second- and third-choice votes. Together, these reforms can reduce polarization, increase electoral competitiveness, and promote legislative cooperation, thereby addressing the core structural incentives that foster gridlock. Several states, such as Maine and Alaska, have successfully implemented RCV and nonpartisan redistricting with positive results, demonstrating the feasibility of this approach.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.64,
+            "rationale": {
+              "generative": "The solution unlocks new electoral dynamics and could inspire further reforms in democratic processes.",
+              "explanatory": "It explains how structural incentives in electoral systems causally drive polarization and gridlock.",
+              "non_obvious": "While electoral reform is discussed, combining independent redistricting with ranked-choice voting as a systemic fix is not widely mainstream.",
+              "scalability": "If broadly adopted, it could transform legislative behavior across the entire U.S., affecting millions of voters and governance outcomes.",
+              "principle": "The insight about aligning incentives through electoral design can apply to other representative democracies facing similar issues."
+            }
+          },
+          "breakthrough_potential": 0.64,
+          "discard": false,
+          "final_score": 0.764,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution of independent redistricting commissions and ranked-choice voting is well-justified, specific, and plausible, with mechanisms explained and examples of successful implementation cited.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.64,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new electoral dynamics and could inspire further reforms in democratic processes.\",\n    \"explanatory\": \"It explains how structural incentives in electoral systems causally drive polarization and gridlock.\",\n    \"non_obvious\": \"While electoral reform is discussed, combining independent redistricting with ranked-choice voting as a systemic fix is not widely mainstream.\",\n    \"scalability\": \"If broadly adopted, it could transform legislative behavior across the entire U.S., affecting millions of voters and governance outcomes.\",\n    \"principle\": \"The insight about aligning incentives through electoral design can apply to other representative democracies facing similar issues.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the increasing polarization and gridlock in Congress, largely due to the winner-take-all electoral system for the House and Senate and the primary system that encourages more extreme candidates. This results in elected officials who often prioritize party loyalty and ideological purity over bipartisan cooperation, making it difficult to pass legislation and address pressing national issues effectively.\n\nA concrete solution is to implement ranked-choice voting (RCV) for congressional elections. RCV allows voters to rank candidates by preference, which encourages candidates to appeal to a broader electorate rather than just their partisan base. This system promotes the election of more moderate and consensus-driven representatives, reducing polarization. Additionally, RCV can decrease the likelihood of extremist candidates winning primaries since candidates must appeal beyond their party\u2019s core. Several U.S. cities and states have successfully adopted RCV, demonstrating its feasibility. Implementing RCV nationally would help Congress function more collaboratively, improve legislative productivity, and better reflect the diverse views of American voters.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.5,
+            "explanatory_depth": 0.4,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.48,
+            "rationale": {
+              "generative": "Ranked-choice voting opens new possibilities for electoral reform and could inspire further innovations in democratic processes.",
+              "explanatory": "The solution identifies the causal mechanism of polarization driven by winner-take-all and primary systems, explaining how RCV addresses these root causes.",
+              "non_obvious": "While electoral reform is a known topic, applying ranked-choice voting nationally to reduce polarization requires a moderate conceptual leap beyond typical partisan solutions.",
+              "scalability": "If implemented nationwide, this could affect millions of voters and fundamentally change legislative dynamics across the entire U.S. government.",
+              "principle": "The insight about voting system design influencing political behavior can be transferred to other democratic systems and organizational decision-making contexts."
+            }
+          },
+          "breakthrough_potential": 0.48,
+          "discard": false,
+          "final_score": 0.6679999999999999,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-explained mechanism likely to reduce polarization and improve legislative cooperation, making the solution plausible and actionable.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.5,\n  \"explanatory_depth\": 0.4,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.48,\n  \"rationale\": {\n    \"generative\": \"Ranked-choice voting opens new possibilities for electoral reform and could inspire further innovations in democratic processes.\",\n    \"explanatory\": \"The solution identifies the causal mechanism of polarization driven by winner-take-all and primary systems, explaining how RCV addresses these root causes.\",\n    \"non_obvious\": \"While electoral reform is a known topic, applying ranked-choice voting nationally to reduce polarization requires a moderate conceptual leap beyond typical partisan solutions.\",\n    \"scalability\": \"If implemented nationwide, this could affect millions of voters and fundamentally change legislative dynamics across the entire U.S. government.\",\n    \"principle\": \"The insight about voting system design influencing political behavior can be transferred to other democratic systems and organizational decision-making contexts.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the polarization and gridlock within Congress, largely driven by the winner-take-all electoral system and gerrymandering. This system incentivizes extreme partisanship, as candidates often only need to appeal to their party\u2019s base to win primaries, reducing incentives for compromise and encouraging legislative stalemates. Gerrymandering exacerbates this by drawing district lines that protect incumbents and skew representation, further entrenching polarization and limiting moderate voices.\n\nA concrete and feasible solution is to implement independent, non-partisan redistricting commissions at the state level to draw congressional districts based on objective criteria such as compactness, contiguity, and respect for communities of interest. Several states, like California and Arizona, have already adopted this approach with positive results, leading to more competitive districts and better representation. By reducing gerrymandering, this reform would encourage candidates to appeal to a broader electorate, incentivize bipartisan cooperation, and mitigate legislative gridlock without requiring constitutional amendments, making it a practical and justified step toward improving the functioning of Congress.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.5,
+            "rationale": {
+              "generative": "The solution opens possibilities for further electoral reforms and innovations in democratic representation.",
+              "explanatory": "It explains the causal link between electoral systems, gerrymandering, and political polarization.",
+              "non_obvious": "While redistricting reform is known, framing it as a key structural fix to polarization requires some conceptual insight.",
+              "scalability": "If widely adopted, it could significantly improve legislative functionality across the entire U.S. political system.",
+              "principle": "The insight about independent, criteria-based districting can be applied to other representative systems facing similar issues."
+            }
+          },
+          "breakthrough_potential": 0.5,
+          "discard": false,
+          "final_score": 0.6799999999999999,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The solution is concrete and plausible, with a clear mechanism (independent redistricting commissions) and justification based on existing state examples, making it likely to reduce polarization and gridlock.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.5,\n  \"rationale\": {\n    \"generative\": \"The solution opens possibilities for further electoral reforms and innovations in democratic representation.\",\n    \"explanatory\": \"It explains the causal link between electoral systems, gerrymandering, and political polarization.\",\n    \"non_obvious\": \"While redistricting reform is known, framing it as a key structural fix to polarization requires some conceptual insight.\",\n    \"scalability\": \"If widely adopted, it could significantly improve legislative functionality across the entire U.S. political system.\",\n    \"principle\": \"The insight about independent, criteria-based districting can be applied to other representative systems facing similar issues.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the increasing polarization and gridlock in Congress, often exacerbated by the Senate\u2019s filibuster rule. The filibuster allows a minority of senators to block legislation unless 60 votes are obtained, which can stymie action even on widely supported bills. This mechanism contributes to legislative paralysis, discourages compromise, and undermines public trust in government effectiveness.\n\nA concrete solution is to reform the filibuster by requiring senators who wish to maintain it to continuously hold the floor and debate, a \u201ctalking filibuster,\u201d rather than allowing silent obstruction. This change preserves the minority\u2019s ability to voice concerns but makes blocking legislation more costly in time and effort, incentivizing negotiation and cooperation. The talking filibuster maintains respect for minority rights while reducing gridlock, is procedurally feasible since Senate rules can be changed by majority vote, and aligns with democratic principles by encouraging transparency and active debate.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.3,
+            "explanatory_depth": 0.4,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.6,
+            "principle_over_implementation": 0.3,
+            "breakthrough_potential": 0.42,
+            "rationale": {
+              "generative": "The solution unlocks some new possibilities for legislative reform but is largely a modification of an existing mechanism.",
+              "explanatory": "It explains how the filibuster causes gridlock by enabling silent obstruction, addressing a causal mechanism rather than just symptoms.",
+              "non_obvious": "Requiring continuous debate to maintain a filibuster is a moderately novel twist that challenges the status quo of silent obstruction.",
+              "scalability": "If widely adopted, it could significantly reduce legislative gridlock affecting the entire U.S. government and its citizens.",
+              "principle": "The insight about increasing the cost of obstruction to encourage cooperation could apply in other deliberative bodies but is somewhat context-specific."
+            }
+          },
+          "breakthrough_potential": 0.42,
+          "discard": false,
+          "final_score": 0.632,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed talking filibuster is a concrete mechanism that addresses the problem of legislative gridlock by increasing the cost of obstruction, making it a plausible and potentially effective reform.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.3,\n  \"explanatory_depth\": 0.4,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.6,\n  \"principle_over_implementation\": 0.3,\n  \"breakthrough_potential\": 0.42,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks some new possibilities for legislative reform but is largely a modification of an existing mechanism.\",\n    \"explanatory\": \"It explains how the filibuster causes gridlock by enabling silent obstruction, addressing a causal mechanism rather than just symptoms.\",\n    \"non_obvious\": \"Requiring continuous debate to maintain a filibuster is a moderately novel twist that challenges the status quo of silent obstruction.\",\n    \"scalability\": \"If widely adopted, it could significantly reduce legislative gridlock affecting the entire U.S. government and its citizens.\",\n    \"principle\": \"The insight about increasing the cost of obstruction to encourage cooperation could apply in other deliberative bodies but is somewhat context-specific.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the increasing polarization and gridlock within Congress, largely driven by the use of the Senate filibuster. The filibuster allows a minority of senators to block legislation by requiring a 60-vote supermajority for most bills, rather than a simple majority. This has led to legislative stagnation, making it difficult to pass crucial laws even when there is majority support, undermining the government's responsiveness and efficiency.\n\nA concrete and feasible solution is to reform the filibuster by returning it to its original \"talking filibuster\" form, which requires senators to physically hold the floor and speak continuously to delay legislation. This change would preserve minority rights to debate and delay, while preventing the ease of silent obstruction that currently contributes to gridlock. It is specific because it targets the filibuster mechanism directly, and feasible because it does not require abolishing the filibuster entirely, which is contentious, but rather reinstates a more demanding procedural rule that encourages negotiation and accountability. Historical precedent and recent proposals by Senate members support the viability of this reform.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.4,
+            "explanatory_depth": 0.5,
+            "non_obviousness": 0.3,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.4,
+            "breakthrough_potential": 0.46,
+            "rationale": {
+              "generative": "Reforming the filibuster could inspire further procedural innovations in legislative processes but is somewhat limited to this context.",
+              "explanatory": "The solution identifies the filibuster as a root cause of gridlock, explaining how procedural rules affect legislative outcomes.",
+              "non_obvious": "Reinstating the talking filibuster is a nuanced approach that requires understanding historical context and procedural mechanics, which is not immediately obvious.",
+              "scalability": "If implemented, it could significantly improve legislative efficiency affecting the entire U.S. population and government functionality.",
+              "principle": "The insight about balancing minority rights with majority rule has potential relevance in other deliberative bodies but is primarily context-specific."
+            }
+          },
+          "breakthrough_potential": 0.46,
+          "discard": false,
+          "final_score": 0.656,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible, and justified solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed reform to the filibuster is specific and plausible, with a clear mechanism to reduce gridlock while preserving minority rights, making it a likely effective solution if implemented.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.4,\n  \"explanatory_depth\": 0.5,\n  \"non_obviousness\": 0.3,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.4,\n  \"breakthrough_potential\": 0.46,\n  \"rationale\": {\n    \"generative\": \"Reforming the filibuster could inspire further procedural innovations in legislative processes but is somewhat limited to this context.\",\n    \"explanatory\": \"The solution identifies the filibuster as a root cause of gridlock, explaining how procedural rules affect legislative outcomes.\",\n    \"non_obvious\": \"Reinstating the talking filibuster is a nuanced approach that requires understanding historical context and procedural mechanics, which is not immediately obvious.\",\n    \"scalability\": \"If implemented, it could significantly improve legislative efficiency affecting the entire U.S. population and government functionality.\",\n    \"principle\": \"The insight about balancing minority rights with majority rule has potential relevance in other deliberative bodies but is primarily context-specific.\"\n  }\n}\n```"
+        }
+      }
+    ],
+    "top_k": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the increasing polarization and gridlock in Congress, largely driven by the winner-take-all, single-member district electoral system. This system incentivizes candidates to appeal primarily to their party\u2019s base, resulting in the election of more ideologically extreme representatives and reduced incentives for bipartisan cooperation. Consequently, legislative stalemates often occur, hampering effective governance and diminishing public trust in democratic institutions.\n\nA concrete solution is to implement ranked-choice voting (RCV) for congressional elections. RCV allows voters to rank candidates by preference, which encourages candidates to appeal to a broader electorate rather than just the partisan base, as winning requires broader support. This system can reduce polarization by promoting more moderate and consensus-driven candidates and increasing electoral competitiveness. Several jurisdictions in the U.S., including Maine, have successfully adopted RCV, demonstrating its feasibility. By fostering more representative and cooperative legislatures, RCV could alleviate gridlock and improve the functionality of the American government.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.64,
+            "rationale": {
+              "generative": "Ranked-choice voting opens new possibilities for electoral reform and can inspire further innovations in democratic processes.",
+              "explanatory": "The solution explains how the electoral system's incentives cause polarization and gridlock, addressing root mechanisms rather than symptoms.",
+              "non_obvious": "While electoral reform is discussed, adopting ranked-choice voting as a direct solution requires a conceptual shift from traditional plurality systems.",
+              "scalability": "If widely implemented, ranked-choice voting could impact millions of voters and transform legislative dynamics across the entire country.",
+              "principle": "The insight about electoral incentives shaping political behavior can apply to various democratic systems beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.64,
+          "discard": false,
+          "final_score": 0.764,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-explained, plausible mechanism to reduce polarization and gridlock, supported by real-world examples, making it a highly useful solution.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.64,\n  \"rationale\": {\n    \"generative\": \"Ranked-choice voting opens new possibilities for electoral reform and can inspire further innovations in democratic processes.\",\n    \"explanatory\": \"The solution explains how the electoral system's incentives cause polarization and gridlock, addressing root mechanisms rather than symptoms.\",\n    \"non_obvious\": \"While electoral reform is discussed, adopting ranked-choice voting as a direct solution requires a conceptual shift from traditional plurality systems.\",\n    \"scalability\": \"If widely implemented, ranked-choice voting could impact millions of voters and transform legislative dynamics across the entire country.\",\n    \"principle\": \"The insight about electoral incentives shaping political behavior can apply to various democratic systems beyond the U.S.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the American government is the polarization and gridlock in Congress, largely fueled by the winner-take-all, single-member district electoral system. This system incentivizes politicians to cater primarily to their party\u2019s base rather than the broader electorate, reinforcing partisan divides and stymying compromise. As a result, legislative productivity declines, and public trust diminishes, undermining effective governance.\n\nA concrete, feasible solution is to implement ranked-choice voting (RCV) for all congressional elections. RCV allows voters to rank candidates by preference, ensuring that winners have broader support and reducing the incentive for extreme partisanship. This system encourages candidates to appeal to a wider constituency, fostering more moderate and cooperative lawmakers. Several states and cities have successfully adopted RCV, demonstrating its viability. By promoting more representative outcomes and encouraging cross-party collaboration, RCV could mitigate polarization and help restore functional governance in Congress.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.64,
+            "rationale": {
+              "generative": "Implementing ranked-choice voting opens pathways for new electoral reforms and more nuanced democratic innovations.",
+              "explanatory": "The solution identifies the causal mechanism of winner-take-all incentives driving polarization and explains how RCV changes candidate behavior.",
+              "non_obvious": "While electoral reform is a known topic, applying ranked-choice voting broadly to reduce polarization requires a conceptual leap beyond typical partisan fixes.",
+              "scalability": "If adopted nationwide, this reform could deeply affect the entire U.S. political system and potentially inspire similar changes globally.",
+              "principle": "The insight about how electoral systems shape political incentives can be transferred to other governance contexts beyond the U.S."
+            }
+          },
+          "breakthrough_potential": 0.64,
+          "discard": false,
+          "final_score": 0.764,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"Ranked-choice voting is a well-defined, plausible reform with a clear mechanism to reduce polarization by encouraging broader appeal, making the solution highly useful and likely to improve governance.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.64,\n  \"rationale\": {\n    \"generative\": \"Implementing ranked-choice voting opens pathways for new electoral reforms and more nuanced democratic innovations.\",\n    \"explanatory\": \"The solution identifies the causal mechanism of winner-take-all incentives driving polarization and explains how RCV changes candidate behavior.\",\n    \"non_obvious\": \"While electoral reform is a known topic, applying ranked-choice voting broadly to reduce polarization requires a conceptual leap beyond typical partisan fixes.\",\n    \"scalability\": \"If adopted nationwide, this reform could deeply affect the entire U.S. political system and potentially inspire similar changes globally.\",\n    \"principle\": \"The insight about how electoral systems shape political incentives can be transferred to other governance contexts beyond the U.S.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the polarization and gridlock within the legislative branch, largely driven by the winner-take-all electoral system and partisan gerrymandering. This structure incentivizes extreme partisanship because primary elections often favor more ideologically extreme candidates, and district boundaries are drawn to create \u201csafe\u201d seats, reducing incentives for compromise. Consequently, Congress frequently struggles to pass legislation, undermining effective governance and public trust.\n\nA concrete and feasible solution is to implement independent, nonpartisan commissions for redistricting in all states, coupled with the adoption of ranked-choice voting (RCV) for congressional elections. Independent commissions reduce partisan manipulation of district boundaries, creating more competitive districts that encourage candidates to appeal to a broader electorate. Ranked-choice voting diminishes the spoiler effect and incentivizes candidates to adopt more moderate positions to gain second- and third-choice votes. Together, these reforms can reduce polarization, increase electoral competitiveness, and promote legislative cooperation, thereby addressing the core structural incentives that foster gridlock. Several states, such as Maine and Alaska, have successfully implemented RCV and nonpartisan redistricting with positive results, demonstrating the feasibility of this approach.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.5,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.64,
+            "rationale": {
+              "generative": "The solution unlocks new electoral dynamics and could inspire further reforms in democratic processes.",
+              "explanatory": "It explains how structural incentives in electoral systems causally drive polarization and gridlock.",
+              "non_obvious": "While electoral reform is discussed, combining independent redistricting with ranked-choice voting as a systemic fix is not widely mainstream.",
+              "scalability": "If broadly adopted, it could transform legislative behavior across the entire U.S., affecting millions of voters and governance outcomes.",
+              "principle": "The insight about aligning incentives through electoral design can apply to other representative democracies facing similar issues."
+            }
+          },
+          "breakthrough_potential": 0.64,
+          "discard": false,
+          "final_score": 0.764,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed solution of independent redistricting commissions and ranked-choice voting is well-justified, specific, and plausible, with mechanisms explained and examples of successful implementation cited.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.64,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new electoral dynamics and could inspire further reforms in democratic processes.\",\n    \"explanatory\": \"It explains how structural incentives in electoral systems causally drive polarization and gridlock.\",\n    \"non_obvious\": \"While electoral reform is discussed, combining independent redistricting with ranked-choice voting as a systemic fix is not widely mainstream.\",\n    \"scalability\": \"If broadly adopted, it could transform legislative behavior across the entire U.S., affecting millions of voters and governance outcomes.\",\n    \"principle\": \"The insight about aligning incentives through electoral design can apply to other representative democracies facing similar issues.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the increasing polarization and gridlock in Congress, largely driven by the winner-take-all electoral system and extreme partisanship. This system discourages moderate candidates and incentivizes politicians to cater to the more polarized ends of their party bases, exacerbating division and making bipartisan cooperation difficult. Consequently, legislation often stalls, undermining effective governance and public trust.\n\nA concrete and feasible solution is to implement ranked-choice voting (RCV) for congressional elections nationwide. RCV allows voters to rank candidates by preference, ensuring that winners have majority support without relying on a simple plurality. This system encourages candidates to appeal to a broader electorate, incentivizes moderation, and reduces negative campaigning. By fostering more centrist, consensus-driven representatives, RCV can help mitigate polarization, enhance legislative collaboration, and improve the functionality of Congress without requiring constitutional amendments, making it an achievable reform at the state level or through federal legislation.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.6,
+            "explanatory_depth": 0.5,
+            "non_obviousness": 0.4,
+            "scalability_of_impact": 0.7,
+            "principle_over_implementation": 0.6,
+            "breakthrough_potential": 0.56,
+            "rationale": {
+              "generative": "Ranked-choice voting opens pathways for new electoral reforms and more nuanced democratic processes beyond simple plurality systems.",
+              "explanatory": "The solution identifies the causal link between winner-take-all elections, polarization, and legislative gridlock, explaining how voting mechanics influence political behavior.",
+              "non_obvious": "While electoral reform is a known topic, applying ranked-choice voting nationwide as a direct remedy to polarization requires a moderate conceptual leap beyond typical partisan solutions.",
+              "scalability": "If adopted broadly, this reform could affect all congressional elections, impacting millions of voters and potentially transforming legislative dynamics at a national scale.",
+              "principle": "The insight that voting system design shapes political incentives and polarization can be applied to other democratic institutions and electoral contexts globally."
+            }
+          },
+          "breakthrough_potential": 0.56,
+          "discard": false,
+          "final_score": 0.716,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-explained, plausible reform with clear mechanisms to reduce polarization and improve governance, making it a highly useful solution.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.5,\n  \"non_obviousness\": 0.4,\n  \"scalability_of_impact\": 0.7,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.56,\n  \"rationale\": {\n    \"generative\": \"Ranked-choice voting opens pathways for new electoral reforms and more nuanced democratic processes beyond simple plurality systems.\",\n    \"explanatory\": \"The solution identifies the causal link between winner-take-all elections, polarization, and legislative gridlock, explaining how voting mechanics influence political behavior.\",\n    \"non_obvious\": \"While electoral reform is a known topic, applying ranked-choice voting nationwide as a direct remedy to polarization requires a moderate conceptual leap beyond typical partisan solutions.\",\n    \"scalability\": \"If adopted broadly, this reform could affect all congressional elections, impacting millions of voters and potentially transforming legislative dynamics at a national scale.\",\n    \"principle\": \"The insight that voting system design shapes political incentives and polarization can be applied to other democratic institutions and electoral contexts globally.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One significant structural problem in the American government is the extreme polarization and gridlock in Congress, partly driven by the winner-take-all electoral system and partisan gerrymandering. This system often results in safe seats for one party, reducing incentives for compromise and leading to legislative stagnation, where important policies are delayed or blocked due to partisan conflicts rather than substantive debate.\n\nA concrete solution to this problem is the adoption of independent redistricting commissions in every state combined with ranked-choice voting for congressional elections. Independent commissions, rather than state legislatures, would draw district boundaries transparently and based on neutral criteria, reducing gerrymandering and creating more competitive districts. Ranked-choice voting allows voters to rank candidates by preference, promoting candidates with broader appeal and reducing extreme partisanship. Together, these reforms would encourage elected officials to be more responsive to a wider range of constituents, fostering cooperation and reducing legislative deadlock. Several states have already implemented these changes with positive effects, making this solution both feasible and justified.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.5,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.4,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.5,
+            "breakthrough_potential": 0.56,
+            "rationale": {
+              "generative": "The solution enables derivative innovations in electoral reform and governance by combining two complementary mechanisms.",
+              "explanatory": "It explains the causal link between electoral systems, districting, and legislative gridlock, addressing root causes rather than symptoms.",
+              "non_obvious": "While electoral reform is discussed, combining independent commissions with ranked-choice voting is not a widely intuitive or mainstream approach.",
+              "scalability": "If fully implemented nationwide, it could deeply affect the entire U.S. political system and potentially inspire reforms in other democracies.",
+              "principle": "The insight about reducing structural incentives for polarization through system design can be applied to other political and organizational contexts."
+            }
+          },
+          "breakthrough_potential": 0.56,
+          "discard": false,
+          "final_score": 0.716,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible, and well-justified solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed solution of independent redistricting commissions combined with ranked-choice voting is specific, plausible, and addresses the root causes of polarization and gridlock, making it highly likely to improve legislative cooperation.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.5,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.4,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.5,\n  \"breakthrough_potential\": 0.56,\n  \"rationale\": {\n    \"generative\": \"The solution enables derivative innovations in electoral reform and governance by combining two complementary mechanisms.\",\n    \"explanatory\": \"It explains the causal link between electoral systems, districting, and legislative gridlock, addressing root causes rather than symptoms.\",\n    \"non_obvious\": \"While electoral reform is discussed, combining independent commissions with ranked-choice voting is not a widely intuitive or mainstream approach.\",\n    \"scalability\": \"If fully implemented nationwide, it could deeply affect the entire U.S. political system and potentially inspire reforms in other democracies.\",\n    \"principle\": \"The insight about reducing structural incentives for polarization through system design can be applied to other political and organizational contexts.\"\n  }\n}\n```"
+        }
+      }
+    ],
+    "final_output": "A significant structural problem in the American government is the increasing polarization and gridlock in Congress, largely driven by the winner-take-all, single-member district electoral system. This system incentivizes candidates to appeal primarily to their party\u2019s base, resulting in the election of more ideologically extreme representatives and reduced incentives for bipartisan cooperation. Consequently, legislative stalemates often occur, hampering effective governance and diminishing public trust in democratic institutions.\n\nA concrete solution is to implement ranked-choice voting (RCV) for congressional elections. RCV allows voters to rank candidates by preference, which encourages candidates to appeal to a broader electorate rather than just the partisan base, as winning requires broader support. This system can reduce polarization by promoting more moderate and consensus-driven candidates and increasing electoral competitiveness. Several jurisdictions in the U.S., including Maine, have successfully adopted RCV, demonstrating its feasibility. By fostering more representative and cooperative legislatures, RCV could alleviate gridlock and improve the functionality of the American government.",
+    "selected": {
+      "mode": "single_pass",
+      "reformulation": "",
+      "scores": {
+        "constraint_satisfaction": 1.0,
+        "usefulness": 0.9,
+        "constraint_overall": 0.95,
+        "breakthrough_scores": {
+          "generative_power": 0.6,
+          "explanatory_depth": 0.7,
+          "non_obviousness": 0.5,
+          "scalability_of_impact": 0.8,
+          "principle_over_implementation": 0.6,
+          "breakthrough_potential": 0.64,
+          "rationale": {
+            "generative": "Ranked-choice voting opens new possibilities for electoral reform and can inspire further innovations in democratic processes.",
+            "explanatory": "The solution explains how the electoral system's incentives cause polarization and gridlock, addressing root mechanisms rather than symptoms.",
+            "non_obvious": "While electoral reform is discussed, adopting ranked-choice voting as a direct solution requires a conceptual shift from traditional plurality systems.",
+            "scalability": "If widely implemented, ranked-choice voting could impact millions of voters and transform legislative dynamics across the entire country.",
+            "principle": "The insight about electoral incentives shaping political behavior can apply to various democratic systems beyond the U.S."
+          }
+        },
+        "breakthrough_potential": 0.64,
+        "discard": false,
+        "final_score": 0.764,
+        "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a significant structural problem and proposes a specific, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed ranked-choice voting system is a well-explained, plausible mechanism to reduce polarization and gridlock, supported by real-world examples, making it a highly useful solution.\"\n  }\n}",
+        "raw_breakthrough_judge": "{\n  \"generative_power\": 0.6,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.5,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.6,\n  \"breakthrough_potential\": 0.64,\n  \"rationale\": {\n    \"generative\": \"Ranked-choice voting opens new possibilities for electoral reform and can inspire further innovations in democratic processes.\",\n    \"explanatory\": \"The solution explains how the electoral system's incentives cause polarization and gridlock, addressing root mechanisms rather than symptoms.\",\n    \"non_obvious\": \"While electoral reform is discussed, adopting ranked-choice voting as a direct solution requires a conceptual shift from traditional plurality systems.\",\n    \"scalability\": \"If widely implemented, ranked-choice voting could impact millions of voters and transform legislative dynamics across the entire country.\",\n    \"principle\": \"The insight about electoral incentives shaping political behavior can apply to various democratic systems beyond the U.S.\"\n  }\n}"
+      }
+    }
+  },
+  "elapsed_seconds": 193.58513402938843
+}

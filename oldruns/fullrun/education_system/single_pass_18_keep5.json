@@ -1,0 +1,780 @@
+{
+  "timestamp": "2026-02-01T16:50:14",
+  "prompt_id": "education_system",
+  "prompt": "Analyze the education system. Identify one structural problem that meaningfully harms learning or equity and propose a concrete, feasible solution. Explain the mechanism and why it would work. (Maximum two paragraphs.)",
+  "condition": "single_pass_18_keep5",
+  "config": {
+    "model": {
+      "name": "gpt-4.1-mini",
+      "max_tokens": 350
+    },
+    "conditions": [
+      "single_pass_18_keep5",
+      "divergent_convergent_18_keep5",
+      "evolutionary_examples"
+    ],
+    "budget": {
+      "max_candidates_per_prompt": 18,
+      "keep_top_k": 5
+    },
+    "sampling": {
+      "single_pass": {
+        "temperature": 0.9,
+        "top_p": 1.0
+      },
+      "reframing": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "num_reformulations": 3
+      },
+      "combinational": {
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "transformational": {
+        "temperature": 1.1,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "judge": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "selection": {
+      "discard_if_constraint_below": 0.4,
+      "constraint_weight": 0.2,
+      "usefulness_weight": 0.2,
+      "breakthrough_weight": 0.6
+    }
+  },
+  "result": {
+    "reformulations": [],
+    "candidates": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in many education systems is the rigid age-based cohort grouping, which forces students of the same chronological age into uniform grade levels regardless of their diverse developmental trajectories, learning speeds, or interests. This one-size-fits-all age grouping often results in disengagement for those who are either ahead or behind the average pace, deepening inequities as students who fall behind receive less tailored support while faster learners are insufficiently challenged. Moreover, this system reinforces a narrow temporal framework for achievement, pressuring students to conform to preset milestones rather than fostering mastery or exploration.\n\nA substantially different solution involves restructuring schooling around competency-based micro-communities rather than age cohorts. Students would join flexible, dynamic learning groups formed around demonstrated skill mastery and shared interests, rotating periodically to expose them to diverse peer interactions and mentorship opportunities. This model shifts focus from age and seat time to personalized learning pathways, fostering equity by allowing all students to progress at their own pace and receive targeted help from peers and educators attuned to their current level. By emphasizing a network of collaborative learning pods, the system naturally supports differentiated instruction and social-emotional growth, creating a more inclusive, adaptive education environment where equity emerges from structural flexibility rather than standardized timing.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "Restructuring education around competency-based micro-communities opens numerous pathways for personalized learning models and peer mentorship innovations.",
+              "explanatory": "It explains how rigid age-based grouping causally limits engagement and equity by enforcing uniform pacing and milestones.",
+              "non_obvious": "Moving away from age cohorts to dynamic skill-based groups requires breaking the deeply ingrained assumption of age as the primary organizing principle.",
+              "scalability": "If widely adopted, this model could transform education systems globally, affecting millions of students with deeper, more equitable learning experiences.",
+              "principle": "The insight of organizing learning by competency and social dynamics rather than age is transferable to other domains requiring personalized progression and collaboration."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed competency-based micro-communities are a plausible and specific mechanism to address inequities caused by age-based grouping, with a clear explanation of how personalized pacing and peer support would improve learning and equity.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"Restructuring education around competency-based micro-communities opens numerous pathways for personalized learning models and peer mentorship innovations.\",\n    \"explanatory\": \"It explains how rigid age-based grouping causally limits engagement and equity by enforcing uniform pacing and milestones.\",\n    \"non_obvious\": \"Moving away from age cohorts to dynamic skill-based groups requires breaking the deeply ingrained assumption of age as the primary organizing principle.\",\n    \"scalability\": \"If widely adopted, this model could transform education systems globally, affecting millions of students with deeper, more equitable learning experiences.\",\n    \"principle\": \"The insight of organizing learning by competency and social dynamics rather than age is transferable to other domains requiring personalized progression and collaboration.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A fundamental structural problem in many education systems is the rigid, age-based grade progression model, which enforces uniform pacing regardless of individual learning variations. This structure often neglects the diverse cognitive and developmental timelines among students, causing some to be held back or pushed forward prematurely, thereby harming both learning outcomes and equity. Students who learn slower may feel stigmatized and disengage, while those who grasp material faster become bored, reducing motivation and widening achievement gaps.\n\nA substantially different solution is to implement a competency-based, cross-age collaborative learning environment where students advance based on mastery rather than age, while also participating in mixed-age peer groups that promote mentorship and social-emotional development. In this model, assessments focus on demonstrated skills and knowledge, allowing personalized pacing. The mechanism relies on peer-supported learning, where older or more advanced students reinforce their knowledge by mentoring younger peers, fostering a community of shared responsibility and mutual growth. This restructuring leverages natural social dynamics to enhance engagement, reduce stigma, and narrow equity gaps by aligning instruction with each learner\u2019s readiness rather than arbitrary age cutoffs.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.6,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "Shifting from age-based progression to competency-based advancement opens many new educational models and derivative innovations.",
+              "explanatory": "It explains how individual pacing and peer mentorship address underlying causes of disengagement and inequity rather than just symptoms.",
+              "non_obvious": "It challenges the deeply ingrained assumption that age should dictate learning progression, requiring a conceptual leap.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of learners deeply and broadly.",
+              "principle": "The insight about mastery-based progression and peer-supported learning applies beyond education to other developmental and organizational contexts."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem (age-based grade progression), proposes a concrete and feasible solution (competency-based, cross-age collaborative learning), and explains the mechanism and rationale within two paragraphs as required.\",\n    \"usefulness\": \"The solution is plausible and specific, leveraging mastery-based progression and peer mentoring to address learning and equity issues. While implementation challenges exist, the mechanism is well-explained and likely to improve engagement and equity.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.6,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"Shifting from age-based progression to competency-based advancement opens many new educational models and derivative innovations.\",\n    \"explanatory\": \"It explains how individual pacing and peer mentorship address underlying causes of disengagement and inequity rather than just symptoms.\",\n    \"non_obvious\": \"It challenges the deeply ingrained assumption that age should dictate learning progression, requiring a conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of learners deeply and broadly.\",\n    \"principle\": \"The insight about mastery-based progression and peer-supported learning applies beyond education to other developmental and organizational contexts.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A structural problem in the education system is the rigid separation of subjects into isolated classes, which fragments students\u2019 understanding and limits meaningful interdisciplinary learning. This compartmentalization often prioritizes standardized content delivery over deeper, connected comprehension, disadvantaging students who struggle to see relevance or apply knowledge across domains, thus perpetuating inequities in engagement and achievement. The artificial barriers between disciplines can also disproportionately affect students from under-resourced schools where supplemental enrichment is scarce, reinforcing gaps in critical thinking and creativity.\n\nA substantially different solution is to reorganize the school day into \u201ctheme-based learning blocks\u201d where multiple subjects are integrated around real-world problems or community projects over extended periods (e.g., weeks). Instead of discrete math, science, or language arts classes, students engage in collaborative modules that require applying skills from several disciplines simultaneously, such as using statistical analysis (math), scientific concepts, and persuasive writing (language arts) to address a local environmental challenge. This approach leverages natural curiosity and relevance to build deeper cognitive links and equitable engagement by valuing diverse modes of learning and expression. It works because it mirrors how knowledge is used outside school, promotes critical interdisciplinary skills, and reduces the cognitive load of switching contexts, which helps all students, especially those marginalized by traditional segmented curricula.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.6,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "Integrating subjects into theme-based blocks opens many new educational models and derivative interdisciplinary innovations.",
+              "explanatory": "It explains how compartmentalization fragments learning and how integration builds deeper cognitive links and equity.",
+              "non_obvious": "Reorganizing the school day around interdisciplinary themes challenges entrenched assumptions about subject separation.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students deeply.",
+              "principle": "The insight about integrated, context-driven learning applies broadly beyond education to other knowledge domains."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.836,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem, proposes a concrete and feasible solution, explains the mechanism, and stays within two paragraphs as required.\",\n    \"usefulness\": \"The solution is specific, plausible, and well-justified, with a clear mechanism linking interdisciplinary learning to improved engagement and equity, making it likely to succeed if implemented.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.6,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"Integrating subjects into theme-based blocks opens many new educational models and derivative interdisciplinary innovations.\",\n    \"explanatory\": \"It explains how compartmentalization fragments learning and how integration builds deeper cognitive links and equity.\",\n    \"non_obvious\": \"Reorganizing the school day around interdisciplinary themes challenges entrenched assumptions about subject separation.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students deeply.\",\n    \"principle\": \"The insight about integrated, context-driven learning applies broadly beyond education to other knowledge domains.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant yet under-addressed structural problem in education is the rigidity of time-based progression, where students advance by age cohort rather than mastery. This \u201cseat-time\u201d model often forces students who learn at different paces into uniform schedules, causing either boredom or frustration, undermining both engagement and equity. Students from disadvantaged backgrounds\u2014who may need more time to grasp foundational concepts due to external factors\u2014are disproportionately harmed by this inflexibility, which can lead to disengagement, widening achievement gaps, and inequitable outcomes.\n\nA feasible, innovative solution is to restructure the school calendar into self-paced, mastery-based modules within smaller, rotating cohorts rather than fixed grade levels. Each module would be a short, intensive period focused on specific competencies, where students enter and exit groups based on demonstrated mastery rather than age. This modular approach allows learners to move fluidly through content, fostering personalized pacing and peer interactions with students at similar levels, reducing stigma. The mechanism works by aligning progression strictly to demonstrated learning, leveraging natural peer mentoring and targeted interventions. This system transforms time from a rigid input into a flexible resource, making learning more equitable by adapting to diverse needs while preserving social cohesion through stable cohort groupings.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.6,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution unlocks numerous derivative innovations by shifting from time-based to mastery-based progression, enabling personalized learning pathways.",
+              "explanatory": "It explains the causal mechanism of how rigid time constraints harm equity and engagement by mismatching pacing to student needs.",
+              "non_obvious": "The approach requires breaking the entrenched assumption that age-based cohorts are necessary, which is a significant conceptual leap.",
+              "scalability": "If widely adopted, it could impact entire education systems globally, affecting millions of students and improving equity deeply.",
+              "principle": "The insight about decoupling progression from fixed time frames is transferable to other domains where rigid schedules limit personalized growth."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem harming equity and learning, proposes a concrete and feasible solution, explains the mechanism, and adheres to the two-paragraph limit.\",\n    \"usefulness\": \"The proposed mastery-based modular system is specific, plausible, and includes mechanisms for personalized pacing and peer interaction, making it likely to improve equity and engagement, though implementation challenges are not deeply addressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.6,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous derivative innovations by shifting from time-based to mastery-based progression, enabling personalized learning pathways.\",\n    \"explanatory\": \"It explains the causal mechanism of how rigid time constraints harm equity and engagement by mismatching pacing to student needs.\",\n    \"non_obvious\": \"The approach requires breaking the entrenched assumption that age-based cohorts are necessary, which is a significant conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could impact entire education systems globally, affecting millions of students and improving equity deeply.\",\n    \"principle\": \"The insight about decoupling progression from fixed time frames is transferable to other domains where rigid schedules limit personalized growth.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in education systems worldwide is the rigid age-based grade-level grouping, which enforces uniform progression irrespective of individual learning pace or style. This approach often harms both learning and equity by marginalizing students who either advance faster or struggle to keep up, leading to disengagement, stigmatization, or unaddressed learning gaps. It entrenches a one-size-fits-all model that fails to recognize diverse cognitive development trajectories and disproportionately affects students from disadvantaged backgrounds who may lack additional support outside school.\n\nA substantially different and feasible solution is to implement dynamic, competency-based cohorting within schools, where students group and regroup fluidly based on mastery of specific skills rather than age or grade. For example, schools could use modular learning blocks with real-time assessments, enabling students to join small cohorts tailored to their proficiency in math, literacy, or science at any given time. This would foster customized peer interactions, encourage collaboration at appropriate challenge levels, and allow educators to target instruction more precisely. By dismantling fixed grade boundaries, this system promotes equity through personalized pacing and reduces stigma by normalizing varied learning paths, ultimately enhancing engagement and mastery for all learners.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "The solution unlocks numerous new possibilities for personalized learning structures and derivative innovations in education delivery.",
+              "explanatory": "It explains the causal mechanism of how rigid age-based grouping harms learning and equity by ignoring individual cognitive development trajectories.",
+              "non_obvious": "It challenges the entrenched assumption of fixed grade levels and proposes fluid, competency-based cohorting, which is a significant conceptual leap.",
+              "scalability": "If widely adopted, it could impact millions of students globally by transforming fundamental educational structures and improving equity.",
+              "principle": "The insight about competency-based grouping over age-based grouping can be transferred to other domains requiring personalized progression and grouping."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.848,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed dynamic, competency-based cohorting system is specific, plausible, and includes mechanisms for real-time assessment and flexible grouping, making it likely to improve equity and learning outcomes.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new possibilities for personalized learning structures and derivative innovations in education delivery.\",\n    \"explanatory\": \"It explains the causal mechanism of how rigid age-based grouping harms learning and equity by ignoring individual cognitive development trajectories.\",\n    \"non_obvious\": \"It challenges the entrenched assumption of fixed grade levels and proposes fluid, competency-based cohorting, which is a significant conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could impact millions of students globally by transforming fundamental educational structures and improving equity.\",\n    \"principle\": \"The insight about competency-based grouping over age-based grouping can be transferred to other domains requiring personalized progression and grouping.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A structural problem deeply undermining both learning and equity in education is the pervasive reliance on standardized testing as a primary measure of student achievement and school performance. This system often narrows curricula, promotes \u201cteaching to the test,\u201d and disproportionately disadvantages students from marginalized or non-traditional backgrounds who may not test well under timed, high-pressure conditions. Standardized tests also fail to capture diverse intelligences, creativity, and critical thinking, which are crucial for meaningful learning and long-term success.\n\nA substantially different solution is to shift accountability from uniform test scores to a dynamic portfolio-based assessment system combined with community-embedded mentorship networks. Instead of one-off exams, students would curate diverse work samples\u2014projects, reflections, collaborative assignments, and artistic expressions\u2014evaluated periodically by panels including teachers, peers, and trained community members from varied cultural and professional backgrounds. This approach leverages the principle of authentic assessment, making learning visible in real-world contexts and centering diverse strengths. By involving community mentors, it fosters personalized growth and social capital, especially for underserved students, while reducing high-stakes pressure. This system enhances equity by validating multiple forms of knowledge and creating a supportive ecosystem where learning is continuous, contextualized, and responsive to individual and cultural identities.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.75,
+            "rationale": {
+              "generative": "Shifting to portfolio-based assessment unlocks numerous derivative innovations in personalized and community-integrated education models.",
+              "explanatory": "The solution explains how standardized testing harms learning by narrowing curricula and failing to capture diverse intelligences, proposing mechanisms that address these root causes.",
+              "non_obvious": "Replacing uniform testing with community-embedded mentorship and authentic assessment requires breaking entrenched assumptions about evaluation and accountability.",
+              "scalability": "If widely adopted, this approach could transform education systems globally, affecting millions of students and educators deeply and sustainably.",
+              "principle": "The insight about valuing diverse, authentic assessments and community involvement applies broadly beyond education to other evaluative and developmental systems."
+            }
+          },
+          "breakthrough_potential": 0.75,
+          "discard": false,
+          "final_score": 0.81,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem (standardized testing) and proposes a concrete, feasible solution (portfolio-based assessment with community mentorship), all within two paragraphs as required.\",\n    \"usefulness\": \"The proposed solution includes specific mechanisms (diverse work samples, evaluation panels, community mentors) that plausibly address equity and learning issues, making it a well-justified and actionable approach, though implementation challenges are not deeply discussed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.75,\n  \"rationale\": {\n    \"generative\": \"Shifting to portfolio-based assessment unlocks numerous derivative innovations in personalized and community-integrated education models.\",\n    \"explanatory\": \"The solution explains how standardized testing harms learning by narrowing curricula and failing to capture diverse intelligences, proposing mechanisms that address these root causes.\",\n    \"non_obvious\": \"Replacing uniform testing with community-embedded mentorship and authentic assessment requires breaking entrenched assumptions about evaluation and accountability.\",\n    \"scalability\": \"If widely adopted, this approach could transform education systems globally, affecting millions of students and educators deeply and sustainably.\",\n    \"principle\": \"The insight about valuing diverse, authentic assessments and community involvement applies broadly beyond education to other evaluative and developmental systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A critical structural problem in many education systems is the rigid age-based cohort grouping, which forces all students of the same age into the same grade regardless of their differing developmental stages, interests, or learning paces. This often leads to disengagement for both advanced and struggling students, exacerbates inequities as those needing more time or support fall behind, and narrows curriculum flexibility, stifling personalized learning paths. The one-size-fits-all age grouping neglects the reality that intellectual and social maturity do not align neatly with chronological age, limiting the system\u2019s ability to foster equitable, deep learning.\n\nA feasible and transformative solution is to implement competency-based, multi-age learning communities where progression is determined by mastery rather than age or seat time. Schools would be restructured into fluid clusters of learners ranging across several ages, organized around shared interests or skill levels, with curricula customized to individual goals. Teachers would act as facilitators and mentors, focusing on students\u2019 demonstrated competencies and growth trajectories rather than rigid grade-level standards. This approach re-centers education on learning outcomes, allowing advanced students to progress without ceiling limits and providing struggling learners with the time and support they need without stigma. By dissolving age-based barriers, this model promotes equity through personalized pacing and cultivates collaboration across diverse maturity levels, preparing students for real-world complexities better than traditional grade cohorts.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "This solution unlocks numerous new educational models and derivative innovations by shifting focus from age to mastery.",
+              "explanatory": "It explains the causal mechanism of how age-based grouping limits learning and equity by ignoring developmental variability.",
+              "non_obvious": "It challenges the deeply ingrained assumption that age should determine educational progression, requiring a conceptual leap.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of learners with deep, personalized impact.",
+              "principle": "The insight of mastery-based progression over age-based grouping is transferable to other domains requiring personalized development."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.8280000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed competency-based, multi-age learning communities are plausible and well-explained, with a clear mechanism for improving equity and learning outcomes, though implementation challenges are not deeply addressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"This solution unlocks numerous new educational models and derivative innovations by shifting focus from age to mastery.\",\n    \"explanatory\": \"It explains the causal mechanism of how age-based grouping limits learning and equity by ignoring developmental variability.\",\n    \"non_obvious\": \"It challenges the deeply ingrained assumption that age should determine educational progression, requiring a conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of learners with deep, personalized impact.\",\n    \"principle\": \"The insight of mastery-based progression over age-based grouping is transferable to other domains requiring personalized development.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant, yet underexamined structural problem in education systems worldwide is the rigid alignment of curricula and assessment across broad age cohorts, which often marginalizes neurodiverse learners and those with asynchronous development. By grouping students strictly by chronological age and enforcing uniform pacing, education fails to accommodate individual variability in cognitive, emotional, and skill development. This leads to disengagement, frustration, and inequities as learners who develop at different rates\u2014whether due to neurodiversity or socioeconomic factors\u2014are forced into a one-size-fits-all mold that neither supports their strengths nor addresses their unique challenges.\n\nA novel and feasible solution is to implement a \u201cmulti-dimensional progress framework\u201d that decouples curriculum advancement from age-based cohorts and instead structures learning pathways around mastery in multiple interconnected domains (e.g., literacy, numeracy, socio-emotional skills). Students would navigate personalized learning trajectories, advancing in some domains while receiving targeted support or enrichment in others. Schools would use flexible grouping and dynamic scheduling, enabled by adaptive technology, to cluster students based on demonstrated competencies rather than age. This mechanism promotes equity by validating diverse developmental timelines and creating learning environments tailored to each student\u2019s current abilities. It also enhances motivation and depth of understanding, as students engage with material at the optimal level of challenge. Unlike common proposals that focus solely on increased funding or standardized test reform, this restructuring addresses systemic inflexibility, fostering genuinely inclusive and effective learning ecosystems.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "Decoupling curriculum progression from age cohorts opens numerous pathways for personalized and adaptive education models.",
+              "explanatory": "It explains how rigid age-based grouping causally limits learning by ignoring individual developmental variability.",
+              "non_obvious": "Challenging the entrenched assumption of age-based cohorts requires a significant conceptual leap in education design.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of learners deeply.",
+              "principle": "The insight about flexible, competency-based progression applies broadly beyond education to other developmental and training systems."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The solution is specific and plausible, with a clear mechanism involving flexible grouping and mastery-based progression that addresses equity and learning challenges, though implementation complexity and resource demands may pose challenges.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"Decoupling curriculum progression from age cohorts opens numerous pathways for personalized and adaptive education models.\",\n    \"explanatory\": \"It explains how rigid age-based grouping causally limits learning by ignoring individual developmental variability.\",\n    \"non_obvious\": \"Challenging the entrenched assumption of age-based cohorts requires a significant conceptual leap in education design.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of learners deeply.\",\n    \"principle\": \"The insight about flexible, competency-based progression applies broadly beyond education to other developmental and training systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A structural problem in education is the rigid scheduling of learning based on age cohorts rather than individual developmental readiness or interest. This age-based grouping enforces uniform pacing, which can harm learning by forcing some students to move too quickly before fully grasping concepts, while others become disengaged due to lack of challenge. It also perpetuates inequities, as students from disadvantaged backgrounds, who may need more time or alternative approaches, are often left behind without systemic flexibility.\n\nA substantially different solution is to decentralize the curriculum into modular, competency-based learning units accessible on-demand across grades, combined with AI-driven personalized learning advisors that recommend pathways based on mastery, interests, and social-emotional data. This system would dismantle strict age cohorts, allowing students to progress asynchronously through knowledge domains while receiving guidance tailored to their unique learning profiles. By decoupling progress from age and fostering learner autonomy within a structure that ensures competencies, the approach enhances equity by meeting diverse needs and maximizing engagement, making education adaptive rather than uniform.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.9,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.86,
+            "rationale": {
+              "generative": "Decoupling learning from age cohorts and using AI-driven personalization opens many new educational models and derivative innovations.",
+              "explanatory": "It explains how rigid age-based pacing causally limits learning and equity by mismatching developmental readiness and engagement.",
+              "non_obvious": "Challenging the entrenched assumption of age-based grouping and integrating AI for personalized pathways requires a significant conceptual leap.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of learners deeply and equitably.",
+              "principle": "The insight of modular, competency-based progression guided by personalized data applies broadly beyond education to other learning and development domains."
+            }
+          },
+          "breakthrough_potential": 0.86,
+          "discard": false,
+          "final_score": 0.8760000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The solution is specific and plausible, explaining the mechanism of modular, competency-based learning combined with AI-driven personalized guidance, which could realistically improve equity and learning outcomes by addressing individual needs.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.9,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.86,\n  \"rationale\": {\n    \"generative\": \"Decoupling learning from age cohorts and using AI-driven personalization opens many new educational models and derivative innovations.\",\n    \"explanatory\": \"It explains how rigid age-based pacing causally limits learning and equity by mismatching developmental readiness and engagement.\",\n    \"non_obvious\": \"Challenging the entrenched assumption of age-based grouping and integrating AI for personalized pathways requires a significant conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of learners deeply and equitably.\",\n    \"principle\": \"The insight of modular, competency-based progression guided by personalized data applies broadly beyond education to other learning and development domains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A fundamental structural problem in many education systems is the rigid age-based cohort grouping, which forces students into uniform grade levels regardless of their individual developmental pace. This structure often harms equity and learning by either holding back advanced learners or pushing accelerated students into social environments where they feel alienated, while also inadequately supporting those who need more time due to diverse cognitive or emotional development trajectories. The one-size-fits-all age stratification ignores the non-linear and varied nature of learning, exacerbating achievement gaps and disengagement.\n\nA substantially different solution is to implement a flexible, competency-based multi-age learning environment facilitated by dynamic social learning cohorts instead of fixed grades. Students would progress by mastery of skills and concepts, but also join cohorts based on thematic projects, interests, or social-emotional readiness, fluidly shifting groups as they grow. This would transform the mechanism by decoupling progression from age and enabling peer learning across developmental stages, fostering inclusivity and personalized challenge. The social context adapts naturally, enhancing motivation and equity by recognizing diverse learning rhythms and encouraging collaboration among heterogeneous peers\u2014ultimately cultivating deeper understanding and reducing stigmas attached to age-based tracking.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "Decoupling age from learning progression opens many new educational models and derivative innovations in personalized learning.",
+              "explanatory": "It explains how rigid age grouping causally harms equity and learning by ignoring developmental variability and social dynamics.",
+              "non_obvious": "Challenging the entrenched assumption of age-based cohorts requires a significant conceptual leap in education design.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students with deep, systemic impact.",
+              "principle": "The insight about flexible, competency-based grouping applies broadly to other developmental and organizational systems beyond education."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed competency-based, multi-age learning environment is plausible and well-explained, with a clear mechanism for improving equity and learning, though practical implementation challenges are not deeply addressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"Decoupling age from learning progression opens many new educational models and derivative innovations in personalized learning.\",\n    \"explanatory\": \"It explains how rigid age grouping causally harms equity and learning by ignoring developmental variability and social dynamics.\",\n    \"non_obvious\": \"Challenging the entrenched assumption of age-based cohorts requires a significant conceptual leap in education design.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students with deep, systemic impact.\",\n    \"principle\": \"The insight about flexible, competency-based grouping applies broadly to other developmental and organizational systems beyond education.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the education system is the rigid age-based grade grouping, which often forces students into uniform learning paces and curricula, regardless of individual readiness or interest. This mechanism can harm both learning and equity by stigmatizing students who diverge from the \u201caverage\u201d developmental trajectory\u2014whether they are advanced or need more time\u2014thereby limiting personalized growth and reinforcing achievement gaps that correlate with socioeconomic status, as disadvantaged students may have less support outside of school to keep up.\n\nA substantially different solution is to implement fluid, competency-based micro-class clusters that dynamically group students across age and traditional grades based on demonstrated mastery and learning interests. Instead of fixed grade levels, students earn badges or credits for specific skills and topics, then self-select or get guided into short-term, focused clusters designed to deepen expertise and peer collaboration at their current level. This system\u2019s mechanism encourages intrinsic motivation, leverages peer-to-peer learning, and reduces stigma from \u201cfalling behind.\u201d By decoupling progression from arbitrary age cohorts, it also fosters equity by meeting diverse learners where they truly are, rather than imposing a one-size-fits-all timeline shaped by social norms rather than cognitive readiness.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.85,
+            "explanatory_depth": 0.75,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.82,
+            "rationale": {
+              "generative": "The solution unlocks numerous new educational models by enabling personalized, competency-based learning clusters that can evolve and diversify.",
+              "explanatory": "It explains how rigid age-based grouping causally limits learning and equity by enforcing uniform pacing and stigmatizing deviations from the norm.",
+              "non_obvious": "It challenges the deeply ingrained assumption of age-based cohorts and proposes a dynamic, mastery-driven grouping that is not commonly considered.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students by fundamentally changing progression and equity.",
+              "principle": "The insight about decoupling progression from arbitrary social norms to meet individual readiness can apply beyond education to other developmental or training systems."
+            }
+          },
+          "breakthrough_potential": 0.82,
+          "discard": false,
+          "final_score": 0.852,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed competency-based micro-class clusters are a plausible and well-explained mechanism that addresses both learning and equity by personalizing education and reducing stigma, though implementation challenges are not deeply discussed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.85,\n  \"explanatory_depth\": 0.75,\n  \"non_obviousness\": 0.80,\n  \"scalability_of_impact\": 0.90,\n  \"principle_over_implementation\": 0.80,\n  \"breakthrough_potential\": 0.82,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new educational models by enabling personalized, competency-based learning clusters that can evolve and diversify.\",\n    \"explanatory\": \"It explains how rigid age-based grouping causally limits learning and equity by enforcing uniform pacing and stigmatizing deviations from the norm.\",\n    \"non_obvious\": \"It challenges the deeply ingrained assumption of age-based cohorts and proposes a dynamic, mastery-driven grouping that is not commonly considered.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students by fundamentally changing progression and equity.\",\n    \"principle\": \"The insight about decoupling progression from arbitrary social norms to meet individual readiness can apply beyond education to other developmental or training systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "One structural problem undermining learning and equity in education is the rigid age-based cohort system, where students are grouped strictly by birth year rather than by skill level or learning pace. This system often forces students to either accelerate or hold back regardless of readiness, creating stress and disengagement for both advanced learners and those needing more time. It entrenches inequities by linking progress to arbitrary age cutoffs rather than individual development, disproportionately affecting students from disadvantaged backgrounds who may require more flexible, personalized paths.\n\nA substantially different solution would be to implement a dynamic, competency-based cohorting system that periodically reorganizes students across traditional grade boundaries based on demonstrated mastery of skills and subject matter rather than age. This system would use modular, micro-credentials to assess progress and allow fluid movement between cohorts throughout the school year. By aligning learning groups with current ability rather than fixed age, schools can tailor instruction more precisely, foster peer collaboration among students at similar levels, and reduce stigmatization. This model promotes equity by ensuring that all students receive instruction and peer interaction suited to their present needs, thus enhancing motivation and learning outcomes without the social penalties of being \"held back\" or \"pushed ahead.\"",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.7,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution unlocks numerous new possibilities for personalized education models and derivative innovations in assessment and grouping.",
+              "explanatory": "It explains the causal mechanism by linking rigid age cohorts to inequity and disengagement, and proposes mastery-based grouping to address these root causes.",
+              "non_obvious": "It challenges the deeply entrenched assumption of age-based cohorts, requiring a conceptual leap to dynamic, competency-based grouping.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students and improving equity and learning outcomes at scale.",
+              "principle": "The insight about aligning groupings to demonstrated ability rather than arbitrary categories is transferable to other domains requiring personalized progression."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.836,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed competency-based cohorting system is specific, explains the mechanism of modular micro-credentials and fluid movement, and plausibly addresses equity and learning issues, making it a highly useful solution.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.7,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new possibilities for personalized education models and derivative innovations in assessment and grouping.\",\n    \"explanatory\": \"It explains the causal mechanism by linking rigid age cohorts to inequity and disengagement, and proposes mastery-based grouping to address these root causes.\",\n    \"non_obvious\": \"It challenges the deeply entrenched assumption of age-based cohorts, requiring a conceptual leap to dynamic, competency-based grouping.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students and improving equity and learning outcomes at scale.\",\n    \"principle\": \"The insight about aligning groupings to demonstrated ability rather than arbitrary categories is transferable to other domains requiring personalized progression.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A pervasive structural problem in education is the rigidity of age-based grade cohorts, which often forces students into uniform pacing irrespective of individual learning readiness or life circumstances. This system can harm both learning and equity because students who develop skills at different rates, or who experience disruptions (due to illness, family issues, or economic instability), are either held back or pushed forward without the tailored support they need. This rigidity perpetuates achievement gaps and diminishes motivation, as students are compared primarily to an arbitrary age group rather than their personal progress.\n\nA substantially different solution is to implement a competency-based, cross-age learning ecosystem where students progress through curriculum units based solely on demonstrated mastery rather than age or time spent in class. To make this feasible and equitable, schools could create mixed-age learning pods supported by adaptive technologies and mentorship models, where older or more advanced students assist peers, fostering collaboration and individualized pacing. This approach dismantles the one-size-fits-all temporal structure, directly addressing varied learning speeds and contexts. By shifting focus to mastery and peer-supported growth, it enhances equity because all students, regardless of background or circumstances, can advance when ready, reducing stigma and disengagement associated with grade retention or social promotion.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "Shifting from age-based cohorts to mastery-based progression opens numerous new educational models and derivative innovations in personalized learning.",
+              "explanatory": "It explains how rigid age grouping causally limits learning by ignoring individual readiness and life circumstances, unifying issues of motivation, equity, and achievement gaps.",
+              "non_obvious": "It challenges the deeply ingrained assumption that age should dictate educational pacing, requiring a conceptual leap to cross-age, mastery-driven progression.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students by fundamentally changing how learning progress is measured and supported.",
+              "principle": "The insight that progress should be mastery-based rather than time-based is transferable to other domains where rigid temporal structures limit individual growth."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.848,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed competency-based, cross-age learning system is well-explained with mechanisms like mixed-age pods, adaptive technology, and mentorship, making it a plausible and effective approach to improving equity and learning.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"Shifting from age-based cohorts to mastery-based progression opens numerous new educational models and derivative innovations in personalized learning.\",\n    \"explanatory\": \"It explains how rigid age grouping causally limits learning by ignoring individual readiness and life circumstances, unifying issues of motivation, equity, and achievement gaps.\",\n    \"non_obvious\": \"It challenges the deeply ingrained assumption that age should dictate educational pacing, requiring a conceptual leap to cross-age, mastery-driven progression.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students by fundamentally changing how learning progress is measured and supported.\",\n    \"principle\": \"The insight that progress should be mastery-based rather than time-based is transferable to other domains where rigid temporal structures limit individual growth.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A fundamental structural problem in many education systems is the rigid, age-based grade cohort structure, which groups students strictly by birth year rather than individual learning pace or mastery. This model often forces students to either languish in material they have already mastered or struggle through topics for which they are unprepared, exacerbating inequities by penalizing those from less resourced backgrounds who may need more time or different instructional approaches. This age-centric grouping also limits peer collaboration to narrow age bands, reducing exposure to diverse perspectives and mentorship opportunities that can catalyze deeper learning.\n\nA substantially different solution is to reorganize school cohorts based on competency clusters rather than age, supplemented by dynamic, interest-driven cross-level learning communities. For example, schools could assess students regularly and group them by demonstrated proficiency in core subjects, while also creating fluid \u201clearning pods\u201d that mix ages and skill sets around shared projects or themes. This approach leverages peer mentoring and scaffolding naturally, while allowing students to progress at their own pace without stigma. The mechanism works by aligning instruction with actual learning needs and social dynamics, fostering equity through personalized progress and reducing dropout risk by maintaining engagement. Such a model would require administrative flexibility but is feasible with current digital tracking and personalized learning tools, ultimately reshaping learning into a more adaptive and inclusive experience.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "Reorganizing cohorts by competency unlocks numerous derivative innovations in personalized and peer-based learning models.",
+              "explanatory": "It explains how misalignment between age-based grouping and individual learning pace causes inequity and disengagement.",
+              "non_obvious": "Challenging the entrenched age-based cohort assumption requires a significant conceptual leap in education design.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students deeply.",
+              "principle": "The insight about aligning groupings to competency rather than age is transferable to other domains requiring personalized progression."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.836,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The solution is specific, explaining the mechanism of competency-based grouping and dynamic learning pods, and is plausible given current technology, making it likely to improve equity and learning outcomes.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"Reorganizing cohorts by competency unlocks numerous derivative innovations in personalized and peer-based learning models.\",\n    \"explanatory\": \"It explains how misalignment between age-based grouping and individual learning pace causes inequity and disengagement.\",\n    \"non_obvious\": \"Challenging the entrenched age-based cohort assumption requires a significant conceptual leap in education design.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students deeply.\",\n    \"principle\": \"The insight about aligning groupings to competency rather than age is transferable to other domains requiring personalized progression.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the education system is the rigid separation of subjects into isolated silos, which limits interdisciplinary thinking and disproportionately harms students who do not thrive under traditional academic categorizations. This compartmentalization often narrows students\u2019 perspectives, hinders the development of practical problem-solving skills, and exacerbates inequities by sidelining those who excel in cross-disciplinary or applied learning environments but struggle within rigid subject boundaries.\n\nA novel solution is to implement \u201ctheme-based modular learning ecosystems\u201d where curricula are organized around real-world challenges or societal themes\u2014such as climate resilience, urban planning, or social justice\u2014instead of discrete subjects. Students engage in project-based modules that integrate multiple disciplines, mentorship from community experts, and personalized learning paths aligned with their interests and strengths. This structure naturally fosters inclusivity by allowing diverse modes of engagement and multiple intelligences to flourish, enhances equity by connecting learning to students\u2019 lived experiences, and develops holistic skills needed for the modern world. By breaking down subject silos and re-centering education around meaningful, integrative challenges, this approach can transform the learning environment into a more engaging, equitable, and effective ecosystem.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "Organizing curricula around real-world themes unlocks numerous derivative innovations in pedagogy and assessment.",
+              "explanatory": "It explains how subject silos limit interdisciplinary skills and equity by restricting diverse learning modes.",
+              "non_obvious": "Reframing education from subjects to thematic challenges requires breaking entrenched academic structures and assumptions.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students deeply.",
+              "principle": "The insight of integrating disciplines around meaningful challenges can apply beyond education to other complex systems."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The solution is specific and plausible, explaining how theme-based modular learning can foster inclusivity and equity by integrating disciplines and personalizing learning, though implementation challenges are not deeply addressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"Organizing curricula around real-world themes unlocks numerous derivative innovations in pedagogy and assessment.\",\n    \"explanatory\": \"It explains how subject silos limit interdisciplinary skills and equity by restricting diverse learning modes.\",\n    \"non_obvious\": \"Reframing education from subjects to thematic challenges requires breaking entrenched academic structures and assumptions.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students deeply.\",\n    \"principle\": \"The insight of integrating disciplines around meaningful challenges can apply beyond education to other complex systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in many education systems is the rigid standardization of curriculum pacing, which enforces uniform progress regardless of individual student readiness or context. This one-size-fits-all temporal structure often stifles deeper learning and disproportionately harms students who face external challenges\u2014such as unstable home environments or language barriers\u2014by forcing them to keep pace with peers rather than mastering content fully. The pressure to \"cover\" a set syllabus within fixed timeframes prioritizes breadth over depth and exacerbates inequities, as students with more resources can compensate for rigid pacing through tutoring or extra learning time, while others fall behind cumulatively.\n\nA substantially different solution would be to replace the fixed pacing model with a dynamic, competency-based progression system integrated with personalized learning contracts negotiated between students, teachers, and support staff. Rather than advancing based on calendar schedules, students move forward after demonstrating mastery in key competencies, supported by individualized learning goals tailored to their context and strengths. This approach decentralizes curriculum timing and embeds flexibility in accountability, allowing learning to unfold organically and reducing stigma around varied pacing. It would work because it shifts focus from uniform throughput to actual understanding, encourages student agency, and allocates resources responsively\u2014fostering equity by recognizing and adapting to diverse learner needs without lowering standards.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "The solution unlocks numerous derivative innovations by enabling personalized, mastery-based learning pathways.",
+              "explanatory": "It explains the causal mechanism of how rigid pacing harms equity and learning by focusing on timing rather than mastery.",
+              "non_obvious": "It challenges the entrenched assumption of fixed curriculum pacing and introduces negotiated, competency-based progression.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students deeply.",
+              "principle": "The insight about decoupling progress from time and focusing on mastery applies broadly beyond education to other learning and development domains."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.848,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem harming equity and learning, proposes a concrete and feasible solution, explains the mechanism, and stays within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed competency-based progression system with personalized learning contracts is a plausible and well-explained approach that addresses the problem directly and offers a mechanism to improve equity and learning outcomes.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous derivative innovations by enabling personalized, mastery-based learning pathways.\",\n    \"explanatory\": \"It explains the causal mechanism of how rigid pacing harms equity and learning by focusing on timing rather than mastery.\",\n    \"non_obvious\": \"It challenges the entrenched assumption of fixed curriculum pacing and introduces negotiated, competency-based progression.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students deeply.\",\n    \"principle\": \"The insight about decoupling progress from time and focusing on mastery applies broadly beyond education to other learning and development domains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in education is the rigid age-grade system, which groups students strictly by chronological age rather than developmental readiness or learning pace. This leads to mismatches where some students are either held back or pushed forward prematurely, causing disengagement, stigma, and inequitable learning outcomes. The system\u2019s inflexibility fails to accommodate diverse cognitive, emotional, and socio-cultural growth trajectories, disproportionately harming students from marginalized backgrounds who may face additional life challenges impacting their readiness.\n\nA novel, feasible solution is to implement a modular, competency-based progression system that unbundles learning into micro-credentials across multiple dimensions (e.g., literacy, numeracy, social skills) with personalized learning pathways leveraging AI-driven adaptive platforms. Rather than advancing by grade level, students earn badges certifying mastery in discrete skill sets at their own pace. Schools become learning hubs where students select modules tailored to their strengths, interests, and needs, blending formal instruction, mentorship, and real-world projects. This mechanism reduces stigma by normalizing variable learning timelines and fosters equity by offering targeted support precisely where a student struggles, rather than a one-size-fits-all curriculum. Over time, this system cultivates intrinsic motivation, self-directed learning, and a more accurate, holistic assessment of abilities, reshaping education into a truly learner-centered experience.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.85,
+            "explanatory_depth": 0.75,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.83,
+            "rationale": {
+              "generative": "The solution unlocks numerous new educational models and derivative innovations by modularizing learning and enabling personalized pathways.",
+              "explanatory": "It explains the causal mechanism of developmental mismatches and how competency-based progression addresses diverse learning trajectories.",
+              "non_obvious": "It breaks the entrenched assumption of age-based progression, requiring a conceptual leap to modular, mastery-based advancement.",
+              "scalability": "If widely adopted, it could transform education systems globally, impacting millions of learners deeply and equitably.",
+              "principle": "The insight about modular, competency-based progression and personalized learning is transferable beyond education to other skill development domains."
+            }
+          },
+          "breakthrough_potential": 0.83,
+          "discard": false,
+          "final_score": 0.8779999999999999,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed modular, competency-based system with AI-driven adaptive learning is specific, plausible, and includes mechanisms to reduce stigma and improve equity, making it highly likely to succeed if implemented.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.85,\n  \"explanatory_depth\": 0.75,\n  \"non_obviousness\": 0.80,\n  \"scalability_of_impact\": 0.90,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.83,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new educational models and derivative innovations by modularizing learning and enabling personalized pathways.\",\n    \"explanatory\": \"It explains the causal mechanism of developmental mismatches and how competency-based progression addresses diverse learning trajectories.\",\n    \"non_obvious\": \"It breaks the entrenched assumption of age-based progression, requiring a conceptual leap to modular, mastery-based advancement.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, impacting millions of learners deeply and equitably.\",\n    \"principle\": \"The insight about modular, competency-based progression and personalized learning is transferable beyond education to other skill development domains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the education system is the rigid age-based grade cohort model, which groups students strictly by chronological age regardless of their developmental readiness or learning pace. This system often harms equity and learning by forcing students who develop at different rates\u2014whether faster or slower\u2014to conform to a uniform curriculum timeline, resulting in unnecessary failure, disengagement, or stigmatization for those outside the average. It also neglects the reality that learning is nonlinear and influenced by diverse cognitive, emotional, and social factors that vary widely among children.\n\nA substantially different solution is to implement a competency-based, cross-age learning model where students progress through curriculum milestones based on demonstrated mastery rather than time spent or age. Schools could be organized into multi-age learning cohorts with fluid grouping tailored dynamically to students\u2019 evolving abilities and interests. Teachers would function as facilitators and personalized guides, using adaptive assessment tools to identify each learner\u2019s next meaningful challenge. This shifts the mechanism from age conformity to mastery recognition, fostering equity by honoring individual growth trajectories and reducing stigma around \u201cfalling behind.\u201d Such a model encourages intrinsic motivation through personalized pacing and peer support across ages, ultimately promoting deeper, more durable learning outcomes and narrowing opportunity gaps.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "Shifting from age-based cohorts to competency-based progression opens many new educational models and derivative innovations in personalized learning.",
+              "explanatory": "It explains the causal mechanism of how rigid age grouping harms learning by ignoring individual developmental variability and motivation.",
+              "non_obvious": "It challenges the deeply ingrained assumption that age should determine educational progression, requiring a conceptual leap.",
+              "scalability": "If widely adopted, it could impact millions of students globally by fundamentally changing how education systems operate.",
+              "principle": "The insight about mastery-based progression over time-based grouping can apply to other domains requiring personalized development and assessment."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.848,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within two paragraphs, fully meeting the prompt requirements.\",\n    \"usefulness\": \"The proposed competency-based, cross-age learning model is well-explained with a clear mechanism and plausible benefits, making it a highly useful and realistic approach to improving equity and learning.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"Shifting from age-based cohorts to competency-based progression opens many new educational models and derivative innovations in personalized learning.\",\n    \"explanatory\": \"It explains the causal mechanism of how rigid age grouping harms learning by ignoring individual developmental variability and motivation.\",\n    \"non_obvious\": \"It challenges the deeply ingrained assumption that age should determine educational progression, requiring a conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could impact millions of students globally by fundamentally changing how education systems operate.\",\n    \"principle\": \"The insight about mastery-based progression over time-based grouping can apply to other domains requiring personalized development and assessment.\"\n  }\n}"
+        }
+      }
+    ],
+    "top_k": [
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in education is the rigid age-grade system, which groups students strictly by chronological age rather than developmental readiness or learning pace. This leads to mismatches where some students are either held back or pushed forward prematurely, causing disengagement, stigma, and inequitable learning outcomes. The system\u2019s inflexibility fails to accommodate diverse cognitive, emotional, and socio-cultural growth trajectories, disproportionately harming students from marginalized backgrounds who may face additional life challenges impacting their readiness.\n\nA novel, feasible solution is to implement a modular, competency-based progression system that unbundles learning into micro-credentials across multiple dimensions (e.g., literacy, numeracy, social skills) with personalized learning pathways leveraging AI-driven adaptive platforms. Rather than advancing by grade level, students earn badges certifying mastery in discrete skill sets at their own pace. Schools become learning hubs where students select modules tailored to their strengths, interests, and needs, blending formal instruction, mentorship, and real-world projects. This mechanism reduces stigma by normalizing variable learning timelines and fosters equity by offering targeted support precisely where a student struggles, rather than a one-size-fits-all curriculum. Over time, this system cultivates intrinsic motivation, self-directed learning, and a more accurate, holistic assessment of abilities, reshaping education into a truly learner-centered experience.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.85,
+            "explanatory_depth": 0.75,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.83,
+            "rationale": {
+              "generative": "The solution unlocks numerous new educational models and derivative innovations by modularizing learning and enabling personalized pathways.",
+              "explanatory": "It explains the causal mechanism of developmental mismatches and how competency-based progression addresses diverse learning trajectories.",
+              "non_obvious": "It breaks the entrenched assumption of age-based progression, requiring a conceptual leap to modular, mastery-based advancement.",
+              "scalability": "If widely adopted, it could transform education systems globally, impacting millions of learners deeply and equitably.",
+              "principle": "The insight about modular, competency-based progression and personalized learning is transferable beyond education to other skill development domains."
+            }
+          },
+          "breakthrough_potential": 0.83,
+          "discard": false,
+          "final_score": 0.8779999999999999,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed modular, competency-based system with AI-driven adaptive learning is specific, plausible, and includes mechanisms to reduce stigma and improve equity, making it highly likely to succeed if implemented.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.85,\n  \"explanatory_depth\": 0.75,\n  \"non_obviousness\": 0.80,\n  \"scalability_of_impact\": 0.90,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.83,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new educational models and derivative innovations by modularizing learning and enabling personalized pathways.\",\n    \"explanatory\": \"It explains the causal mechanism of developmental mismatches and how competency-based progression addresses diverse learning trajectories.\",\n    \"non_obvious\": \"It breaks the entrenched assumption of age-based progression, requiring a conceptual leap to modular, mastery-based advancement.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, impacting millions of learners deeply and equitably.\",\n    \"principle\": \"The insight about modular, competency-based progression and personalized learning is transferable beyond education to other skill development domains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A structural problem in education is the rigid scheduling of learning based on age cohorts rather than individual developmental readiness or interest. This age-based grouping enforces uniform pacing, which can harm learning by forcing some students to move too quickly before fully grasping concepts, while others become disengaged due to lack of challenge. It also perpetuates inequities, as students from disadvantaged backgrounds, who may need more time or alternative approaches, are often left behind without systemic flexibility.\n\nA substantially different solution is to decentralize the curriculum into modular, competency-based learning units accessible on-demand across grades, combined with AI-driven personalized learning advisors that recommend pathways based on mastery, interests, and social-emotional data. This system would dismantle strict age cohorts, allowing students to progress asynchronously through knowledge domains while receiving guidance tailored to their unique learning profiles. By decoupling progress from age and fostering learner autonomy within a structure that ensures competencies, the approach enhances equity by meeting diverse needs and maximizing engagement, making education adaptive rather than uniform.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.9,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.86,
+            "rationale": {
+              "generative": "Decoupling learning from age cohorts and using AI-driven personalization opens many new educational models and derivative innovations.",
+              "explanatory": "It explains how rigid age-based pacing causally limits learning and equity by mismatching developmental readiness and engagement.",
+              "non_obvious": "Challenging the entrenched assumption of age-based grouping and integrating AI for personalized pathways requires a significant conceptual leap.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of learners deeply and equitably.",
+              "principle": "The insight of modular, competency-based progression guided by personalized data applies broadly beyond education to other learning and development domains."
+            }
+          },
+          "breakthrough_potential": 0.86,
+          "discard": false,
+          "final_score": 0.8760000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The solution is specific and plausible, explaining the mechanism of modular, competency-based learning combined with AI-driven personalized guidance, which could realistically improve equity and learning outcomes by addressing individual needs.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.9,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.86,\n  \"rationale\": {\n    \"generative\": \"Decoupling learning from age cohorts and using AI-driven personalization opens many new educational models and derivative innovations.\",\n    \"explanatory\": \"It explains how rigid age-based pacing causally limits learning and equity by mismatching developmental readiness and engagement.\",\n    \"non_obvious\": \"Challenging the entrenched assumption of age-based grouping and integrating AI for personalized pathways requires a significant conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of learners deeply and equitably.\",\n    \"principle\": \"The insight of modular, competency-based progression guided by personalized data applies broadly beyond education to other learning and development domains.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in the education system is the rigid age-based grade grouping, which often forces students into uniform learning paces and curricula, regardless of individual readiness or interest. This mechanism can harm both learning and equity by stigmatizing students who diverge from the \u201caverage\u201d developmental trajectory\u2014whether they are advanced or need more time\u2014thereby limiting personalized growth and reinforcing achievement gaps that correlate with socioeconomic status, as disadvantaged students may have less support outside of school to keep up.\n\nA substantially different solution is to implement fluid, competency-based micro-class clusters that dynamically group students across age and traditional grades based on demonstrated mastery and learning interests. Instead of fixed grade levels, students earn badges or credits for specific skills and topics, then self-select or get guided into short-term, focused clusters designed to deepen expertise and peer collaboration at their current level. This system\u2019s mechanism encourages intrinsic motivation, leverages peer-to-peer learning, and reduces stigma from \u201cfalling behind.\u201d By decoupling progression from arbitrary age cohorts, it also fosters equity by meeting diverse learners where they truly are, rather than imposing a one-size-fits-all timeline shaped by social norms rather than cognitive readiness.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.85,
+            "explanatory_depth": 0.75,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.82,
+            "rationale": {
+              "generative": "The solution unlocks numerous new educational models by enabling personalized, competency-based learning clusters that can evolve and diversify.",
+              "explanatory": "It explains how rigid age-based grouping causally limits learning and equity by enforcing uniform pacing and stigmatizing deviations from the norm.",
+              "non_obvious": "It challenges the deeply ingrained assumption of age-based cohorts and proposes a dynamic, mastery-driven grouping that is not commonly considered.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students by fundamentally changing progression and equity.",
+              "principle": "The insight about decoupling progression from arbitrary social norms to meet individual readiness can apply beyond education to other developmental or training systems."
+            }
+          },
+          "breakthrough_potential": 0.82,
+          "discard": false,
+          "final_score": 0.852,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed competency-based micro-class clusters are a plausible and well-explained mechanism that addresses both learning and equity by personalizing education and reducing stigma, though implementation challenges are not deeply discussed.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.85,\n  \"explanatory_depth\": 0.75,\n  \"non_obviousness\": 0.80,\n  \"scalability_of_impact\": 0.90,\n  \"principle_over_implementation\": 0.80,\n  \"breakthrough_potential\": 0.82,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new educational models by enabling personalized, competency-based learning clusters that can evolve and diversify.\",\n    \"explanatory\": \"It explains how rigid age-based grouping causally limits learning and equity by enforcing uniform pacing and stigmatizing deviations from the norm.\",\n    \"non_obvious\": \"It challenges the deeply ingrained assumption of age-based cohorts and proposes a dynamic, mastery-driven grouping that is not commonly considered.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students by fundamentally changing progression and equity.\",\n    \"principle\": \"The insight about decoupling progression from arbitrary social norms to meet individual readiness can apply beyond education to other developmental or training systems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A significant structural problem in education systems worldwide is the rigid age-based grade-level grouping, which enforces uniform progression irrespective of individual learning pace or style. This approach often harms both learning and equity by marginalizing students who either advance faster or struggle to keep up, leading to disengagement, stigmatization, or unaddressed learning gaps. It entrenches a one-size-fits-all model that fails to recognize diverse cognitive development trajectories and disproportionately affects students from disadvantaged backgrounds who may lack additional support outside school.\n\nA substantially different and feasible solution is to implement dynamic, competency-based cohorting within schools, where students group and regroup fluidly based on mastery of specific skills rather than age or grade. For example, schools could use modular learning blocks with real-time assessments, enabling students to join small cohorts tailored to their proficiency in math, literacy, or science at any given time. This would foster customized peer interactions, encourage collaboration at appropriate challenge levels, and allow educators to target instruction more precisely. By dismantling fixed grade boundaries, this system promotes equity through personalized pacing and reduces stigma by normalizing varied learning paths, ultimately enhancing engagement and mastery for all learners.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.7,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "The solution unlocks numerous new possibilities for personalized learning structures and derivative innovations in education delivery.",
+              "explanatory": "It explains the causal mechanism of how rigid age-based grouping harms learning and equity by ignoring individual cognitive development trajectories.",
+              "non_obvious": "It challenges the entrenched assumption of fixed grade levels and proposes fluid, competency-based cohorting, which is a significant conceptual leap.",
+              "scalability": "If widely adopted, it could impact millions of students globally by transforming fundamental educational structures and improving equity.",
+              "principle": "The insight about competency-based grouping over age-based grouping can be transferred to other domains requiring personalized progression and grouping."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.848,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed dynamic, competency-based cohorting system is specific, plausible, and includes mechanisms for real-time assessment and flexible grouping, making it likely to improve equity and learning outcomes.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.7,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new possibilities for personalized learning structures and derivative innovations in education delivery.\",\n    \"explanatory\": \"It explains the causal mechanism of how rigid age-based grouping harms learning and equity by ignoring individual cognitive development trajectories.\",\n    \"non_obvious\": \"It challenges the entrenched assumption of fixed grade levels and proposes fluid, competency-based cohorting, which is a significant conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could impact millions of students globally by transforming fundamental educational structures and improving equity.\",\n    \"principle\": \"The insight about competency-based grouping over age-based grouping can be transferred to other domains requiring personalized progression and grouping.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "single_pass",
+        "reformulation": "",
+        "text": "A pervasive structural problem in education is the rigidity of age-based grade cohorts, which often forces students into uniform pacing irrespective of individual learning readiness or life circumstances. This system can harm both learning and equity because students who develop skills at different rates, or who experience disruptions (due to illness, family issues, or economic instability), are either held back or pushed forward without the tailored support they need. This rigidity perpetuates achievement gaps and diminishes motivation, as students are compared primarily to an arbitrary age group rather than their personal progress.\n\nA substantially different solution is to implement a competency-based, cross-age learning ecosystem where students progress through curriculum units based solely on demonstrated mastery rather than age or time spent in class. To make this feasible and equitable, schools could create mixed-age learning pods supported by adaptive technologies and mentorship models, where older or more advanced students assist peers, fostering collaboration and individualized pacing. This approach dismantles the one-size-fits-all temporal structure, directly addressing varied learning speeds and contexts. By shifting focus to mastery and peer-supported growth, it enhances equity because all students, regardless of background or circumstances, can advance when ready, reducing stigma and disengagement associated with grade retention or social promotion.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "Shifting from age-based cohorts to mastery-based progression opens numerous new educational models and derivative innovations in personalized learning.",
+              "explanatory": "It explains how rigid age grouping causally limits learning by ignoring individual readiness and life circumstances, unifying issues of motivation, equity, and achievement gaps.",
+              "non_obvious": "It challenges the deeply ingrained assumption that age should dictate educational pacing, requiring a conceptual leap to cross-age, mastery-driven progression.",
+              "scalability": "If widely adopted, it could transform education systems globally, affecting millions of students by fundamentally changing how learning progress is measured and supported.",
+              "principle": "The insight that progress should be mastery-based rather than time-based is transferable to other domains where rigid temporal structures limit individual growth."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.848,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed competency-based, cross-age learning system is well-explained with mechanisms like mixed-age pods, adaptive technology, and mentorship, making it a plausible and effective approach to improving equity and learning.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"Shifting from age-based cohorts to mastery-based progression opens numerous new educational models and derivative innovations in personalized learning.\",\n    \"explanatory\": \"It explains how rigid age grouping causally limits learning by ignoring individual readiness and life circumstances, unifying issues of motivation, equity, and achievement gaps.\",\n    \"non_obvious\": \"It challenges the deeply ingrained assumption that age should dictate educational pacing, requiring a conceptual leap to cross-age, mastery-driven progression.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, affecting millions of students by fundamentally changing how learning progress is measured and supported.\",\n    \"principle\": \"The insight that progress should be mastery-based rather than time-based is transferable to other domains where rigid temporal structures limit individual growth.\"\n  }\n}\n```"
+        }
+      }
+    ],
+    "final_output": "A significant structural problem in education is the rigid age-grade system, which groups students strictly by chronological age rather than developmental readiness or learning pace. This leads to mismatches where some students are either held back or pushed forward prematurely, causing disengagement, stigma, and inequitable learning outcomes. The system\u2019s inflexibility fails to accommodate diverse cognitive, emotional, and socio-cultural growth trajectories, disproportionately harming students from marginalized backgrounds who may face additional life challenges impacting their readiness.\n\nA novel, feasible solution is to implement a modular, competency-based progression system that unbundles learning into micro-credentials across multiple dimensions (e.g., literacy, numeracy, social skills) with personalized learning pathways leveraging AI-driven adaptive platforms. Rather than advancing by grade level, students earn badges certifying mastery in discrete skill sets at their own pace. Schools become learning hubs where students select modules tailored to their strengths, interests, and needs, blending formal instruction, mentorship, and real-world projects. This mechanism reduces stigma by normalizing variable learning timelines and fosters equity by offering targeted support precisely where a student struggles, rather than a one-size-fits-all curriculum. Over time, this system cultivates intrinsic motivation, self-directed learning, and a more accurate, holistic assessment of abilities, reshaping education into a truly learner-centered experience.",
+    "selected": {
+      "mode": "single_pass",
+      "reformulation": "",
+      "scores": {
+        "constraint_satisfaction": 1.0,
+        "usefulness": 0.9,
+        "constraint_overall": 0.95,
+        "breakthrough_scores": {
+          "generative_power": 0.85,
+          "explanatory_depth": 0.75,
+          "non_obviousness": 0.8,
+          "scalability_of_impact": 0.9,
+          "principle_over_implementation": 0.85,
+          "breakthrough_potential": 0.83,
+          "rationale": {
+            "generative": "The solution unlocks numerous new educational models and derivative innovations by modularizing learning and enabling personalized pathways.",
+            "explanatory": "It explains the causal mechanism of developmental mismatches and how competency-based progression addresses diverse learning trajectories.",
+            "non_obvious": "It breaks the entrenched assumption of age-based progression, requiring a conceptual leap to modular, mastery-based advancement.",
+            "scalability": "If widely adopted, it could transform education systems globally, impacting millions of learners deeply and equitably.",
+            "principle": "The insight about modular, competency-based progression and personalized learning is transferable beyond education to other skill development domains."
+          }
+        },
+        "breakthrough_potential": 0.83,
+        "discard": false,
+        "final_score": 0.8779999999999999,
+        "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a structural problem and proposes a concrete, feasible solution within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed modular, competency-based system with AI-driven adaptive learning is specific, plausible, and includes mechanisms to reduce stigma and improve equity, making it highly likely to succeed if implemented.\"\n  }\n}",
+        "raw_breakthrough_judge": "{\n  \"generative_power\": 0.85,\n  \"explanatory_depth\": 0.75,\n  \"non_obviousness\": 0.80,\n  \"scalability_of_impact\": 0.90,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.83,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new educational models and derivative innovations by modularizing learning and enabling personalized pathways.\",\n    \"explanatory\": \"It explains the causal mechanism of developmental mismatches and how competency-based progression addresses diverse learning trajectories.\",\n    \"non_obvious\": \"It breaks the entrenched assumption of age-based progression, requiring a conceptual leap to modular, mastery-based advancement.\",\n    \"scalability\": \"If widely adopted, it could transform education systems globally, impacting millions of learners deeply and equitably.\",\n    \"principle\": \"The insight about modular, competency-based progression and personalized learning is transferable beyond education to other skill development domains.\"\n  }\n}"
+      }
+    }
+  },
+  "elapsed_seconds": 183.80911493301392
+}

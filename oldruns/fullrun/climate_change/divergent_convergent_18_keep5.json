@@ -1,0 +1,807 @@
+{
+  "timestamp": "2026-02-01T16:41:53",
+  "prompt_id": "climate_change",
+  "prompt": "Identify one major structural bottleneck that prevents effective climate action and propose a concrete, feasible intervention that targets this bottleneck. Explain why it would have outsized impact. (Maximum two paragraphs.)",
+  "condition": "divergent_convergent_18_keep5",
+  "config": {
+    "model": {
+      "name": "gpt-4.1-mini",
+      "max_tokens": 350
+    },
+    "conditions": [
+      "single_pass_18_keep5",
+      "divergent_convergent_18_keep5",
+      "evolutionary_examples"
+    ],
+    "budget": {
+      "max_candidates_per_prompt": 18,
+      "keep_top_k": 5
+    },
+    "sampling": {
+      "single_pass": {
+        "temperature": 0.9,
+        "top_p": 1.0
+      },
+      "reframing": {
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "num_reformulations": 3
+      },
+      "combinational": {
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "transformational": {
+        "temperature": 1.1,
+        "top_p": 1.0,
+        "candidates_per_reformulation": 3
+      },
+      "judge": {
+        "temperature": 0.0,
+        "top_p": 1.0
+      }
+    },
+    "selection": {
+      "discard_if_constraint_below": 0.4,
+      "constraint_weight": 0.2,
+      "usefulness_weight": 0.2,
+      "breakthrough_weight": 0.6
+    }
+  },
+  "result": {
+    "reformulations": [
+      "Analyze a fundamental systemic barrier embedded within current global governance or economic frameworks that significantly hinders comprehensive climate action, and describe an intervention at the policy or institutional level that could address this barrier to accelerate progress.",
+      "Identify a key incentive misalignment among major climate stakeholders (governments, corporations, communities) that structurally limits effective climate action, and propose an intervention that would realign these incentives to promote scalable and sustained climate solutions.",
+      "Focus on a critical infrastructure or technological gap that structurally constrains the transition to a low-carbon economy, and suggest a targeted intervention that could unlock or catalyze widespread adoption of clean technologies or practices."
+    ],
+    "candidates": [
+      {
+        "mode": "structural_transfer",
+        "domain": "Quantum computing algorithms",
+        "reformulation": "Analyze a fundamental systemic barrier embedded within current global governance or economic frameworks that significantly hinders comprehensive climate action, and describe an intervention at the policy or institutional level that could address this barrier to accelerate progress.",
+        "text": "Domain used: Quantum computing algorithms.\n\nA core structural principle in quantum computing algorithms is *quantum superposition and interference,* which allows multiple possible states or solutions to be represented and processed simultaneously, with constructive interference amplifying optimal outcomes while destructive interference cancels suboptimal ones. This contrasts sharply with classical sequential decision-making, which evaluates options one at a time. Mapping this principle onto global climate governance reveals a structural barrier: current frameworks operate in siloed, sequential negotiations among nation-states, where fragmented interests prevent simultaneous, integrated consideration of diverse policy options, leading to slow, incremental progress rather than systemic breakthroughs.\n\nThe intervention is to create an institutional \u201cclimate superposition platform\u201d that enables all major stakeholders\u2014countries, industries, civil society\u2014to collaboratively input a broad, simultaneous spectrum of multi-dimensional policy proposals, weighted by their priorities and constraints. Using advanced AI and multi-criteria optimization methods inspired by quantum interference, the platform would algorithmically amplify synergistic policies and suppress contradictory ones, delivering an optimized, collective climate action agenda in near real-time. This structural shift from sequential bargaining to dynamic, interference-based policy synthesis could break deadlocks, accelerate consensus-building, and enable comprehensive, systemic climate strategies that leverage collective intelligence rather than fragmented incrementalism.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.5,
+          "constraint_overall": 0.75,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.75,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution unlocks numerous new possibilities by enabling simultaneous, integrated policy synthesis that can inspire derivative innovations in governance and decision-making.",
+              "explanatory": "It reveals the causal mechanism of fragmented sequential negotiations as a bottleneck and proposes a structural shift inspired by quantum principles to unify diverse policy options.",
+              "non_obvious": "Applying quantum superposition and interference concepts to global climate governance is a significant conceptual leap beyond conventional negotiation frameworks.",
+              "scalability": "If fully implemented, it could impact global climate governance systems, affecting billions by accelerating systemic climate action worldwide.",
+              "principle": "The insight of leveraging superposition and interference for collective decision-making is transferable to other complex multi-stakeholder domains beyond climate."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.78,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.5,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck (sequential, siloed climate negotiations) and proposes a concrete intervention (a collaborative AI-driven platform inspired by quantum principles) within two paragraphs, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"While the proposal is innovative and outlines a mechanism for integrating diverse stakeholder inputs using AI and optimization, it remains somewhat abstract and speculative regarding feasibility and implementation details, limiting its practical usefulness.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.75,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new possibilities by enabling simultaneous, integrated policy synthesis that can inspire derivative innovations in governance and decision-making.\",\n    \"explanatory\": \"It reveals the causal mechanism of fragmented sequential negotiations as a bottleneck and proposes a structural shift inspired by quantum principles to unify diverse policy options.\",\n    \"non_obvious\": \"Applying quantum superposition and interference concepts to global climate governance is a significant conceptual leap beyond conventional negotiation frameworks.\",\n    \"scalability\": \"If fully implemented, it could impact global climate governance systems, affecting billions by accelerating systemic climate action worldwide.\",\n    \"principle\": \"The insight of leveraging superposition and interference for collective decision-making is transferable to other complex multi-stakeholder domains beyond climate.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Medieval guild systems",
+        "reformulation": "Analyze a fundamental systemic barrier embedded within current global governance or economic frameworks that significantly hinders comprehensive climate action, and describe an intervention at the policy or institutional level that could address this barrier to accelerate progress.",
+        "text": "Domain used: Medieval guild systems\n\nA core structural principle of Medieval guilds was their role as self-regulating, skill-sharing communities that controlled entry, maintained quality standards, and fostered collective responsibility among members within a defined trade. Mapping this to global governance and economic frameworks reveals a fundamental systemic barrier: the lack of enforceable, collaborative accountability mechanisms among nation-states and industries, which results in fragmented, competitive climate action and free-rider problems. Unlike guilds, current global systems treat climate commitments as voluntary and atomized, without institutionally binding norms that integrate shared knowledge, capacity-building, and quality control over emissions and sustainability practices.\n\nDrawing from this principle, a feasible solution is the creation of International Climate Guilds\u2014sector-specific, globally mandated consortiums of governments, industries, and technical experts that enforce binding entry criteria, common performance standards, and ongoing peer review for climate action compliance. These guilds would institutionalize collective responsibility, share innovation openly within the community, and deliver certification tied to trade privileges or financial incentives. By embedding a structured, enforceable community of practice with clear incentives and participatory governance, this approach would overcome current fragmentation, reduce free-riding, and accelerate technology diffusion, thus driving more comprehensive and unified climate progress.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution unlocks numerous derivative innovations by introducing a new institutional framework for collective accountability and knowledge sharing.",
+              "explanatory": "It explains the causal mechanism of fragmented climate action through the absence of enforceable, collaborative governance akin to guild systems.",
+              "non_obvious": "Applying medieval guild principles to modern global climate governance requires a significant conceptual leap beyond conventional policy approaches.",
+              "scalability": "If fully implemented, it could unify global sectors and nations, deeply affecting climate action worldwide through binding standards and incentives.",
+              "principle": "The insight about self-regulating, peer-enforced communities is broadly transferable to other domains facing collective action problems."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.7959999999999999,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed International Climate Guilds offer a plausible mechanism with enforceable standards, peer review, and incentives, though the global political feasibility and enforcement details remain somewhat abstract.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous derivative innovations by introducing a new institutional framework for collective accountability and knowledge sharing.\",\n    \"explanatory\": \"It explains the causal mechanism of fragmented climate action through the absence of enforceable, collaborative governance akin to guild systems.\",\n    \"non_obvious\": \"Applying medieval guild principles to modern global climate governance requires a significant conceptual leap beyond conventional policy approaches.\",\n    \"scalability\": \"If fully implemented, it could unify global sectors and nations, deeply affecting climate action worldwide through binding standards and incentives.\",\n    \"principle\": \"The insight about self-regulating, peer-enforced communities is broadly transferable to other domains facing collective action problems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Coral reef ecosystems",
+        "reformulation": "Analyze a fundamental systemic barrier embedded within current global governance or economic frameworks that significantly hinders comprehensive climate action, and describe an intervention at the policy or institutional level that could address this barrier to accelerate progress.",
+        "text": "Domain used: Coral reef ecosystems\n\nA core structural principle of coral reef ecosystems is their decentralized network of symbiotic relationships where diverse species mutually support resilience and resource cycling, enabling the ecosystem to adapt and thrive despite environmental stress. This decentralized, mutually reinforcing structure contrasts sharply with current global governance, which is often overly centralized or fragmented, creating systemic inertia and misaligned incentives that hinder coordinated, comprehensive climate action.\n\nMapping this to global climate governance, the fundamental barrier is the lack of a resilient, decentralized institutional framework that fosters real-time cooperation and resource sharing among diverse stakeholders\u2014nations, corporations, local communities\u2014each with varying needs and capacities. Inspired by coral reefs, a feasible solution is to create a global \u201cClimate Symbiosis Network\u201d: a polycentric governance platform enabling dynamic, bottom-up collaborations where actors form flexible, mutually beneficial coalitions around shared climate goals, resource exchanges (e.g., technology, finance, data), and adaptive policy experimentation. This network would be supported by interoperable digital infrastructure and binding but evolving agreements that encourage continuous feedback and mutual support. By structurally embedding symbiotic, decentralized cooperation, this approach would enhance adaptability, trust, and leverage diverse capacities\u2014accelerating comprehensive climate action beyond the limitations of rigid, top-down frameworks.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution unlocks numerous new governance models and collaborative mechanisms inspired by ecological symbiosis, enabling derivative innovations in climate cooperation.",
+              "explanatory": "It explains the causal bottleneck of centralized governance by contrasting it with decentralized ecological networks, revealing mechanisms of resilience and adaptability.",
+              "non_obvious": "Mapping coral reef symbiotic structures to global governance requires a significant conceptual leap beyond conventional top-down or fragmented approaches.",
+              "scalability": "If fully implemented, it could transform global climate governance affecting nearly all nations and stakeholders with deep systemic impact.",
+              "principle": "The insight of decentralized, symbiotic cooperation is broadly transferable to other complex systems beyond climate governance."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.82,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck (centralized and fragmented global governance) and proposes a concrete, feasible intervention (a decentralized Climate Symbiosis Network) within the two-paragraph limit, fulfilling all prompt requirements.\",\n    \"usefulness\": \"The proposed solution is plausible and specific, outlining mechanisms such as polycentric governance, interoperable digital infrastructure, and binding but evolving agreements, though it remains somewhat conceptual without detailed implementation steps.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new governance models and collaborative mechanisms inspired by ecological symbiosis, enabling derivative innovations in climate cooperation.\",\n    \"explanatory\": \"It explains the causal bottleneck of centralized governance by contrasting it with decentralized ecological networks, revealing mechanisms of resilience and adaptability.\",\n    \"non_obvious\": \"Mapping coral reef symbiotic structures to global governance requires a significant conceptual leap beyond conventional top-down or fragmented approaches.\",\n    \"scalability\": \"If fully implemented, it could transform global climate governance affecting nearly all nations and stakeholders with deep systemic impact.\",\n    \"principle\": \"The insight of decentralized, symbiotic cooperation is broadly transferable to other complex systems beyond climate governance.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: global climate action must operate within the sovereign state system, where each nation inde",
+        "reformulation": "Analyze a fundamental systemic barrier embedded within current global governance or economic frameworks that significantly hinders comprehensive climate action, and describe an intervention at the policy or institutional level that could address this barrier to accelerate progress.",
+        "text": "Assumption broken: Global climate action must operate within the sovereign state system, where each nation independently sets climate commitments based on national interest and competitiveness.\n\nStructural problem: This assumption fragments responsibility and allows climate action to be slowed or weakened by \"free-riding\" and short-term national economic priorities, preventing effective global coordination needed to address the systemic, transboundary nature of the climate crisis.\n\nSolution: Reframe global governance by establishing a supranational climate authority with binding enforcement powers over cross-border carbon budgets and climate investments\u2014enabled through a treaty that members agree to cede partial sovereignty on climate matters. This institution would set mandatory, science-based emission caps transcending national borders, facilitate pooled financing for climate adaptation/mitigation, and impose penalties for non-compliance, thus internalizing global climate externalities. By transforming climate governance from fragmented national control to integrated supranational authority, the solution breaks the deadlock of competitive national interests and allows coordinated, credible, and equitable implementation of ambitious climate action worldwide.\n\nThis would plausibly work because it removes incentive misalignments inherent in the current state-centric model, aligns all actors to a common framework, and builds trust through enforceable rules and shared benefits, accelerating comprehensive climate action beyond voluntary pledges.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 1.0,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.85,
+            "rationale": {
+              "generative": "Establishing a supranational authority unlocks numerous new governance models and cooperative mechanisms beyond current fragmented approaches.",
+              "explanatory": "It reveals the causal mechanism of fragmented sovereignty causing free-riding and misaligned incentives in climate action.",
+              "non_obvious": "It requires a fundamental conceptual leap to cede national sovereignty to a binding supranational entity, breaking entrenched assumptions.",
+              "scalability": "If fully implemented, it could coordinate climate action globally, affecting every nation and ecosystem with enforceable impact.",
+              "principle": "The insight about overcoming fragmented authority through supranational governance can apply to other global commons challenges beyond climate."
+            }
+          },
+          "breakthrough_potential": 0.85,
+          "discard": false,
+          "final_score": 0.85,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed supranational climate authority with binding enforcement is a specific mechanism addressing incentive misalignments and coordination failures, though its feasibility depends on significant political will and sovereignty concessions, which may limit practical implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 1.0,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.85,\n  \"rationale\": {\n    \"generative\": \"Establishing a supranational authority unlocks numerous new governance models and cooperative mechanisms beyond current fragmented approaches.\",\n    \"explanatory\": \"It reveals the causal mechanism of fragmented sovereignty causing free-riding and misaligned incentives in climate action.\",\n    \"non_obvious\": \"It requires a fundamental conceptual leap to cede national sovereignty to a binding supranational entity, breaking entrenched assumptions.\",\n    \"scalability\": \"If fully implemented, it could coordinate climate action globally, affecting every nation and ecosystem with enforceable impact.\",\n    \"principle\": \"The insight about overcoming fragmented authority through supranational governance can apply to other global commons challenges beyond climate.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: climate action must be driven primarily by competitive economic incentives and market-based ",
+        "reformulation": "Analyze a fundamental systemic barrier embedded within current global governance or economic frameworks that significantly hinders comprehensive climate action, and describe an intervention at the policy or institutional level that could address this barrier to accelerate progress.",
+        "text": "Assumption broken: Climate action must be driven primarily by competitive economic incentives and market-based mechanisms for it to be effective.\n\nThe structural problem is that current global frameworks rely heavily on market-driven tools\u2014carbon pricing, trading schemes, and competitive innovation\u2014to motivate climate action. This capitalist-innovation paradigm inherently delays systematic transformation, as meaningful emissions cuts often conflict with short-term profit motives and market dynamics, creating misaligned incentives that sustain incrementalism rather than radical shifts.\n\nBy breaking the assumption that climate action depends primarily on economic competition, a globally coordinated, cooperative climate stewardship network could be established\u2014one modeled on open-source governance and collective resource management. Instead of emphasizing market trade-offs, this network would enable real-time sharing of climate mitigation technologies, best practices, and emission data among nations and communities, governed through transparent democratic institutions empowered to set binding global emission limits collaboratively. This approach dismantles zero-sum dynamics by reframing climate action as a commons problem requiring solidarity and knowledge commons governance, thus accelerating innovation diffusion and collective accountability beyond market constraints. In practice, open cooperation amplifies trust, reduces duplicative investments, and leverages collective intelligence, yielding more rapid systemic decarbonization.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.81,
+            "rationale": {
+              "generative": "The solution unlocks numerous new possibilities by enabling open-source governance and collective resource management models for climate action.",
+              "explanatory": "It explains the causal mechanism of misaligned market incentives and reframes climate action as a commons problem requiring cooperative governance.",
+              "non_obvious": "It breaks the dominant assumption that economic competition is the primary driver, proposing a fundamentally different cooperative paradigm.",
+              "scalability": "If fully implemented, it could affect global systems and populations by accelerating systemic decarbonization through shared innovation and accountability.",
+              "principle": "The insight about shifting from competitive markets to cooperative commons governance is transferable across domains facing collective action problems."
+            }
+          },
+          "breakthrough_potential": 0.81,
+          "discard": false,
+          "final_score": 0.826,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck\u2014the reliance on market-based mechanisms\u2014and proposes a concrete, feasible intervention: a globally coordinated cooperative network modeled on open-source governance. The response is within the two-paragraph limit and includes justification for outsized impact.\",\n    \"usefulness\": \"The proposed intervention is plausible and specific, emphasizing mechanisms like real-time sharing, democratic governance, and collective accountability that could accelerate decarbonization. However, the feasibility of global coordination and enforcement is challenging, which slightly lowers the score.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.81,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new possibilities by enabling open-source governance and collective resource management models for climate action.\",\n    \"explanatory\": \"It explains the causal mechanism of misaligned market incentives and reframes climate action as a commons problem requiring cooperative governance.\",\n    \"non_obvious\": \"It breaks the dominant assumption that economic competition is the primary driver, proposing a fundamentally different cooperative paradigm.\",\n    \"scalability\": \"If fully implemented, it could affect global systems and populations by accelerating systemic decarbonization through shared innovation and accountability.\",\n    \"principle\": \"The insight about shifting from competitive markets to cooperative commons governance is transferable across domains facing collective action problems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: climate action must be planned and implemented based on fixed, long-term projections and cen",
+        "reformulation": "Analyze a fundamental systemic barrier embedded within current global governance or economic frameworks that significantly hinders comprehensive climate action, and describe an intervention at the policy or institutional level that could address this barrier to accelerate progress.",
+        "text": "Assumption broken: Climate action must be planned and implemented based on fixed, long-term projections and centralized, top-down targets (e.g., nationally determined contributions or global emission caps) that rely on stable, predictable socioeconomic trajectories.\n\nStructural problem: The inherent uncertainty and rapid evolution in climate, technology, and social conditions make rigid long-term targets and centralized planning ineffective, limiting adaptability and stifling innovative responses needed to accelerate climate action. This assumption traps policies in linear, often outdated frameworks poorly suited for dynamic complexity, leading to delays, missed opportunities, or misallocated resources.\n\nSolution: Break this assumption by instituting a decentralized, real-time adaptive climate governance system that continuously updates policies and interventions through machine-assisted participatory decision-making at multiple scales (local, national, global). This system would harness AI-driven environmental and social data monitoring, crowdsourced innovation, and iterative policy experiments\u2014enabling a constantly evolving \"climate action feedback loop\" that dynamically reallocates resources and shifts strategies faster than traditional models allow. Such institutional redesign would transform climate governance from rigid mandate-setting to flexible, co-created, and self-correcting ecosystems.\n\nThis approach plausibly works by embracing complexity and uncertainty as assets rather than liabilities, fostering agility and maximizing diverse solutions' collective intelligence. Real-time feedback can reveal what works or fails quickly, allowing acceleration, scaling, or termination of actions with evidence rather than inertia, driving faster and more effective comprehensive climate action beyond conventional governance constraints.",
+        "judge": {
+          "constraint_satisfaction": 0.9,
+          "usefulness": 0.8,
+          "constraint_overall": 0.8500000000000001,
+          "breakthrough_scores": {
+            "generative_power": 0.9,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.87,
+            "rationale": {
+              "generative": "It unlocks numerous new possibilities by enabling continuous, adaptive policy innovation and decentralized decision-making.",
+              "explanatory": "It explains the causal mechanism of how rigid governance structures fail under complexity and how adaptive feedback loops can overcome this.",
+              "non_obvious": "It requires breaking the entrenched assumption of fixed, top-down climate planning and embracing real-time, AI-assisted governance.",
+              "scalability": "If fully implemented, it could transform climate action globally across all governance levels, affecting billions and entire ecosystems.",
+              "principle": "The insight of adaptive, decentralized governance applies broadly to complex, dynamic systems beyond climate policy."
+            }
+          },
+          "breakthrough_potential": 0.87,
+          "discard": false,
+          "final_score": 0.8620000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.9,\n  \"usefulness\": 0.8,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention with justification, all within two paragraphs, satisfying the prompt requirements well.\",\n    \"usefulness\": \"The proposed decentralized, adaptive governance system leveraging AI and participatory decision-making is a plausible and specific mechanism likely to improve climate action by increasing flexibility and responsiveness.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.9,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.87,\n  \"rationale\": {\n    \"generative\": \"It unlocks numerous new possibilities by enabling continuous, adaptive policy innovation and decentralized decision-making.\",\n    \"explanatory\": \"It explains the causal mechanism of how rigid governance structures fail under complexity and how adaptive feedback loops can overcome this.\",\n    \"non_obvious\": \"It requires breaking the entrenched assumption of fixed, top-down climate planning and embracing real-time, AI-assisted governance.\",\n    \"scalability\": \"If fully implemented, it could transform climate action globally across all governance levels, affecting billions and entire ecosystems.\",\n    \"principle\": \"The insight of adaptive, decentralized governance applies broadly to complex, dynamic systems beyond climate policy.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Ancient Mesopotamian irrigation systems",
+        "reformulation": "Identify a key incentive misalignment among major climate stakeholders (governments, corporations, communities) that structurally limits effective climate action, and propose an intervention that would realign these incentives to promote scalable and sustained climate solutions.",
+        "text": "Domain: Ancient Mesopotamian irrigation systems\n\nStructural principle: In Mesopotamian irrigation, a centralized system of canals and water-sharing agreements governed water distribution, but crucially, this system depended on cooperative, enforceable collective action at the community level. Local water user associations managed access, monitored usage, and imposed sanctions for overuse, aligning incentives through a shared responsibility framework that balanced individual and communal needs.\n\nMapping and solution: The core structural problem in climate action today is the misalignment of incentives where governments, corporations, and communities operate in siloed, competing frameworks without enforceable, shared resource governance. By adapting the Mesopotamian model, we can create decentralized, yet interconnected \u201cclimate commons councils\u201d\u2014local and regional multi-stakeholder bodies equipped with the authority to allocate carbon budgets and climate resources (e.g., permits, subsidies) based on transparent, enforceable agreements. These councils would monitor collective resource usage (emissions, land use) and impose graduated penalties or rewards for compliance, fostering a cooperative ecosystem that aligns incentives across sectors and scales.\n\nThis solution works because it shifts climate governance from patchy top-down mandates or voluntary pledges toward a peer-regulated, enforceable system of shared resource management. Like ancient canals that required communal stewardship to maintain flow, contemporary climate commons councils create mutual accountability and dynamic incentive structures that promote scalable, sustained climate solutions beyond isolated interests.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution unlocks numerous possibilities for decentralized, enforceable climate governance models that can inspire derivative innovations in resource management.",
+              "explanatory": "It explains the causal mechanism of incentive alignment through collective action and enforceable agreements, unifying governance challenges across sectors.",
+              "non_obvious": "Adapting ancient irrigation governance to modern climate action requires a significant conceptual leap beyond typical top-down or voluntary frameworks.",
+              "scalability": "If widely adopted, climate commons councils could impact global emissions management by engaging multiple stakeholders across regions and sectors.",
+              "principle": "The insight of peer-regulated, shared resource governance is transferable across domains beyond climate, such as water, fisheries, or energy management."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck (misaligned incentives and siloed governance) and proposes a concrete, feasible intervention (decentralized climate commons councils) with a clear explanation of why it would have outsized impact, all within two paragraphs.\",\n    \"usefulness\": \"The proposed solution is specific, with mechanisms for multi-stakeholder governance, enforceable agreements, and incentive alignment, making it plausible and likely to foster cooperative climate action at multiple scales.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous possibilities for decentralized, enforceable climate governance models that can inspire derivative innovations in resource management.\",\n    \"explanatory\": \"It explains the causal mechanism of incentive alignment through collective action and enforceable agreements, unifying governance challenges across sectors.\",\n    \"non_obvious\": \"Adapting ancient irrigation governance to modern climate action requires a significant conceptual leap beyond typical top-down or voluntary frameworks.\",\n    \"scalability\": \"If widely adopted, climate commons councils could impact global emissions management by engaging multiple stakeholders across regions and sectors.\",\n    \"principle\": \"The insight of peer-regulated, shared resource governance is transferable across domains beyond climate, such as water, fisheries, or energy management.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Beekeeping colony dynamics",
+        "reformulation": "Identify a key incentive misalignment among major climate stakeholders (governments, corporations, communities) that structurally limits effective climate action, and propose an intervention that would realign these incentives to promote scalable and sustained climate solutions.",
+        "text": "Domain used: Beekeeping colony dynamics\n\nA core structural principle from beekeeping colonies is the decentralized task allocation regulated by pheromone signaling, where no single bee directs the entire hive, but the collective adapts quickly through local feedback loops\u2014each bee responds to environmental cues and chemical signals to balance foraging, defense, and brood care. This distributed coordination avoids conflicts of interest by aligning individual roles with colony health rather than individual gain.\n\nMapping this to climate stakeholders reveals a key structural problem: governments, corporations, and communities operate with siloed incentives and delayed, inaccurately perceived feedback on their climate impact, causing misaligned priorities and fragmented action. Borrowing the beekeeping principle, a concrete solution is to create a decentralized, real-time \u201cclimate pheromone network\u201d \u2014 a transparent, blockchain-based platform emitting continuously updated, localized signals reflecting collective environmental impact and resource needs. Stakeholders\u2019 climate actions would be algorithmically linked to these signals, dynamically adjusting regulations, funding, and market incentives based on immediate ecological feedback. This real-time, distributed signaling system would structurally align incentives by embedding continuous, mutual accountability and adaptability, much like bees instinctively adjusting behavior for colony resilience, fostering scalable, sustained climate solutions through emergent coordination rather than top-down mandates.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.75,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution unlocks numerous possibilities for decentralized, adaptive climate governance and derivative innovations in real-time feedback systems.",
+              "explanatory": "It reveals the causal mechanism of misaligned incentives due to delayed feedback and proposes a systemic feedback loop inspired by natural colony dynamics.",
+              "non_obvious": "Mapping pheromone-based decentralized coordination from beekeeping to climate action requires a significant conceptual leap beyond conventional centralized policy approaches.",
+              "scalability": "If widely adopted, it could impact global climate governance structures, affecting governments, corporations, and communities at scale.",
+              "principle": "The insight about decentralized, feedback-driven coordination is broadly transferable across complex socio-ecological systems beyond climate action."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.8,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck\u2014fragmented incentives and delayed feedback among climate stakeholders\u2014and proposes a concrete, feasible intervention: a decentralized, blockchain-based real-time signaling platform. The response is within the two-paragraph limit and explains why the intervention would have outsized impact.\",\n    \"usefulness\": \"The proposed solution is specific and mechanistic, leveraging real-time feedback and decentralized coordination to align incentives, which is plausible and could foster emergent cooperation. However, the feasibility of implementing such a complex blockchain system across diverse stakeholders and ensuring effective algorithmic regulation is somewhat optimistic, reducing the usefulness score.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.75,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous possibilities for decentralized, adaptive climate governance and derivative innovations in real-time feedback systems.\",\n    \"explanatory\": \"It reveals the causal mechanism of misaligned incentives due to delayed feedback and proposes a systemic feedback loop inspired by natural colony dynamics.\",\n    \"non_obvious\": \"Mapping pheromone-based decentralized coordination from beekeeping to climate action requires a significant conceptual leap beyond conventional centralized policy approaches.\",\n    \"scalability\": \"If widely adopted, it could impact global climate governance structures, affecting governments, corporations, and communities at scale.\",\n    \"principle\": \"The insight about decentralized, feedback-driven coordination is broadly transferable across complex socio-ecological systems beyond climate action.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Traditional Japanese tea ceremony",
+        "reformulation": "Identify a key incentive misalignment among major climate stakeholders (governments, corporations, communities) that structurally limits effective climate action, and propose an intervention that would realign these incentives to promote scalable and sustained climate solutions.",
+        "text": "Domain used: Traditional Japanese tea ceremony\n\nA core structural principle in the tea ceremony (chanoyu) is *ichi-go ichi-e* \u2014 the idea that each gathering is a unique, mindful encounter that fosters deep connection and shared responsibility among participants. This principle ensures that hosts and guests engage with profound respect, awareness, and intentionality, transcending transactional interaction. Translating this into climate action, the structural problem is the misalignment of incentives where governments prioritize short-term political gains, corporations focus on quarterly profits, and communities face diffuse benefits, leading to fragmented, episodic, and superficial commitments rather than sustained and collective responsibility.\n\nThe solution is to institutionalize *ichi-go ichi-e*-style climate forums where stakeholders must convene regularly in a ritualized, transparent, and deeply participatory manner\u2014each session treated as a singular, accountable event fostering authentic dialogue, shared stewardship, and mutual recognition of interdependence. Embedding this principle into climate governance structures (e.g., cross-sector climate councils at local to global scales) would create consistent, high-trust environments where participants internalize the uniqueness and gravity of each decision, aligning incentives toward long-term, cooperative climate solutions. This approach plausibly fosters sustained commitment by transforming climate action from a fragmented transaction into a continuous, relational practice rooted in collective presence and responsibility.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.7,
+            "explanatory_depth": 0.6,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.6,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.72,
+            "rationale": {
+              "generative": "The solution unlocks new relational and governance models that could inspire diverse participatory climate innovations.",
+              "explanatory": "It explains the causal mechanism of incentive misalignment and how ritualized, mindful engagement can realign motivations.",
+              "non_obvious": "Applying a traditional cultural principle like ichi-go ichi-e to climate governance requires a significant conceptual leap.",
+              "scalability": "If institutionalized broadly, it could deeply affect governance systems and stakeholder behaviors worldwide.",
+              "principle": "The insight about embedding mindful, unique encounters to foster responsibility is transferable beyond the tea ceremony context."
+            }
+          },
+          "breakthrough_potential": 0.72,
+          "discard": false,
+          "final_score": 0.752,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck (misaligned incentives leading to fragmented climate action) and proposes a concrete, feasible intervention (institutionalizing ritualized climate forums inspired by ichi-go ichi-e). The response is within two paragraphs and includes justification for outsized impact.\",\n    \"usefulness\": \"The proposal offers a plausible mechanism to foster sustained commitment and trust through regular, ritualized stakeholder engagement, which could improve cooperation. However, the intervention is somewhat abstract and may face challenges in practical implementation and scaling, limiting its immediate effectiveness.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.7,\n  \"explanatory_depth\": 0.6,\n  \"non_obviousness\": 0.8,\n  \"scalability_of_impact\": 0.6,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.72,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks new relational and governance models that could inspire diverse participatory climate innovations.\",\n    \"explanatory\": \"It explains the causal mechanism of incentive misalignment and how ritualized, mindful engagement can realign motivations.\",\n    \"non_obvious\": \"Applying a traditional cultural principle like ichi-go ichi-e to climate governance requires a significant conceptual leap.\",\n    \"scalability\": \"If institutionalized broadly, it could deeply affect governance systems and stakeholder behaviors worldwide.\",\n    \"principle\": \"The insight about embedding mindful, unique encounters to foster responsibility is transferable beyond the tea ceremony context.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: climate action must be driven by rational, explicit decision-making processes within establi",
+        "reformulation": "Identify a key incentive misalignment among major climate stakeholders (governments, corporations, communities) that structurally limits effective climate action, and propose an intervention that would realign these incentives to promote scalable and sustained climate solutions.",
+        "text": "Assumption broken: Climate action must be driven by rational, explicit decision-making processes within established political, corporate, or community governance systems (excluding subconscious, cultural, or emergent collective behaviors).  \n\nStructural problem: A major incentive misalignment lies in how climate stakeholders explicitly prioritize immediate, measurable benefits within formal decision frameworks, underestimating or discounting the power of shared narratives, cultural identity, and informal social norms that often drive individual and collective behaviors more strongly than formal incentives. This creates a persistent gap between stated climate goals and actual behavior, as stakeholders feel disconnected from rational incentives or overwhelmed by conflicting interests, leading to fragmented and slow progress.\n\nSolution: Break from the assumption of pure rational agency and implement large-scale, culturally embedded climate story ecosystems that reshape collective identity and social norms across governments, corporations, and communities. This can be operationalized through immersive, participatory climate narratives integrated into education, media, workplaces, and local customs\u2014enabled by augmented reality and gamified social platforms\u2014where stakeholders co-create positive climate roles, rituals, and visions that make sustainable behaviors intuitively meaningful and socially rewarded beyond formal policies or market signals. \n\nThis approach works by converting abstract climate imperatives into emotionally compelling, socially reinforced identities and narratives that align incentives intrinsically rather than extrinsically, promoting sustained behavior change at scale. By harnessing emergent cultural dynamics, it bypasses the bottlenecks of competing formal incentives and builds durable motivation rooted in shared meaning and belonging.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.85,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.86,
+            "rationale": {
+              "generative": "It unlocks numerous new pathways by integrating cultural narratives with technology to drive climate action beyond traditional incentives.",
+              "explanatory": "It reveals the causal mechanism of incentive misalignment by highlighting the dominant role of cultural identity and social norms over formal decision-making.",
+              "non_obvious": "It breaks the common assumption that rational, explicit decision-making alone drives climate action, proposing a culturally embedded narrative ecosystem instead.",
+              "scalability": "If widely adopted, it can influence global populations across governments, corporations, and communities by reshaping collective identities and behaviors.",
+              "principle": "The insight about leveraging emergent cultural dynamics to align intrinsic incentives applies broadly across domains beyond climate action."
+            }
+          },
+          "breakthrough_potential": 0.86,
+          "discard": false,
+          "final_score": 0.856,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The solution is specific and plausible, leveraging cultural narratives and immersive technologies to shift social norms, though it may face challenges in large-scale implementation and measuring impact, which slightly limits its practical certainty.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.85,\n  \"explanatory_depth\": 0.80,\n  \"non_obviousness\": 0.90,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.90,\n  \"breakthrough_potential\": 0.86,\n  \"rationale\": {\n    \"generative\": \"It unlocks numerous new pathways by integrating cultural narratives with technology to drive climate action beyond traditional incentives.\",\n    \"explanatory\": \"It reveals the causal mechanism of incentive misalignment by highlighting the dominant role of cultural identity and social norms over formal decision-making.\",\n    \"non_obvious\": \"It breaks the common assumption that rational, explicit decision-making alone drives climate action, proposing a culturally embedded narrative ecosystem instead.\",\n    \"scalability\": \"If widely adopted, it can influence global populations across governments, corporations, and communities by reshaping collective identities and behaviors.\",\n    \"principle\": \"The insight about leveraging emergent cultural dynamics to align intrinsic incentives applies broadly across domains beyond climate action.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "** effective climate action requires stakeholder incentives to be aligned predominantly around *indi",
+        "reformulation": "Identify a key incentive misalignment among major climate stakeholders (governments, corporations, communities) that structurally limits effective climate action, and propose an intervention that would realign these incentives to promote scalable and sustained climate solutions.",
+        "text": "**Broken assumption:** Effective climate action requires stakeholder incentives to be aligned predominantly around *individual or organizational self-interest* rather than collective or shared identity frameworks.\n\n**Structural problem:** Governments, corporations, and communities often operate with incentives structured around their own discrete interests\u2014national economic growth, shareholder returns, or local community benefits\u2014creating misalignments that limit cooperation and scalable climate solutions. This siloed self-interest discourages shared responsibility and undercuts collective commitment to long-term climate goals.\n\n**Solution:** Break this assumption by creating an integrated, multi-stakeholder \u201cClimate Identity Network\u201d (CIN) that transforms climate action incentives from self-focused metrics (GDP, profit, local welfare) to contributions supporting a shared global climate identity. Members (governments, corporations, communities) receive social, economic, and legal benefits only when they earn \u201cClimate Reputation Tokens\u201d accrued through cooperative projects verified transparently on a decentralized platform. These tokens become a new near-universal currency powering access to favorable trade terms, subsidies, public procurement, and social licenses to operate\u2014fostering collective incentive structures anchored in shared identity and mutual climate stewardship rather than isolated economic gain.\n\nThis solution is enabled by breaking the assumption of self-interest dominance, thereby tapping into intrinsic motivations of reputation, belonging, and trust between stakeholder types. By embedding climate incentives in identity and network effects, CIN shifts the reward system toward cooperative, scalable, and sustained action that transcends traditional misaligned incentive boundaries.",
+        "judge": {
+          "constraint_satisfaction": 0.9,
+          "usefulness": 0.7,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.85,
+            "explanatory_depth": 0.75,
+            "non_obviousness": 0.8,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.83,
+            "rationale": {
+              "generative": "The solution unlocks numerous new cooperative incentive models and derivative innovations by redefining climate action rewards through shared identity tokens.",
+              "explanatory": "It reveals the causal mechanism of misaligned incentives rooted in self-interest silos and how shifting to collective identity can unify disparate actors.",
+              "non_obvious": "It requires breaking the deeply ingrained assumption that self-interest dominates stakeholder motivation, which is a significant conceptual leap.",
+              "scalability": "If widely adopted, it could transform global governance, corporate behavior, and community engagement, impacting billions and systemic climate outcomes.",
+              "principle": "The insight about shifting incentives from isolated self-interest to shared identity frameworks is broadly transferable beyond climate to other collective action problems."
+            }
+          },
+          "breakthrough_potential": 0.83,
+          "discard": false,
+          "final_score": 0.818,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.9,\n  \"usefulness\": 0.7,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention with a clear explanation of its outsized impact. Although the response is slightly longer than two paragraphs, it is well-structured and focused on the prompt requirements.\",\n    \"usefulness\": \"The proposed Climate Identity Network is a specific mechanism leveraging incentives, reputation tokens, and decentralized verification, which plausibly could shift incentives toward collective climate action. However, the complexity and scale of implementation may pose challenges, slightly reducing the score.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.85,\n  \"explanatory_depth\": 0.75,\n  \"non_obviousness\": 0.80,\n  \"scalability_of_impact\": 0.90,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.83,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new cooperative incentive models and derivative innovations by redefining climate action rewards through shared identity tokens.\",\n    \"explanatory\": \"It reveals the causal mechanism of misaligned incentives rooted in self-interest silos and how shifting to collective identity can unify disparate actors.\",\n    \"non_obvious\": \"It requires breaking the deeply ingrained assumption that self-interest dominates stakeholder motivation, which is a significant conceptual leap.\",\n    \"scalability\": \"If widely adopted, it could transform global governance, corporate behavior, and community engagement, impacting billions and systemic climate outcomes.\",\n    \"principle\": \"The insight about shifting incentives from isolated self-interest to shared identity frameworks is broadly transferable beyond climate to other collective action problems.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken:** effective climate action requires that stakeholders\u2014governments, corporations, and communi",
+        "reformulation": "Identify a key incentive misalignment among major climate stakeholders (governments, corporations, communities) that structurally limits effective climate action, and propose an intervention that would realign these incentives to promote scalable and sustained climate solutions.",
+        "text": "**Assumption broken:** Effective climate action requires that stakeholders\u2014governments, corporations, and communities\u2014engage as distinct, siloed actors with separate agendas and responsibilities, rather than as integrated, dynamic collectives with mutable identities and shared ownership over outcomes.\n\n**Structural problem:** The siloed nature of stakeholder incentives leads to fragmented actions, mistrust, and an inability to coordinate at the necessary scale and pace. Governments prioritize national interests and political cycles, corporations focus on quarterly profits and shareholder returns, and communities operate with localized, immediate concerns, leaving no unified mechanism for sustained, holistic climate solutions.\n\n**Solution:** Break down traditional stakeholder boundaries by creating \u201cClimate Stewardship Collectives\u201d \u2014 legally empowered, cross-sectoral entities that blend representatives from governments, corporations, and communities into unified decision-making bodies with shared fiduciary responsibility and profit/loss stakes tied explicitly to measurable climate outcomes. These collectives would use blockchain or decentralized ledger technologies to transparently allocate risks, rewards, and resources, ensuring incentives are structurally aligned and dynamically shared beyond individual stakeholder limits.\n\nBecause the collective\u2019s identity and incentives transcend and blend stakeholder categories, no single party can defect without facing direct collective consequences. The result is real-time adaptive governance rooted in trust and joint ownership, unleashing cooperative innovation, reducing free-riding, and enabling scalable, sustained climate action not achievable under segmented incentive structures.",
+        "judge": {
+          "constraint_satisfaction": 0.9,
+          "usefulness": 0.7,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.85,
+            "explanatory_depth": 0.75,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.83,
+            "rationale": {
+              "generative": "The solution unlocks numerous new governance and incentive alignment models that could inspire derivative innovations in collective action beyond climate.",
+              "explanatory": "It reveals the causal mechanism of siloed incentives fragmenting climate efforts and unifies diverse stakeholder challenges under a shared ownership framework.",
+              "non_obvious": "It requires breaking the entrenched assumption of separate stakeholder roles and proposes a novel legal and technological fusion of identities and incentives.",
+              "scalability": "If widely adopted, it could transform global climate governance structures, affecting governments, corporations, and communities at scale.",
+              "principle": "The insight about transcending siloed incentives through integrated collective entities is transferable to other complex systemic challenges."
+            }
+          },
+          "breakthrough_potential": 0.83,
+          "discard": false,
+          "final_score": 0.818,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.9,\n  \"usefulness\": 0.7,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention with justification, all within the two-paragraph limit, satisfying the prompt requirements well.\",\n    \"usefulness\": \"The proposed solution is specific and includes mechanisms like legal empowerment and blockchain technology to align incentives, but its complexity and reliance on novel governance structures may challenge practical implementation, slightly limiting its plausibility.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.85,\n  \"explanatory_depth\": 0.75,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.83,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new governance and incentive alignment models that could inspire derivative innovations in collective action beyond climate.\",\n    \"explanatory\": \"It reveals the causal mechanism of siloed incentives fragmenting climate efforts and unifies diverse stakeholder challenges under a shared ownership framework.\",\n    \"non_obvious\": \"It requires breaking the entrenched assumption of separate stakeholder roles and proposes a novel legal and technological fusion of identities and incentives.\",\n    \"scalability\": \"If widely adopted, it could transform global climate governance structures, affecting governments, corporations, and communities at scale.\",\n    \"principle\": \"The insight about transcending siloed incentives through integrated collective entities is transferable to other complex systemic challenges.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Urban pigeon flock behavior",
+        "reformulation": "Focus on a critical infrastructure or technological gap that structurally constrains the transition to a low-carbon economy, and suggest a targeted intervention that could unlock or catalyze widespread adoption of clean technologies or practices.",
+        "text": "Domain used: Urban pigeon flock behavior\n\nStructural problem: The transition to low-carbon infrastructure is hindered by fragmented coordination among diverse stakeholders (governments, utilities, consumers, and clean-tech developers) who each pursue independent but interdependent goals, leading to slow, inconsistent adoption of clean technologies despite available innovations.\n\nSolution: Urban pigeons achieve highly coordinated, adaptive flocking behavior through simple local interaction rules\u2014each bird aligns its direction with nearby neighbors and adjusts speed based on local density, producing efficient group movement without centralized control. Applying this, create decentralized \u201clocal clean-tech hubs\u201d composed of geographically proximate stakeholders who share real-time data on their energy use, technology adoption progress, and barriers. Using AI-driven platforms that replicate pigeon-like local alignment, hubs dynamically adjust deployment strategies, incentives, and information flow based on neighbors\u2019 status, creating emergent, self-organized waves of adoption. This peer-to-peer adaptive coordination catalyzes scaling by enabling flexible synchronization and rapid diffusion of best practices and technologies across micro-communities, without waiting for centralized mandates.\n\nWhy it works: By structurally replicating the flock\u2019s decentralized, local-rule-based coordination, this approach overcomes rigid top-down planning bottlenecks and isolated innovation silos. It leverages real-time local interactions to propagate momentum and alignment adaptively across the system, accelerating clean technology uptake through emergent collective behavior akin to pigeon flocks\u2019 efficient navigation\u2014scalable, resilient, and context sensitive.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.6,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.8,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.81,
+            "rationale": {
+              "generative": "The solution unlocks numerous new coordination and diffusion strategies by applying decentralized local interaction rules to complex stakeholder networks.",
+              "explanatory": "It reveals the causal mechanism of emergent coordination through local alignment, explaining how decentralized interactions can overcome fragmentation.",
+              "non_obvious": "Drawing an analogy from urban pigeon flocking to stakeholder coordination requires a significant conceptual leap beyond typical top-down or siloed approaches.",
+              "scalability": "If widely adopted, it could transform coordination across millions of stakeholders in urban energy systems, accelerating clean technology diffusion at scale.",
+              "principle": "The insight into decentralized, local-rule-based emergent coordination is broadly transferable to other complex systems beyond climate action."
+            }
+          },
+          "breakthrough_potential": 0.81,
+          "discard": false,
+          "final_score": 0.806,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.6,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed decentralized, AI-driven local hubs inspired by pigeon flock behavior offer a plausible mechanism for improving coordination and accelerating clean technology adoption, though the idea remains somewhat abstract and would require significant development to implement effectively.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 0.8,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.81,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new coordination and diffusion strategies by applying decentralized local interaction rules to complex stakeholder networks.\",\n    \"explanatory\": \"It reveals the causal mechanism of emergent coordination through local alignment, explaining how decentralized interactions can overcome fragmentation.\",\n    \"non_obvious\": \"Drawing an analogy from urban pigeon flocking to stakeholder coordination requires a significant conceptual leap beyond typical top-down or siloed approaches.\",\n    \"scalability\": \"If widely adopted, it could transform coordination across millions of stakeholders in urban energy systems, accelerating clean technology diffusion at scale.\",\n    \"principle\": \"The insight into decentralized, local-rule-based emergent coordination is broadly transferable to other complex systems beyond climate action.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Ant colony foraging patterns",
+        "reformulation": "Focus on a critical infrastructure or technological gap that structurally constrains the transition to a low-carbon economy, and suggest a targeted intervention that could unlock or catalyze widespread adoption of clean technologies or practices.",
+        "text": "Domain used: Ant colony foraging patterns\n\nStructural problem: The transition to a low-carbon economy is structurally constrained by fragmented knowledge sharing and lack of coordinated adoption pathways across diverse clean technology stakeholders, leading to slow, inefficient diffusion of innovations.\n\nSolution: Inspired by ant colonies\u2019 pheromone-based stigmergic foraging\u2014where individual ants deposit pheromone trails that collectively guide others toward optimal food sources without centralized control\u2014I propose establishing a decentralized, digital \u201cclean tech pheromone network.\u201d This platform would allow early adopters and pilot projects to continuously and transparently report real-time performance data and contextual adoption feedback, effectively \u201cdepositing\u201d digital signals that dynamically guide other businesses, investors, and policymakers toward the most promising low-carbon technologies and best practices under their local conditions. By enabling emergent, self-reinforcing pathways of adoption based on collective experiential data, the network would accelerate widespread uptake without heavy top-down mandates or fragmented pilot redundancies.\n\nThis approach plausibly works because it replicates how ant colonies solve complex optimization problems through simple, local interactions and positive feedback loops, but translated into human institutional contexts. Instead of slow centralized evaluation or rigid standards, the network creates an adaptive, continuously updated marketplace of signals, lowering uncertainty and transaction costs, thus unlocking scalable diffusion of clean innovations tailored to varied contexts.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.8,
+            "rationale": {
+              "generative": "The solution unlocks numerous new pathways for decentralized innovation diffusion and can inspire derivative platforms in other sectors.",
+              "explanatory": "It reveals the causal mechanism of stigmergy and positive feedback loops as a model for overcoming coordination bottlenecks in complex systems.",
+              "non_obvious": "Applying ant colony stigmergy to institutional knowledge sharing requires a significant conceptual leap beyond typical centralized or market-based approaches.",
+              "scalability": "If widely adopted, it could transform global clean technology adoption dynamics, impacting millions of stakeholders and accelerating climate action.",
+              "principle": "The insight of decentralized, emergent coordination via digital signaling is broadly transferable across domains facing fragmentation and slow diffusion."
+            }
+          },
+          "breakthrough_potential": 0.8,
+          "discard": false,
+          "final_score": 0.8400000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed decentralized digital network inspired by ant colony behavior is a plausible mechanism to improve knowledge sharing and coordination, with a clear pathway to accelerating clean technology adoption, though practical implementation challenges remain.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.8,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous new pathways for decentralized innovation diffusion and can inspire derivative platforms in other sectors.\",\n    \"explanatory\": \"It reveals the causal mechanism of stigmergy and positive feedback loops as a model for overcoming coordination bottlenecks in complex systems.\",\n    \"non_obvious\": \"Applying ant colony stigmergy to institutional knowledge sharing requires a significant conceptual leap beyond typical centralized or market-based approaches.\",\n    \"scalability\": \"If widely adopted, it could transform global clean technology adoption dynamics, impacting millions of stakeholders and accelerating climate action.\",\n    \"principle\": \"The insight of decentralized, emergent coordination via digital signaling is broadly transferable across domains facing fragmentation and slow diffusion.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "structural_transfer",
+        "domain": "Deep sea hydrothermal vents",
+        "reformulation": "Focus on a critical infrastructure or technological gap that structurally constrains the transition to a low-carbon economy, and suggest a targeted intervention that could unlock or catalyze widespread adoption of clean technologies or practices.",
+        "text": "Domain used: Deep sea hydrothermal vents\n\nStructural problem: The transition to a low-carbon economy is constrained by the intermittent and spatially uneven availability of renewable energy resources (like solar and wind), which lack consistent, localized energy generation and nutrient-like material cycling to sustain continuous industrial activity and innovation hubs.\n\nStructural principle from Deep sea hydrothermal vents: These vents create highly localized, self-sustaining ecosystems by continuously supplying chemical energy and minerals in a harsh, resource-scarce environment. Microbial communities and specialized organisms form symbiotic, tightly coupled nutrient cycles fueled by vent emissions, enabling rich biodiversity without sunlight. This stable yet dynamic microenvironment supports complex life by leveraging constant, concentrated energy and material flux in a constrained space.\n\nProposed solution: Develop modular, localized \u201cenergy and resource vent hubs\u201d near industrial clusters or urban centers\u2014specialized infrastructure nodes that integrate on-site renewable energy generation (solar, wind, geothermal), advanced energy storage, and closed-loop material recycling systems (capturing CO2, recycling waste heat, recovering critical minerals). These hubs would act as self-sustaining micro-ecosystems, continuously cycling energy and resources to stabilize supply and production, much like vent ecosystems. By concentrating diverse clean technology inputs and outputs in micro-regions that mimic the vent\u2019s localized, continuous chemical flux, the hubs can catalyze widespread adoption of sustainable industrial practices and decarbonize hard-to-abate sectors.\n\nWhy it works: This approach mirrors the vent\u2019s success in creating stability and productivity in an otherwise extreme environment by tightly coupling energy and material cycles locally. By building infrastructure that continuously feeds energy and recycles waste streams within a constrained ecosystem, it overcomes the intermittency and geographic mismatch of renewables. This catalyzes local",
+        "judge": {
+          "constraint_satisfaction": 0.8,
+          "usefulness": 0.7,
+          "constraint_overall": 0.75,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "The solution unlocks numerous derivative innovations by integrating energy generation, storage, and material recycling into modular hubs.",
+              "explanatory": "It explains the causal mechanism of stabilizing energy and resource flows by mimicking natural nutrient cycling in extreme environments.",
+              "non_obvious": "The analogy to deep sea hydrothermal vents and applying their ecosystem principles to urban industrial energy systems is a significant conceptual leap.",
+              "scalability": "If widely deployed, these hubs could transform multiple industrial clusters globally, deeply impacting decarbonization efforts in hard-to-abate sectors.",
+              "principle": "The insight of tightly coupled, localized energy and material cycling is transferable across domains beyond climate action infrastructure."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.756,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.8,\n  \"usefulness\": 0.7,\n  \"overall\": 0.75,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate identifies a clear structural bottleneck and proposes a concrete, feasible intervention with justification, though the response slightly exceeds two paragraphs and includes some domain-specific analogy that may reduce clarity.\",\n    \"usefulness\": \"The proposed solution is specific and plausible, integrating renewable energy, storage, and recycling in localized hubs to address intermittency and resource cycling, though it remains somewhat conceptual without detailed implementation steps.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"The solution unlocks numerous derivative innovations by integrating energy generation, storage, and material recycling into modular hubs.\",\n    \"explanatory\": \"It explains the causal mechanism of stabilizing energy and resource flows by mimicking natural nutrient cycling in extreme environments.\",\n    \"non_obvious\": \"The analogy to deep sea hydrothermal vents and applying their ecosystem principles to urban industrial energy systems is a significant conceptual leap.\",\n    \"scalability\": \"If widely deployed, these hubs could transform multiple industrial clusters globally, deeply impacting decarbonization efforts in hard-to-abate sectors.\",\n    \"principle\": \"The insight of tightly coupled, localized energy and material cycling is transferable across domains beyond climate action infrastructure.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: effective climate action depends primarily on technological innovation and infrastructure in",
+        "reformulation": "Focus on a critical infrastructure or technological gap that structurally constrains the transition to a low-carbon economy, and suggest a targeted intervention that could unlock or catalyze widespread adoption of clean technologies or practices.",
+        "text": "Assumption broken: Effective climate action depends primarily on technological innovation and infrastructure investments being designed and deployed from top-down expert and centralized planning frameworks.\n\nStructural problem: The prevailing approach assumes only centralized authorities (governments, major corporations, technical experts) can effectively design and implement the required infrastructure and technology systems for low-carbon transitions, often resulting in slow deployment, local resistance, and mismatches with diverse community needs and conditions.\n\nSolution: Break the assumption by shifting to a decentralized, community-driven infrastructure and technology development model that empowers local communities to design, customize, build, and maintain low-carbon solutions using open-source blueprints and modular technologies made affordable by distributed manufacturing (e.g., local 3D printing, microgrids, energy storage). Coupled with regional collaborative networks and digital platforms for peer-to-peer knowledge sharing and crowdfunding, this \u201copen innovation commons\u201d approach can rapidly generate and scale diverse, locally adapted clean technologies without waiting for centralized approvals or heavy capital investments.\n\nThis solution works because it harnesses bottom-up creativity and contextual knowledge, accelerates adoption by fitting solutions to specific local social and environmental realities, and reduces bureaucratic delays. Furthermore, decentralized manufacturing and digital commons lower economic and political barriers, rapidly multiplying clean infrastructure where it is most needed and mobilizing stakeholders intrinsically as co-creators rather than passive recipients.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.8,
+          "constraint_overall": 0.9,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.76,
+            "rationale": {
+              "generative": "It unlocks numerous new pathways for innovation by enabling diverse, locally tailored clean technologies and collaborative development models.",
+              "explanatory": "It explains the causal bottleneck of centralized control limiting adaptation and deployment speed, revealing how decentralization addresses these mechanisms.",
+              "non_obvious": "It breaks the common assumption that only centralized authorities can effectively manage climate infrastructure, requiring a conceptual leap to community-driven models.",
+              "scalability": "If widely adopted, it could impact millions by rapidly multiplying clean infrastructure adapted to local needs, bypassing bureaucratic and capital constraints.",
+              "principle": "The insight about decentralizing innovation and leveraging open commons applies broadly beyond climate action to many complex systemic challenges."
+            }
+          },
+          "breakthrough_potential": 0.76,
+          "discard": false,
+          "final_score": 0.8160000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.8,\n  \"overall\": 0.9,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention with justification, all within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed decentralized, community-driven model with open-source and distributed manufacturing is specific, plausible, and addresses key barriers, though some implementation challenges remain unaddressed.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.76,\n  \"rationale\": {\n    \"generative\": \"It unlocks numerous new pathways for innovation by enabling diverse, locally tailored clean technologies and collaborative development models.\",\n    \"explanatory\": \"It explains the causal bottleneck of centralized control limiting adaptation and deployment speed, revealing how decentralization addresses these mechanisms.\",\n    \"non_obvious\": \"It breaks the common assumption that only centralized authorities can effectively manage climate infrastructure, requiring a conceptual leap to community-driven models.\",\n    \"scalability\": \"If widely adopted, it could impact millions by rapidly multiplying clean infrastructure adapted to local needs, bypassing bureaucratic and capital constraints.\",\n    \"principle\": \"The insight about decentralizing innovation and leveraging open commons applies broadly beyond climate action to many complex systemic challenges.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken:** effective climate action must be undertaken primarily by centralized public or private ins",
+        "reformulation": "Focus on a critical infrastructure or technological gap that structurally constrains the transition to a low-carbon economy, and suggest a targeted intervention that could unlock or catalyze widespread adoption of clean technologies or practices.",
+        "text": "**Assumption broken:** Effective climate action must be undertaken primarily by centralized public or private institutions with clearly delineated authority over infrastructure investments and regulatory enforcement.\n\n**Structural problem:** The transition to a low-carbon economy is often hindered because critical infrastructure upgrades\u2014such as grid modernization, deployment of distributed energy resources, or zero-carbon transport networks\u2014require substantial coordination and approval from centralized entities, which are slow, bureaucratic, and risk-averse. This centralization limits rapid innovation and grassroots experimentation that could uncover scalable clean technology solutions.\n\n**Solution:** Decentralize the authority to modify and upgrade local infrastructure by creating a legally protected \u201ccarbon innovation sandbox\u201d status for communities and local cooperatives. Within these sandboxes, residents, startups, and municipalities would gain temporary regulatory autonomy to create and deploy experimental clean-energy microgrids, autonomous shared electric mobility systems, or peer-to-peer renewable energy exchange platforms without waiting for conventional top-down approvals. This legal decoupling from centralized governance allows rapid, on-the-ground trial and error, fostering disruptive innovation and creating scalable models that, if successful, can be adopted by larger systems.\n\nThis approach plausibly works because it harnesses localized entrepreneurial energy and community buy-in, reduces bottlenecks tied to centralized decision-making, and accelerates real-world testing of novel solutions. The sandbox framework balances risk with innovation by maintaining oversight only at the boundaries, thus unlocking a surge of decentralized action critical to transformative low-carbon infrastructure deployment.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "Decentralizing regulatory authority unlocks numerous new pathways for local innovation and derivative clean technology solutions.",
+              "explanatory": "It explains how centralized bureaucratic inertia causally blocks rapid infrastructure upgrades and how local autonomy can overcome this.",
+              "non_obvious": "The idea challenges the entrenched assumption that only centralized institutions can effectively manage critical infrastructure transitions.",
+              "scalability": "If widely adopted, it could transform infrastructure governance globally, impacting millions through accelerated low-carbon deployments.",
+              "principle": "The insight about decentralizing authority to foster innovation applies broadly beyond climate to other complex system transitions."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.848,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed 'carbon innovation sandbox' is a specific, plausible mechanism that targets centralized bureaucratic delays by enabling localized experimentation, which could realistically accelerate innovation and scalable climate solutions.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"Decentralizing regulatory authority unlocks numerous new pathways for local innovation and derivative clean technology solutions.\",\n    \"explanatory\": \"It explains how centralized bureaucratic inertia causally blocks rapid infrastructure upgrades and how local autonomy can overcome this.\",\n    \"non_obvious\": \"The idea challenges the entrenched assumption that only centralized institutions can effectively manage critical infrastructure transitions.\",\n    \"scalability\": \"If widely adopted, it could transform infrastructure governance globally, impacting millions through accelerated low-carbon deployments.\",\n    \"principle\": \"The insight about decentralizing authority to foster innovation applies broadly beyond climate to other complex system transitions.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: *clean technology adoption and climate action must primarily focus on physical infrastructur",
+        "reformulation": "Focus on a critical infrastructure or technological gap that structurally constrains the transition to a low-carbon economy, and suggest a targeted intervention that could unlock or catalyze widespread adoption of clean technologies or practices.",
+        "text": "Assumption broken: *Clean technology adoption and climate action must primarily focus on physical infrastructure and material innovation to achieve systemic low-carbon transitions.*\n\nStructural problem: Current strategies overwhelmingly prioritize physical infrastructure upgrades or direct material technology advances (e.g., renewable energy hardware, battery tech) but overlook the deep, latent potential of cognitive infrastructure\u2014that is, shared mental models, cultural narratives, and collective knowledge frameworks. This limits widespread clean technology adoption because social norms, beliefs, and knowledge dissemination systems remain structured around fossil-era paradigms, constraining behavioral shifts and acceptance at scale.\n\nSolution: Break this assumption by catalyzing a global \u201ccognitive infrastructure overhaul\u201d using AI-driven adaptive storytelling platforms embedded in everyday media channels (social networks, streaming services, games). These platforms continuously track emerging public attitudes, tailor compelling, culturally resonant narratives about clean technologies\u2019 benefits, and dynamically counter misinformation by subtly integrating pro-sustainability concepts into mainstream culture. This creates an accelerating positive feedback loop where widespread culture and values shift first, unlocking rapid diffusion and normalization of clean technology adoption without relying solely on physical tech improvements or structural policy enforcement.\n\nWhy it works: By deliberately targeting and transforming collective cognition\u2014the mental \u2018infrastructure\u2019 underpinning society\u2019s decisions and behaviors\u2014this approach leverages scalable, low-cost psychological and cultural shifts to overcome inertia, skepticism, and misinformation that block adoption. Once clean technologies are reframed as socially desirable, aspirational, and normative, individual and institutional uptake accelerates organically, complementing and vastly expanding the impact of existing physical and policy interventions.",
+        "judge": {
+          "constraint_satisfaction": 0.9,
+          "usefulness": 0.7,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.9,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.87,
+            "rationale": {
+              "generative": "This solution unlocks numerous new pathways by shifting focus to cognitive infrastructure, enabling diverse cultural and behavioral innovations.",
+              "explanatory": "It explains the causal role of shared mental models and cultural narratives in limiting technology adoption, unifying social and technological barriers.",
+              "non_obvious": "It breaks the common assumption that physical infrastructure is the primary lever, requiring a conceptual leap to target collective cognition.",
+              "scalability": "By embedding adaptive storytelling in global media, it can influence billions, creating deep cultural shifts that accelerate adoption at scale.",
+              "principle": "The insight about transforming cognitive infrastructure applies broadly to other systemic challenges beyond climate action."
+            }
+          },
+          "breakthrough_potential": 0.87,
+          "discard": false,
+          "final_score": 0.8420000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.9,\n  \"usefulness\": 0.7,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention with a clear explanation of its outsized impact, all within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed AI-driven adaptive storytelling platform is a plausible and specific mechanism targeting cultural and cognitive barriers, though its large-scale implementation and effectiveness depend on complex social dynamics and technology adoption, which introduces some uncertainty.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.9,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.87,\n  \"rationale\": {\n    \"generative\": \"This solution unlocks numerous new pathways by shifting focus to cognitive infrastructure, enabling diverse cultural and behavioral innovations.\",\n    \"explanatory\": \"It explains the causal role of shared mental models and cultural narratives in limiting technology adoption, unifying social and technological barriers.\",\n    \"non_obvious\": \"It breaks the common assumption that physical infrastructure is the primary lever, requiring a conceptual leap to target collective cognition.\",\n    \"scalability\": \"By embedding adaptive storytelling in global media, it can influence billions, creating deep cultural shifts that accelerate adoption at scale.\",\n    \"principle\": \"The insight about transforming cognitive infrastructure applies broadly to other systemic challenges beyond climate action.\"\n  }\n}\n```"
+        }
+      }
+    ],
+    "top_k": [
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: climate action must be planned and implemented based on fixed, long-term projections and cen",
+        "reformulation": "Analyze a fundamental systemic barrier embedded within current global governance or economic frameworks that significantly hinders comprehensive climate action, and describe an intervention at the policy or institutional level that could address this barrier to accelerate progress.",
+        "text": "Assumption broken: Climate action must be planned and implemented based on fixed, long-term projections and centralized, top-down targets (e.g., nationally determined contributions or global emission caps) that rely on stable, predictable socioeconomic trajectories.\n\nStructural problem: The inherent uncertainty and rapid evolution in climate, technology, and social conditions make rigid long-term targets and centralized planning ineffective, limiting adaptability and stifling innovative responses needed to accelerate climate action. This assumption traps policies in linear, often outdated frameworks poorly suited for dynamic complexity, leading to delays, missed opportunities, or misallocated resources.\n\nSolution: Break this assumption by instituting a decentralized, real-time adaptive climate governance system that continuously updates policies and interventions through machine-assisted participatory decision-making at multiple scales (local, national, global). This system would harness AI-driven environmental and social data monitoring, crowdsourced innovation, and iterative policy experiments\u2014enabling a constantly evolving \"climate action feedback loop\" that dynamically reallocates resources and shifts strategies faster than traditional models allow. Such institutional redesign would transform climate governance from rigid mandate-setting to flexible, co-created, and self-correcting ecosystems.\n\nThis approach plausibly works by embracing complexity and uncertainty as assets rather than liabilities, fostering agility and maximizing diverse solutions' collective intelligence. Real-time feedback can reveal what works or fails quickly, allowing acceleration, scaling, or termination of actions with evidence rather than inertia, driving faster and more effective comprehensive climate action beyond conventional governance constraints.",
+        "judge": {
+          "constraint_satisfaction": 0.9,
+          "usefulness": 0.8,
+          "constraint_overall": 0.8500000000000001,
+          "breakthrough_scores": {
+            "generative_power": 0.9,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.87,
+            "rationale": {
+              "generative": "It unlocks numerous new possibilities by enabling continuous, adaptive policy innovation and decentralized decision-making.",
+              "explanatory": "It explains the causal mechanism of how rigid governance structures fail under complexity and how adaptive feedback loops can overcome this.",
+              "non_obvious": "It requires breaking the entrenched assumption of fixed, top-down climate planning and embracing real-time, AI-assisted governance.",
+              "scalability": "If fully implemented, it could transform climate action globally across all governance levels, affecting billions and entire ecosystems.",
+              "principle": "The insight of adaptive, decentralized governance applies broadly to complex, dynamic systems beyond climate policy."
+            }
+          },
+          "breakthrough_potential": 0.87,
+          "discard": false,
+          "final_score": 0.8620000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.9,\n  \"usefulness\": 0.8,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention with justification, all within two paragraphs, satisfying the prompt requirements well.\",\n    \"usefulness\": \"The proposed decentralized, adaptive governance system leveraging AI and participatory decision-making is a plausible and specific mechanism likely to improve climate action by increasing flexibility and responsiveness.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.9,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.87,\n  \"rationale\": {\n    \"generative\": \"It unlocks numerous new possibilities by enabling continuous, adaptive policy innovation and decentralized decision-making.\",\n    \"explanatory\": \"It explains the causal mechanism of how rigid governance structures fail under complexity and how adaptive feedback loops can overcome this.\",\n    \"non_obvious\": \"It requires breaking the entrenched assumption of fixed, top-down climate planning and embracing real-time, AI-assisted governance.\",\n    \"scalability\": \"If fully implemented, it could transform climate action globally across all governance levels, affecting billions and entire ecosystems.\",\n    \"principle\": \"The insight of adaptive, decentralized governance applies broadly to complex, dynamic systems beyond climate policy.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: climate action must be driven by rational, explicit decision-making processes within establi",
+        "reformulation": "Identify a key incentive misalignment among major climate stakeholders (governments, corporations, communities) that structurally limits effective climate action, and propose an intervention that would realign these incentives to promote scalable and sustained climate solutions.",
+        "text": "Assumption broken: Climate action must be driven by rational, explicit decision-making processes within established political, corporate, or community governance systems (excluding subconscious, cultural, or emergent collective behaviors).  \n\nStructural problem: A major incentive misalignment lies in how climate stakeholders explicitly prioritize immediate, measurable benefits within formal decision frameworks, underestimating or discounting the power of shared narratives, cultural identity, and informal social norms that often drive individual and collective behaviors more strongly than formal incentives. This creates a persistent gap between stated climate goals and actual behavior, as stakeholders feel disconnected from rational incentives or overwhelmed by conflicting interests, leading to fragmented and slow progress.\n\nSolution: Break from the assumption of pure rational agency and implement large-scale, culturally embedded climate story ecosystems that reshape collective identity and social norms across governments, corporations, and communities. This can be operationalized through immersive, participatory climate narratives integrated into education, media, workplaces, and local customs\u2014enabled by augmented reality and gamified social platforms\u2014where stakeholders co-create positive climate roles, rituals, and visions that make sustainable behaviors intuitively meaningful and socially rewarded beyond formal policies or market signals. \n\nThis approach works by converting abstract climate imperatives into emotionally compelling, socially reinforced identities and narratives that align incentives intrinsically rather than extrinsically, promoting sustained behavior change at scale. By harnessing emergent cultural dynamics, it bypasses the bottlenecks of competing formal incentives and builds durable motivation rooted in shared meaning and belonging.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.85,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.86,
+            "rationale": {
+              "generative": "It unlocks numerous new pathways by integrating cultural narratives with technology to drive climate action beyond traditional incentives.",
+              "explanatory": "It reveals the causal mechanism of incentive misalignment by highlighting the dominant role of cultural identity and social norms over formal decision-making.",
+              "non_obvious": "It breaks the common assumption that rational, explicit decision-making alone drives climate action, proposing a culturally embedded narrative ecosystem instead.",
+              "scalability": "If widely adopted, it can influence global populations across governments, corporations, and communities by reshaping collective identities and behaviors.",
+              "principle": "The insight about leveraging emergent cultural dynamics to align intrinsic incentives applies broadly across domains beyond climate action."
+            }
+          },
+          "breakthrough_potential": 0.86,
+          "discard": false,
+          "final_score": 0.856,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The solution is specific and plausible, leveraging cultural narratives and immersive technologies to shift social norms, though it may face challenges in large-scale implementation and measuring impact, which slightly limits its practical certainty.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.85,\n  \"explanatory_depth\": 0.80,\n  \"non_obviousness\": 0.90,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.90,\n  \"breakthrough_potential\": 0.86,\n  \"rationale\": {\n    \"generative\": \"It unlocks numerous new pathways by integrating cultural narratives with technology to drive climate action beyond traditional incentives.\",\n    \"explanatory\": \"It reveals the causal mechanism of incentive misalignment by highlighting the dominant role of cultural identity and social norms over formal decision-making.\",\n    \"non_obvious\": \"It breaks the common assumption that rational, explicit decision-making alone drives climate action, proposing a culturally embedded narrative ecosystem instead.\",\n    \"scalability\": \"If widely adopted, it can influence global populations across governments, corporations, and communities by reshaping collective identities and behaviors.\",\n    \"principle\": \"The insight about leveraging emergent cultural dynamics to align intrinsic incentives applies broadly across domains beyond climate action.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: global climate action must operate within the sovereign state system, where each nation inde",
+        "reformulation": "Analyze a fundamental systemic barrier embedded within current global governance or economic frameworks that significantly hinders comprehensive climate action, and describe an intervention at the policy or institutional level that could address this barrier to accelerate progress.",
+        "text": "Assumption broken: Global climate action must operate within the sovereign state system, where each nation independently sets climate commitments based on national interest and competitiveness.\n\nStructural problem: This assumption fragments responsibility and allows climate action to be slowed or weakened by \"free-riding\" and short-term national economic priorities, preventing effective global coordination needed to address the systemic, transboundary nature of the climate crisis.\n\nSolution: Reframe global governance by establishing a supranational climate authority with binding enforcement powers over cross-border carbon budgets and climate investments\u2014enabled through a treaty that members agree to cede partial sovereignty on climate matters. This institution would set mandatory, science-based emission caps transcending national borders, facilitate pooled financing for climate adaptation/mitigation, and impose penalties for non-compliance, thus internalizing global climate externalities. By transforming climate governance from fragmented national control to integrated supranational authority, the solution breaks the deadlock of competitive national interests and allows coordinated, credible, and equitable implementation of ambitious climate action worldwide.\n\nThis would plausibly work because it removes incentive misalignments inherent in the current state-centric model, aligns all actors to a common framework, and builds trust through enforceable rules and shared benefits, accelerating comprehensive climate action beyond voluntary pledges.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.7,
+          "constraint_overall": 0.85,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.9,
+            "scalability_of_impact": 1.0,
+            "principle_over_implementation": 0.85,
+            "breakthrough_potential": 0.85,
+            "rationale": {
+              "generative": "Establishing a supranational authority unlocks numerous new governance models and cooperative mechanisms beyond current fragmented approaches.",
+              "explanatory": "It reveals the causal mechanism of fragmented sovereignty causing free-riding and misaligned incentives in climate action.",
+              "non_obvious": "It requires a fundamental conceptual leap to cede national sovereignty to a binding supranational entity, breaking entrenched assumptions.",
+              "scalability": "If fully implemented, it could coordinate climate action globally, affecting every nation and ecosystem with enforceable impact.",
+              "principle": "The insight about overcoming fragmented authority through supranational governance can apply to other global commons challenges beyond climate."
+            }
+          },
+          "breakthrough_potential": 0.85,
+          "discard": false,
+          "final_score": 0.85,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.7,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed supranational climate authority with binding enforcement is a specific mechanism addressing incentive misalignments and coordination failures, though its feasibility depends on significant political will and sovereignty concessions, which may limit practical implementation.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.9,\n  \"scalability_of_impact\": 1.0,\n  \"principle_over_implementation\": 0.85,\n  \"breakthrough_potential\": 0.85,\n  \"rationale\": {\n    \"generative\": \"Establishing a supranational authority unlocks numerous new governance models and cooperative mechanisms beyond current fragmented approaches.\",\n    \"explanatory\": \"It reveals the causal mechanism of fragmented sovereignty causing free-riding and misaligned incentives in climate action.\",\n    \"non_obvious\": \"It requires a fundamental conceptual leap to cede national sovereignty to a binding supranational entity, breaking entrenched assumptions.\",\n    \"scalability\": \"If fully implemented, it could coordinate climate action globally, affecting every nation and ecosystem with enforceable impact.\",\n    \"principle\": \"The insight about overcoming fragmented authority through supranational governance can apply to other global commons challenges beyond climate.\"\n  }\n}\n```"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken:** effective climate action must be undertaken primarily by centralized public or private ins",
+        "reformulation": "Focus on a critical infrastructure or technological gap that structurally constrains the transition to a low-carbon economy, and suggest a targeted intervention that could unlock or catalyze widespread adoption of clean technologies or practices.",
+        "text": "**Assumption broken:** Effective climate action must be undertaken primarily by centralized public or private institutions with clearly delineated authority over infrastructure investments and regulatory enforcement.\n\n**Structural problem:** The transition to a low-carbon economy is often hindered because critical infrastructure upgrades\u2014such as grid modernization, deployment of distributed energy resources, or zero-carbon transport networks\u2014require substantial coordination and approval from centralized entities, which are slow, bureaucratic, and risk-averse. This centralization limits rapid innovation and grassroots experimentation that could uncover scalable clean technology solutions.\n\n**Solution:** Decentralize the authority to modify and upgrade local infrastructure by creating a legally protected \u201ccarbon innovation sandbox\u201d status for communities and local cooperatives. Within these sandboxes, residents, startups, and municipalities would gain temporary regulatory autonomy to create and deploy experimental clean-energy microgrids, autonomous shared electric mobility systems, or peer-to-peer renewable energy exchange platforms without waiting for conventional top-down approvals. This legal decoupling from centralized governance allows rapid, on-the-ground trial and error, fostering disruptive innovation and creating scalable models that, if successful, can be adopted by larger systems.\n\nThis approach plausibly works because it harnesses localized entrepreneurial energy and community buy-in, reduces bottlenecks tied to centralized decision-making, and accelerates real-world testing of novel solutions. The sandbox framework balances risk with innovation by maintaining oversight only at the boundaries, thus unlocking a surge of decentralized action critical to transformative low-carbon infrastructure deployment.",
+        "judge": {
+          "constraint_satisfaction": 1.0,
+          "usefulness": 0.9,
+          "constraint_overall": 0.95,
+          "breakthrough_scores": {
+            "generative_power": 0.8,
+            "explanatory_depth": 0.7,
+            "non_obviousness": 0.75,
+            "scalability_of_impact": 0.85,
+            "principle_over_implementation": 0.8,
+            "breakthrough_potential": 0.78,
+            "rationale": {
+              "generative": "Decentralizing regulatory authority unlocks numerous new pathways for local innovation and derivative clean technology solutions.",
+              "explanatory": "It explains how centralized bureaucratic inertia causally blocks rapid infrastructure upgrades and how local autonomy can overcome this.",
+              "non_obvious": "The idea challenges the entrenched assumption that only centralized institutions can effectively manage critical infrastructure transitions.",
+              "scalability": "If widely adopted, it could transform infrastructure governance globally, impacting millions through accelerated low-carbon deployments.",
+              "principle": "The insight about decentralizing authority to foster innovation applies broadly beyond climate to other complex system transitions."
+            }
+          },
+          "breakthrough_potential": 0.78,
+          "discard": false,
+          "final_score": 0.848,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 1.0,\n  \"usefulness\": 0.9,\n  \"overall\": 0.95,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention within the two-paragraph limit, fully satisfying the prompt requirements.\",\n    \"usefulness\": \"The proposed 'carbon innovation sandbox' is a specific, plausible mechanism that targets centralized bureaucratic delays by enabling localized experimentation, which could realistically accelerate innovation and scalable climate solutions.\"\n  }\n}",
+          "raw_breakthrough_judge": "{\n  \"generative_power\": 0.8,\n  \"explanatory_depth\": 0.7,\n  \"non_obviousness\": 0.75,\n  \"scalability_of_impact\": 0.85,\n  \"principle_over_implementation\": 0.8,\n  \"breakthrough_potential\": 0.78,\n  \"rationale\": {\n    \"generative\": \"Decentralizing regulatory authority unlocks numerous new pathways for local innovation and derivative clean technology solutions.\",\n    \"explanatory\": \"It explains how centralized bureaucratic inertia causally blocks rapid infrastructure upgrades and how local autonomy can overcome this.\",\n    \"non_obvious\": \"The idea challenges the entrenched assumption that only centralized institutions can effectively manage critical infrastructure transitions.\",\n    \"scalability\": \"If widely adopted, it could transform infrastructure governance globally, impacting millions through accelerated low-carbon deployments.\",\n    \"principle\": \"The insight about decentralizing authority to foster innovation applies broadly beyond climate to other complex system transitions.\"\n  }\n}"
+        }
+      },
+      {
+        "mode": "constraint_violation",
+        "assumption": "broken: *clean technology adoption and climate action must primarily focus on physical infrastructur",
+        "reformulation": "Focus on a critical infrastructure or technological gap that structurally constrains the transition to a low-carbon economy, and suggest a targeted intervention that could unlock or catalyze widespread adoption of clean technologies or practices.",
+        "text": "Assumption broken: *Clean technology adoption and climate action must primarily focus on physical infrastructure and material innovation to achieve systemic low-carbon transitions.*\n\nStructural problem: Current strategies overwhelmingly prioritize physical infrastructure upgrades or direct material technology advances (e.g., renewable energy hardware, battery tech) but overlook the deep, latent potential of cognitive infrastructure\u2014that is, shared mental models, cultural narratives, and collective knowledge frameworks. This limits widespread clean technology adoption because social norms, beliefs, and knowledge dissemination systems remain structured around fossil-era paradigms, constraining behavioral shifts and acceptance at scale.\n\nSolution: Break this assumption by catalyzing a global \u201ccognitive infrastructure overhaul\u201d using AI-driven adaptive storytelling platforms embedded in everyday media channels (social networks, streaming services, games). These platforms continuously track emerging public attitudes, tailor compelling, culturally resonant narratives about clean technologies\u2019 benefits, and dynamically counter misinformation by subtly integrating pro-sustainability concepts into mainstream culture. This creates an accelerating positive feedback loop where widespread culture and values shift first, unlocking rapid diffusion and normalization of clean technology adoption without relying solely on physical tech improvements or structural policy enforcement.\n\nWhy it works: By deliberately targeting and transforming collective cognition\u2014the mental \u2018infrastructure\u2019 underpinning society\u2019s decisions and behaviors\u2014this approach leverages scalable, low-cost psychological and cultural shifts to overcome inertia, skepticism, and misinformation that block adoption. Once clean technologies are reframed as socially desirable, aspirational, and normative, individual and institutional uptake accelerates organically, complementing and vastly expanding the impact of existing physical and policy interventions.",
+        "judge": {
+          "constraint_satisfaction": 0.9,
+          "usefulness": 0.7,
+          "constraint_overall": 0.8,
+          "breakthrough_scores": {
+            "generative_power": 0.9,
+            "explanatory_depth": 0.8,
+            "non_obviousness": 0.85,
+            "scalability_of_impact": 0.9,
+            "principle_over_implementation": 0.9,
+            "breakthrough_potential": 0.87,
+            "rationale": {
+              "generative": "This solution unlocks numerous new pathways by shifting focus to cognitive infrastructure, enabling diverse cultural and behavioral innovations.",
+              "explanatory": "It explains the causal role of shared mental models and cultural narratives in limiting technology adoption, unifying social and technological barriers.",
+              "non_obvious": "It breaks the common assumption that physical infrastructure is the primary lever, requiring a conceptual leap to target collective cognition.",
+              "scalability": "By embedding adaptive storytelling in global media, it can influence billions, creating deep cultural shifts that accelerate adoption at scale.",
+              "principle": "The insight about transforming cognitive infrastructure applies broadly to other systemic challenges beyond climate action."
+            }
+          },
+          "breakthrough_potential": 0.87,
+          "discard": false,
+          "final_score": 0.8420000000000001,
+          "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.9,\n  \"usefulness\": 0.7,\n  \"overall\": 0.8,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention with a clear explanation of its outsized impact, all within the two-paragraph limit.\",\n    \"usefulness\": \"The proposed AI-driven adaptive storytelling platform is a plausible and specific mechanism targeting cultural and cognitive barriers, though its large-scale implementation and effectiveness depend on complex social dynamics and technology adoption, which introduces some uncertainty.\"\n  }\n}",
+          "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.9,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.87,\n  \"rationale\": {\n    \"generative\": \"This solution unlocks numerous new pathways by shifting focus to cognitive infrastructure, enabling diverse cultural and behavioral innovations.\",\n    \"explanatory\": \"It explains the causal role of shared mental models and cultural narratives in limiting technology adoption, unifying social and technological barriers.\",\n    \"non_obvious\": \"It breaks the common assumption that physical infrastructure is the primary lever, requiring a conceptual leap to target collective cognition.\",\n    \"scalability\": \"By embedding adaptive storytelling in global media, it can influence billions, creating deep cultural shifts that accelerate adoption at scale.\",\n    \"principle\": \"The insight about transforming cognitive infrastructure applies broadly to other systemic challenges beyond climate action.\"\n  }\n}\n```"
+        }
+      }
+    ],
+    "final_output": "Assumption broken: Climate action must be planned and implemented based on fixed, long-term projections and centralized, top-down targets (e.g., nationally determined contributions or global emission caps) that rely on stable, predictable socioeconomic trajectories.\n\nStructural problem: The inherent uncertainty and rapid evolution in climate, technology, and social conditions make rigid long-term targets and centralized planning ineffective, limiting adaptability and stifling innovative responses needed to accelerate climate action. This assumption traps policies in linear, often outdated frameworks poorly suited for dynamic complexity, leading to delays, missed opportunities, or misallocated resources.\n\nSolution: Break this assumption by instituting a decentralized, real-time adaptive climate governance system that continuously updates policies and interventions through machine-assisted participatory decision-making at multiple scales (local, national, global). This system would harness AI-driven environmental and social data monitoring, crowdsourced innovation, and iterative policy experiments\u2014enabling a constantly evolving \"climate action feedback loop\" that dynamically reallocates resources and shifts strategies faster than traditional models allow. Such institutional redesign would transform climate governance from rigid mandate-setting to flexible, co-created, and self-correcting ecosystems.\n\nThis approach plausibly works by embracing complexity and uncertainty as assets rather than liabilities, fostering agility and maximizing diverse solutions' collective intelligence. Real-time feedback can reveal what works or fails quickly, allowing acceleration, scaling, or termination of actions with evidence rather than inertia, driving faster and more effective comprehensive climate action beyond conventional governance constraints.",
+    "selected": {
+      "mode": "constraint_violation",
+      "reformulation": "Analyze a fundamental systemic barrier embedded within current global governance or economic frameworks that significantly hinders comprehensive climate action, and describe an intervention at the policy or institutional level that could address this barrier to accelerate progress.",
+      "scores": {
+        "constraint_satisfaction": 0.9,
+        "usefulness": 0.8,
+        "constraint_overall": 0.8500000000000001,
+        "breakthrough_scores": {
+          "generative_power": 0.9,
+          "explanatory_depth": 0.8,
+          "non_obviousness": 0.85,
+          "scalability_of_impact": 0.9,
+          "principle_over_implementation": 0.9,
+          "breakthrough_potential": 0.87,
+          "rationale": {
+            "generative": "It unlocks numerous new possibilities by enabling continuous, adaptive policy innovation and decentralized decision-making.",
+            "explanatory": "It explains the causal mechanism of how rigid governance structures fail under complexity and how adaptive feedback loops can overcome this.",
+            "non_obvious": "It requires breaking the entrenched assumption of fixed, top-down climate planning and embracing real-time, AI-assisted governance.",
+            "scalability": "If fully implemented, it could transform climate action globally across all governance levels, affecting billions and entire ecosystems.",
+            "principle": "The insight of adaptive, decentralized governance applies broadly to complex, dynamic systems beyond climate policy."
+          }
+        },
+        "breakthrough_potential": 0.87,
+        "discard": false,
+        "final_score": 0.8620000000000001,
+        "raw_constraint_judge": "{\n  \"constraint_satisfaction\": 0.9,\n  \"usefulness\": 0.8,\n  \"overall\": 0.85,\n  \"discard\": false,\n  \"rationale\": {\n    \"constraints\": \"The candidate clearly identifies a major structural bottleneck and proposes a concrete, feasible intervention with justification, all within two paragraphs, satisfying the prompt requirements well.\",\n    \"usefulness\": \"The proposed decentralized, adaptive governance system leveraging AI and participatory decision-making is a plausible and specific mechanism likely to improve climate action by increasing flexibility and responsiveness.\"\n  }\n}",
+        "raw_breakthrough_judge": "```json\n{\n  \"generative_power\": 0.9,\n  \"explanatory_depth\": 0.8,\n  \"non_obviousness\": 0.85,\n  \"scalability_of_impact\": 0.9,\n  \"principle_over_implementation\": 0.9,\n  \"breakthrough_potential\": 0.87,\n  \"rationale\": {\n    \"generative\": \"It unlocks numerous new possibilities by enabling continuous, adaptive policy innovation and decentralized decision-making.\",\n    \"explanatory\": \"It explains the causal mechanism of how rigid governance structures fail under complexity and how adaptive feedback loops can overcome this.\",\n    \"non_obvious\": \"It requires breaking the entrenched assumption of fixed, top-down climate planning and embracing real-time, AI-assisted governance.\",\n    \"scalability\": \"If fully implemented, it could transform climate action globally across all governance levels, affecting billions and entire ecosystems.\",\n    \"principle\": \"The insight of adaptive, decentralized governance applies broadly to complex, dynamic systems beyond climate policy.\"\n  }\n}\n```"
+      }
+    }
+  },
+  "elapsed_seconds": 208.98459196090698
+}

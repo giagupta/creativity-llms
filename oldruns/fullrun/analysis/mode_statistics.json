@@ -1,0 +1,18 @@
+{
+  "structural_transfer": {
+    "count": 45,
+    "breakthrough_mean": 0.7220000000000001,
+    "breakthrough_std": 0.06461775719919832,
+    "non_obviousness_mean": 0.8000000000000003,
+    "generative_power_mean": 0.7200000000000001,
+    "final_score_mean": 0.7567555555555556
+  },
+  "constraint_violation": {
+    "count": 45,
+    "breakthrough_mean": 0.7851111111111111,
+    "breakthrough_std": 0.05034527251536598,
+    "non_obviousness_mean": 0.8266666666666665,
+    "generative_power_mean": 0.801111111111111,
+    "final_score_mean": 0.8181777777777778
+  }
+}

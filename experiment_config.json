@@ -3,7 +3,11 @@
     "name": "gpt-4.1-mini",
     "max_tokens": 350
   },
-  "conditions": ["single_pass_18_keep5", "divergent_convergent_18_keep5"],
+  "conditions": [
+    "single_pass_18_keep5",
+    "divergent_convergent_18_keep5",
+    "evolutionary_examples"
+  ],
   "budget": {
     "max_candidates_per_prompt": 18,
     "keep_top_k": 5
